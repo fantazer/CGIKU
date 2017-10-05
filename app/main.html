@@ -11,6 +11,7 @@
 		<meta name="msapplication-navbutton-color" content="#000" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
 		<!--icons
+	link(rel="shortcut icon" href="img/fav/favicon.ico")
 	link(rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png")
 	link(rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png")
 	link(rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png")
@@ -27,7 +28,6 @@
 	link(rel="icon" type="image/png" sizes="228x228" href="img/fav/coast-228x228.png")
 	link(rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png")
 	link(rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png")
-	link(rel="shortcut icon" href="img/fav/favicon.ico")
 	link(rel="manifest" href="img/fav/manifest.json")
 	meta(name="mobile-web-app-capable" content="yes")
 	meta(name="theme-color" content="#020307")
@@ -44,7 +44,7 @@
 		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
 		<!--link(rel="stylesheet", href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css")-->
 		<!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
-		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
+		<!--link(rel="stylesheet", href="bower/owl.carousel/dist/assets/owl.carousel.css")-->
 		<!--endbuild-->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-edit.css" />
@@ -56,185 +56,337 @@
 
 	<body>
 		<!--block header-->
-		<div class="main-section" style="background-image:url('https://static.pexels.com/photos/158607/cairn-fog-mystical-background-158607.jpeg');">
-			<div class="main-section-filter"></div>
+		<div class="head-container">
+			<!--header-->
 			<div class="header">
-				<div class="header-layer">
+				<div class="top-line">
 					<div class="main-cont">
-						<div class="header-wrap">
-							<a class="header-logo" href="#">Logo
-								<!--img(src="img/logo-main.svg", alt="")-->
-							</a>
-							<div class="header-nav">
-								<div class="header-nav__el">
-									<div class="header-nav__el-link-wrap">
-										<a class="header-nav__el-link" href="#">О нас</a>
-										<div class="header-nav__el-icon">
-											<svg class="icon-el">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="header-nav__sub">
-										<div class="coner-wrap">
-											<div class="window-coner-top"></div>
-											<div class="header-nav__sub-wrap">
-												<a class="header-nav__sub-el" href="#">О компании</a>
-												<a class="header-nav__sub-el" href="#">Контакты</a>
-												<a class="header-nav__sub-el" href="#">Карьера</a>
-												<a class="header-nav__sub-el" href="#">Отзывы клиентов</a>
-												<a class="header-nav__sub-el" href="#">Преимущества</a>
-												<a class="header-nav__sub-el" href="#">Безопасность</a>
-												<a class="header-nav__sub-el" href="#">Новости и советы</a>
-											</div>
-										</div>
-									</div>
+						<div class="top-line-wrap">
+							<div class="main-logo">
+								<img src="img/logo-dark.png" alt="" />
+							</div>
+							<div class="top-line-info">
+								<div class="top-line-el">
+									<div class="top-line-el-title">Работа горячей линии:</div>
+									<div class="top-line-el-info">Ежедневно c 9-00 ч. до 20-00 ч.</div>
 								</div>
-								<div class="header-nav__el">
-									<div class="header-nav__el-link-wrap">
-										<a class="header-nav__el-link" href="#">Декларация 3-НДФЛ</a>
-										<div class="header-nav__el-icon">
-											<svg class="icon-el">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="header-nav__sub">
-										<div class="coner-wrap">
-											<div class="window-coner-top"></div>
-											<div class="header-nav__sub-wrap">
-												<a class="header-nav__sub-el" href="#">О компании</a>
-												<a class="header-nav__sub-el" href="#">Контакты</a>
-												<a class="header-nav__sub-el" href="#">Карьера</a>
-												<a class="header-nav__sub-el" href="#">Отзывы клиентов</a>
-												<a class="header-nav__sub-el" href="#">Преимущества</a>
-												<a class="header-nav__sub-el" href="#">Безопасность</a>
-												<a class="header-nav__sub-el" href="#">Новости и советы</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="header-nav__el">
-									<div class="header-nav__el-link-wrap">
-										<a class="header-nav__el-link" href="#">Налоги</a>
-										<div class="header-nav__el-icon">
-											<svg class="icon-el">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="header-nav__sub">
-										<div class="coner-wrap">
-											<div class="window-coner-top"></div>
-											<div class="header-nav__sub-wrap">
-												<a class="header-nav__sub-el" href="#">О компании</a>
-												<a class="header-nav__sub-el" href="#">Контакты</a>
-												<a class="header-nav__sub-el" href="#">Карьера</a>
-												<a class="header-nav__sub-el" href="#">Отзывы клиентов</a>
-												<a class="header-nav__sub-el" href="#">Преимущества</a>
-												<a class="header-nav__sub-el" href="#">Безопасность</a>
-												<a class="header-nav__sub-el" href="#">Новости и советы</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="header-nav__el">
-									<div class="header-nav__el-link-wrap">
-										<a class="header-nav__el-link" href="#">Покупка жилья</a>
-										<div class="header-nav__el-icon">
-											<svg class="icon-el">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="header-nav__sub">
-										<div class="coner-wrap">
-											<div class="window-coner-top"></div>
-											<div class="header-nav__sub-wrap">
-												<a class="header-nav__sub-el" href="#">О компании</a>
-												<a class="header-nav__sub-el" href="#">Контакты</a>
-												<a class="header-nav__sub-el" href="#">Карьера</a>
-												<a class="header-nav__sub-el" href="#">Отзывы клиентов</a>
-												<a class="header-nav__sub-el" href="#">Преимущества</a>
-												<a class="header-nav__sub-el" href="#">Безопасность</a>
-												<a class="header-nav__sub-el" href="#">Новости и советы</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="header-nav__el">
-									<div class="header-nav__el-link-wrap">
-										<a class="header-nav__el-link" href="#">Другие вычеты</a>
-										<div class="header-nav__el-icon">
-											<svg class="icon-el">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="header-nav__sub">
-										<div class="coner-wrap">
-											<div class="window-coner-top"></div>
-											<div class="header-nav__sub-wrap">
-												<a class="header-nav__sub-el" href="#">О компании</a>
-												<a class="header-nav__sub-el" href="#">Контакты</a>
-												<a class="header-nav__sub-el" href="#">Карьера</a>
-												<a class="header-nav__sub-el" href="#">Отзывы клиентов</a>
-												<a class="header-nav__sub-el" href="#">Преимущества</a>
-												<a class="header-nav__sub-el" href="#">Безопасность</a>
-												<a class="header-nav__sub-el" href="#">Новости и советы</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="header-nav__el">
-									<div class="header-nav__el-link-wrap">
-										<a class="header-nav__el-link" href="#">Полезное</a>
-										<div class="header-nav__el-icon">
-											<svg class="icon-el">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="header-nav__sub">
-										<div class="coner-wrap">
-											<div class="window-coner-top"></div>
-											<div class="header-nav__sub-wrap">
-												<a class="header-nav__sub-el" href="#">О компании</a>
-												<a class="header-nav__sub-el" href="#">Контакты</a>
-												<a class="header-nav__sub-el" href="#">Карьера</a>
-												<a class="header-nav__sub-el" href="#">Отзывы клиентов</a>
-												<a class="header-nav__sub-el" href="#">Преимущества</a>
-												<a class="header-nav__sub-el" href="#">Безопасность</a>
-												<a class="header-nav__sub-el" href="#">Новости и советы</a>
-											</div>
-										</div>
-									</div>
+								<div class="top-line-el">
+									<div class="top-line-el-title">Прием онлайн-заявок:</div>
+									<div class="top-line-el-info">Круглосуточно</div>
 								</div>
 							</div>
-							<div class="header-contact">
-								<div class="header-phone">
-									<a href="tel:8(495)123-12-12">8(495)123-12-12</a>
-								</div>
-							</div>
-							<div class="menu-toggle">
-								<svg class="icon-el">
-									<use xlink:href="#menu"></use>
-								</svg>
-							</div>
+							<!--.top-line-loc
+					.top-line-loc-el
+						.top-line-loc-icon
+							+icon("metro","icon")
+						.top-line-loc-text Варшавская
+					.top-line-loc-el
+						.top-line-loc-icon
+							+icon("metro","icon")
+						.top-line-loc-text Каширская
+					-->
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="main-section-cont">
-				<div class="main-section-title">this is template</div>
+			<!--header-end-->
+			<!--nav-->
+			<div class="nav">
+				<div class="main-cont">
+					<div class="nav-wrap">
+						<div class="nav-toggle">
+							<svg class="icon">
+								<use xlink:href="#menu"></use>
+							</svg>
+						</div>
+						<div class="menu-wrap">
+							<div class="menu">
+								<a class="menu-el" href="#">Главная</a>
+								<a class="menu-el" href="#">Услуги</a>
+								<a class="menu-el" href="#">О компании</a>
+								<a class="menu-el" href="#">Прайс-лист</a>
+								<a class="menu-el" href="#">Наши лицензии</a>
+								<a class="menu-el" href="#">Контакты</a>
+								<a class="menu-el" href="#">Акции</a>
+							</div>
+						</div>
+						<div class="nav-phone">
+							<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">
+								<svg class="icon">
+									<use xlink:href="#phone-call"></use>
+								</svg>+7 (495) 514-84-13</a>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!--nav-end-->
 		</div>
 		<!--block header end-->
+		<!--.header-baner(style="background-image:url('img/img-5.jpg')")-->
+		<div class="image-baner">
+			<!--img(src="img/img-8.jpg", alt="")-->
+			<!--img(src="img/house-1.png", alt="")-->
+		</div>
+		<!--.baner(style="background-image:url('img/img-2.jpg')")-->
+		<div class="baner">
+			<div class="main-cont">
+				<div class="header-baner">
+					<div class="header-baner__slogan">
+						<div class="header-baner__text">кадастровые и геодезические услуги</div>
+						<div class="header-baner__text--sub">Вы можете доверять нашим профессионалам</div>
+						<div class="header-check">
+							<div class="header-check-el">
+								<div class="header-check-ico">
+									<svg class="icon">
+										<use xlink:href="#checked"></use>
+									</svg>
+								</div>
+								<div class="header-check-text">Выполнение поставленных сроков</div>
+							</div>
+							<div class="header-check-el">
+								<div class="header-check-ico">
+									<svg class="icon">
+										<use xlink:href="#checked"></use>
+									</svg>
+								</div>
+								<div class="header-check-text">Низкая цена услуг</div>
+							</div>
+							<div class="header-check-el">
+								<div class="header-check-ico">
+									<svg class="icon">
+										<use xlink:href="#checked"></use>
+									</svg>
+								</div>
+								<div class="header-check-text">Лучшие специалисты</div>
+							</div>
+							<div class="header-check-el">
+								<div class="header-check-ico">
+									<svg class="icon">
+										<use xlink:href="#checked"></use>
+									</svg>
+								</div>
+								<div class="header-check-text">Выезд в тот же день</div>
+							</div>
+						</div>
+						<div class="header__get">
+							<div class="header__btn header__btn-more">Подробнее</div>
+							<div class="header__btn header__btn-get">Заказать</div>
+						</div>
+					</div>
+					<div class="header-baner__img">
+						<img src="img/img-10.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section--service">
+			<div class="main-cont">
+				<div class="section-title">Услуги по межеванию</div>
+				<div class="section-title-sub">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
+				<div class="service">
+					<div class="service__el">
+						<div class="service__title">Уточнение границ земельного участка</div>
+						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
+						<div class="service__price">18 000 руб.</div>
+						<div class="service__get">
+							<div class="service__btn service__btn-more">Подробнее</div>
+							<div class="service__btn service__btn-get">Заказать</div>
+						</div>
+					</div>
+					<div class="service__el">
+						<div class="service__title">Уточнение границ земельного участка</div>
+						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
+						<div class="service__price">18 000 руб.</div>
+						<div class="service__get">
+							<div class="service__btn service__btn-more">Подробнее</div>
+							<div class="service__btn service__btn-get">Заказать</div>
+						</div>
+					</div>
+					<div class="service__el">
+						<div class="service__title">Уточнение границ земельного участка</div>
+						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
+						<div class="service__price">18 000 руб.</div>
+						<div class="service__get">
+							<div class="service__btn service__btn-more">Подробнее</div>
+							<div class="service__btn service__btn-get">Заказать</div>
+						</div>
+					</div>
+					<div class="service__el">
+						<div class="service__title">Уточнение границ земельного участка</div>
+						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
+						<div class="service__price">18 000 руб.</div>
+						<div class="service__get">
+							<div class="service__btn service__btn-more">Подробнее</div>
+							<div class="service__btn service__btn-get">Заказать</div>
+						</div>
+					</div>
+					<div class="service__el">
+						<div class="service__title">Уточнение границ земельного участка</div>
+						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
+						<div class="service__price">18 000 руб.</div>
+						<div class="service__get">
+							<div class="service__btn service__btn-more">Подробнее</div>
+							<div class="service__btn service__btn-get">Заказать</div>
+						</div>
+					</div>
+					<div class="service__el">
+						<div class="service__title">Уточнение границ земельного участка</div>
+						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
+						<div class="service__price">18 000 руб.</div>
+						<div class="service__get">
+							<div class="service__btn service__btn-more">Подробнее</div>
+							<div class="service__btn service__btn-get">Заказать</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--.section.section--advant
+.section-title Наши преимущества
+.main-cont
+	.advant
+		.advant-info
+			.advant-info__el
+				.advant-info__ico
+					+icon("heart","icon")
+				.advant-info__cont
+					.advant-info__title Точнее не бывает!
+					.advant-info__text Измерение площади участка рулеткой даёт погрешность в десятки квадратных метров.
+			.advant-info__el
+				.advant-info__ico
+					+icon("heart","icon")
+				.advant-info__cont
+					.advant-info__title Работы «под ключ»
+					.advant-info__text Стоять в очередях больше не нужно - мы все берем на себя!
+			.advant-info__el
+				.advant-info__ico
+					+icon("heart","icon")
+				.advant-info__cont
+					.advant-info__title Выезд сразу
+					.advant-info__text Стоять в очередях больше не нужно - мы все берем на себя!
+			.advant-info__el
+				.advant-info__ico
+					+icon("heart","icon")
+				.advant-info__cont
+					.advant-info__title Консультации — 0 рублей
+					.advant-info__text Стоять в очередях больше не нужно - мы все берем на себя!
+		.advant-img
+			img(src="img/instr.jpg", alt="")
+			//img(src="img/img-8.jpg", alt="")
+
+
+-->
+		<div class="about" style="background-image:url('img/our.jpg');">
+			<div class="main-cont">
+				<div class="about-cont">
+					<div class="about-cont__title">О нашей компании</div>
+					<div class="about-cont__text">Мы всегда ценим Ваше время. Для выполнения большего вида предоставляемых нами услуг от Вас не требуется никаких оригиналов правоустанавливающих и правоудостоверяющих документов!
+						<br>
+						<br>Вам достаточно выслать нам скан или фото таких документов по электронной почте. Наши специалисты проверят Ваши документы и свяжутся с Вами для дальнейшего сотрудничества. Мы так же можем выслать Вам коммерческое предложение заверенное подписью Генерального
+						директора и печатью организации.</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section--advant">
+			<div class="section-title">Наши преимущества</div>
+			<div class="main-cont">
+				<div class="advant">
+					<div class="advant-info">
+						<div class="advant-info__el">
+							<div class="advant-info__ico">
+								<svg class="icon">
+									<use xlink:href="#doc"></use>
+								</svg>
+							</div>
+							<div class="advant-info__cont">
+								<div class="advant-info__title">Точнее не бывает!</div>
+								<div class="advant-info__text">Измерение площади участка рулеткой даёт погрешность в десятки квадратных метров.</div>
+							</div>
+						</div>
+						<div class="advant-info__el">
+							<div class="advant-info__ico">
+								<svg class="icon">
+									<use xlink:href="#plan"></use>
+								</svg>
+							</div>
+							<div class="advant-info__cont">
+								<div class="advant-info__title">Работы «под ключ»</div>
+								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
+							</div>
+						</div>
+						<div class="advant-info__el">
+							<div class="advant-info__ico">
+								<svg class="icon">
+									<use xlink:href="#time"></use>
+								</svg>
+							</div>
+							<div class="advant-info__cont">
+								<div class="advant-info__title">Выезд сразу</div>
+								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
+							</div>
+						</div>
+						<div class="advant-info__el">
+							<div class="advant-info__ico">
+								<svg class="icon">
+									<use xlink:href="#money"></use>
+								</svg>
+							</div>
+							<div class="advant-info__cont">
+								<div class="advant-info__title">Консультации — 0 рублей</div>
+								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
+							</div>
+						</div>
+					</div>
+					<div class="advant-img">
+						<img src="img/instr.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section--news">
+			<div class="section-title">Новости</div>
+			<div class="main-cont">
+				<div class="news">
+					<div class="news__el">
+						<div class="news__el-date">18 июля 2017</div>
+						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
+						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">22 авгутса 2017</div>
+						<div class="news__el-title">Межевание участков, постановка на учет</div>
+						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">19 сентября 2014</div>
+						<div class="news__el-title">Подготовка технических планов</div>
+						<div class="news__el-text">Технический план квартиры, дома, помещения, сооружения, гаража, объекта незавершенного строительства. Технический план для ввода объекта в эксплуатацию. Акт обследования. Заключение кадастрового инженера...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">03 апреля 2014</div>
+						<div class="news__el-title">Кадастровая съемка участков</div>
+						<div class="news__el-text">Кадастровая съемка участка, Акт выбора земельных участков, Ситуационный план, Схема расположения земельного участка на кадастровой карте...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">18 июля 2017</div>
+						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
+						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">22 авгутса 2017</div>
+						<div class="news__el-title">Межевание участков, постановка на учет</div>
+						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block footer-->
+		<!--block footer end-->
 		<!--build:js js/combined.js-->
 		<script src="bower/jquery/dist/jquery.js"></script>
-		<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
 		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
-		<script src="js/jquery.smoothscroll.js"></script>
+		<!--script(src='bower/owl.carousel/dist/owl.carousel.min.js')-->
+		<!--script(src="js/jquery.smoothscroll.js")-->
 		<!-- endbuild-->
 		<script src="js/script.js"></script>
 		<script src="js/script-edit.js"></script>

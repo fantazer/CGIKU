@@ -11,6 +11,7 @@
 		<meta name="msapplication-navbutton-color" content="#000" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
 		<!--icons
+	link(rel="shortcut icon" href="img/fav/favicon.ico")
 	link(rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png")
 	link(rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png")
 	link(rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png")
@@ -27,7 +28,6 @@
 	link(rel="icon" type="image/png" sizes="228x228" href="img/fav/coast-228x228.png")
 	link(rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png")
 	link(rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png")
-	link(rel="shortcut icon" href="img/fav/favicon.ico")
 	link(rel="manifest" href="img/fav/manifest.json")
 	meta(name="mobile-web-app-capable" content="yes")
 	meta(name="theme-color" content="#020307")
@@ -44,7 +44,7 @@
 		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
 		<!--link(rel="stylesheet", href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css")-->
 		<!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
-		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
+		<!--link(rel="stylesheet", href="bower/owl.carousel/dist/assets/owl.carousel.css")-->
 		<!--endbuild-->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-edit.css" />
@@ -235,9 +235,21 @@
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">
+						<use xlink:href="#attest"></use>
+					</svg>
+					<div class="element-list-svg__name">attest</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
 						<use xlink:href="#cancel"></use>
 					</svg>
 					<div class="element-list-svg__name">cancel</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#case"></use>
+					</svg>
+					<div class="element-list-svg__name">case</div>
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">
@@ -247,9 +259,27 @@
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">
+						<use xlink:href="#coins"></use>
+					</svg>
+					<div class="element-list-svg__name">coins</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#doc"></use>
+					</svg>
+					<div class="element-list-svg__name">doc</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
 						<use xlink:href="#garbage"></use>
 					</svg>
 					<div class="element-list-svg__name">garbage</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#hand"></use>
+					</svg>
+					<div class="element-list-svg__name">hand</div>
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">
@@ -268,6 +298,12 @@
 						<use xlink:href="#interface"></use>
 					</svg>
 					<div class="element-list-svg__name">interface</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#key"></use>
+					</svg>
+					<div class="element-list-svg__name">key</div>
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">
@@ -295,6 +331,18 @@
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">
+						<use xlink:href="#metro"></use>
+					</svg>
+					<div class="element-list-svg__name">metro</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#money"></use>
+					</svg>
+					<div class="element-list-svg__name">money</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
 						<use xlink:href="#phone-call"></use>
 					</svg>
 					<div class="element-list-svg__name">phone-call</div>
@@ -304,6 +352,24 @@
 						<use xlink:href="#placeholder"></use>
 					</svg>
 					<div class="element-list-svg__name">placeholder</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#plan"></use>
+					</svg>
+					<div class="element-list-svg__name">plan</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#posred"></use>
+					</svg>
+					<div class="element-list-svg__name">posred</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#result"></use>
+					</svg>
+					<div class="element-list-svg__name">result</div>
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">
@@ -361,17 +427,35 @@
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">
+						<use xlink:href="#sprite"></use>
+					</svg>
+					<div class="element-list-svg__name">sprite</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
 						<use xlink:href="#star"></use>
 					</svg>
 					<div class="element-list-svg__name">star</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#time"></use>
+					</svg>
+					<div class="element-list-svg__name">time</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#worker"></use>
+					</svg>
+					<div class="element-list-svg__name">worker</div>
 				</div>
 			</div>
 		</div>
 		<!--build:js js/combined.js-->
 		<script src="bower/jquery/dist/jquery.js"></script>
-		<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
 		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
-		<script src="js/jquery.smoothscroll.js"></script>
+		<!--script(src='bower/owl.carousel/dist/owl.carousel.min.js')-->
+		<!--script(src="js/jquery.smoothscroll.js")-->
 		<!-- endbuild-->
 		<script src="js/script.js"></script>
 		<script src="js/script-edit.js"></script>
