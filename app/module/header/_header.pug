@@ -9,21 +9,31 @@ mixin header()
 						.main-logo
 							img(src="img/logo-dark.png", alt="")
 						.top-line-info
-							.top-line-el
-								.top-line-el-title Работа горячей линии:
-								.top-line-el-info Ежедневно c 9-00 ч. до 20-00 ч.
-							.top-line-el
-								.top-line-el-title Прием онлайн-заявок:
-								.top-line-el-info Круглосуточно
-						//.top-line-loc
-							.top-line-loc-el
-								.top-line-loc-icon
-									+icon("metro","icon")
-								.top-line-loc-text Варшавская
-							.top-line-loc-el
-								.top-line-loc-icon
-									+icon("metro","icon")
-								.top-line-loc-text Каширская
+								.top-line-el__wrap
+									.top-line-el
+										.top-line-el-title Работа горячей линии:
+										.top-line-el-info Ежедневно c 9-00 ч. до 20-00 ч.
+									.top-line-el
+										.top-line-el-title Прием онлайн-заявок:
+										.top-line-el-info Круглосуточно
+								.top-line__contact
+									.top-line-loc
+										.top-line-loc-el
+											.top-line-loc-icon
+												+icon("metro","icon")
+											.top-line-loc-text Варшавская
+										.top-line-loc-el
+											.top-line-loc-icon
+												+icon("metro","icon")
+											.top-line-loc-text Каширская
+									.nav-phone
+										a(href="tel:+7 (495) 514-84-13").nav-phone-el
+											+icon("phone-call","icon")
+											| +7 (495) 514-84-13
+										a(href="tel:+7 (495) 514-84-13").nav-phone-el
+											+icon("phone-call","icon")
+											| +7 (495) 283-96-83
+
 		//header-end
 
 		//nav
@@ -46,7 +56,7 @@ mixin header()
 									];
 							each item in items
 								a(href="#").menu-el #{item}
-					.nav-phone
+					//.nav-phone
 						a(href="tel:+7 (495) 514-84-13").nav-phone-el
 							+icon("phone-call","icon")
 							| +7 (495) 514-84-13

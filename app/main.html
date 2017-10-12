@@ -10,45 +10,18 @@
 		<meta name="theme-color" content="#000" />
 		<meta name="msapplication-navbutton-color" content="#000" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
-		<!--icons
-	link(rel="shortcut icon" href="img/fav/favicon.ico")
-	link(rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png")
-	link(rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png")
-	link(rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png")
-	link(rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png")
-	link(rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png")
-	link(rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png")
-	link(rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png")
-	link(rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png")
-	link(rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png")
-	meta(name="apple-mobile-web-app-capable" content="yes")
-	meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
-	meta(name="apple-mobile-web-app-title" content="My App")
-	link(rel="yandex-tableau-widget" href="img/fav/yandex-browser-manifest.json")
-	link(rel="icon" type="image/png" sizes="228x228" href="img/fav/coast-228x228.png")
-	link(rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png")
-	link(rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png")
-	link(rel="manifest" href="img/fav/manifest.json")
-	meta(name="mobile-web-app-capable" content="yes")
-	meta(name="theme-color" content="#020307")
-	meta(name="application-name" content="My App")
-	meta(name="msapplication-TileColor" content="#020307")
-	meta(name="msapplication-TileImage" content="img/fav/mstile-144x144.png")
-	meta(name="msapplication-config" content="img/fav/browserconfig.xml")
-	
-	-->
+		<!--icons-->
+		<link rel="shortcut icon" href="img/fav/favicon.ico" />
 		<!--SEO-->
 		<title>Document</title>
 		<meta name="description" itemprop="description" content="" />
 		<!--build:css css/vendor.css-->
 		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
-		<!--link(rel="stylesheet", href="bower/flexbox-grid-stylus/dist/flexbox-grid.min.css")-->
-		<!--link(rel="stylesheet", href="bower/components-font-awesome/css/font-awesome.css")-->
-		<!--link(rel="stylesheet", href="bower/owl.carousel/dist/assets/owl.carousel.css")-->
+		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
+		<link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
 		<!--endbuild-->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-edit.css" />
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic" rel="stylesheet" />
 	</head>
 	<!-- mixin nameMixin()-->
 	<!-- - var args = Array.prototype.slice.call(arguments)-->
@@ -66,25 +39,47 @@
 								<img src="img/logo-dark.png" alt="" />
 							</div>
 							<div class="top-line-info">
-								<div class="top-line-el">
-									<div class="top-line-el-title">Работа горячей линии:</div>
-									<div class="top-line-el-info">Ежедневно c 9-00 ч. до 20-00 ч.</div>
+								<div class="top-line-el__wrap">
+									<div class="top-line-el">
+										<div class="top-line-el-title">Работа горячей линии:</div>
+										<div class="top-line-el-info">Ежедневно c 9-00 ч. до 20-00 ч.</div>
+									</div>
+									<div class="top-line-el">
+										<div class="top-line-el-title">Прием онлайн-заявок:</div>
+										<div class="top-line-el-info">Круглосуточно</div>
+									</div>
 								</div>
-								<div class="top-line-el">
-									<div class="top-line-el-title">Прием онлайн-заявок:</div>
-									<div class="top-line-el-info">Круглосуточно</div>
+								<div class="top-line__contact">
+									<div class="top-line-loc">
+										<div class="top-line-loc-el">
+											<div class="top-line-loc-icon">
+												<svg class="icon">
+													<use xlink:href="#metro"></use>
+												</svg>
+											</div>
+											<div class="top-line-loc-text">Варшавская</div>
+										</div>
+										<div class="top-line-loc-el">
+											<div class="top-line-loc-icon">
+												<svg class="icon">
+													<use xlink:href="#metro"></use>
+												</svg>
+											</div>
+											<div class="top-line-loc-text">Каширская</div>
+										</div>
+									</div>
+									<div class="nav-phone">
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">
+											<svg class="icon">
+												<use xlink:href="#phone-call"></use>
+											</svg>+7 (495) 514-84-13</a>
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">
+											<svg class="icon">
+												<use xlink:href="#phone-call"></use>
+											</svg>+7 (495) 283-96-83</a>
+									</div>
 								</div>
 							</div>
-							<!--.top-line-loc
-					.top-line-loc-el
-						.top-line-loc-icon
-							+icon("metro","icon")
-						.top-line-loc-text Варшавская
-					.top-line-loc-el
-						.top-line-loc-icon
-							+icon("metro","icon")
-						.top-line-loc-text Каширская
-					-->
 						</div>
 					</div>
 				</div>
@@ -110,12 +105,11 @@
 								<a class="menu-el" href="#">Акции</a>
 							</div>
 						</div>
-						<div class="nav-phone">
-							<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">
-								<svg class="icon">
-									<use xlink:href="#phone-call"></use>
-								</svg>+7 (495) 514-84-13</a>
-						</div>
+						<!--.nav-phone
+				a(href="tel:+7 (495) 514-84-13").nav-phone-el
+					+icon("phone-call","icon")
+					| +7 (495) 514-84-13
+				-->
 					</div>
 				</div>
 			</div>
@@ -274,7 +268,6 @@
 			img(src="img/instr.jpg", alt="")
 			//img(src="img/img-8.jpg", alt="")
 
-
 -->
 		<div class="about" style="background-image:url('img/our.jpg');">
 			<div class="main-cont">
@@ -381,11 +374,17 @@
 			</div>
 		</div>
 		<!--block footer-->
+		<div class="scroll-up">
+			<svg class="icon">
+				<use xlink:href="#arrow-up"></use>
+			</svg>
+		</div>
 		<!--block footer end-->
 		<!--build:js js/combined.js-->
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
-		<!--script(src='bower/owl.carousel/dist/owl.carousel.min.js')-->
+		<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="bower/fancybox/dist/jquery.fancybox.js"></script>
 		<!--script(src="js/jquery.smoothscroll.js")-->
 		<!-- endbuild-->
 		<script src="js/script.js"></script>

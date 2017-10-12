@@ -1,9 +1,5 @@
 .head-container
-	position fixed
 	width 100%
-	top 0
-	left 0
-	z-index 200
 	background: white
 
 .header
@@ -32,6 +28,7 @@
 	+below(1200px)
 		display none
 	width 70%
+.top-line-el__wrap
 	flex(between)
 .top-line-el
 	f()
@@ -55,7 +52,8 @@
 	f()
 .top-line-loc-el
 	flex(mid)
-	margin-left 20px
+	&:nth-child(1)
+		margin-right 20px
 .top-line-loc-icon
 	.icon
 		size 25px
@@ -102,6 +100,7 @@
 
 .menu-el--active
 	background #236884
+
 .nav-phone-el
 	+above(1200px)
 		.icon
@@ -132,7 +131,7 @@
 
 .main-logo
 	img
-		width: 170px
+		width: 230px
 
 .header-baner
 	img
@@ -162,3 +161,11 @@
 .header-baner__text--sub
 	width: 100%
 	margin-bottom: 30px
+
+.top-line__contact
+	flex(between)
+	padding: 20px 0 10px 0
+
+.nav-phone
+	flex(between)
+	width: 50%

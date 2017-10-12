@@ -28,13 +28,49 @@ $columns = 12
 init($breakpoints, $columns)
 
 body
-	padding-top: 95px
+	//padding-top: 95px
 	@extend .type--main
 	font-family $v-font
 	color $main-text-color
 	line-height 1.2
 	letter-spacing 0.01em
 
+//Добавялем стили для этого элемента
+@-webkit-keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+//Анимация из animateCSs
+@keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.shrink
+	position fixed
+	top 0
+	left 0
+	background white
+	width 100%
+	margin 0
+	padding 10px
+	animation:  slideInDown  1s 1 ease-in-out;
+	z-index 10
+	border-bottom 1px solid #efeded
+	padding-bottom: 5px
 .main-cont
 	center(1200px,10px)
 
@@ -146,6 +182,7 @@ body
 	margin-bottom: 80px
 	line-height: 1.5
 
+
 .service__el
 	item(3,40px)
 	margin-bottom: 40px
@@ -228,3 +265,31 @@ body
 	background-color $red
 	color white
 	//box-shadow 0 9px 18px rgba(242, 0, 34, 0.6)
+
+.scroll-up
+	+below(768px)
+		size 40px
+	flex(mid)
+	round()
+	cp()
+	tr(all)
+	position: fixed
+	z-index 15
+	bottom 5%
+	right 5%
+	border 1px solid $border-color
+	size 64px
+	opacity 0
+	background: white
+	&:hover
+		background: black
+		.icon
+			fill white
+	.icon
+		+below(768px)
+			size 15px
+		size 30px
+		fill black
+
+.scroll-up--show
+	opacity 1
