@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+	//fancy-box
+	$(".fancybox").fancybox();
+	//fancy-box === end
+
+
 	//scroll top
 	var scrollTop = 750;
 	$(window).scroll(function() {
@@ -21,7 +26,7 @@ $(document).ready(function(){
 
 	//slider el
 	$(".slider").owlCarousel({
-	 items : 4,
+	 items : 6,
 		responsive : {
 				0:{
 					items : 2
@@ -30,15 +35,16 @@ $(document).ready(function(){
 					items : 3
 				},
 				960:{
-					items : 4
+					items : 6
 				},
 
 			},
-	 margin:50,
+	 margin:20,
 	 autoHeight : true,
 	 dots: false,
-	 autoplay : true,
+	 autoplay : false,
 	 singleItem:true,
+	 loop:true,
 	 nav:true,
 	 navText:[
 			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',

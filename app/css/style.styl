@@ -293,3 +293,68 @@ body
 
 .scroll-up--show
 	opacity 1
+
+.owl-next,.owl-prev
+	position absolute
+	top 50%
+	margin-top -30px
+	color white
+	font-size 40px
+.owl-carousel
+	position relative
+.owl-prev
+	+below(768px)
+		left 2%
+	left -10%
+.owl-next
+	+below(768px)
+		right 2%
+	right -10%
+.slider-control
+	size 40
+	fill darken($gray,20)
+	tr(all)
+	&:hover
+		fill black
+.owl-dots
+	width 100%
+	flex(mid)
+	margin-top -40px
+	position relative
+	z-index 2000
+.owl-dot
+	round()
+	margin 5px
+	width 10px
+	height 10px
+	background white
+.owl-dot.active
+	background #322f40
+
+.section--customer
+	padding: 150px 0
+
+.section--certificate
+	bgi("img-1.jpg")
+	bg-full()
+	padding: 150px 0
+	position: relative
+	background-attachment: fixed
+	//filter: blur(20px) grayscale(20%);
+	.section-title
+		color white
+		position: relative
+	.filter
+		background: rgba(39, 57, 93, 0.72)
+
+.filter
+	position: absolute
+	width: 100%
+	height: 100%
+	top 0
+	left 0
+	background: rgba(60, 60, 60, 0.75)
+/*
+.slider
+	width: 80%
+	margin: 0 auto*/

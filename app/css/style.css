@@ -1375,6 +1375,92 @@ body {
 .scroll-up--show {
   opacity: 1;
 }
+.owl-next,
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  color: #fff;
+  font-size: 40px;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-prev {
+  left: -10%;
+}
+@media only screen and (max-width: 768px) {
+  .owl-prev {
+    left: 2%;
+  }
+}
+.owl-next {
+  right: -10%;
+}
+@media only screen and (max-width: 768px) {
+  .owl-next {
+    right: 2%;
+  }
+}
+.slider-control {
+  width: 40px;
+  height: 40px;
+  fill: #bcbcbc;
+  transition: all 0.4s;
+}
+.slider-control:hover {
+  fill: #111;
+}
+.owl-dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2000;
+}
+.owl-dot {
+  border-radius: 50%;
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+.owl-dot.active {
+  background: #322f40;
+}
+.section--customer {
+  padding: 150px 0;
+}
+.section--certificate {
+  background: url("../img/img-1.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 150px 0;
+  position: relative;
+  background-attachment: fixed;
+}
+.section--certificate .section-title {
+  color: #fff;
+  position: relative;
+}
+.section--certificate .filter {
+  background: rgba(39,57,93,0.72);
+}
+.filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(60,60,60,0.75);
+}
+/*
+.slider
+	width: 80%
+	margin: 0 auto*/
 @-moz-keyframes slideInDown {
   from {
     transform: translate3d(0, -100%, 0);
