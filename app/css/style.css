@@ -533,7 +533,8 @@ p {
 .service__btn-get,
 .header__btn,
 .header__btn-more,
-.header__btn-get {
+.header__btn-get,
+.footer-get__el {
   text-transform: uppercase;
   transition: all 0.4s;
   display: inline-block;
@@ -558,7 +559,8 @@ p {
 .service__btn-get:hover,
 .header__btn:hover,
 .header__btn-more:hover,
-.header__btn-get:hover {
+.header__btn-get:hover,
+.footer-get__el:hover {
   cursor: pointer;
 }
 .btn--sm {
@@ -575,8 +577,9 @@ p {
   font-size: 12px;
   padding: 10px 30px;
 }
-.btn--lg {
-  font-size: 20px;
+.btn--lg,
+.footer-get__el {
+  font-size: 16px;
   padding: 10px 30px;
 }
 @media only screen and (max-width: 768px) {
@@ -587,37 +590,43 @@ p {
 }
 .btn--mark,
 .service__btn-get,
-.header__btn-get {
+.header__btn-get,
+.footer-get__el {
   color: #f20022;
   background: #fff;
   border: 1px solid #f20022;
 }
 .btn--mark .nav-icon,
 .service__btn-get .nav-icon,
-.header__btn-get .nav-icon {
+.header__btn-get .nav-icon,
+.footer-get__el .nav-icon {
   fill: #fff;
 }
 .btn--mark:hover,
 .service__btn-get:hover,
-.header__btn-get:hover {
+.header__btn-get:hover,
+.footer-get__el:hover {
   background-color: #f20022;
   color: #fff;
   box-shadow: 0 9px 18px rgba(242,0,34,0.6);
 }
 .btn--mark:active,
 .service__btn-get:active,
-.header__btn-get:active {
+.header__btn-get:active,
+.footer-get__el:active {
   background-color: #f20022;
   outline: 0 !important;
 }
 .btn--mark input[type="submit"],
 .service__btn-get input[type="submit"],
-.header__btn-get input[type="submit"] {
+.header__btn-get input[type="submit"],
+.footer-get__el input[type="submit"] {
   border: 0;
 }
 .btn--mark .nav-icon,
 .service__btn-get .nav-icon,
-.header__btn-get .nav-icon {
+.header__btn-get .nav-icon,
+.footer-get__el .nav-icon {
   fill: #fff;
 }
 .btn--disable {
@@ -1054,6 +1063,7 @@ button {
   width: 100%;
 }
 .header-baner__text {
+  width: 100%;
   font-size: 40px;
   margin-bottom: 20px;
   color: #111;
@@ -1074,6 +1084,13 @@ button {
   justify-content: space-between;
   align-items: center;
   width: 50%;
+}
+.header-baner__price {
+  width: 100%;
+  font-size: 48px;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -1431,7 +1448,7 @@ body {
   background: #322f40;
 }
 .section--customer {
-  padding: 150px 0;
+  padding: 0 0 150px 0;
 }
 .section--certificate {
   background: url("../img/img-1.jpg") no-repeat;
@@ -1461,6 +1478,106 @@ body {
 .slider
 	width: 80%
 	margin: 0 auto*/
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list__el {
+  display: flex;
+  justify-content: space-between;
+  width: 46%;
+  margin-bottom: 60px;
+}
+.list__el--img {
+  margin-right: 20px;
+}
+.list__el--title {
+  font-size: 24px;
+  color: #111;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.list__el--item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+.list__el--item:hover {
+  cursor: pointer;
+}
+.list__el--item:before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #f20022;
+  left: 0px;
+  top: 5px;
+}
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.footer__el {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  padding: 30px;
+}
+.footer__el:nth-child(2) {
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+}
+.footer__icon {
+  margin-bottom: 40px;
+}
+.footer__icon .icon {
+  width: 70px;
+  height: 70px;
+  fill: #ff4136;
+}
+.footer__title {
+  font-size: 24px;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.footer__text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer__text--red {
+  color: #f20022;
+}
+.footer-get__el {
+  background-color: #f20022;
+  color: #fff;
+  padding: 20px 50px;
+}
+.footer-get {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-map {
+  width: 100%;
+  height: 400px;
+  background: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @-moz-keyframes slideInDown {
   from {
     transform: translate3d(0, -100%, 0);

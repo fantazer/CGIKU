@@ -332,7 +332,7 @@ body
 	background #322f40
 
 .section--customer
-	padding: 150px 0
+	padding: 0 0 150px 0
 
 .section--certificate
 	bgi("img-1.jpg")
@@ -358,3 +358,85 @@ body
 .slider
 	width: 80%
 	margin: 0 auto*/
+
+.list
+	flex(between)
+	fw()
+	flex(between)
+
+.list__el
+	f()
+	justify-content: space-between
+	width: 46%
+	margin-bottom: 60px
+
+.list__el--img
+	margin-right: 20px
+
+.list__el--title
+	font-size: 24px
+	color black
+	text-transform: uppercase
+	margin-bottom: 20px
+
+.list__el--item
+	cp()
+	position: relative
+	margin-bottom: 10px
+	//text-decoration: underline
+	padding-left: 20px
+	&:before
+		content ''
+		round()
+		position: absolute
+		size 5px
+		background: $red
+		left 0px
+		top 5px
+
+.footer__wrap
+	flex(between)
+	margin-bottom: 80px
+
+.footer__el
+	width: 33%
+	flex(mid)
+	fl()
+	text-align: center
+	padding: 30px
+	&:nth-child(2)
+		border-right 1px solid $gray
+		border-left 1px solid $gray
+.footer__icon
+	margin-bottom: 40px
+	.icon
+		size 70px
+		fill red
+
+.footer__title
+	font-size: 24px
+	color black
+	font-weight: bold
+	margin-bottom: 40px
+
+.footer__text
+	font-size: 18px
+	margin-bottom: 10px
+
+.footer__text--red
+	color $red
+
+.footer-get__el
+	@extend .btn--mark
+	@extend .btn--lg
+	background-color $red
+	color white
+	padding: 20px 50px
+.footer-get
+	flex(mid)
+
+.footer-map
+	width: 100%
+	height: 400px
+	background: $gray
+	flex(mid)

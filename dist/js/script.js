@@ -1,7 +1,126 @@
 $(document).ready(function(){
 
-	var bodyExtend =$('.head-container').height();
-	$('body').css('paddingTop',bodyExtend);
+	//fancy-box
+	$(".fancybox").fancybox();
+	//fancy-box === end
+
+
+	//scroll top
+	var scrollTop = 750;
+	$(window).scroll(function() {
+		var scroll = $(this).scrollTop();
+		if ( scroll >= scrollTop ) {
+				//var heightHeader=$('.header-main-wrap').height();
+				$('.scroll-up').addClass('scroll-up--show');
+			}
+			else {
+					$('.scroll-up').removeClass('scroll-up--show');
+			}
+	});
+
+	$('.scroll-up').click(function() {
+    $('html, body').animate({scrollTop: 0},800);
+    return false;
+  });
+	//scroll top ===end
+
+	//slider el
+	$(".slider-certificate").owlCarousel({
+	 items : 3,
+		responsive : {
+				0:{
+					items : 2
+				},
+				768:{
+					items : 3
+				},
+				960:{
+					items : 3
+				},
+
+			},
+	 margin:20,
+	 autoHeight : true,
+	 dots: false,
+	 autoplay : false,
+	 singleItem:true,
+	 loop:true,
+	 nav:true,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 ]
+	 }
+	);
+
+	$(".slider-customer").owlCarousel({
+	 items : 5,
+		responsive : {
+				0:{
+					items : 2
+				},
+				768:{
+					items : 3
+				},
+				960:{
+					items : 5
+				},
+
+			},
+	 margin:20,
+	 autoHeight : true,
+	 dots: false,
+	 autoplay : false,
+	 singleItem:true,
+	 loop:true,
+	 nav:true,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 ]
+	 }
+	);
+
+	$(".slider-header-baner").owlCarousel({
+	 items : 1,
+	 margin:20,
+	 autoHeight : true,
+	 dots: false,
+	 autoplay : true,
+	 singleItem:true,
+	 loop:true,
+	 //animateOut: 'fadeOut',
+	 nav:true,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 ]
+	 }
+	);
+	//slider el === end
+
+	//animate top menu
+	var shrinkHeader = 250;
+	var heightHeader=$('.header').height();
+	$(window).scroll(function() {
+		var scroll = $(this).scrollTop();
+		if ( scroll >= shrinkHeader ) {
+				$('.header').addClass('shrink');
+				$('body').css('paddingTop',heightHeader);
+			}
+			else {
+					$('.header').removeClass('shrink');
+					$('body').css('paddingTop',0);
+			}
+	});
+
+	$(window).resize(function(){
+		heightHeader=$('.header').height();
+	});
+	//animate top menu === end
+
+	//var bodyExtend =$('.head-container').height();
+	//$('body').css('paddingTop',bodyExtend);
 	/* ###### For only ies  ######*/
 	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
 	//	//code

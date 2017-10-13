@@ -1,5 +1,31 @@
 mixin footer()
 	//block footer
+	.section.section--footer
+		.main-cont
+			.section-title Оформите заказ
+			.section-title-sub Прием в офисе с понедельника по пятницу с 9:00 до 20:00, суббота: по предварительной записи, выходной: воскресенье.
+			.footer__wrap
+				.footer__el
+					.footer__icon
+						+icon("map","icon")
+					.footer__title В офисе
+					.footer__text г. Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
+				.footer__el
+					.footer__icon
+						+icon("phone-call","icon")
+					.footer__title По телефону
+					a(href="tel:+7 (495) 514-84-13").footer__text.footer__text--red +7 (495) 514-84-13
+					a(href="tel:+7 (495) 283-96-83").footer__text.footer__text--red +7 (495) 283-96-83
+				.footer__el
+					.footer__icon
+						+icon("mail","icon")
+					.footer__title По email
+					a(href="mailto:info@cgiku.ru").footer__text.footer__text--red info@cgiku.ru
+			.footer-get
+				.footer-get__el Оставить заявку
+
+	.footer-map
+		h1 Карта
 	.scroll-up
 		+icon("arrow-up","icon")
 	//block footer end

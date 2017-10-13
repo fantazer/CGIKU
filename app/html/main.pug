@@ -10,39 +10,114 @@ include block_html/_include.pug
 //.baner(style="background-image:url('img/img-2.jpg')")
 .baner
 	.main-cont
-		.header-baner
-			.header-baner__slogan
-				.header-baner__text кадастровые и геодезические услуги
-				.header-baner__text--sub Вы можете доверять нашим профессионалам
-				.header-check
-					.header-check-el
-						.header-check-ico
-							+icon("checked","icon")
-						.header-check-text Выполнение поставленных сроков
-					.header-check-el
-						.header-check-ico
-							+icon("checked","icon")
-						.header-check-text Низкая цена услуг
-					.header-check-el
-						.header-check-ico
-							+icon("checked","icon")
-						.header-check-text Лучшие специалисты
-					.header-check-el
-						.header-check-ico
-							+icon("checked","icon")
-						.header-check-text Выезд в тот же день
+		.slider-header-baner.owl-carousel
+			.header-baner
+				.header-baner__slogan
+					.header-baner__text Технический план дома
+					.header-baner__text--sub Площадь до 100 кв.м
+					.header-check
+						.header-check-el
+							.header-check-ico
+								+icon("checked","icon")
+							.header-check-text Выполнение поставленных сроков
+						.header-check-el
+							.header-check-ico
+								+icon("checked","icon")
+							.header-check-text Низкая цена услуг
+						.header-check-el
+							.header-check-ico
+								+icon("checked","icon")
+							.header-check-text Лучшие специалисты
+						.header-check-el
+							.header-check-ico
+								+icon("checked","icon")
+							.header-check-text Выезд в тот же день
+					.header-baner__price 14 000 р.
+					.header__get
+						.header__btn.header__btn-more Подробнее
+						.header__btn.header__btn-get Заказать
 
-				.header__get
-					.header__btn.header__btn-more Подробнее
-					.header__btn.header__btn-get Заказать
+				.header-baner__img
+					img(src="img/baner-2.png", alt="")
 
-			.header-baner__img
-				img(src="img/img-10.png", alt="")
+			.header-baner
+				.header-baner__slogan
+					.header-baner__text Межевание участка
+					.header-baner__text--sub Площадь до 8 сот.
+					.header-check
+						.header-check-el
+							.header-check-ico
+								+icon("checked","icon")
+							.header-check-text Подготовка необходимой документации
+						.header-check-el
+							.header-check-ico
+								+icon("checked","icon")
+							.header-check-text Соблюдение нормативов
+						.header-check-el
+							.header-check-ico
+								+icon("checked","icon")
+							.header-check-text Гарантия выполненных работ
+						.header-check-el
+							.header-check-ico
+								+icon("checked","icon")
+							.header-check-text Соблюдение сроков
+					.header-baner__price 14 000 р.
+					.header__get
+						.header__btn.header__btn-more Подробнее
+						.header__btn.header__btn-get Заказать
+
+				.header-baner__img
+					img(src="img/baner-1.png", alt="")
+
+
+//service
+.section.section--list
+	.main-cont
+		.section-title Наши услуги
+		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+		.list
+				.list__el
+					.list__el--img
+						img(src="img/list-2.jpg", alt="")
+					.list__el--info
+							.list__el--title Межевой план
+							each meg_plans in meg_plan
+								.list__el--item #{meg_plans.name}
+
+				.list__el
+					.list__el--img
+						img(src="img/list-1.jpg", alt="")
+					.list__el--info
+						.list__el--title Технический план
+						each meg_plans in meg_plan
+							.list__el--item #{meg_plans.name}
+
+				.list__el
+					.list__el--img
+						img(src="img/list-3.jpg", alt="")
+					.list__el--info
+						.list__el--title Кадастровые работы
+						each meg_plans in meg_plan
+							.list__el--item #{meg_plans.name}
+
+				.list__el
+					.list__el--img
+						img(src="img/list-4.jpg", alt="")
+					.list__el--info
+						.list__el--title Геодезические работы
+						each meg_plans in meg_plan
+							.list__el--item #{meg_plans.name}
+//about
+.about(style="background-image:url('img/our.jpg')")
+	.main-cont
+		.about-cont
+			.about-cont__title О нашей компании
+			.about-cont__text Мы всегда ценим Ваше время. Для выполнения большего вида предоставляемых нами услуг от Вас не требуется никаких оригиналов правоустанавливающих и правоудостоверяющих документов!<br> <br>Вам достаточно выслать нам скан или фото таких документов по электронной почте. Наши специалисты проверят Ваши документы и свяжутся с Вами для дальнейшего сотрудничества. Мы так же можем выслать Вам коммерческое предложение заверенное подписью Генерального директора и печатью организации.
 
 //service
 .section.section--service
 	.main-cont
-		.section-title Услуги по межеванию
+		.section-title Популярные услуги
 		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
 		.service
 			- for (var i=0;i<6;i++)
@@ -54,45 +129,25 @@ include block_html/_include.pug
 						.service__btn.service__btn-more Подробнее
 						.service__btn.service__btn-get Заказать
 
-//.section.section--advant
-	.section-title Наши преимущества
+//slider customer
+.section.section--customer
+	.section-title Наши заказчики
 	.main-cont
-		.advant
-			.advant-info
-				.advant-info__el
-					.advant-info__ico
-						+icon("heart","icon")
-					.advant-info__cont
-						.advant-info__title Точнее не бывает!
-						.advant-info__text Измерение площади участка рулеткой даёт погрешность в десятки квадратных метров.
-				.advant-info__el
-					.advant-info__ico
-						+icon("heart","icon")
-					.advant-info__cont
-						.advant-info__title Работы «под ключ»
-						.advant-info__text Стоять в очередях больше не нужно - мы все берем на себя!
-				.advant-info__el
-					.advant-info__ico
-						+icon("heart","icon")
-					.advant-info__cont
-						.advant-info__title Выезд сразу
-						.advant-info__text Стоять в очередях больше не нужно - мы все берем на себя!
-				.advant-info__el
-					.advant-info__ico
-						+icon("heart","icon")
-					.advant-info__cont
-						.advant-info__title Консультации — 0 рублей
-						.advant-info__text Стоять в очередях больше не нужно - мы все берем на себя!
-			.advant-img
-				img(src="img/instr.jpg", alt="")
-				//img(src="img/img-8.jpg", alt="")
+		.slider-customer.owl-carousel
+			- for (var i=1;i<15;i++)
+				.slider__el
+					img(src="img/"+i+"-customer.jpg", alt="")
 
-//about
-.about(style="background-image:url('img/our.jpg')")
+//slider certificate
+.section.section--certificate
+	.filter
+	.section-title Наши сертификаты
 	.main-cont
-		.about-cont
-			.about-cont__title О нашей компании
-			.about-cont__text Мы всегда ценим Ваше время. Для выполнения большего вида предоставляемых нами услуг от Вас не требуется никаких оригиналов правоустанавливающих и правоудостоверяющих документов!<br> <br>Вам достаточно выслать нам скан или фото таких документов по электронной почте. Наши специалисты проверят Ваши документы и свяжутся с Вами для дальнейшего сотрудничества. Мы так же можем выслать Вам коммерческое предложение заверенное подписью Генерального директора и печатью организации.
+		.slider-certificate.owl-carousel
+			- for (var i=1;i<11;i++)
+				.slider__el
+					a(href="img/cert-"+i+".jpg" rel="group-elemen").fancybox
+						img(src="img/cert-"+i+".jpg", alt="")
 
 //advant
 .section.section--advant
@@ -126,26 +181,6 @@ include block_html/_include.pug
 						.advant-info__text Стоять в очередях больше не нужно - мы все берем на себя!
 			.advant-img
 				img(src="img/instr.jpg", alt="")
-
-//slider customer
-.section.section--customer
-	.section-title Наши заказчики
-	.main-cont
-		.slider.owl-carousel
-			- for (var i=1;i<15;i++)
-				.slider__el
-					img(src="img/"+i+"-customer.jpg", alt="")
-
-//slider certificate
-.section.section--certificate
-	.filter
-	.section-title Наши сертификаты
-	.main-cont
-		.slider.owl-carousel
-			- for (var i=1;i<15;i++)
-				.slider__el
-					a(href="img/cert.jpg" rel="group-elemen").fancybox
-						img(src="img/cert.jpg", alt="")
 
 //news
 .section.section--news

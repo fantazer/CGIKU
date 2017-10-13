@@ -25,8 +25,8 @@ $(document).ready(function(){
 	//scroll top ===end
 
 	//slider el
-	$(".slider").owlCarousel({
-	 items : 6,
+	$(".slider-certificate").owlCarousel({
+	 items : 3,
 		responsive : {
 				0:{
 					items : 2
@@ -35,7 +35,7 @@ $(document).ready(function(){
 					items : 3
 				},
 				960:{
-					items : 6
+					items : 3
 				},
 
 			},
@@ -45,6 +45,51 @@ $(document).ready(function(){
 	 autoplay : false,
 	 singleItem:true,
 	 loop:true,
+	 nav:true,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 ]
+	 }
+	);
+
+	$(".slider-customer").owlCarousel({
+	 items : 5,
+		responsive : {
+				0:{
+					items : 2
+				},
+				768:{
+					items : 3
+				},
+				960:{
+					items : 5
+				},
+
+			},
+	 margin:20,
+	 autoHeight : true,
+	 dots: false,
+	 autoplay : false,
+	 singleItem:true,
+	 loop:true,
+	 nav:true,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 ]
+	 }
+	);
+
+	$(".slider-header-baner").owlCarousel({
+	 items : 1,
+	 margin:20,
+	 autoHeight : true,
+	 dots: false,
+	 autoplay : true,
+	 singleItem:true,
+	 loop:true,
+	 //animateOut: 'fadeOut',
 	 nav:true,
 	 navText:[
 			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
