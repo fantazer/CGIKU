@@ -22,10 +22,26 @@ mixin footer()
 					.footer__title По email
 					a(href="mailto:info@cgiku.ru").footer__text.footer__text--red info@cgiku.ru
 			.footer-get
-				.footer-get__el Оставить заявку
+				.footer-get__el.modal-get(data-modal="order") Оставить заявку
 
 	.footer-map
 		h1 Карта
 	.scroll-up
 		+icon("arrow-up","icon")
+
+.modal-layer
+	.modal-cont
+		.modal-filter
+		.modal-wrap
+			.modal(data-modal="order")
+				.modal-content.modal-content--fogot
+					.modal-close
+						+icon("close","icon")
+					.modal-title Восстановление пароля
+					.modal-fogot-text Укажите Ваш e-mail, и мы сможем отправить ссылку для восстановления пароля на Ваш почтовый ящик.
+					form(action="#")
+						.input-btn-row
+							input(type="text" placeholder="Логин").input
+							input(type="submit" value="Выслать").input-btn
+
 	//block footer end

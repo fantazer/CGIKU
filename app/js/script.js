@@ -1,9 +1,71 @@
 $(document).ready(function(){
+	
+
+	//modals
+	$('.modal-content').click(function(event){
+		event.stopPropagation();
+	});
+	var scrollPos = 0;
+
+	var openModal = function () {
+  	if(!$('.modal-layer').hasClass('modal-layer-show')){
+			$('.modal-layer').addClass('modal-layer-show');
+		}
+	 scrollPos = $(window).scrollTop();
+	 console.log(scrollPos);
+		$('body').css({
+				overflow: 'hidden',
+				position: 'fixed',
+				overflowY: 'scroll',
+				top : -scrollPos,
+				width:'100%'
+		});
+		return scrollPos;
+	};
+
+	var closeModal = function () {
+		console.log("scrollPos",scrollPos);
+  	$('.modal-layer').removeClass('modal-layer-show');
+  	$("body").removeClass("modal-fix");
+  	$('body').css({
+            overflow: '',
+            position: '',
+            top: ''
+        })
+    $(window).scrollTop(scrollPos);
+    $('.modal').removeClass('modal__show');
+		$('.enter').removeClass('enter--open');
+		$('.basket').removeClass('basket--open');
+	};
+
+	$('.modal-get').click(function (){
+		openModal();
+		$('.enter').removeClass('enter--open');
+		$('.basket').removeClass('basket--open');
+		var currentModal = $(this).data("modal");
+		$('.modal').each(function () {
+			if ($(this).data('modal')===currentModal){
+				$(this).addClass('modal__show')
+			} else {
+				$(this).removeClass('modal__show')
+			}
+		});
+		var modalHeightCont = $('.modal.modal__show').height();
+		$('.modal-filter').height(modalHeightCont+60);
+		$('.modal-wrap').css('minHeight',modalHeightCont + 60);
+
+	});
+
+	$('.modal-layer , .modal-close').click(function (){
+		closeModal();
+		console.log('cloose');
+	});
+	//modals ===end
+
 
 	//fancy-box
 	$(".fancybox").fancybox();
 	//fancy-box === end
-
 
 	//scroll top
 	var scrollTop = 750;

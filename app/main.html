@@ -28,6 +28,31 @@
 	<!-- - for item in args-->
 
 	<body>
+		<div class="modal-layer">
+			<div class="modal-cont">
+				<div class="modal-filter"></div>
+				<div class="modal-wrap">
+					<div class="modal" data-modal="order">
+						<div class="modal-content modal-content--fogot">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-title">Восстановление пароля</div>
+							<div class="modal-fogot-text">Укажите Ваш e-mail, и мы сможем отправить ссылку для восстановления пароля на Ваш почтовый ящик.</div>
+							<form action="#">
+								<div class="input-btn-row">
+									<input class="input" type="text" placeholder="Логин" />
+									<input class="input-btn" type="submit" value="Выслать" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer end-->
+		</div>
 		<!--block header-->
 		<div class="head-container">
 			<!--header-->
@@ -166,7 +191,7 @@
 							<div class="header-baner__price">14 000 р.</div>
 							<div class="header__get">
 								<div class="header__btn header__btn-more">Подробнее</div>
-								<div class="header__btn header__btn-get">Заказать</div>
+								<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
 							</div>
 						</div>
 						<div class="header-baner__img">
@@ -214,7 +239,7 @@
 							<div class="header-baner__price">14 000 р.</div>
 							<div class="header__get">
 								<div class="header__btn header__btn-more">Подробнее</div>
-								<div class="header__btn header__btn-get">Заказать</div>
+								<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
 							</div>
 						</div>
 						<div class="header-baner__img">
@@ -616,7 +641,7 @@
 					</div>
 				</div>
 				<div class="footer-get">
-					<div class="footer-get__el">Оставить заявку</div>
+					<div class="footer-get__el modal-get" data-modal="order">Оставить заявку</div>
 				</div>
 			</div>
 		</div>
@@ -628,7 +653,6 @@
 				<use xlink:href="#arrow-up"></use>
 			</svg>
 		</div>
-		<!--block footer end-->
 		<!--build:js js/combined.js-->
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
