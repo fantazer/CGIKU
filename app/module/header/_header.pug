@@ -52,10 +52,10 @@ mixin header()
 									'Прайс-лист',
 									'Наши лицензии',
 									'Контакты',
-									'Акции'
 									];
 							each item in items
 								a(href="#").menu-el #{item}
+							a(href="#").menu-el.menu-el--mark Акции
 					//.nav-phone
 						a(href="tel:+7 (495) 514-84-13").nav-phone-el
 							+icon("phone-call","icon")

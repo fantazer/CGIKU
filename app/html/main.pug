@@ -76,7 +76,7 @@ include block_html/_include.pug
 		.section-title Наши услуги
 		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
 		.list
-				.list__el
+				.list__el.wow.fadeIn(data-wow-duration="2s" data-wow-delay="0.5s")
 					.list__el--img
 						img(src="img/list-2.jpg", alt="")
 					.list__el--info
@@ -84,7 +84,7 @@ include block_html/_include.pug
 							each meg_plans in meg_plan
 								.list__el--item #{meg_plans.name}
 
-				.list__el
+				.list__el.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
 					.list__el--img
 						img(src="img/list-1.jpg", alt="")
 					.list__el--info
@@ -92,7 +92,7 @@ include block_html/_include.pug
 						each meg_plans in meg_plan
 							.list__el--item #{meg_plans.name}
 
-				.list__el
+				.list__el.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1.5s")
 					.list__el--img
 						img(src="img/list-3.jpg", alt="")
 					.list__el--info
@@ -100,7 +100,7 @@ include block_html/_include.pug
 						each meg_plans in meg_plan
 							.list__el--item #{meg_plans.name}
 
-				.list__el
+				.list__el.wow.fadeIn(data-wow-duration="2s" data-wow-delay="2.5s")
 					.list__el--img
 						img(src="img/list-4.jpg", alt="")
 					.list__el--info
@@ -108,14 +108,14 @@ include block_html/_include.pug
 						each meg_plans in meg_plan
 							.list__el--item #{meg_plans.name}
 //about
-.about(style="background-image:url('img/our.jpg')")
+.about.wow.fadeIn(style="background-image:url('img/our.jpg')" data-wow-duration="2s" data-wow-delay="1s")
 	.main-cont
 		.about-cont
 			.about-cont__title О нашей компании
 			.about-cont__text Мы всегда ценим Ваше время. Для выполнения большего вида предоставляемых нами услуг от Вас не требуется никаких оригиналов правоустанавливающих и правоудостоверяющих документов!<br> <br>Вам достаточно выслать нам скан или фото таких документов по электронной почте. Наши специалисты проверят Ваши документы и свяжутся с Вами для дальнейшего сотрудничества. Мы так же можем выслать Вам коммерческое предложение заверенное подписью Генерального директора и печатью организации.
 
 //service
-.section.section--service
+.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
 	.main-cont
 		.section-title Популярные услуги
 		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
@@ -130,7 +130,7 @@ include block_html/_include.pug
 						.service__btn.service__btn-get Заказать
 
 //slider customer
-.section.section--customer
+.section.section--customer.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
 	.section-title Наши заказчики
 	.main-cont
 		.slider-customer.owl-carousel
@@ -139,7 +139,7 @@ include block_html/_include.pug
 					img(src="img/"+i+"-customer.jpg", alt="")
 
 //slider certificate
-.section.section--certificate
+.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
 	.filter
 	.section-title Наши сертификаты
 	.main-cont
@@ -150,7 +150,7 @@ include block_html/_include.pug
 						img(src="img/cert-"+i+".jpg", alt="")
 
 //advant
-.section.section--advant
+.section.section--advant.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
 	.section-title Наши преимущества
 	.main-cont
 		.advant
@@ -183,7 +183,7 @@ include block_html/_include.pug
 				img(src="img/instr.jpg", alt="")
 
 //news
-.section.section--news
+.section.section--news.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
 	.section-title Новости
 	.main-cont
 		.news

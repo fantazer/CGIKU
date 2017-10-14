@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+	new WOW().init();
 	//validate
 	$('.validate-form').each(function() {
 		var curentForm = $(this);

@@ -1056,7 +1056,7 @@ button {
   }
 }
 .top-line-el-info {
-  font-size: 14px;
+  font-size: 12px;
   padding: 5px 20px;
   background: #f20022;
   -webkit-border-radius: 20px;
@@ -1122,7 +1122,7 @@ button {
   }
 }
 .menu-wrap {
-  width: 80%;
+  width: 100%;
 }
 @media only screen and (min-width: 1200px) {
   .menu-wrap {
@@ -1166,6 +1166,8 @@ button {
   text-transform: uppercase;
   padding: 20px 10px;
   font-size: 14px;
+  width: 100%;
+  text-align: center;
 }
 @media only screen and (max-width: 1200px) {
   .menu-el {
@@ -2170,6 +2172,16 @@ body {
 }
 .style-label--checkbox.field-error .sytle-input-element {
   border: 2px solid #ff4136;
+}
+.menu-el--mark {
+  font-weight: bold;
+  color: #080808;
+  background: #ffdf6d;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+}
+.menu-el--mark:hover {
+  background: #ffd43a;
 }
 @-webkit-keyframes slideInDown {
   from {
