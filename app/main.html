@@ -39,13 +39,36 @@
 									<use xlink:href="#close"></use>
 								</svg>
 							</div>
-							<div class="modal-title">Восстановление пароля</div>
-							<div class="modal-fogot-text">Укажите Ваш e-mail, и мы сможем отправить ссылку для восстановления пароля на Ваш почтовый ящик.</div>
-							<form action="#">
-								<div class="input-btn-row">
-									<input class="input" type="text" placeholder="Логин" />
-									<input class="input-btn" type="submit" value="Выслать" />
+							<div class="modal-title">Бесплатная консультация</div>
+							<div class="modal-text">Обращаетесь к нам впервые?
+								<br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+							<form class="validate-form" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
 								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="modal-send" type="submit" value="Отправить заявку" />
 							</form>
 						</div>
 					</div>
@@ -658,6 +681,7 @@
 		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
 		<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
 		<script src="bower/fancybox/dist/jquery.fancybox.js"></script>
+		<script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
 		<!--script(src="js/jquery.smoothscroll.js")-->
 		<!-- endbuild-->
 		<script src="js/script.js"></script>

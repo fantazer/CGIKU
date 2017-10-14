@@ -489,6 +489,7 @@ body
 	left 50%
 	opacity .1
 	transition transform .8s, opacity 1s
+	max-width 550px
 
 .modal-content
 	+below(768px)
@@ -498,9 +499,9 @@ body
 		overflow-y scroll
 		padding: 20px 5px
 		width: 100%!important
+	background: #2b8850
 	position: relative
 	padding: 40px
-	background: white
 	+below(768px)
 		width: 80%
 
@@ -523,14 +524,14 @@ body
 		top 20px
 		right 20px
 	position: absolute
-	top: 30px
-	right: 30px
+	top: 20px
+	right: 20px
 	cp()
 	.icon
 		+below(768px)
 			size 18px
-		size 24px
-		fill rgba(0, 0, 0, 0.42)
+		size 20px
+		fill white
 
 .modal-open
 	overflow: hidden
@@ -549,6 +550,57 @@ body
 
 .modal-title
 	@extend .type--lg
-	margin-bottom: 40px
+	margin-bottom: 0px
 	text-align: center
+	color white
+	font-size: 32px
 
+.modal-text
+	text-align: center
+	margin: 30px auto
+	width: 80%
+	font-size: 16px
+	line-height: 1.2
+	color white
+
+.validate-form
+	input,textarea
+		width: 100%
+		margin-bottom: 20px
+
+.modal-send
+	@extend .btn--md
+	@extend .btn--mark
+	background: #fdf051
+	border 0
+	color #3a3838
+	font-weight: 600
+	padding: 15px
+	font-size: 16px
+	&:hover
+		box-shadow 0 9px 18px rgb(76, 72, 19)
+
+.agree-row
+	f()
+	align-items: center
+	margin:10px 0 30px 0
+	a
+		text-decoration: underline
+		display: inline-block
+
+.agree-row__text
+	width: 100%
+	color white
+	a
+		color white
+
+.modal
+	.field-error
+		.error
+			color white
+			margin-bottom: 20px
+			display: inline-block
+
+.style-label--checkbox.field-error
+	.sytle-input-element
+		border 2px solid red

@@ -1,6 +1,76 @@
 $(document).ready(function(){
 	
+	//validate
+	$('.validate-form').each(function() {
+		var curentForm = $(this);
+    $(this).validate({
+    			highlight: function(element) { //даем родителю класс если есть ошибка
+							$(element).parent().addClass("field-error");
+					},
+					unhighlight: function(element) {
+							$(element).parent().removeClass("field-error");
+					},
+		    	rules:{ //правила для полей
+						name:{
+							required:true,
+						},
+						phone:{
+							required:true,
+							minlength:5,
+							number:true
+						},
+						comment:{
+							required:true,
+							minlength:5,
+						},
+						agree: {
+							required: true
+						}
+					},
+					messages:{
+						name:{
+							required: 'Обязательное поле',
+						},
+						phone:{
+							required: 'Обязательное поле',
+							number:'Введите правильный номер',
+							minlength:'Номер должен быть длиннее',
+						},
+						comment:{
+							required: 'Обязательное поле',
+							minlength:'Сообщение должно быть длиннее',
+						},
+						agree:{
+							required: false,
+						}
+					},
+					submitHandler : function(form){
+						$.ajax({ //отправка ajax
+						            type: "POST",
+						            url: "/wp-content/themes/AAK/sender.php",
+						            data: $(form).serialize(),
+						            timeout: 3000,
+						          });
+							$('.modal-close').click(); // автозакрытие окна
+							setTimeout(function(){
+										$('.modal-true').bPopup({
+											closeClass:'modal-close',
+												position:['auto','auto'], // position center
+												follow: [true,true],
+												autoClose: 2000
+										});
+										$(':input','.validate-form') //очитска формы от данных
+										  .not(':button, :submit, :reset, :hidden')
+										  .val('')
+										  .removeAttr('checked')
+										  .removeAttr('selected')
+							},2000)
 
+				}
+		    });
+		});
+
+	//validate===end
 	//modals
 	$('.modal-content').click(function(event){
 		event.stopPropagation();
@@ -14,11 +84,11 @@ $(document).ready(function(){
 	 scrollPos = $(window).scrollTop();
 	 console.log(scrollPos);
 		$('body').css({
-				overflow: 'hidden',
-				position: 'fixed',
-				overflowY: 'scroll',
-				top : -scrollPos,
-				width:'100%'
+			overflow: 'hidden',
+			position: 'fixed',
+			overflowY: 'scroll',
+			top : -scrollPos,
+			width:'100%'
 		});
 		return scrollPos;
 	};
@@ -28,10 +98,10 @@ $(document).ready(function(){
   	$('.modal-layer').removeClass('modal-layer-show');
   	$("body").removeClass("modal-fix");
   	$('body').css({
-            overflow: '',
-            position: '',
-            top: ''
-        })
+			overflow: '',
+			position: '',
+			top: ''
+		})
     $(window).scrollTop(scrollPos);
     $('.modal').removeClass('modal__show');
 		$('.enter').removeClass('enter--open');

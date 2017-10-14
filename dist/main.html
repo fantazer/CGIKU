@@ -24,6 +24,54 @@
 	<!-- - for item in args-->
 
 	<body>
+		<div class="modal-layer">
+			<div class="modal-cont">
+				<div class="modal-filter"></div>
+				<div class="modal-wrap">
+					<div class="modal" data-modal="order">
+						<div class="modal-content modal-content--fogot">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-title">Бесплатная консультация</div>
+							<div class="modal-text">Обращаетесь к нам впервые?
+								<br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+							<form class="validate-form" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="modal-send" type="submit" value="Отправить заявку" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer end-->
+		</div>
 		<!--block header-->
 		<div class="head-container">
 			<!--header-->
@@ -162,7 +210,7 @@
 							<div class="header-baner__price">14 000 р.</div>
 							<div class="header__get">
 								<div class="header__btn header__btn-more">Подробнее</div>
-								<div class="header__btn header__btn-get">Заказать</div>
+								<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
 							</div>
 						</div>
 						<div class="header-baner__img">
@@ -210,7 +258,7 @@
 							<div class="header-baner__price">14 000 р.</div>
 							<div class="header__get">
 								<div class="header__btn header__btn-more">Подробнее</div>
-								<div class="header__btn header__btn-get">Заказать</div>
+								<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
 							</div>
 						</div>
 						<div class="header-baner__img">
@@ -612,7 +660,7 @@
 					</div>
 				</div>
 				<div class="footer-get">
-					<div class="footer-get__el">Оставить заявку</div>
+					<div class="footer-get__el modal-get" data-modal="order">Оставить заявку</div>
 				</div>
 			</div>
 		</div>
@@ -624,7 +672,6 @@
 				<use xlink:href="#arrow-up"></use>
 			</svg>
 		</div>
-		<!--block footer end-->
 		<script src="js/combined.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/script-edit.js"></script>
