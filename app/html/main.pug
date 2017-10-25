@@ -70,67 +70,53 @@ include block_html/_include.pug
 					img(src="img/baner-1.png", alt="")
 
 
-//service
+
+
+//service two column
 .section.section--list
 	.main-cont
-		.section-title Наши услуги
+		.section-title Направления нашей деятельности
 		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
-		.list
-				.list__el.wow.fadeIn(data-wow-duration="2s" data-wow-delay="0.5s")
-					.list__el--img
-						img(src="img/list-2.jpg", alt="")
-					.list__el--info
-							.list__el--title Межевой план
-							each meg_plans in meg_plan
-								.list__el--item #{meg_plans.name}
+		.category
+			.category__el
+				.category__el--img
+					img(src="img/category-kadastr.png", alt="")
+				.category__el--title Кадастровые работы
+				.category__el-info
+					-
+						var items = [
+							'Межевой план',
+							'Технический план',
+							'Уточнение границ участка '
+							];
+					each item in items
+						a(href="#").category__el--item #{item}
+				a(href="#").category__el-get Eще услуги
 
-				.list__el.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
-					.list__el--img
-						img(src="img/list-1.jpg", alt="")
-					.list__el--info
-						.list__el--title Технический план
-						each meg_plans in meg_plan
-							.list__el--item #{meg_plans.name}
+			.category__el
+				.category__el--img
+					img(src="img/category-land.png", alt="")
+				.category__el--title Геодезические работы
+				.category__el-info
+					-
+						var items = [
+						'Вынос границ земельного участка',
+						'Топографическая съемка',
+						'Кадастровая съемка '
+						];
+					each item in items
+						a(href="#").category__el--item #{item}
+				a(href="#").category__el-get Eще услуги
 
-				.list__el.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1.5s")
-					.list__el--img
-						img(src="img/list-3.jpg", alt="")
-					.list__el--info
-						.list__el--title Кадастровые работы
-						each meg_plans in meg_plan
-							.list__el--item #{meg_plans.name}
-
-				.list__el.wow.fadeIn(data-wow-duration="2s" data-wow-delay="2.5s")
-					.list__el--img
-						img(src="img/list-4.jpg", alt="")
-					.list__el--info
-						.list__el--title Геодезические работы
-						each meg_plans in meg_plan
-							.list__el--item #{meg_plans.name}
 //about
-.about.wow.fadeIn(style="background-image:url('img/our.jpg')" data-wow-duration="2s" data-wow-delay="1s")
+.about.wow.fadeIn(style="background-image:url('img/our-gray.jpg')" data-wow-duration="1.75s" data-wow-delay="1s")
 	.main-cont
 		.about-cont
 			.about-cont__title О нашей компании
 			.about-cont__text Мы всегда ценим Ваше время. Для выполнения большего вида предоставляемых нами услуг от Вас не требуется никаких оригиналов правоустанавливающих и правоудостоверяющих документов!<br> <br>Вам достаточно выслать нам скан или фото таких документов по электронной почте. Наши специалисты проверят Ваши документы и свяжутся с Вами для дальнейшего сотрудничества. Мы так же можем выслать Вам коммерческое предложение заверенное подписью Генерального директора и печатью организации.
 
-//service
-.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
-	.main-cont
-		.section-title Популярные услуги
-		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
-		.service
-			- for (var i=0;i<6;i++)
-				.service__el
-					.service__title Уточнение границ земельного участка
-					.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
-					.service__price 18 000 руб.
-					.service__get
-						.service__btn.service__btn-more Подробнее
-						.service__btn.service__btn-get Заказать
-
 //slider customer
-.section.section--customer.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
+.section.section--customer.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
 	.section-title Наши заказчики
 	.main-cont
 		.slider-customer.owl-carousel
@@ -139,7 +125,7 @@ include block_html/_include.pug
 					img(src="img/"+i+"-customer.jpg", alt="")
 
 //slider certificate
-.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
+.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
 	.filter
 	.section-title Наши сертификаты
 	.main-cont
@@ -150,7 +136,7 @@ include block_html/_include.pug
 						img(src="img/cert-"+i+".jpg", alt="")
 
 //advant
-.section.section--advant.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
+.section.section--advant.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
 	.section-title Наши преимущества
 	.main-cont
 		.advant
@@ -182,8 +168,76 @@ include block_html/_include.pug
 			.advant-img
 				img(src="img/instr.jpg", alt="")
 
+//service
+.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.main-cont
+		.section-title Популярные услуги
+		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+		.service
+			- for (var i=0;i<6;i++)
+				.service__el
+					.service__title Уточнение границ земельного участка
+					.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
+					.service__price 18 000 руб.
+					.service__get
+						.service__btn.service__btn-more Подробнее
+						.service__btn.service__btn-get Заказать
+
+//step work
+#step.section.section-step
+	.section-filter
+	.main-cont
+		.section-title как мы работаем
+		.step
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 01
+						.step-text
+							.step-text__title Отправляете нам заявку
+							.step-text__descr Наши кадастровые инженеры проведут для Вас бесплатную консультацию. Выбор даты и времени выезда геодезистов для обмеров.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 02
+						.step-text
+							.step-text__title Подписание договора
+							.step-text__descr Наши сотрудники могут привезти подписанный нами договор в день производства обмеров, либо Вы можете приехать к нам в офис в удобное время.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 03
+						.step-text
+							.step-text__title Выезд геодезистов для обмеров.
+							.step-text__descr Наши специалисты выезжают непосредственно на рабочий объек и проводят все необходимые работы.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 04
+						.step-text
+							.step-text__title Обработка результатов
+							.step-text__descr Камеральная обработка произведенных обмеров, согласование с Вами результатов обмеров. Формирование кадастровой документации.
+
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 05
+						.step-text
+							.step-text__title Передача Вам готовой  документации.
+							.step-text__descr Вы получаете на руки все необходимые документы, оформленные в соответсвии со всеми правилами и стандартами.
+					.step-line
+						.step-dot
+
 //news
-.section.section--news.wow.fadeIn(data-wow-duration="2s" data-wow-delay="1s")
+.section.section--news.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
 	.section-title Новости
 	.main-cont
 		.news

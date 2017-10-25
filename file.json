@@ -4,6 +4,7 @@
 		"footer":"footer"
 	},
 	"page":{
-		"index":"index"
+		"index":"index",
+		"single":"single"
 	}
 }

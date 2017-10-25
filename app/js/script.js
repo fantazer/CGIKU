@@ -1,5 +1,19 @@
 $(document).ready(function(){
-	new WOW().init();
+
+	//drop menu
+	var hideToggle = function(targetClick,toggleEl) {
+		$(targetClick).click(function(event){
+				event.stopPropagation();
+				$(toggleEl).slideToggle("fast");
+		});
+		$(document).on("click", function () {
+				$(toggleEl).hide();
+		});
+	}
+	hideToggle('.nav-toggle','.menu-wrap');
+	//drop menu===end
+
+	//new WOW().init();
 	//validate
 	$('.validate-form').each(function() {
 		var curentForm = $(this);
@@ -161,7 +175,7 @@ $(document).ready(function(){
 	 items : 3,
 		responsive : {
 				0:{
-					items : 2
+					items : 4
 				},
 				768:{
 					items : 3
@@ -189,7 +203,7 @@ $(document).ready(function(){
 	 items : 5,
 		responsive : {
 				0:{
-					items : 2
+					items : 4
 				},
 				768:{
 					items : 3

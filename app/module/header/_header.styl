@@ -4,7 +4,7 @@
 
 .header
 	+below(768px)
-		//display none
+		padding: 0
 	padding 10px 0
 	//background #267da0
 
@@ -13,8 +13,6 @@
 
 //.main-cont
 .top-line-wrap
-	+below(1200px)
-		flex(mid)
 	flex(between)
 .mobile-logo
 	+above(1200px)
@@ -25,10 +23,12 @@
 		width 50%
 		max-width 300px
 .top-line-info
-	+below(1200px)
-		display none
+	+below(968px)
+		width: auto
 	width 70%
 .top-line-el__wrap
+	+below(1024px)
+		display: none
 	flex(between)
 .top-line-el
 	f()
@@ -47,7 +47,7 @@
 	br(20px)
 	color white
 .top-line-loc
-	+below(1200px)
+	+below(960px)
 		display none
 	f()
 .top-line-loc-el
@@ -60,45 +60,95 @@
 		fill black
 		margin-right 10px
 .nav
+	.main-cont
+		padding: 0px
 	border-top 1px solid #ececec
 	border-bottom 1px solid #ececec
 	//background #267DA0
 	//box-shadow 0px 5px 5px rgba(44, 44, 44, 0.63)
 .nav-wrap
-	+below(1200px)
+	+below(768px)
+		flex(mid)
 		padding 10px
+
 	flex(between)
 	//padding 10px 0
 	position relative
 .menu-wrap
 	+above(1200px)
 		display block!important
-	+below(1200px)
+	+below(768px)
 		display none
 		position absolute
 		top 100%
 		left -10px
 		z-index 300
 		width calc(100% + 20px)
-		background #1c576e
+		border-bottom:1px solid #f4f4f5
+		background white
 	width 100%
 .menu
-	+below(1200px)
+	+below(768px)
 		fw()
 	flex(between)
+	
 .menu-el
-	+below(1200px)
+	+below(768px)
 		width 100%
 		text-align center
-		border-bottom 1px solid #24657e
+		border-top 1px solid #f4f4f5
 	&:first-child
 		padding-left: 0
 	up()
-	padding 20px 10px
 	font-size 14px
 	width: 100%
 	text-align: center
 	//color white
+	position: relative
+	a
+		+below(1024px)
+			padding: 20px 0
+			font-size: 12px
+		+below(768px)
+			padding: 15px 0
+		padding 20px 10px
+		display: block
+		tr(all)
+		&:hover
+			background: #f7f7f7
+
+.menu-el__sub
+	+below(768px)
+		display: block
+		width: 100%
+		position: static
+		a
+			display: block
+			width: 100%
+	position: absolute
+	top 100%
+	z-index 10
+	left: 0px
+	display: none
+
+.menu-el__sub-el
+	+below(768px)
+		background: whitesmoke
+	background: white
+	display: inline-block
+	padding: 20px 10px
+	width: 200px
+	border-top 1px solid $gray
+.menu-el-service
+	&:hover
+		.menu-el__sub
+			display: block!important
+	a
+		f()
+		justify-content center
+	.icon
+		size 10px
+		margin-left: 10px
 
 .menu-el--active
 	background #236884
@@ -109,6 +159,11 @@
 			display none
 	+below(1200px)
 		flex(mid)
+	+below(1024px)
+		font-size: 16px
+		margin-left: 20px
+	+below(768px)
+		font-size: 14px
 	.icon
 		size 20px
 		fill white
@@ -120,41 +175,48 @@
 
 .nav-toggle
 	flex(mid)
-	+above(1200px)
+	cp()
+	+above(768px)
 		display none
 	.icon
-		fill white
+		fill black
 		size 20px
-
-.header-baner
-	img
-		margin: 0 auto
-		//width: 100%
 
 .main-logo
 	img
+		+below(768px)
+			width: 45%
 		width: 230px
 
-.header-baner
-	img
-		width: 60%
 
 .header-baner
+	+below(768px)
+		padding: 20px 0
 	f()
 	justify-content: space-between
 	padding: 40px 0
+	img
+		margin: 0 auto
+		width: 60%
 
 .header-baner__slogan
+	+below(768px)
+		width: 100%
+		text-align: center
 	width: 50%
 	flex(mid)
 	fl()
 
 .header-baner__img
+	+below(768px)
+		display: none
 	width: 50%
 	img
 		width: 100%
 
 .header-baner__text
+	+below(768px)
+		font-size: 20px
 	width: 100%
 	font-size: 40px
 	margin-bottom: 20px
@@ -166,17 +228,33 @@
 	margin-bottom: 30px
 
 .top-line__contact
+	+below(1024px)
+		padding: 10px 0
+		margin-left: auto
 	flex(between)
 	padding: 20px 0 10px 0
 
 .nav-phone
+	+below(960px)
+		width: 100%
+	+below(768px)
+		fl()
 	flex(between)
 	width: 50%
 
 .header-baner__price
+	+below(768px)
+		font-size: 28px
 	width: 100%
 	font-size: 48px
 	color black
 	font-weight: bold
 	margin-bottom: 20px
 	
+.logo--short
+	+above(767px)
+		display: none
+
+.logo--full
+	+below(768px)
+		display: none

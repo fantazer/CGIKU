@@ -6,8 +6,9 @@ mixin header()
 			.top-line
 				.main-cont
 					.top-line-wrap
-						.main-logo
-							img(src="img/logo-dark.png", alt="")
+						a(href="/").main-logo
+							img(src="img/logo-dark.png", alt="").logo--full
+							img(src="img/logo-short.png", alt="").logo--short
 						.top-line-info
 								.top-line-el__wrap
 									.top-line-el
@@ -27,12 +28,8 @@ mixin header()
 												+icon("metro","icon")
 											.top-line-loc-text Каширская
 									.nav-phone
-										a(href="tel:+7 (495) 514-84-13").nav-phone-el
-											+icon("phone-call","icon")
-											| +7 (495) 514-84-13
-										a(href="tel:+7 (495) 514-84-13").nav-phone-el
-											+icon("phone-call","icon")
-											| +7 (495) 283-96-83
+										a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 514-84-13
+										a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 283-96-83
 
 		//header-end
 
@@ -44,18 +41,31 @@ mixin header()
 						+icon("menu","icon")
 					.menu-wrap
 						.menu
-							-
-								var items = [
-									'Главная',
-									'Услуги',
-									'О компании',
-									'Прайс-лист',
-									'Наши лицензии',
-									'Контакты',
-									];
-							each item in items
-								a(href="#").menu-el #{item}
-							a(href="#").menu-el.menu-el--mark Акции
+							.menu-el
+								a(href="#")
+									span Главная
+							.menu-el.menu-el-service
+								a(href="#")
+									span Услуги
+										+icon("arrow-down","icon")
+								.menu-el__sub
+									a(href="#").menu-el__sub-el Кадастровые работы
+									a(href="#").menu-el__sub-el Геодезические работы
+							.menu-el
+								a(href="#")
+									span О компании
+							.menu-el
+								a(href="#")
+									span Прайс-лист
+							.menu-el
+								a(href="#")
+									span Наши лицензии
+							.menu-el
+								a(href="#")
+									span Контакты
+							.menu-el.menu-el--mark
+								a(href="#")
+									span Акции
 					//.nav-phone
 						a(href="tel:+7 (495) 514-84-13").nav-phone-el
 							+icon("phone-call","icon")

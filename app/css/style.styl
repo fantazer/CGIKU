@@ -75,9 +75,14 @@ body
 	center(1200px,10px)
 
 .section
+	+below(768px)
+		padding: 30px 0
 	padding: 100px 0
 
 .section-title
+	+below(768px)
+		font-size: 20px
+		margin-bottom: 30px
 	text-align: center
 	margin-bottom: 60px
 	font-size: 40px
@@ -96,6 +101,13 @@ body
 	fw()
 
 .news__el
+	+below(1024px)
+		item-clear(3,auto!important)
+		item(2,40px)
+	+below(640px)
+		item(1,40px)
+		padding: 30px 20px
+		margin-bottom: 0 !important
 	item(3,40px)
 
 .news__el-date
@@ -121,31 +133,59 @@ body
 	justify-content: space-between
 
 .advant-info
+	+below(768px)
+		width: 100%
+		padding-top: 30px
+		width: 80%
+		margin: 0 auto
 	width: 45%
 	padding-top: 10%
 
 .advant-info__el
+	+below(768px)
+		fw()
 	f()
 	justify-content: space-between
 	margin-bottom: 50px
 
 .advant-info__ico
+	+below(768px)
+		flex(mid)
+		margin-right: 0
+		margin-bottom: 20px
+		width: 100%
 	margin-right: 40px
 	.icon
+		+below(768px)
+			size 60px
 		size 80px
-		fill red
+		fill #de3339
 
 .advant-info__title
+	+below(768px)
+		text-align: center
+		width: 100%
+		font-size: 16px
 	font-weight: 700
 	color black
 	font-size: 24px
 	margin-bottom: 20px
 
 .advant-info__text
+	+below(768px)
+		width: 100%
+		text-align: center
 	line-height: 1.5
 	width: 70%
 
 .about-cont
+	+below(1024px)
+		height: auto
+		padding: 40px 20px
+		width: 50%
+	+below(768px)
+		width: 100%
+		//background: #bf0005
 	height: 485px
 	width: 40%
 	f()
@@ -153,19 +193,24 @@ body
 	fl()
 
 .about-cont__title
+	+below(768px)
+		font-size: 20px
+		text-align: center
 	@extend .title
-	color white
+	//color white
 	up()
 
 .about-cont__text
-	color white
+	//color white
 	line-height: 1.9
 
 .about
+	+below(768px)
+		background: #bf0005
 	bg-full()
 
 .baner
-	padding: 7% 0
+	padding: 2% 0
 	bg-full()
 	background-position center right
 	position: relative
@@ -175,6 +220,10 @@ body
 	fw()
 
 .section-title-sub
+	+below(768px)
+		margin-top: 0px
+		margin-bottom: 30px
+		width: 80%
 	text-align: center
 	width: 60%
 	margin: 0 auto
@@ -184,6 +233,14 @@ body
 
 
 .service__el
+	+below(1200px)
+		padding: 80px 30px
+	+below(1024px)
+		item-clear(3,auto!important)
+		item(2,40px)
+	+below(640px)
+		item(1,40px)
+		padding: 30px 20px
 	item(3,40px)
 	margin-bottom: 40px
 	padding: 80px 40px
@@ -193,6 +250,8 @@ body
 	margin-bottom: 10px
 
 .service__title
+	+below(768px)
+		text-align: center
 	up()
 	font-size: 18px
 	font-family: 'Gotham'
@@ -205,19 +264,28 @@ body
 	line-height: 1.5
 
 .service__price
+	+below(640px)
+		text-align: center
 	font-weight: bold
 	font-size: 20px
 	color black
 	margin: 40px 0
 
 .service__get
+	+below(1200px)
+		fw()
 	f()
 
 .service__btn
+	+below(1200px)
+		width: 100%
+		margin-bottom: 20px
 	@extend .btn--md
 	font-weight bold
 
 .service__btn-more
+	+below(1200px)
+		margin-right: 0
 	@extend .btn--light
 	margin-right: 20px
 
@@ -230,6 +298,9 @@ body
 		margin: 60px auto
 
 .header-check
+	+below(768px)
+		margin-bottom: 10px
+		width: 320px
 	width: 100%
 	margin-bottom: 30px
 
@@ -238,25 +309,39 @@ body
 	align-items: center
 	margin-bottom: 10px
 	.icon
+		+below(768px)
+			size 20px
 		size 30px
 		fill $red
 		margin-right: 20px
 
 .header-check-text
+	+below(768px)
+		font-size: 10px
+		text-align: left
 	color black
 	font-weight: bold
 	up()
 
 .header__get
+	+below(768px)
+		flex(mid)
+	+below(640px)
+		fw()
 	f()
 	width: 100%
 
 .header__btn
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
 	@extend .btn--md
 	padding: 20px 60px
 	font-weight bold
 
 .header__btn-more
+	+below(768px)
+		margin-right: 0
 	@extend .btn--light
 	margin-right: 20px
 
@@ -303,12 +388,14 @@ body
 .owl-carousel
 	position relative
 .owl-prev
-	+below(768px)
+	+below(1200px)
 		left 2%
+		display: none
 	left -10%
 .owl-next
-	+below(768px)
+	+below(1200x)
 		right 2%
+		display: none
 	right -10%
 .slider-control
 	size 40
@@ -332,9 +419,13 @@ body
 	background #322f40
 
 .section--customer
-	padding: 0 0 150px 0
+	+below(768px)
+		padding: 30px 0
+	padding: 150px 0px
 
 .section--certificate
+	+below(768px)
+		padding: 30px 0
 	bgi("img-1.jpg")
 	bg-full()
 	padding: 150px 0
@@ -365,15 +456,27 @@ body
 	flex(between)
 
 .list__el
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+		fl()
 	f()
 	justify-content: space-between
 	width: 46%
 	margin-bottom: 60px
 
 .list__el--img
+	+below(640px)
+		flex(mid)
+		margin-right: 0
+		margin-bottom: 20px
 	margin-right: 20px
 
 .list__el--title
+	+below(768px)
+		font-size: 20px
+	+below(640px)
+		text-align: center
 	font-size: 24px
 	color black
 	text-transform: uppercase
@@ -395,36 +498,54 @@ body
 		top 5px
 
 .footer__wrap
-	flex(between)
+	+below(768px)
+		margin-bottom: 30px
+		fw()
+	f()
+	justify-content: space-between
 	margin-bottom: 80px
 
 .footer__el
+	+below(768px)
+		width: 100%
+		padding: 10px
 	width: 33%
-	flex(mid)
+	f()
 	fl()
 	text-align: center
 	padding: 30px
 	&:nth-child(2)
+		+below(768px)
+			border 0
 		border-right 1px solid $gray
 		border-left 1px solid $gray
 .footer__icon
+	+below(768px)
+		margin-bottom: 20px
 	margin-bottom: 40px
 	.icon
+		+below(768px)
+			size 50px
 		size 70px
-		fill red
-
+		//fill black
+		fill $red
 .footer__title
+	+below(768px)
+		font-size: 20px
 	font-size: 24px
 	color black
 	font-weight: bold
 	margin-bottom: 40px
 
 .footer__text
+	+below(768px)
+		font-size: 14px
 	font-size: 18px
 	margin-bottom: 10px
 
 .footer__text--red
-	color $red
+	//color $red
+	color black
 
 .footer-get__el
 	@extend .btn--mark
@@ -499,7 +620,8 @@ body
 		overflow-y scroll
 		padding: 20px 5px
 		width: 100%!important
-	background: #2b8850
+	//background: #2b8850
+	background: white
 	position: relative
 	padding: 40px
 	+below(768px)
@@ -549,19 +671,25 @@ body
 	height: 100%
 
 .modal-title
+	+below(768px)
+		font-size: 20px
 	@extend .type--lg
 	margin-bottom: 0px
 	text-align: center
-	color white
+	//color white
+	color black
 	font-size: 32px
 
 .modal-text
+	+below(768px)
+		width: 100%
+		font-size: 12px
 	text-align: center
-	margin: 30px auto
-	width: 80%
+	margin: 20px auto 40px auto
+	//width: 80%
 	font-size: 16px
 	line-height: 1.2
-	color white
+	color #5f5f5f
 
 .validate-form
 	input,textarea
@@ -571,9 +699,9 @@ body
 .modal-send
 	@extend .btn--md
 	@extend .btn--mark
-	background: #fdf051
+	background: $red
 	border 0
-	color #3a3838
+	color white
 	font-weight: 600
 	padding: 15px
 	font-size: 16px
@@ -590,14 +718,14 @@ body
 
 .agree-row__text
 	width: 100%
-	color white
+	color black
 	a
-		color white
-
+		color #9c9a9a
+		text-decoration: none
 .modal
 	.field-error
 		.error
-			color white
+			color black
 			margin-bottom: 20px
 			display: inline-block
 
@@ -613,3 +741,307 @@ body
 	tr(all)
 	&:hover
 		background: darken(#ffdf6d,10)
+
+.advant-img
+	+below(768px)
+		display: none
+
+.advant-info__cont
+	width: 100%
+
+.slider-customer
+	.owl-nav
+		+below(1300px)
+			display: none
+
+.slider-certificate
+	.owl-nav
+		+below(1200px)
+			display: none
+
+.slider-header-baner
+	+below(1300px)
+		.owl-nav
+			display: none
+
+.section--service
+	//background: #efefef
+	+below(768px)
+		padding-bottom: 0
+
+$step = #b3b2b2
+//step
+.section-step
+	position relative
+	//bgi('item-5.jpg')
+	background: #efefef
+
+.section-title
+	+below(768px)
+		font-size 22px
+	font-size 34px
+	text-align center
+	up()
+.step
+	+below(768px)
+		margin-top 30px
+	margin-top 100px
+//.step-row
+.step-el
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+	width calc(50% - 0.5px)
+	flex(between)
+	align-items initial
+.step-content
+	+below(768px)
+		width 100%
+	f()
+	br(10px)
+	background white
+	width 80%
+	overflow: hidden
+.step-numb
+	+below(768px)
+		width 90px
+	color white
+	border-right 1px solid #efefef
+	padding  20px
+	font-size 32px
+	font-weight bold
+	background: #5da06b
+.step-text
+	+below(768px)
+		width calc(100% - 90px)
+		justify-content flex-start
+	padding 20px
+	font-size 14px
+.step-line
+	+below(768px)
+		display none
+	width 10%
+	border-right 1px solid $step
+	position relative
+	height auto
+.step-dot
+	size 20px
+	round()
+	background $step
+	margin-top -15px
+	position absolute
+	right -11px
+	top 50%
+.step-row--right
+	f()
+	justify-content flex-end
+	width 100%
+	margin-left -2px
+	.step-line
+		height 100%
+		border 0
+		border-left 1px solid $step
+	.step-dot
+		right initial
+		left -11px
+//.step-dot
+.step-total
+	+below(768px)
+		margin-top 30px
+		width 100%
+		font-size 16px
+	up()
+	text-align center
+	color white
+	width 60%
+	margin 0px auto
+	font-size 22px
+	margin-top 100px
+.step-triangle
+	triangle('down', 20px, $step)
+	position absolute
+	bottom -20px
+	left -20px
+
+.step-text__title
+	color black
+	font-weight:bold
+	font-size: 16px
+	margin-bottom: 10px
+	text-transform: uppercase
+	line-height: 1.6
+
+.step-text__descr
+	line-height: 1.6
+//step
+
+.bread
+	f()
+
+.bread__el
+	margin-right: 40px
+	position: relative
+	color #535353
+	&:last-child
+		&:before
+			display: none
+	&:before
+		content '>'
+		position: absolute
+		//color red
+		top 0
+		right -25px
+
+.bread-wrap
+	padding: 40px 0
+
+.content__info
+	font-size: 14px
+	p
+		font-size: 14px
+	li
+		color black
+		font-size: 14px
+		line-height: 1.8
+	strong
+		color black
+
+.content
+	+below(768px)
+		fw()
+	f()
+	justify-content: space-between
+
+.content__toolbar
+	+below(768px)
+		order 2
+		width: 100%
+	width: 25%
+.content__info
+	+below(768px)
+		order 1
+		width: 100%
+	width: 70%
+
+.toolbar
+	margin-bottom: 40px
+
+.toolbar__el
+	display: block
+	padding: 15px 30px
+	border 1px solid $border-color
+	margin-top: -1px
+	line-height: 1.8
+	background: #f5f4f4
+	color black
+	font-size: 14px
+
+.toolbar__title
+	up()
+	font-weight: bold
+	background: $green
+	padding: 20px
+	color white
+	text-align: center
+
+.contact-form
+	+below(768px)
+		margin-top: 0px
+	padding: 50px 0
+	margin-top: 100px
+	form
+		+below(768px)
+			fl()
+		f()
+		justify-content: space-between
+		width: 100%
+	background: #f1f1f1
+	.input-row
+		width: 100%
+		input
+			+below(768px)
+				width: 100%
+				margin-bottom: 20px
+			width: 90%
+			margin-bottom: 0
+	.modal-send
+		+below(768px)
+			width: 100%
+		margin-bottom: 0
+		width: 45%
+	.section-title-sub
+		margin-bottom: 30px
+
+.search
+	margin-bottom: 40px
+	form
+		f()
+		.icon
+			size 20px
+.input--search
+	width: 80%
+	border-right 0
+.button--search
+	width: 20%
+	background: $gray
+	border 0
+
+.category
+	+below(640px)
+		fw()
+	f()
+	justify-content: space-around
+
+.category__el
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+	flex(mid)
+	fl()
+	border 1px solid #efefef
+	padding 40px 0
+
+.category__el--title
+	+below(1024px)
+		font-size: 18px
+	@extend .type--lg
+	up()
+	text-align: center
+	color black
+	margin-bottom: 30px
+
+.category__el--img
+	margin-bottom: 30px
+	flex(mid)
+	img
+		width: 65%
+
+.category__el-get
+	@extend .btn--lg
+	@extend .btn--mark
+	padding: 15px 60px
+	font-size: 14px
+
+.category__el--item
+	+below(640px)
+		width: 100%
+	tr(all)
+	br(20px)
+	margin-bottom: 20px
+	font-weight: bold
+	text-align: center
+	display: block
+	background: #efefef
+	width: 80%
+	//color white
+	padding: 15px
+	&:hover
+		color white
+		background: darken($green,20)
+.category__el-info
+	+below(1024px)
+		padding: 20px
+	flex(mid)
+	fl()
+	padding: 20px 40px
+	width: 100%

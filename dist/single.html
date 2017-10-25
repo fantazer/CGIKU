@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--colors-tabs-->
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<!--icons-->
+		<link rel="shortcut icon" href="img/fav/favicon.ico" />
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<div class="modal-layer">
+			<div class="modal-cont">
+				<div class="modal-filter"></div>
+				<div class="modal-wrap">
+					<div class="modal" data-modal="order">
+						<div class="modal-content modal-content--fogot">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-title">Бесплатная консультация</div>
+							<div class="modal-text">Обращаетесь к нам впервые?
+								<br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+							<form class="validate-form" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="modal-send" type="submit" value="Отправить заявку" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--block footer end-->
+		</div>
+		<!--block header-->
+		<div class="head-container">
+			<!--header-->
+			<div class="header">
+				<div class="top-line">
+					<div class="main-cont">
+						<div class="top-line-wrap">
+							<a class="main-logo" href="/">
+								<img class="logo--full" src="img/logo-dark.png" alt="" />
+								<img class="logo--short" src="img/logo-short.png" alt="" />
+							</a>
+							<div class="top-line-info">
+								<div class="top-line-el__wrap">
+									<div class="top-line-el">
+										<div class="top-line-el-title">Работа горячей линии:</div>
+										<div class="top-line-el-info">Ежедневно c 9-00 ч. до 20-00 ч.</div>
+									</div>
+									<div class="top-line-el">
+										<div class="top-line-el-title">Прием онлайн-заявок:</div>
+										<div class="top-line-el-info">Круглосуточно</div>
+									</div>
+								</div>
+								<div class="top-line__contact">
+									<div class="top-line-loc">
+										<div class="top-line-loc-el">
+											<div class="top-line-loc-icon">
+												<svg class="icon">
+													<use xlink:href="#metro"></use>
+												</svg>
+											</div>
+											<div class="top-line-loc-text">Варшавская</div>
+										</div>
+										<div class="top-line-loc-el">
+											<div class="top-line-loc-icon">
+												<svg class="icon">
+													<use xlink:href="#metro"></use>
+												</svg>
+											</div>
+											<div class="top-line-loc-text">Каширская</div>
+										</div>
+									</div>
+									<div class="nav-phone">
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header-end-->
+			<!--nav-->
+			<div class="nav">
+				<div class="main-cont">
+					<div class="nav-wrap">
+						<div class="nav-toggle">
+							<svg class="icon">
+								<use xlink:href="#menu"></use>
+							</svg>
+						</div>
+						<div class="menu-wrap">
+							<div class="menu">
+								<div class="menu-el">
+									<a href="#">
+										<span>Главная</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el-service">
+									<a href="#">
+										<span>Услуги
+											<svg class="icon">
+												<use xlink:href="#arrow-down"></use>
+											</svg>
+										</span>
+									</a>
+									<div class="menu-el__sub">
+										<a class="menu-el__sub-el" href="#">Кадастровые работы</a>
+										<a class="menu-el__sub-el" href="#">Геодезические работы</a>
+									</div>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>О компании</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Прайс-лист</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Наши лицензии</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Контакты</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el--mark">
+									<a href="#">
+										<span>Акции</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--.nav-phone
+				a(href="tel:+7 (495) 514-84-13").nav-phone-el
+					+icon("phone-call","icon")
+					| +7 (495) 514-84-13
+				-->
+					</div>
+				</div>
+			</div>
+			<!--nav-end-->
+		</div>
+		<!--block header end-->
+		<div class="main-cont">
+			<div class="bread-wrap">
+				<div class="bread">
+					<a class="bread__el" href="#">Пункт 1</a>
+					<a class="bread__el" href="#">Пункт 2</a>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div class="main-cont">
+			<div class="content">
+				<div class="content__toolbar">
+					<div class="search">
+						<form action="javascript:void(null);">
+							<input class="input input--search" type="text" name="name" placeholder="Ваш запрос" />
+							<button class="button--search" type="submit">
+								<svg class="icon">
+									<use xlink:href="#magnifying-glass"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+					<div class="toolbar">
+						<div class="toolbar__title">Популярные услгуи</div>
+						<a class="toolbar__el" href="#">Уточнение земельного участка</a>
+						<a class="toolbar__el" href="#">Межевой план</a>
+						<a class="toolbar__el" href="#">Топографическая съемка</a>
+						<a class="toolbar__el" href="#">Исполнительная съемка</a>
+						<a class="toolbar__el" href="#">Раздел земельного участка</a>
+						<a class="toolbar__el" href="#">Уточнение местоположения границ и/или площади земельного участка</a>
+						<a class="toolbar__el" href="#">Геодезическое сопровождение строительства</a>
+						<a class="toolbar__el" href="#">Технический план</a>
+						<a class="toolbar__el" href="#">Кадастровые работы по Москве</a>
+					</div>
+					<div class="toolbar">
+						<div class="toolbar__title">Нормативная документация</div>
+						<a class="toolbar__el" href="#">Геодезическая деятельность</a>
+						<a class="toolbar__el" href="#">Кадастровая деятельность</a>
+					</div>
+					<!--.toolbar
+			.toolbar__title Нормативная документация
+			-
+				var items = [
+				'Пример кадастрового паспорта квартиры',
+				'Образец межевого плана земельного участка',
+				'Обязательно ли делать межевание земельного участка'
+				];
+			each item in items
+				a(href="#").toolbar__el 
+			
+			
+			-->
+				</div>
+				<div class="content__info">
+					<h1>Уточнение местоположения границ и/или площади земельного участка</h1>
+					<p>Межеванием является комплекс работ по установлению на местности границ муниципальных образований и других административно-территориальных образований, границ земельных участков с закреплением  таких  границ межевыми знаками и определению  их координат.
+						Межевание земель, как комплекс работ, включает в себя землеустройство, геодезию и кадастровые работы.</p>
+					<p>Согласно законопроекту «Об определении точных границ земельных участков и местоположения зданий, сооружений, объектов незавершенного строительства и о внесении изменений в некоторые законодательные акты РФ»
+						<strong>с </strong>
+						<strong>01.01.2018 г. запрещается любое распоряжение (согласование распоряжения) земельными участками, в отношении которых в государственном кадастре недвижимости отсутствуют сведения о местоположении границ, установленных в соответствии с законодательством
+							РФ</strong>. Данный законопроект был разработан для выполнения плана мероприятий («дорожной карты») «Повышение качества государственных услуг в сфере государственного кадастрового учета недвижимого имущества и государственной регистрации прав на
+						недвижимое имущество и сделок с ним», утвержденной Распоряжением Правительства РФ № 2236-р от 01.12.2012 г.</p>
+					<p>Потребность в проведении кадастровых работ по уточнению границ земельного участка объясняется тем, что большая часть сведений о границах земельных участков внесена в Государственный кадастр недвижимости без установления таких границ на местности,
+						а именно -  по сведениям, содержащимся в правоустанавливающих документах на земельный участок. Если же все-таки производились какие-либо геодезические измерения, то они не имели высокую точность.</p>
+					<p>Именно поэтому в настоящее время по всей территории РФ огромное количество участков имеет пересечения друг с другом, тем самым вызывая споры и недовольства у собственников таких земельных участков. Процедура уточнения производится с целью устранения
+						таких пересечений границ. Кроме того, уточнение необходимо проводить для внесения сведений об изменении границ и площади земельного участка в базу государственного кадастра недвижимости.</p>
+					<strong>Уточнение границ земельного участка необходимо производить в следующих случаях:</strong>
+					<ul>
+						<li>если фактическое местоположение границ или конфигурация земельного участка (части земельного участка) не соответствуют сведениям, содержащимся в государственном кадастре недвижимости,</li>
+						<li>если фактическая площадь земельного участка (части земельного участка) не соответствует площади, сведения о которой содержатся в государственном кадастре недвижимости,</li>
+						<li>если имеет место реестровая (кадастровая) ошибка.</li>
+						<li>если земельный участок является ранее учтенным и на него имеются все правоустанавливающие документы, но сведения о границах земельного участка отсутствуют в Государственном кадастре недвижимости</li>
+					</ul>
+					<p>Уточнение местоположения границ и/или площади земельного участка осуществляется путем формирования межевого плана и подачи такого межевого плана в орган государственной регистрации. Межевой план подготавливается кадастровым инженером в форме электронного
+						документа в формате XML, заверенного усиленной квалифицированной электронной подписью кадастрового инженера, подготовившего такой план, и оформляется в виде файлов в формате XML, созданных с использованием XML-схем и обеспечивающих считывание и
+						контроль представленных данных.</p>
+					<p>При проведении процедуры уточнения границ земельного участка обязательным к включению в состав межевого плана является акт согласования местоположения границ земельных участков. Местоположение границ уточняемого земельного участка считается согласованным
+						при наличии в акте согласования личных подписей правообладателей смежных (соседних) земельных участков, либо их законных представителей.</p>
+					<p>Сведения о местоположении границ земельного участка в межевом плане указываются на основании геодезических обмеров, в ходе которых определяются координаты характерных точек границ такого земельного участка.</p>
+					<p>Если Вам необходимо произвести уточнение границ Вашего земельного участка, либо уточнить площадь земельного участка, позвоните нам, и мы дадим Вам полную консультацию, а также произведем все необходимые для этого работы по разумным ценам и в разумные
+						сроки.</p>
+				</div>
+			</div>
+		</div>
+		<!--contact-form-->
+		<div class="contact-form">
+			<div class="section-title">Оставьте свою заявку</div>
+			<div class="section-title-sub">Оформите обращение с помощью этой формы, мы перезвоним
+				<br>Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+			<div class="main-cont">
+				<form class="validate-form" action="javascript:void(null);">
+					<div class="input-row">
+						<input class="input" type="text" name="name" placeholder="Ваше имя" />
+					</div>
+					<div class="input-row">
+						<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+					</div>
+					<!--.input-rowtextarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+			-->
+					<!--.agree-row
+			.check-el
+				label.style-label.style-label--checkbox
+					input(type="checkbox" name="agree").sytle-input
+					.sytle-input-element
+						+icon("checked","icon-check")
+					.sytle-input-text=text
+			.agree-row__text Согласен с
+				a(href="#") условиями обработки персональных данных
+			-->
+					<input class="modal-send" type="submit" value="Отправить заявку" />
+				</form>
+			</div>
+		</div>
+		<!--news-->
+		<div class="section section--news wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="section-title">Новости</div>
+			<div class="main-cont">
+				<div class="news">
+					<div class="news__el">
+						<div class="news__el-date">18 июля 2017</div>
+						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
+						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">22 авгутса 2017</div>
+						<div class="news__el-title">Межевание участков, постановка на учет</div>
+						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">19 сентября 2014</div>
+						<div class="news__el-title">Подготовка технических планов</div>
+						<div class="news__el-text">Технический план квартиры, дома, помещения, сооружения, гаража, объекта незавершенного строительства. Технический план для ввода объекта в эксплуатацию. Акт обследования. Заключение кадастрового инженера...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">03 апреля 2014</div>
+						<div class="news__el-title">Кадастровая съемка участков</div>
+						<div class="news__el-text">Кадастровая съемка участка, Акт выбора земельных участков, Ситуационный план, Схема расположения земельного участка на кадастровой карте...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">18 июля 2017</div>
+						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
+						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">22 авгутса 2017</div>
+						<div class="news__el-title">Межевание участков, постановка на учет</div>
+						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--slider certificate-->
+		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="filter"></div>
+			<div class="section-title">Наши сертификаты</div>
+			<div class="main-cont">
+				<div class="slider-certificate owl-carousel">
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-1.jpg" rel="group-elemen">
+							<img src="img/cert-1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-2.jpg" rel="group-elemen">
+							<img src="img/cert-2.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-3.jpg" rel="group-elemen">
+							<img src="img/cert-3.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-4.jpg" rel="group-elemen">
+							<img src="img/cert-4.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-5.jpg" rel="group-elemen">
+							<img src="img/cert-5.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-6.jpg" rel="group-elemen">
+							<img src="img/cert-6.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-7.jpg" rel="group-elemen">
+							<img src="img/cert-7.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-8.jpg" rel="group-elemen">
+							<img src="img/cert-8.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-9.jpg" rel="group-elemen">
+							<img src="img/cert-9.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-10.jpg" rel="group-elemen">
+							<img src="img/cert-10.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block footer-->
+		<div class="section section--footer">
+			<div class="main-cont">
+				<div class="section-title">Оформите заказ</div>
+				<div class="section-title-sub">Прием в офисе с понедельника по пятницу с 9:00 до 20:00, суббота: по предварительной записи, выходной: воскресенье.</div>
+				<div class="footer__wrap">
+					<div class="footer__el">
+						<div class="footer__icon">
+							<svg class="icon">
+								<use xlink:href="#map"></use>
+							</svg>
+						</div>
+						<div class="footer__title">В офисе</div>
+						<div class="footer__text">г. Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6</div>
+					</div>
+					<div class="footer__el">
+						<div class="footer__icon">
+							<svg class="icon">
+								<use xlink:href="#phone-call"></use>
+							</svg>
+						</div>
+						<div class="footer__title">По телефону</div>
+						<a class="footer__text footer__text--red" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+						<a class="footer__text footer__text--red" href="tel:+7 (495) 283-96-83">+7 (495) 283-96-83</a>
+					</div>
+					<div class="footer__el">
+						<div class="footer__icon">
+							<svg class="icon">
+								<use xlink:href="#mail"></use>
+							</svg>
+						</div>
+						<div class="footer__title">По email</div>
+						<a class="footer__text footer__text--red" href="mailto:info@cgiku.ru">info@cgiku.ru</a>
+					</div>
+				</div>
+				<div class="footer-get">
+					<div class="footer-get__el modal-get" data-modal="order">Оставить заявку</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-map">
+			<h1>Карта</h1>
+		</div>
+		<div class="scroll-up">
+			<svg class="icon">
+				<use xlink:href="#arrow-up"></use>
+			</svg>
+		</div>
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>

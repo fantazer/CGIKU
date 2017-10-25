@@ -18,8 +18,10 @@ gray = #AAAAAA
 black = #111111
 
 $blue = #0095c6
-$red = #f20022
+//$red = #f20022
+$red = #5da06b
 $gray = #efefef
+$green = #5da06b
 
 $main-text-color = #585858
 $link-color = #5a5a5a
@@ -63,7 +65,7 @@ typeSize(fontSm,font)
 	font-family "Gotham"
 
 .type--xl
-	typeSize(40,20)
+	typeSize(32,20)
 	font-weight 500
 	font-family "Gotham"
 
@@ -73,18 +75,28 @@ typeSize(fontSm,font)
 h1
 	@extend .type--xl
 	color black
+	padding-top: 0
+	margin-top: 0
 h2
 	@extend .type--lg
 	color black
+	padding-top: 0
+	margin-top: 0
 h3
 	@extend .type--main
 	color black
+	padding-top: 0
+	margin-top: 0
 h4
 	@extend .type--sm
 	color black
+	padding-top: 0
+	margin-top: 0
 h5
 	@extend .type--xs
 	color black
+	padding-top: 0
+	margin-top: 0
 
 a
 	transition color .6s
@@ -99,6 +111,7 @@ p
 	line-height: 1.8
 	padding-top: 0
 	margin-top: 0
+	color black
 
 .link--mark
 	br-animate('1px',$blue)
@@ -185,7 +198,7 @@ btnStyleLight(br-btn,color-btn)
 	&:hover
 		background-color $red
 		color white
-		box-shadow 0 9px 18px rgba(242, 0, 34, 0.6)
+		box-shadow 0 9px 18px rgb(146, 171, 151)
 	&:active
 		background-color $red
 		outline 0!important

@@ -84,9 +84,10 @@
 				<div class="top-line">
 					<div class="main-cont">
 						<div class="top-line-wrap">
-							<div class="main-logo">
-								<img src="img/logo-dark.png" alt="" />
-							</div>
+							<a class="main-logo" href="/">
+								<img class="logo--full" src="img/logo-dark.png" alt="" />
+								<img class="logo--short" src="img/logo-short.png" alt="" />
+							</a>
 							<div class="top-line-info">
 								<div class="top-line-el__wrap">
 									<div class="top-line-el">
@@ -118,14 +119,8 @@
 										</div>
 									</div>
 									<div class="nav-phone">
-										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">
-											<svg class="icon">
-												<use xlink:href="#phone-call"></use>
-											</svg>+7 (495) 514-84-13</a>
-										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">
-											<svg class="icon">
-												<use xlink:href="#phone-call"></use>
-											</svg>+7 (495) 283-96-83</a>
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
 									</div>
 								</div>
 							</div>
@@ -145,13 +140,49 @@
 						</div>
 						<div class="menu-wrap">
 							<div class="menu">
-								<a class="menu-el" href="#">Главная</a>
-								<a class="menu-el" href="#">Услуги</a>
-								<a class="menu-el" href="#">О компании</a>
-								<a class="menu-el" href="#">Прайс-лист</a>
-								<a class="menu-el" href="#">Наши лицензии</a>
-								<a class="menu-el" href="#">Контакты</a>
-								<a class="menu-el menu-el--mark" href="#">Акции</a>
+								<div class="menu-el">
+									<a href="#">
+										<span>Главная</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el-service">
+									<a href="#">
+										<span>Услуги
+											<svg class="icon">
+												<use xlink:href="#arrow-down"></use>
+											</svg>
+										</span>
+									</a>
+									<div class="menu-el__sub">
+										<a class="menu-el__sub-el" href="#">Кадастровые работы</a>
+										<a class="menu-el__sub-el" href="#">Геодезические работы</a>
+									</div>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>О компании</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Прайс-лист</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Наши лицензии</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Контакты</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el--mark">
+									<a href="#">
+										<span>Акции</span>
+									</a>
+								</div>
 							</div>
 						</div>
 						<!--.nav-phone
@@ -273,85 +304,41 @@
 				</div>
 			</div>
 		</div>
-		<!--service-->
+		<!--service two column-->
 		<div class="section section--list">
 			<div class="main-cont">
-				<div class="section-title">Наши услуги</div>
+				<div class="section-title">Направления нашей деятельности</div>
 				<div class="section-title-sub">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
-				<div class="list">
-					<div class="list__el wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-						<div class="list__el--img">
-							<img src="img/list-2.jpg" alt="" />
+				<div class="category">
+					<div class="category__el">
+						<div class="category__el--img">
+							<img src="img/category-kadastr.png" alt="" />
 						</div>
-						<div class="list__el--info">
-							<div class="list__el--title">Межевой план</div>
-							<div class="list__el--item">Уточнение границ участка (межевание) </div>
-							<div class="list__el--item">Исправление реестровой ошибки (бывш. кадастровая ошибка)</div>
-							<div class="list__el--item">Раздел земельного участка </div>
-							<div class="list__el--item">Объединение земельных участков</div>
-							<div class="list__el--item">Перераспределение земельных участков </div>
-							<div class="list__el--item">Образование земельного участка из земель муниципальной собственности</div>
-							<div class="list__el--item">Образование земельного участка под многоквартирным домом </div>
-							<div class="list__el--item">Межевание земель общего пользования СНТ</div>
-							<div class="list__el--item">Образование частного сервитута (часть земельного участка)</div>
+						<div class="category__el--title">Кадастровые работы</div>
+						<div class="category__el-info">
+							<a class="category__el--item" href="#">Межевой план</a>
+							<a class="category__el--item" href="#">Технический план</a>
+							<a class="category__el--item" href="#">Уточнение границ участка </a>
 						</div>
+						<a class="category__el-get" href="#">Eще услуги</a>
 					</div>
-					<div class="list__el wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-						<div class="list__el--img">
-							<img src="img/list-1.jpg" alt="" />
+					<div class="category__el">
+						<div class="category__el--img">
+							<img src="img/category-land.png" alt="" />
 						</div>
-						<div class="list__el--info">
-							<div class="list__el--title">Технический план</div>
-							<div class="list__el--item">Уточнение границ участка (межевание) </div>
-							<div class="list__el--item">Исправление реестровой ошибки (бывш. кадастровая ошибка)</div>
-							<div class="list__el--item">Раздел земельного участка </div>
-							<div class="list__el--item">Объединение земельных участков</div>
-							<div class="list__el--item">Перераспределение земельных участков </div>
-							<div class="list__el--item">Образование земельного участка из земель муниципальной собственности</div>
-							<div class="list__el--item">Образование земельного участка под многоквартирным домом </div>
-							<div class="list__el--item">Межевание земель общего пользования СНТ</div>
-							<div class="list__el--item">Образование частного сервитута (часть земельного участка)</div>
+						<div class="category__el--title">Геодезические работы</div>
+						<div class="category__el-info">
+							<a class="category__el--item" href="#">Вынос границ земельного участка</a>
+							<a class="category__el--item" href="#">Топографическая съемка</a>
+							<a class="category__el--item" href="#">Кадастровая съемка </a>
 						</div>
-					</div>
-					<div class="list__el wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
-						<div class="list__el--img">
-							<img src="img/list-3.jpg" alt="" />
-						</div>
-						<div class="list__el--info">
-							<div class="list__el--title">Кадастровые работы</div>
-							<div class="list__el--item">Уточнение границ участка (межевание) </div>
-							<div class="list__el--item">Исправление реестровой ошибки (бывш. кадастровая ошибка)</div>
-							<div class="list__el--item">Раздел земельного участка </div>
-							<div class="list__el--item">Объединение земельных участков</div>
-							<div class="list__el--item">Перераспределение земельных участков </div>
-							<div class="list__el--item">Образование земельного участка из земель муниципальной собственности</div>
-							<div class="list__el--item">Образование земельного участка под многоквартирным домом </div>
-							<div class="list__el--item">Межевание земель общего пользования СНТ</div>
-							<div class="list__el--item">Образование частного сервитута (часть земельного участка)</div>
-						</div>
-					</div>
-					<div class="list__el wow fadeIn" data-wow-duration="2s" data-wow-delay="2.5s">
-						<div class="list__el--img">
-							<img src="img/list-4.jpg" alt="" />
-						</div>
-						<div class="list__el--info">
-							<div class="list__el--title">Геодезические работы</div>
-							<div class="list__el--item">Уточнение границ участка (межевание) </div>
-							<div class="list__el--item">Исправление реестровой ошибки (бывш. кадастровая ошибка)</div>
-							<div class="list__el--item">Раздел земельного участка </div>
-							<div class="list__el--item">Объединение земельных участков</div>
-							<div class="list__el--item">Перераспределение земельных участков </div>
-							<div class="list__el--item">Образование земельного участка из земель муниципальной собственности</div>
-							<div class="list__el--item">Образование земельного участка под многоквартирным домом </div>
-							<div class="list__el--item">Межевание земель общего пользования СНТ</div>
-							<div class="list__el--item">Образование частного сервитута (часть земельного участка)</div>
-						</div>
+						<a class="category__el-get" href="#">Eще услуги</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--about-->
-		<div class="about wow fadeIn" style="background-image:url('img/our.jpg');" data-wow-duration="2s" data-wow-delay="1s">
+		<div class="about wow fadeIn" style="background-image:url('img/our-gray.jpg');" data-wow-duration="1.75s" data-wow-delay="1s">
 			<div class="main-cont">
 				<div class="about-cont">
 					<div class="about-cont__title">О нашей компании</div>
@@ -362,8 +349,174 @@
 				</div>
 			</div>
 		</div>
+		<!--slider customer-->
+		<div class="section section--customer wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="section-title">Наши заказчики</div>
+			<div class="main-cont">
+				<div class="slider-customer owl-carousel">
+					<div class="slider__el">
+						<img src="img/1-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/2-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/3-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/4-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/5-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/6-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/7-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/8-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/9-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/10-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/11-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/12-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/13-customer.jpg" alt="" />
+					</div>
+					<div class="slider__el">
+						<img src="img/14-customer.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--slider certificate-->
+		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="filter"></div>
+			<div class="section-title">Наши сертификаты</div>
+			<div class="main-cont">
+				<div class="slider-certificate owl-carousel">
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-1.jpg" rel="group-elemen">
+							<img src="img/cert-1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-2.jpg" rel="group-elemen">
+							<img src="img/cert-2.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-3.jpg" rel="group-elemen">
+							<img src="img/cert-3.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-4.jpg" rel="group-elemen">
+							<img src="img/cert-4.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-5.jpg" rel="group-elemen">
+							<img src="img/cert-5.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-6.jpg" rel="group-elemen">
+							<img src="img/cert-6.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-7.jpg" rel="group-elemen">
+							<img src="img/cert-7.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-8.jpg" rel="group-elemen">
+							<img src="img/cert-8.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-9.jpg" rel="group-elemen">
+							<img src="img/cert-9.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-10.jpg" rel="group-elemen">
+							<img src="img/cert-10.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--advant-->
+		<div class="section section--advant wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="section-title">Наши преимущества</div>
+			<div class="main-cont">
+				<div class="advant">
+					<div class="advant-info">
+						<div class="advant-info__el">
+							<div class="advant-info__ico">
+								<svg class="icon">
+									<use xlink:href="#doc"></use>
+								</svg>
+							</div>
+							<div class="advant-info__cont">
+								<div class="advant-info__title">Точнее не бывает!</div>
+								<div class="advant-info__text">Измерение площади участка рулеткой даёт погрешность в десятки квадратных метров.</div>
+							</div>
+						</div>
+						<div class="advant-info__el">
+							<div class="advant-info__ico">
+								<svg class="icon">
+									<use xlink:href="#plan"></use>
+								</svg>
+							</div>
+							<div class="advant-info__cont">
+								<div class="advant-info__title">Работы «под ключ»</div>
+								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
+							</div>
+						</div>
+						<div class="advant-info__el">
+							<div class="advant-info__ico">
+								<svg class="icon">
+									<use xlink:href="#time"></use>
+								</svg>
+							</div>
+							<div class="advant-info__cont">
+								<div class="advant-info__title">Выезд сразу</div>
+								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
+							</div>
+						</div>
+						<div class="advant-info__el">
+							<div class="advant-info__ico">
+								<svg class="icon">
+									<use xlink:href="#money"></use>
+								</svg>
+							</div>
+							<div class="advant-info__cont">
+								<div class="advant-info__title">Консультации — 0 рублей</div>
+								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
+							</div>
+						</div>
+					</div>
+					<div class="advant-img">
+						<img src="img/instr.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--service-->
-		<div class="section section--service wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+		<div class="section section--service wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
 			<div class="main-cont">
 				<div class="section-title">Популярные услуги</div>
 				<div class="section-title-sub">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
@@ -425,174 +578,87 @@
 				</div>
 			</div>
 		</div>
-		<!--slider customer-->
-		<div class="section section--customer wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-			<div class="section-title">Наши заказчики</div>
+		<!--step work-->
+		<div class="section section-step" id="step">
+			<div class="section-filter"></div>
 			<div class="main-cont">
-				<div class="slider-customer owl-carousel">
-					<div class="slider__el">
-						<img src="img/1-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/2-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/3-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/4-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/5-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/6-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/7-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/8-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/9-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/10-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/11-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/12-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/13-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/14-customer.jpg" alt="" />
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--slider certificate-->
-		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-			<div class="filter"></div>
-			<div class="section-title">Наши сертификаты</div>
-			<div class="main-cont">
-				<div class="slider-certificate owl-carousel">
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-1.jpg" rel="group-elemen">
-							<img src="img/cert-1.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-2.jpg" rel="group-elemen">
-							<img src="img/cert-2.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-3.jpg" rel="group-elemen">
-							<img src="img/cert-3.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-4.jpg" rel="group-elemen">
-							<img src="img/cert-4.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-5.jpg" rel="group-elemen">
-							<img src="img/cert-5.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-6.jpg" rel="group-elemen">
-							<img src="img/cert-6.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-7.jpg" rel="group-elemen">
-							<img src="img/cert-7.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-8.jpg" rel="group-elemen">
-							<img src="img/cert-8.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-9.jpg" rel="group-elemen">
-							<img src="img/cert-9.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-10.jpg" rel="group-elemen">
-							<img src="img/cert-10.jpg" alt="" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--advant-->
-		<div class="section section--advant wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-			<div class="section-title">Наши преимущества</div>
-			<div class="main-cont">
-				<div class="advant">
-					<div class="advant-info">
-						<div class="advant-info__el">
-							<div class="advant-info__ico">
-								<svg class="icon">
-									<use xlink:href="#doc"></use>
-								</svg>
+				<div class="section-title">как мы работаем</div>
+				<div class="step">
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">01</div>
+								<div class="step-text">
+									<div class="step-text__title">Отправляете нам заявку</div>
+									<div class="step-text__descr">Наши кадастровые инженеры проведут для Вас бесплатную консультацию. Выбор даты и времени выезда геодезистов для обмеров.</div>
+								</div>
 							</div>
-							<div class="advant-info__cont">
-								<div class="advant-info__title">Точнее не бывает!</div>
-								<div class="advant-info__text">Измерение площади участка рулеткой даёт погрешность в десятки квадратных метров.</div>
-							</div>
-						</div>
-						<div class="advant-info__el">
-							<div class="advant-info__ico">
-								<svg class="icon">
-									<use xlink:href="#plan"></use>
-								</svg>
-							</div>
-							<div class="advant-info__cont">
-								<div class="advant-info__title">Работы «под ключ»</div>
-								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
-							</div>
-						</div>
-						<div class="advant-info__el">
-							<div class="advant-info__ico">
-								<svg class="icon">
-									<use xlink:href="#time"></use>
-								</svg>
-							</div>
-							<div class="advant-info__cont">
-								<div class="advant-info__title">Выезд сразу</div>
-								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
-							</div>
-						</div>
-						<div class="advant-info__el">
-							<div class="advant-info__ico">
-								<svg class="icon">
-									<use xlink:href="#money"></use>
-								</svg>
-							</div>
-							<div class="advant-info__cont">
-								<div class="advant-info__title">Консультации — 0 рублей</div>
-								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
 							</div>
 						</div>
 					</div>
-					<div class="advant-img">
-						<img src="img/instr.jpg" alt="" />
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">02</div>
+								<div class="step-text">
+									<div class="step-text__title">Подписание договора</div>
+									<div class="step-text__descr">Наши сотрудники могут привезти подписанный нами договор в день производства обмеров, либо Вы можете приехать к нам в офис в удобное время.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">03</div>
+								<div class="step-text">
+									<div class="step-text__title">Выезд геодезистов для обмеров.</div>
+									<div class="step-text__descr">Наши специалисты выезжают непосредственно на рабочий объек и проводят все необходимые работы.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">04</div>
+								<div class="step-text">
+									<div class="step-text__title">Обработка результатов</div>
+									<div class="step-text__descr">Камеральная обработка произведенных обмеров, согласование с Вами результатов обмеров. Формирование кадастровой документации.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">05</div>
+								<div class="step-text">
+									<div class="step-text__title">Передача Вам готовой документации.</div>
+									<div class="step-text__descr">Вы получаете на руки все необходимые документы, оформленные в соответсвии со всеми правилами и стандартами.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--news-->
-		<div class="section section--news wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+		<div class="section section--news wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
 			<div class="section-title">Новости</div>
 			<div class="main-cont">
 				<div class="news">
