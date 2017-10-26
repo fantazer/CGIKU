@@ -105,6 +105,21 @@ include block_html/_include.pug
 					a(href="#") условиями обработки персональных данных
 			input(type="submit" value="Отправить заявку").modal-send
 
+//service
+.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.main-cont
+		.section-title Популярные услуги
+		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+		.service
+			- for (var i=0;i<6;i++)
+				.service__el
+					.service__title Уточнение границ земельного участка
+					.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
+					.service__price 18 000 руб.
+					.service__get
+						.service__btn.service__btn-more Подробнее
+						.service__btn.service__btn-get Заказать
+
 //news
 .section.section--news.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
 	.section-title Новости
@@ -137,7 +152,6 @@ include block_html/_include.pug
 				.news__el-date 22 авгутса 2017
 				.news__el-title Межевание участков, постановка на учет
 				.news__el-text Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....
-
 
 //slider certificate
 .section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
