@@ -124,6 +124,19 @@ include block_html/_include.pug
 
 
 //service
+.section.section--calc
+	.main-cont
+		.section-title Выберите площадь дома
+		.section-title-sub Подача в Росреестр – плюс 3 000 руб. к стоимости работ.
+		.calc
+			input(type="range" placeholder=""  class="calc-range")
+			.calc-range__wrap
+				.calc-range-val
+					.calc-range-numb 10 000
+					.calc-range-pay руб
+			.calc-text Цена услуги
+
+//service
 .section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
 	.main-cont
 		.section-title Популярные услуги

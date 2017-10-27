@@ -3263,7 +3263,7 @@ body {
   padding: 150px 0;
 }
 .section--doc {
-  padding: 150px 0 50px 0;
+  padding: 150px 0;
 }
 .doc {
   display: -webkit-box;
@@ -3314,6 +3314,65 @@ body {
 }
 .doc__text {
   line-height: 1.4;
+}
+.irs-from,
+.irs-to,
+.irs-single {
+  font-size: 24px;
+  top: -25px;
+  margin-left: 0px;
+}
+.calc-range-val {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  background: #fade6f;
+  padding: 15px 50px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
+.calc-range__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #111;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.calc-range-pay {
+  margin-left: 10px;
+}
+.calc-text {
+  text-align: center;
+}
+.section--calc {
+  background: #f1f1f1;
+}
+.irs-from,
+.irs-to,
+.irs-single {
+  background: #5da06b;
 }
 @-webkit-keyframes slideInDown {
   from {

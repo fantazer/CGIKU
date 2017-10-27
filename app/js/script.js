@@ -1,5 +1,58 @@
 $(document).ready(function(){
 
+
+	//range slider
+	//range slider simple
+  $(".calc-range").ionRangeSlider({
+ 		values: [
+ 			50,
+ 			100,
+ 			200,
+ 			300,
+ 			400
+ 		],
+ 		grid: true,
+ 		postfix: " кв.м",
+ 		onChange: function (data) {
+ 				if(data.from_value == 50){
+ 					$('.calc-range-numb').text('10 000 ');
+ 				}
+ 				if(data.from_value == 100){
+ 					$('.calc-range-numb').text('14 000 ');
+ 				}
+ 				if(data.from_value == 200){
+ 					$('.calc-range-numb').text('20 000 ');
+ 				}
+ 				if(data.from_value == 300){
+ 					$('.calc-range-numb').text('25 000 ');
+ 				}
+ 				if(data.from_value == 400){
+ 					$('.calc-range-numb').text('30 000 ');
+ 				}
+    },
+ 	});
+/*
+// take val from input
+	var start = 100
+	var end = 1000
+ 	$(".calc-range").ionRangeSlider({
+ 		min:start,
+ 		max:end
+ 	});
+ 	onlyInteger(".range-control");
+*/
+	var slider = $(".calc-range").data("ionRangeSlider");
+	$('.calc-range').keyup(function() {
+		start = $('.range-start').val();
+		end = $('.range-end').val();
+		slider.update({
+   			 min: start,
+   			 max: end,
+			});
+		console.log(start);
+	});
+
+
 	//drop menu
 	var hideToggle = function(targetClick,toggleEl) {
 		$(targetClick).click(function(event){

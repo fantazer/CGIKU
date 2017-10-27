@@ -23,6 +23,7 @@
   "devDependencies": {
     "fancybox": "^3.1.25",
     "jquery-validation": "^1.17.0",
-    "wow": "wowjs#^1.1.2"
+    "wow": "wowjs#^1.1.2",
+    "ion.rangeSlider": "ionrangeslider#^2.2.0"
   }
 }
