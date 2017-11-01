@@ -57,4 +57,14 @@ mixin footer()
 								a(href="#") условиями обработки персональных данных
 						input(type="submit" value="Отправить заявку").modal-send
 
+			.modal(data-modal="true")
+				.modal-content.modal-content--true
+					+icon("interface","icon")
+					.modal-text-true Ваша заявка принята
+
+			.modal(data-modal="next")
+				.modal-content.modal-content--truesend
+					+icon("interface","icon")
+					.modal-text-truesend Ваша заявка принята!
+
 	//block footer end

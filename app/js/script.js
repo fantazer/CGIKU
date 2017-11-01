@@ -2,7 +2,6 @@ $(document).ready(function(){
 
 
 	//range slider
-	//range slider simple
   $(".calc-range").ionRangeSlider({
  		values: [
  			50,
@@ -29,28 +28,9 @@ $(document).ready(function(){
  				if(data.from_value == 400){
  					$('.calc-range-numb').text('30 000 ');
  				}
-    },
+    }
  	});
-/*
-// take val from input
-	var start = 100
-	var end = 1000
- 	$(".calc-range").ionRangeSlider({
- 		min:start,
- 		max:end
- 	});
- 	onlyInteger(".range-control");
-*/
-	var slider = $(".calc-range").data("ionRangeSlider");
-	$('.calc-range').keyup(function() {
-		start = $('.range-start').val();
-		end = $('.range-end').val();
-		slider.update({
-   			 min: start,
-   			 max: end,
-			});
-		console.log(start);
-	});
+	//range slider===end
 
 
 	//drop menu
@@ -67,6 +47,72 @@ $(document).ready(function(){
 	//drop menu===end
 
 	//new WOW().init();
+
+
+
+	//modals
+	$('.modal-content').click(function(event){
+		event.stopPropagation();
+	});
+	var scrollPos = 0;
+
+	var openModal = function () {
+	if(!$('.modal-layer').hasClass('modal-layer-show')){
+		$('.modal-layer').addClass('modal-layer-show');
+	}
+	 scrollPos = $(window).scrollTop();
+		$('body').css({
+			overflow: 'hidden',
+			position: 'fixed',
+			overflowY: 'scroll',
+			top : -scrollPos,
+			width:'100%'
+		});
+		return scrollPos;
+	};
+
+	var closeModal = function () {
+		console.log("scrollPos",scrollPos);
+  	$('.modal-layer').removeClass('modal-layer-show');
+  	$("body").removeClass("modal-fix");
+  	$('body').css({
+			overflow: '',
+			position: '',
+			top: ''
+		})
+    $(window).scrollTop(scrollPos);
+    $('.modal').removeClass('modal__show');
+		$('.enter').removeClass('enter--open');
+		$('.basket').removeClass('basket--open');
+	};
+
+	var initModal = function(el){
+		openModal();
+		$('.enter').removeClass('enter--open');
+		$('.basket').removeClass('basket--open');
+		$('.modal').each(function () {
+			if ($(this).data('modal')===el){
+				$(this).addClass('modal__show')
+			} else {
+				$(this).removeClass('modal__show')
+			}
+		});
+		var modalHeightCont = $(window).height();
+		$('.modal-filter').height(modalHeightCont);
+		$('.modal-wrap').css('height',modalHeightCont );
+		$('.modal-wrap').css('minHeight',modalHeightCont );
+	}
+
+	$('.modal-get').click(function (){
+		var currentModal = $(this).data("modal");
+		initModal(currentModal);
+	});
+
+	$('.modal-layer , .modal-close').click(function (){
+		closeModal();
+	});
+	//modals ===end
+
 	//validate
 	$('.validate-form').each(function() {
 		var curentForm = $(this);
@@ -118,86 +164,21 @@ $(document).ready(function(){
 						            data: $(form).serialize(),
 						            timeout: 3000,
 						          });
-							$('.modal-close').click(); // автозакрытие окна
+							closeModal();
+							initModal("next");
 							setTimeout(function(){
-										$('.modal-true').bPopup({
-											closeClass:'modal-close',
-												position:['auto','auto'], // position center
-												follow: [true,true],
-												autoClose: 2000
-										});
+										closeModal();
 										$(':input','.validate-form') //очитска формы от данных
 										  .not(':button, :submit, :reset, :hidden')
 										  .val('')
 										  .removeAttr('checked')
 										  .removeAttr('selected')
-							},2000)
+							},2500)
 
 				}
 		    });
 		});
-
 	//validate===end
-	//modals
-	$('.modal-content').click(function(event){
-		event.stopPropagation();
-	});
-	var scrollPos = 0;
-
-	var openModal = function () {
-  	if(!$('.modal-layer').hasClass('modal-layer-show')){
-			$('.modal-layer').addClass('modal-layer-show');
-		}
-	 scrollPos = $(window).scrollTop();
-	 console.log(scrollPos);
-		$('body').css({
-			overflow: 'hidden',
-			position: 'fixed',
-			overflowY: 'scroll',
-			top : -scrollPos,
-			width:'100%'
-		});
-		return scrollPos;
-	};
-
-	var closeModal = function () {
-		console.log("scrollPos",scrollPos);
-  	$('.modal-layer').removeClass('modal-layer-show');
-  	$("body").removeClass("modal-fix");
-  	$('body').css({
-			overflow: '',
-			position: '',
-			top: ''
-		})
-    $(window).scrollTop(scrollPos);
-    $('.modal').removeClass('modal__show');
-		$('.enter').removeClass('enter--open');
-		$('.basket').removeClass('basket--open');
-	};
-
-	$('.modal-get').click(function (){
-		openModal();
-		$('.enter').removeClass('enter--open');
-		$('.basket').removeClass('basket--open');
-		var currentModal = $(this).data("modal");
-		$('.modal').each(function () {
-			if ($(this).data('modal')===currentModal){
-				$(this).addClass('modal__show')
-			} else {
-				$(this).removeClass('modal__show')
-			}
-		});
-		var modalHeightCont = $('.modal.modal__show').height();
-		$('.modal-filter').height(modalHeightCont+60);
-		$('.modal-wrap').css('minHeight',modalHeightCont + 60);
-
-	});
-
-	$('.modal-layer , .modal-close').click(function (){
-		closeModal();
-		console.log('cloose');
-	});
-	//modals ===end
 
 
 	//fancy-box
@@ -223,80 +204,7 @@ $(document).ready(function(){
   });
 	//scroll top ===end
 
-	//slider el
-	$(".slider-certificate").owlCarousel({
-	 items : 3,
-		responsive : {
-				0:{
-					items : 4
-				},
-				768:{
-					items : 3
-				},
-				960:{
-					items : 3
-				},
 
-			},
-	 margin:20,
-	 autoHeight : true,
-	 dots: false,
-	 autoplay : false,
-	 singleItem:true,
-	 loop:true,
-	 nav:true,
-	 navText:[
-			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
-			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
-	 ]
-	 }
-	);
-
-	$(".slider-customer").owlCarousel({
-	 items : 5,
-		responsive : {
-				0:{
-					items : 4
-				},
-				768:{
-					items : 3
-				},
-				960:{
-					items : 5
-				},
-
-			},
-	 margin:20,
-	 autoHeight : true,
-	 dots: false,
-	 autoplay : false,
-	 singleItem:true,
-	 loop:true,
-	 nav:true,
-	 navText:[
-			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
-			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
-	 ]
-	 }
-	);
-
-	$(".slider-header-baner").owlCarousel({
-	 items : 1,
-	 margin:20,
-	 autoHeight : true,
-	 dots: false,
-	 autoplay : true,
-	 singleItem:true,
-	 loop:true,
-	 //animateOut: 'fadeOut',
-	 nav:true,
-	 navText:[
-			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
-			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
-	 ]
-	 }
-	);
-	//slider el === end
 
 	//animate top menu
 	var shrinkHeader = 250;
@@ -318,12 +226,6 @@ $(document).ready(function(){
 	});
 	//animate top menu === end
 
-	//var bodyExtend =$('.head-container').height();
-	//$('body').css('paddingTop',bodyExtend);
-	/* ###### For only ies  ######*/
-	//if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)){
-	//	//code
-	//}
 
 	function detectIE() {
 	var ua = window.navigator.userAgent;
@@ -390,7 +292,82 @@ $(document).ready(function(){
 })
 
 //cash SVG
+$(window).load(function () {
+	//slider el
+	$(".slider-certificate").owlCarousel({
+	 items : 3,
+		responsive : {
+				0:{
+					items : 4
+				},
+				768:{
+					items : 3
+				},
+				960:{
+					items : 3
+				},
 
+			},
+	 margin:20,
+	 autoHeight : true,
+	 dots: false,
+	 autoplay : false,
+	 singleItem:true,
+	 loop:true,
+	 nav:true,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 ]
+	 }
+	);
+
+	$(".slider-customer").owlCarousel({
+	 items : 5,
+		responsive : {
+				0:{
+					items : 4
+				},
+				768:{
+					items : 3
+				},
+				960:{
+					items : 5
+				},
+
+			},
+	 margin:20,
+	 autoHeight : true,
+	 dots: false,
+	 autoplay : false,
+	 singleItem:true,
+	 loop:true,
+	 nav:true,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 ]
+	 }
+	);
+
+	$(".slider-header-baner").owlCarousel({
+	 items : 1,
+	 margin:20,
+	 autoHeight : true,
+	 dots: false,
+	 autoplay : false,
+	 singleItem:true,
+	 loop:true,
+	 //animateOut: 'fadeOut',
+	 nav:true,
+	 navText:[
+			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+	 ]
+	 }
+	);
+	//slider el === end
+})
 ;( function( window, document )
 {
 	'use strict';

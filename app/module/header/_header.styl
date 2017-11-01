@@ -35,7 +35,7 @@
 	align-items center
 .top-line-el-title
 	+below(1440px)
-		font-size 12px
+		font-size 10px
 	font-weight bold
 	margin-right 10px
 	font-size 14px
@@ -243,13 +243,18 @@
 	width: 50%
 
 .header-baner__price
+	flex(between)
+	width: 85%
+	align-self: flex-start
+
+.header-baner__price-el
 	+below(768px)
 		font-size: 28px
 	width: 100%
 	font-size: 48px
 	color black
 	font-weight: bold
-	margin-bottom: 20px
+	margin-bottom: 40px
 	
 .logo--short
 	+above(767px)
@@ -258,3 +263,7 @@
 .logo--full
 	+below(768px)
 		display: none
+
+.header-baner__price--false
+	text-decoration: line-through
+	color #cac5c5

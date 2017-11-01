@@ -16,7 +16,9 @@ mixin header()
 										.top-line-el-info Ежедневно c 9-00 ч. до 20-00 ч.
 									.top-line-el
 										.top-line-el-title Прием онлайн-заявок:
-										.top-line-el-info Круглосуточно
+										.top-line-el-info.top-line-el-info--call.modal-get(data-modal="order")
+											+icon("phone","icon")
+											span Круглосуточно
 								.top-line__contact
 									.top-line-loc
 										.top-line-loc-el

@@ -79,16 +79,7 @@ body
 		padding: 30px 0
 	padding: 100px 0
 
-.section-title
-	+below(768px)
-		font-size: 20px
-		margin-bottom: 30px
-	text-align: center
-	margin-bottom: 60px
-	font-size: 40px
-	color black
-	up()
-	font-weight:700
+
 
 .title
 	font-weight: 700
@@ -342,7 +333,7 @@ body
 	font-weight bold
 
 .header__btn-more
-	+below(768px)
+	+below(640px)
 		margin-right: 0
 	@extend .btn--light
 	margin-right: 20px
@@ -602,9 +593,6 @@ body
 	+below(768px)
 		width: 100%
 		box-shadow 0 0 0
-	+below(640px)
-		top 0
-		left 0
 	box-shadow 0 2px 4px rgba(0, 0, 0, 0.24)
 	transform translate(-50%,-350%)
 	position: absolute
@@ -618,7 +606,7 @@ body
 	+below(768px)
 		padding: 20px
 	+below(640px)
-		max-height calc(100vh - 80px)
+		max-height calc(100vh - 60px)
 		overflow-y scroll
 		padding: 20px 5px
 		width: 100%!important
@@ -638,8 +626,6 @@ body
 .modal__show
 	+below(768px)
 		flex(mid)
-	+below(640px)
-		transform translate(0%,0%)
 	opacity 1
 	transform translate(-50%,-50%)
 
@@ -757,7 +743,7 @@ body
 
 .slider-certificate
 	.owl-nav
-		+below(1200px)
+		+below(1370px)
 			display: none
 
 .slider-header-baner
@@ -779,10 +765,15 @@ $step = #b3b2b2
 
 .section-title
 	+below(768px)
-		font-size 22px
-	font-size 34px
-	text-align center
+		font-size: 20px
+		margin-bottom: 30px
+	text-align: center
+	margin-bottom: 60px
+	font-size: 40px
+	color black
 	up()
+	font-weight:700
+
 .step
 	+below(768px)
 		margin-top 30px
@@ -1066,6 +1057,8 @@ $step = #b3b2b2
 	//background: red
 
 .lp-baner__img
+	+below(768px)
+		background: none
 	bg-full()
 	position: absolute
 	top 0
@@ -1076,12 +1069,21 @@ $step = #b3b2b2
 
 
 .lp-baner__content
+	+below(768px)
+		width: 70%
+		margin: 0 auto
+	+below(640px)
+		width: 100%
 	margin-top: -30px
 	z-index 5
 	position: relative
 	width: 50%
 
 .lp-baner__title
+	+below(768px)
+		text-align: center
+	+below(640px)
+		font-size:24px
 	up()
 	font-size: 48px
 	color black
@@ -1090,15 +1092,21 @@ $step = #b3b2b2
 	line-height: 1.4
 
 .lp-baner__title-sub
+	+below(768px)
+		text-align: center
 	line-height: 1.4
 	margin-bottom: 30px
 
 .section-wrap
-	width: 100%
 	f()
+	fw()
+	width: 100%
 	justify-content: space-between
+
 .section-call
-	width: 45%
+	+below(640px)
+		width: 100%
+	width: 50%
 
 .section-title--left
 	text-align: left
@@ -1108,31 +1116,48 @@ $step = #b3b2b2
 
 .box
 	p
+		+below(768px)
+			font-size: 14px
 		font-size: 16px
-		line-height: 1.8
+		line-height: 1.6
 
 .section-call--img
+	+below(640px)
+		display: none
 	flex(mid)
 
 .section--start
+	+below(768px)
+		background-image: none!important
+		.section-call
+			width: 100%
 	bg-full()
 
-.section--why
+/*.section--why
 	padding: 150px 0
 
 .section--start
 	padding: 150px 0
 
 .section--doc
-	padding: 150px 0
+	padding: 150px 0*/
 
 .doc
+	+below(1023px)
+		justify-content: space-around
 	f()
+	fw()
 	justify-content: space-between
 
 .doc__el
+	+below(1024px)
+		width: 45%
+		margin-bottom: 20px
+	+below(640px)
+		width: 100%
 	bsh()
-	flex(mid)
+	f()
+	align-items: center
 	fl()
 	width: 24%
 	padding: 40px 20px
@@ -1144,6 +1169,8 @@ $step = #b3b2b2
 		size 90px
 
 .doc__title
+	+below(1024px)
+		font-size: 12px
 	color black
 	font-weight: bold
 	text-align: center
@@ -1184,3 +1211,109 @@ $step = #b3b2b2
 
 .irs-from, .irs-to, .irs-single
 	background: $green
+
+
+.modal-content--truesend
+	background: white
+	flex(mid)
+	fl()
+	.icon
+		size 100px
+		margin-bottom: 30px
+		fill $green
+.modal-text-truesend
+	text-align: center
+	font-weight: bold
+	font-size: 20px
+	color black
+	text-transform: uppercase
+.attanintion
+	margin: 30px 0
+	padding: 20px
+	background: #fff0b3
+	br(10px)
+
+.top-line-el-info--call
+	box-shadow 0px 3px 0px #305432
+	cp()
+	f()
+	.icon
+		size 15px
+		fill white
+		margin-right: 10px
+
+.cost
+	+below(1024px)
+		justify-content: space-around
+	+below(768px)
+		margin-bottom: 20px
+	f()
+	fw()
+	justify-content: space-between
+	margin-bottom: 80px
+
+.cost__el
+	+below(1024px)
+		width: 45%
+		margin-bottom: 20px
+	+below(640px)
+		width: 100%
+		padding: 20px 10px
+	f()
+	fl()
+	align-items: center
+	padding: 40px 20px
+	border 1px solid $border-color
+	width: 24%
+.cost__el-img
+	+below(1024px)
+		padding: 35%
+	+below(768px)
+		margin-bottom: 0
+	bg-full()
+	background-size contain
+	padding: 45%
+	margin-bottom: 40px
+
+.cost__el-title
+	text-align: center
+	color black
+	font-weight: bold
+	font-size: 16px
+	margin-bottom: 20px
+	span
+		display: block
+		padding: 5px 20px
+		margin-top: 10px
+		font-size 14px
+		background: #f1f1f1
+		br(10px)_
+.cost__el-text
+	+below(1200px)
+		font-size: 12px
+	margin-bottom: 20px
+	color gray
+	text-align: center
+.cost__el-price
+	font-size: 28px
+	color black
+	margin-bottom: 40px
+	font-weight: bold
+
+.cost-inform
+	+below(640px)
+		width: 100%
+		margin-bottom: 40px
+		padding: 10px 20px
+		text-align: left
+	width: 70%
+	margin: 0 auto
+	padding: 20px 40px
+	line-height: 1.8
+	br(10px)
+	background: #f1f1f1
+	text-align: center
+
+.section--price
+	padding-top: 100px
+	padding-bottom: 0
