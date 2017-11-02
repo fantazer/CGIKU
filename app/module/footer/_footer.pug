@@ -1,6 +1,6 @@
 mixin footer()
 	//block footer
-	.section.section--footer
+	//.section.section--footer
 		.main-cont
 			.section-title Оформите заказ
 			.section-title-sub Прием в офисе с понедельника по пятницу с 9:00 до 20:00, суббота: по предварительной записи, выходной: воскресенье.
@@ -24,10 +24,57 @@ mixin footer()
 			.footer-get
 				.footer-get__el.modal-get(data-modal="order") Оставить заявку
 
-	.footer-map
+	//.footer-map
 		h1 Карта
-	.scroll-up
-		+icon("arrow-up","icon")
+
+
+	//section-contact
+	#contact.section.section-contact
+		.main-cont
+			.section-title Наши контакты
+			.contact
+				.contact-form.contact-form--footer
+					.main-form
+						.form-title Оставьте вашу заявку
+						.form-title-sub Мы свяжемся с вам в кратчайшее время
+						form.validate-form.form--footer( action="javascript:void(null);")
+							.input-row
+								input(type="text" name="name" placeholder="Ваше имя").input
+							.input-row
+								input(type="text" name="phone" placeholder="Ваш телефон").input
+							.input-row
+								textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+							.agree-row
+								.check-el
+									label.style-label.style-label--checkbox
+										input(type="checkbox" name="agree").sytle-input
+										.sytle-input-element
+											+icon("checked","icon-check")
+										.sytle-input-text=text
+								.agree-row__text Согласен с
+									a(href="#") условиями обработки персональных данных
+							input(type="submit" value="Отправить заявку").form-footer-send
+					.contact-info
+						.map
+							script("text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false")
+
+						.contact-row-wrap
+							.contact-row
+								.contact-icon
+									+icon("placeholder","icon")
+								.contact-text Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
+							.contact-row
+								.contact-icon
+									+icon("phone-call","icon")
+								.contact-text +7 (495) 514-84-13
+							.contact-row
+								.contact-icon
+									+icon("mail","icon")
+								.contact-text info@cgiku.ru
+	//section-contact-end
+
+.scroll-up
+	+icon("arrow-up","icon")
 
 .modal-layer
 	.modal-cont

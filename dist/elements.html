@@ -24,6 +24,11 @@
 	<!-- - for item in args-->
 
 	<body>
+		<div class="scroll-up">
+			<svg class="icon">
+				<use xlink:href="#arrow-up"></use>
+			</svg>
+		</div>
 		<div class="modal-layer">
 			<div class="modal-cont">
 				<div class="modal-filter"></div>
@@ -66,6 +71,22 @@
 								</div>
 								<input class="modal-send" type="submit" value="Отправить заявку" />
 							</form>
+						</div>
+					</div>
+					<div class="modal" data-modal="true">
+						<div class="modal-content modal-content--true">
+							<svg class="icon">
+								<use xlink:href="#interface"></use>
+							</svg>
+							<div class="modal-text-true">Ваша заявка принята</div>
+						</div>
+					</div>
+					<div class="modal" data-modal="next">
+						<div class="modal-content modal-content--truesend">
+							<svg class="icon">
+								<use xlink:href="#interface"></use>
+							</svg>
+							<div class="modal-text-truesend">Ваша заявка принята!</div>
 						</div>
 					</div>
 				</div>
@@ -393,6 +414,12 @@
 						<use xlink:href="#phone-call"></use>
 					</svg>
 					<div class="element-list-svg__name">phone-call</div>
+				</div>
+				<div class="element-list-svg__icon">
+					<svg class="icon-el">
+						<use xlink:href="#phone"></use>
+					</svg>
+					<div class="element-list-svg__name">phone</div>
 				</div>
 				<div class="element-list-svg__icon">
 					<svg class="icon-el">

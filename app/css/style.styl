@@ -105,6 +105,8 @@ body
 	margin-bottom: 10px
 
 .news__el-title
+	+below(768px)
+		font-size: 16px
 	font-family: 'Gotham'
 	margin-bottom: 20px
 	color black
@@ -706,19 +708,20 @@ body
 .agree-row__text
 	width: 100%
 	color black
+	font-size: 12px
 	a
 		color #9c9a9a
 		text-decoration: none
-.modal
-	.field-error
-		.error
-			color black
-			margin-bottom: 20px
-			display: inline-block
+.field-error
+	.error
+		display: none!important
 
+.field-error
+	input
+		border 1px solid #dc3d3d
 .style-label--checkbox.field-error
 	.sytle-input-element
-		border 2px solid red
+		border 1px solid #dc3d3d
 
 
 .menu-el--mark
@@ -856,6 +859,8 @@ $step = #b3b2b2
 	left -20px
 
 .step-text__title
+	+below(768px)
+		font-size: 14px
 	color black
 	font-weight:bold
 	font-size: 16px
@@ -864,6 +869,8 @@ $step = #b3b2b2
 	line-height: 1.6
 
 .step-text__descr
+	+below(768px)
+		font-size: 12px
 	line-height: 1.6
 //step
 
@@ -1317,3 +1324,106 @@ $step = #b3b2b2
 .section--price
 	padding-top: 100px
 	padding-bottom: 0
+
+
+.section-contact
+	background #efefef
+.contact
+	form
+		width 100%
+	textarea
+		width 100%
+	.main-form
+		padding 40px
+		border 1px solid #e3e3e3
+.contact-form--footer
+	+below(768px)
+		fw()
+		margin-top 30px
+	flex(between)
+	align-items flex-start
+	margin-top 80px
+	.main-form
+		+below(768px)
+			width 100%
+			margin-bottom 20px
+			padding 30px 20px
+		width 40%
+.main-form
+	background: white
+.contact-info
+	+below(768px)
+		width 100%
+	width 55%
+	background: white
+.map
+	+below(768px)
+		margin-bottom: 10px
+	margin-bottom 40px
+.contact-row
+	flex(mid)
+	margin-bottom 20px
+	.icon
+		margin-right 20px
+		+below(768px)
+			size 20px
+		size 30px
+		fill $green
+.contact-text
+	+below(768px)
+		font-size 12px
+		width 100%
+	font-size 16px
+	line-height:1.6
+	width 60%
+
+.form-title
+	+below(1200px)
+		font-size 16px
+	up()
+	text-align center
+	font-size 24px
+	font-weight bold
+	color black
+	margin-bottom: 20px
+.form-title-sub
+	+below(768px)
+		font-size: 10px
+		margin-bottom: 20px
+	font-size 16px
+	margin-bottom: 40px
+	text-align: center
+.form-month
+	up()
+	font-weight bold
+	font-size 32px
+	margin-bottom 30px
+.form-foter-text
+	+below(1200px)
+		font-size 12px
+	text-align center
+	color grey
+
+.contact-form--footer
+	form
+		fl()
+	align-items: stretch
+	margin-top: 0
+	padding-top: 0
+
+.form--footer
+	.input-row
+		+below(768px)
+			margin-bottom: 0px
+		width: 100%
+		margin-bottom: 30px
+		input
+			width: 100%
+
+.form-footer-send
+	@extend .modal-send
+
+.contact-row-wrap
+	+below(768px)
+		padding: 20px
+	padding: 20px 40px
