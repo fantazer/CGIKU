@@ -226,17 +226,14 @@ body
 
 
 .service__el
-	+below(1200px)
-		padding: 80px 30px
 	+below(1024px)
-		item-clear(3,auto!important)
 		item(2,40px)
 	+below(640px)
 		item(1,40px)
 		padding: 30px 20px
-	item(3,40px)
+	item(2,40px)
 	margin-bottom: 40px
-	padding: 80px 40px
+	padding:  40px
 	border 1px solid #efeded
 
 .service__el-date
@@ -355,7 +352,7 @@ body
 	tr(all)
 	position: fixed
 	z-index 15
-	bottom 5%
+	bottom 20%
 	right 5%
 	border 1px solid $border-color
 	size 64px
@@ -1427,3 +1424,95 @@ $step = #b3b2b2
 	+below(768px)
 		padding: 20px
 	padding: 20px 40px
+
+
+.city-wrap
+	f()
+	fw()
+	br(10px)
+	padding: 10px
+	margin-bottom: 40px
+
+.city-el
+	+below(768px)
+		width: 30%
+	+below(640px)
+		width: 45%
+	width: 20%
+	font-size: 10px
+	margin: 5px 0
+
+.city-title
+	+below(768px)
+		font-size: 18px
+	margin-top: 20px
+	@extend .title
+	@extend .type--md
+
+.city-wrap
+	+below(768px)
+		flex(between)
+	f()
+	fw()
+	br(10px)
+	padding: 10px
+	margin-bottom: 40px
+	background: #f5f4f4
+	border 1px solid #f5f4f4
+
+
+#menu-kadastrovy-e-raboty
+	display: block
+
+.footer
+	.menu-el
+		+below(768px)
+			width: 100%
+			text-align: center!important
+			flex-grow 1
+			flex-shrink 1
+			flex-basis 100px
+			a
+				font-size: 10px
+		width: auto
+		&:first-child
+			text-align: left
+		&:last-child
+			text-align: right
+	.menu-el--mark
+		background: none
+		font-weight: normal
+
+.footer-menu
+	border-bottom:1px solid #fdf5f5
+	border-top:1px solid #fdf5f5
+	.menu-wrap
+		+below(768px)
+			display: block
+			position: static
+			top initial
+			left initial
+.footer-info
+	padding: 20px 0
+
+.footer-info-wrap
+	+below(768px)
+		fw()
+	flex(between)
+
+.footer-info__phone
+	@extend .nav-phone-el
+	+below(768px)
+		margin-left: 0
+		width: 100%
+
+.footer-info__logo
+	+below(768px)
+		width: 100%
+		flex(mid)
+		margin-bottom: 20px
+	.logo--full
+		+below(768px)
+			flex(mid)
+			display: block
+			width: 150px

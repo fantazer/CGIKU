@@ -436,7 +436,7 @@ gulp.task('build',function(){
 				'copy:css',
 				'min:css',
 				'min:js',
-				'img',
+				//'img',
 				'svg',
 				'make'
 				//'zip'

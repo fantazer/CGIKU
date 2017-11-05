@@ -91,7 +91,9 @@
 	+below(768px)
 		fw()
 	flex(between)
-	
+	list-style: none
+	padding: 0
+	margin: 0
 .menu-el
 	+below(768px)
 		width 100%
@@ -136,12 +138,11 @@
 		background: whitesmoke
 	background: white
 	display: inline-block
-	padding: 20px 10px
 	width: 200px
 	border-top 1px solid $gray
 .menu-el-service
 	&:hover
-		.menu-el__sub
+		.sub-menu
 			display: block!important
 	a
 		f()
@@ -269,3 +270,27 @@
 .header-baner__price--false
 	text-decoration: line-through
 	color #cac5c5
+
+.sub-menu
+	+below(768px)
+		display: block
+		position: static
+		width: 100%
+	list-style: none
+	position: absolute
+	padding: 0
+	width: 200px
+	.menu-item
+		@extend .menu-el__sub-el
+		display: block
+		width: 100%
+		a
+			display: block
+			width: 100%
+
+.menu-item
+	@extend .menu-el
+	display: block
+
+.sub-menu
+	@extend .menu-el__sub

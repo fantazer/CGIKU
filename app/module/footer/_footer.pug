@@ -73,45 +73,79 @@ mixin footer()
 								.contact-text info@cgiku.ru
 	//section-contact-end
 
-.scroll-up
-	+icon("arrow-up","icon")
+	.footer
+		.footer-menu
+			.main-cont
+				.menu
+					.menu-el
+						a(href="#")
+							span Главная
+					.menu-el.menu-el-service
+						a(href="#")
+							span Услуги
+					.menu-el
+						a(href="#")
+							span О компании
+					.menu-el
+						a(href="#")
+							span Прайс-лист
+					.menu-el
+						a(href="#")
+							span Наши лицензии
+					.menu-el
+						a(href="#")
+							span Контакты
+					.menu-el.menu-el--mark
+						a(href="#")
+							span Акции
+		.footer-info
+			.main-cont
+				.footer-info-wrap
+					a(href="/").footer-info__logo
+						img(src="img/logo-dark.png", alt="").logo--full
+					.footer-info__phone
+							a(href="tel:+7 (495) 514-84-13").footer-info__phone +7 (495) 514-84-13
+							a(href="tel:+7 (495) 514-84-13").footer-info__phone +7 (495) 283-96-83
 
-.modal-layer
-	.modal-cont
-		.modal-filter
-		.modal-wrap
-			.modal(data-modal="order")
-				.modal-content.modal-content--fogot
-					.modal-close
-						+icon("close","icon")
-					.modal-title Бесплатная консультация
-					.modal-text Обращаетесь к нам впервые? <br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
-					form.validate-form( action="javascript:void(null);")
-						.input-row
-							input(type="text" name="name" placeholder="Ваше имя").input
-						.input-row
-							input(type="text" name="phone" placeholder="Ваш телефон").input
-						.input-row
-							textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
-						.agree-row
-							.check-el
-								label.style-label.style-label--checkbox
-									input(type="checkbox" name="agree").sytle-input
-									.sytle-input-element
-										+icon("checked","icon-check")
-									.sytle-input-text=text
-							.agree-row__text Согласен с
-								a(href="#") условиями обработки персональных данных
-						input(type="submit" value="Отправить заявку").modal-send
+	.scroll-up
+		+icon("arrow-up","icon")
 
-			.modal(data-modal="true")
-				.modal-content.modal-content--true
-					+icon("interface","icon")
-					.modal-text-true Ваша заявка принята
+	.modal-layer
+		.modal-cont
+			.modal-filter
+			.modal-wrap
+				.modal(data-modal="order")
+					.modal-content.modal-content--fogot
+						.modal-close
+							+icon("close","icon")
+						.modal-title Бесплатная консультация
+						.modal-text Обращаетесь к нам впервые? <br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
+						form.validate-form( action="javascript:void(null);")
+							.input-row
+								input(type="text" name="name" placeholder="Ваше имя").input
+							.input-row
+								input(type="text" name="phone" placeholder="Ваш телефон").input
+							.input-row
+								textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+							.agree-row
+								.check-el
+									label.style-label.style-label--checkbox
+										input(type="checkbox" name="agree").sytle-input
+										.sytle-input-element
+											+icon("checked","icon-check")
+										.sytle-input-text=text
+								.agree-row__text Согласен с
+									a(href="#") условиями обработки персональных данных
+							input(type="submit" value="Отправить заявку").modal-send
 
-			.modal(data-modal="next")
-				.modal-content.modal-content--truesend
-					+icon("interface","icon")
-					.modal-text-truesend Ваша заявка принята!
+				.modal(data-modal="true")
+					.modal-content.modal-content--true
+						+icon("interface","icon")
+						.modal-text-true Ваша заявка принята
+
+				.modal(data-modal="next")
+					.modal-content.modal-content--truesend
+						+icon("interface","icon")
+						.modal-text-truesend Ваша заявка принята!
 
 	//block footer end
