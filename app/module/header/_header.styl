@@ -220,7 +220,7 @@
 		font-size: 20px
 	width: 100%
 	font-size: 40px
-	margin-bottom: 20px
+	margin-bottom: 40px
 	color black
 	up()
 
@@ -244,6 +244,10 @@
 	width: 50%
 
 .header-baner__price
+	+below(1024px)
+		width: 400px
+		justify-content: center
+		margin: 0 auto
 	+below(640px)
 		width: 100%
 	flex(between)
@@ -251,13 +255,15 @@
 	align-self: flex-start
 
 .header-baner__price-el
+	+below(1024px)
+		font-size: 38px
 	+below(768px)
 		font-size: 28px
 	width: 100%
 	font-size: 48px
 	color black
 	font-weight: bold
-	margin-bottom: 40px
+	margin-bottom: 20px
 	
 .logo--short
 	+above(767px)
@@ -294,3 +300,12 @@
 
 .sub-menu
 	@extend .menu-el__sub
+
+.header-baner__price-info
+	width: 100%
+	margin-bottom: 20px
+	span
+		display: inline-block
+		//padding: 5px 20px
+		br(10px)
+		//background: white

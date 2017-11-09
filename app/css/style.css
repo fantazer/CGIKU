@@ -1450,7 +1450,7 @@ button {
 .header-baner__text {
   width: 100%;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #111;
   text-transform: uppercase;
 }
@@ -1529,6 +1529,16 @@ button {
       -ms-flex-item-align: start;
           align-self: flex-start;
 }
+@media only screen and (max-width: 1024px) {
+  .header-baner__price {
+    width: 400px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+}
 @media only screen and (max-width: 640px) {
   .header-baner__price {
     width: 100%;
@@ -1539,7 +1549,12 @@ button {
   font-size: 48px;
   color: #111;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .header-baner__price-el {
+    font-size: 38px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .header-baner__price-el {
@@ -1583,6 +1598,15 @@ button {
 }
 .menu-item {
   display: block;
+}
+.header-baner__price-info {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.header-baner__price-info span {
+  display: inline-block;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -1998,7 +2022,7 @@ body {
 }
 .header-check {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 768px) {
   .header-check {
@@ -3267,11 +3291,6 @@ body {
   width: 100%;
   height: 100%;
 }
-@media only screen and (max-width: 768px) {
-  .lp-baner__img {
-    background: none;
-  }
-}
 .lp-baner__content {
   margin-top: -30px;
   z-index: 5;
@@ -3992,6 +4011,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .footer-menu .menu-wrap {
+    width: 100% !important;
     display: block;
     position: static;
     top: initial;
