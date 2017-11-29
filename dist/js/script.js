@@ -321,7 +321,6 @@ $(window).load(function () {
 	 dots: false,
 	 autoplay : false,
 	 singleItem:true,
-	 loop:true,
 	 nav:true,
 	 navText:[
 			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',

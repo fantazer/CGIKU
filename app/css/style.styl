@@ -1520,3 +1520,153 @@ $step = #b3b2b2
 			flex(mid)
 			display: block
 			width: 150px
+
+.advance
+	+below(768px)
+		fw()
+	flex(between)
+	fw()
+	margin-top 80px
+.advance-el
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+		flex(mid)
+	width 45%
+	flex(between)
+	margin-bottom 40px
+.advance-icon
+	+below(968px)
+		padding 20px
+	+below(768px)
+		margin-right 20px
+	round()
+	flex(mid)
+	border 1px solid $green
+	padding 40px
+	.icon
+		+below(968px)
+			size 40px
+		size 70px
+		fill $green
+.advance-text
+	+below(968px)
+		font-size 14px
+	width 60%
+	font-size 18px
+	line-height: 1.6
+
+.section--main-service
+	.section-title
+		font-size: 30px
+	.section-title-sub
+		font-size: 24px
+
+
+.main-service__title
+	@extend .type--xl
+	text-align: center
+	color black
+	margin-bottom: 60px
+
+.main-service
+	f()
+	fw()
+	justify-content: space-between
+
+.main-service__col
+	width: 48%
+	f()
+	fl()
+	justify-content: centers
+
+.main-service__el-title
+	margin-bottom: 10px
+	@extend .type--lg
+	color black
+	font-size: 19px
+.main-service__title-sub
+	@extend .type--md
+	color black
+	margin-bottom: 20px
+
+.main-service__el
+	f()
+	padding: 30px
+	justify-content: space-between
+	margin-bottom: 20px
+	border 1px solid #ededed
+	border-radius 10px
+	min-height:250px
+
+.main-service__cont
+	width: 65%
+	f()
+	justify-content: center
+	fl()
+.main-service__price-row
+	+below(1024px)
+		width: 400px
+		justify-content: center
+		margin: 0 auto
+	+below(640px)
+		width: 100%
+	flex(between)
+	width: 85%
+	align-self: flex-start
+.main-service__price
+	+below(1024px)
+		font-size: 38px
+	+below(768px)
+		font-size: 28px
+	width: 100%
+	font-size: 22px
+	color black
+	font-weight: bold
+	margin-bottom: 20px
+//.main-service__price--true
+.main-service__price--false
+	text-decoration: line-through
+	color #cac5c5
+.main-service__get
+	+below(768px)
+		flex(mid)
+	+below(640px)
+		fw()
+	f()
+	width: 100%
+.main-service__btn
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+	@extend .btn--md
+	padding: 10px 30px
+	font-weight bold
+
+.main-service__btn-more
+	+below(640px)
+		margin-right: 0
+	@extend .btn--light
+	margin-right: 20px
+
+.main-service__btn-get
+	@extend .btn--mark
+	background-color $red
+	color white
+	//box-shadow 0 9px 18px rgba(242, 0, 34, 0.6)
+//.modal-get
+.main-service__img
+	width: 35%
+.main-service__img-el
+	bg-full()
+	width: 100%
+	height: 100%
+	background-size: contain
+
+
+.main-service__el-get
+	@extend .btn--lg
+	@extend .btn--mark
+	padding: 15px 60px
+	font-size: 14px
+	margin: 40px auto 0 auto

@@ -249,22 +249,106 @@
 				</div>
 			</div>
 		</div>
-		<!--contact-form-->
-		<div class="contact-form">
-			<div class="section-title">Оставьте свою заявку</div>
-			<div class="section-title-sub">Оформите обращение с помощью этой формы, мы перезвоним
-				<br>Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+		<!--step work-->
+		<div class="section section-step" id="step">
+			<div class="section-filter"></div>
 			<div class="main-cont">
-				<form class="validate-form" action="javascript:void(null);">
-					<div class="input-row">
-						<input class="input" type="text" name="name" placeholder="Ваше имя" />
+				<div class="section-title">как мы работаем</div>
+				<div class="step">
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">01</div>
+								<div class="step-text">
+									<div class="step-text__descr">Отправляете нам заявку или звоните.Получаете бесплатную консультацию от кадастрового инженера.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
 					</div>
-					<div class="input-row">
-						<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">02</div>
+								<div class="step-text">
+									<div class="step-text__descr">Направляете нам электронные копии Ваших документов или приезжаете с ними к нам в офис.</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<!--.input-rowtextarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
-			-->
-					<!--.agree-row
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">03</div>
+								<div class="step-text">
+									<div class="step-text__descr">Анализируем документы, готовим проект Договора, согласовываем с Вами дату и время приезда геодезистов для проведения измерений.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">04</div>
+								<div class="step-text">
+									<div class="step-text__descr">В назначенное время геодезисты приезжают к Вам, передают Договор и производят измерения.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">05</div>
+								<div class="step-text">
+									<div class="step-text__descr">Формируем технический план и согласовываем его с Вами.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">06</div>
+								<div class="step-text">
+									<div class="step-text__descr">Передаем Вам готовый технический план.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--contact-form-->
+		<!--.contact-form
+.section-title Оставьте свою заявку
+.section-title-sub Оформите обращение с помощью этой формы, мы перезвоним <br>Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
+.main-cont
+	form.validate-form( action="javascript:void(null);")
+		.input-row
+			input(type="text" name="name" placeholder="Ваше имя").input
+		.input-row
+			input(type="text" name="phone" placeholder="Ваш телефон").input
+		//.input-row
+			textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+		//.agree-row
 			.check-el
 				label.style-label.style-label--checkbox
 					input(type="checkbox" name="agree").sytle-input
@@ -273,11 +357,9 @@
 					.sytle-input-text=text
 			.agree-row__text Согласен с
 				a(href="#") условиями обработки персональных данных
-			-->
-					<input class="modal-send" type="submit" value="Отправить заявку" />
-				</form>
-			</div>
-		</div>
+		input(type="submit" value="Отправить заявку").modal-send
+
+-->
 		<!--price-->
 		<div class="section section--price wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
 			<div class="main-cont">
@@ -371,85 +453,35 @@
 			</div>
 		</div>
 		<!--service-->
-		<div class="section section--calc">
-			<div class="main-cont">
-				<div class="section-title">Выберите площадь дома</div>
-				<div class="section-title-sub">Подача в Росреестр – плюс 3 000 руб. к стоимости работ.</div>
-				<div class="calc">
-					<input class="calc-range" type="range" placeholder="" />
-					<div class="calc-range__wrap">
-						<div class="calc-range-val">
-							<div class="calc-range-numb">10 000</div>
-							<div class="calc-range-pay">руб</div>
-						</div>
-					</div>
-					<div class="calc-text">Цена услуги</div>
-				</div>
-			</div>
-		</div>
+		<!--.section.section--calc
+.main-cont
+	.section-title Выберите площадь дома
+	.section-title-sub Подача в Росреестр – плюс 3 000 руб. к стоимости работ.
+	.calc
+		input(type="range" placeholder=""  class="calc-range")
+		.calc-range__wrap
+			.calc-range-val
+				.calc-range-numb 10 000
+				.calc-range-pay руб
+		.calc-text Цена услуги
+
+-->
 		<!--service-->
-		<div class="section section--service wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="main-cont">
-				<div class="section-title">Популярные услуги</div>
-				<div class="section-title-sub">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
-				<div class="service">
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get modal-get" data-modal="order">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get modal-get" data-modal="order">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get modal-get" data-modal="order">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get modal-get" data-modal="order">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get modal-get" data-modal="order">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get modal-get" data-modal="order">Заказать</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!--.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+.main-cont
+	.section-title Популярные услуги
+	.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+	.service
+		- for (var i=0;i<6;i++)
+			.service__el
+				.service__title Уточнение границ земельного участка
+				.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
+				.service__price 18 000 руб.
+				.service__get
+					.service__btn.service__btn-more Подробнее
+					.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+
+-->
 		<!--slider certificate-->
 		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
 			<div class="filter"></div>
@@ -606,6 +638,14 @@ h1 Карта
 										</svg>
 									</div>
 									<div class="contact-text">info@cgiku.ru</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#metro"></use>
+										</svg>
+									</div>
+									<a class="contact-text" href="#">Как к нам проехать подробнее</a>
 								</div>
 							</div>
 						</div>

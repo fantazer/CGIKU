@@ -161,168 +161,333 @@
 			<!--img(src="img/house-1.png", alt="")-->
 		</div>
 		<!--.baner(style="background-image:url('img/img-2.jpg')")-->
-		<div class="baner">
+		<!--.baner
+.main-cont
+	.slider-header-baner.owl-carousel
+		.header-baner
+			.header-baner__slogan
+				.header-baner__text Технический план дома
+				//.header-baner__text--sub Площадь до 100 кв.м
+				.header-check
+					.header-check-el
+						.header-check-ico
+							+icon("checked","icon")
+						.header-check-text Выполнение поставленных сроков
+					.header-check-el
+						.header-check-ico
+							+icon("checked","icon")
+						.header-check-text Низкая цена услуг
+					.header-check-el
+						.header-check-ico
+							+icon("checked","icon")
+						.header-check-text Лучшие специалисты
+					.header-check-el
+						.header-check-ico
+							+icon("checked","icon")
+						.header-check-text Оперативный выезд на место
+				.header-baner__price
+					.header-baner__price-el.header-baner__price--true 14 000 р.
+					.header-baner__price-el.header-baner__price--false 15 000 р.
+				.header-baner__price-info
+					span Подача в Росреестр – плюс 3 000 руб. к стоимости работ.
+				.header__get
+					.header__btn.header__btn-more Подробнее
+					.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
+
+			.header-baner__img
+				img(src="img/baner-2.png", alt="")
+
+		.header-baner
+			.header-baner__slogan
+				.header-baner__text Межевание участка
+				.header-check
+					.header-check-el
+						.header-check-ico
+							+icon("checked","icon")
+						.header-check-text Подготовка необходимой документации
+					.header-check-el
+						.header-check-ico
+							+icon("checked","icon")
+						.header-check-text Соблюдение нормативов
+					.header-check-el
+						.header-check-ico
+							+icon("checked","icon")
+						.header-check-text Гарантия выполненных работ
+					.header-check-el
+						.header-check-ico
+							+icon("checked","icon")
+						.header-check-text Соблюдение сроков
+				.header-baner__price
+					.header-baner__price-el.header-baner__price--true 14 000 р.
+					.header-baner__price-el.header-baner__price--false 15 000 р.
+				.header-baner__price-info
+					span Подача в Росреестр – плюс 3 000 руб. к стоимости работ.
+				.header__get
+					.header__btn.header__btn-more Подробнее
+					.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
+
+			.header-baner__img
+				img(src="img/baner-1.png", alt="")
+
+-->
+		<!--service two column-->
+		<!--.section.section--list
+.main-cont
+	.section-title Направления нашей деятельности
+	.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+	.category
+		.category__el
+			.category__el--img
+				img(src="img/category-kadastr.png", alt="")
+			.category__el--title Кадастровые работы
+			.category__el-info
+				-
+					var items = [
+						'Межевой план',
+						'Технический план',
+						'Уточнение границ участка '
+						];
+				each item in items
+					a(href="#").category__el--item 
+			a(href="#").category__el-get Eще услуги
+
+		.category__el
+			.category__el--img
+				img(src="img/category-land.png", alt="")
+			.category__el--title Геодезические работы
+			.category__el-info
+				-
+					var items = [
+					'Вынос границ земельного участка',
+					'Топографическая съемка',
+					'Кадастровая съемка '
+					];
+				each item in items
+					a(href="#").category__el--item 
+			a(href="#").category__el-get Eще услуги
+
+-->
+		<!--main-service-->
+		<div class="section section--main-service">
 			<div class="main-cont">
-				<div class="slider-header-baner owl-carousel">
-					<div class="header-baner">
-						<div class="header-baner__slogan">
-							<div class="header-baner__text">Технический план дома</div>
-							<!--.header-baner__text--sub Площадь до 100 кв.м-->
-							<div class="header-check">
-								<div class="header-check-el">
-									<div class="header-check-ico">
-										<svg class="icon">
-											<use xlink:href="#checked"></use>
-										</svg>
-									</div>
-									<div class="header-check-text">Выполнение поставленных сроков</div>
+				<div class="section-title">Компания «Центр геодезических и кадастровых услуг» (ЦГиКУ)</div>
+				<div class="section-title-sub">оказывает услуги по направлениям:</div>
+				<div class="main-service">
+					<div class="main-service__col">
+						<div class="main-service__title">Кадастровые работы</div>
+						<div class="main-service__el">
+							<div class="main-service__cont">
+								<div class="main-service__el-title">Технический план дома</div>
+								<div class="main-service__title-sub">площадь дома до 100 кв. м</div>
+								<div class="main-service__price-row">
+									<div class="main-service__price main-service__price--true">14 000 руб.</div>
+									<div class="main-service__price main-service__price--false">15 000 руб.</div>
 								</div>
-								<div class="header-check-el">
-									<div class="header-check-ico">
-										<svg class="icon">
-											<use xlink:href="#checked"></use>
-										</svg>
-									</div>
-									<div class="header-check-text">Низкая цена услуг</div>
-								</div>
-								<div class="header-check-el">
-									<div class="header-check-ico">
-										<svg class="icon">
-											<use xlink:href="#checked"></use>
-										</svg>
-									</div>
-									<div class="header-check-text">Лучшие специалисты</div>
-								</div>
-								<div class="header-check-el">
-									<div class="header-check-ico">
-										<svg class="icon">
-											<use xlink:href="#checked"></use>
-										</svg>
-									</div>
-									<div class="header-check-text">Оперативный выезд на место</div>
+								<div class="main-service__get">
+									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
+									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
 								</div>
 							</div>
-							<div class="header-baner__price">
-								<div class="header-baner__price-el header-baner__price--true">14 000 р.</div>
-								<div class="header-baner__price-el header-baner__price--false">15 000 р.</div>
-							</div>
-							<div class="header-baner__price-info">
-								<span>Подача в Росреестр – плюс 3 000 руб. к стоимости работ.</span>
-							</div>
-							<div class="header__get">
-								<div class="header__btn header__btn-more">Подробнее</div>
-								<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
+							<div class="main-service__img">
+								<div class="main-service__img-el" style="background-image:url('img/baner-6.png');"></div>
 							</div>
 						</div>
-						<div class="header-baner__img">
-							<img src="img/baner-2.png" alt="" />
+						<div class="main-service__el">
+							<div class="main-service__cont">
+								<div class="main-service__el-title">Межевание (уточнение границ) земельного участка</div>
+								<div class="main-service__title-sub">размер участка до 8 соток</div>
+								<div class="main-service__price-row">
+									<div class="main-service__price main-service__price--true">14 000 руб.</div>
+									<div class="main-service__price main-service__price--false">15 000 руб.</div>
+								</div>
+								<div class="main-service__get">
+									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
+									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+							<div class="main-service__img">
+								<div class="main-service__img-el" style="background-image:url('img/baner-4.png');"></div>
+							</div>
 						</div>
+						<div class="main-service__el">
+							<div class="main-service__cont">
+								<div class="main-service__el-title">Исправление кадастровой (реестровой) ошибки</div>
+								<div class="main-service__title-sub">размер участка до 8 соток</div>
+								<div class="main-service__price-row">
+									<div class="main-service__price main-service__price--true">14 000 руб.</div>
+									<div class="main-service__price main-service__price--false">15 000 руб.</div>
+								</div>
+								<div class="main-service__get">
+									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
+									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+							<div class="main-service__img">
+								<div class="main-service__img-el" style="background-image:url('img/baner-6.png');"></div>
+							</div>
+						</div>
+						<div class="main-service__el">
+							<div class="main-service__cont">
+								<div class="main-service__el-title">Межевой план</div>
+								<div class="main-service__title-sub">на раздел, объединение и т.п.</div>
+								<div class="main-service__price-row">
+									<div class="main-service__price main-service__price--true">14 000 руб.</div>
+									<div class="main-service__price main-service__price--false">15 000 руб.</div>
+								</div>
+								<div class="main-service__get">
+									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
+									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+							<div class="main-service__img">
+								<div class="main-service__img-el" style="background-image:url('img/baner-6.png');"></div>
+							</div>
+						</div>
+						<a class="main-service__el-get" href="#">Eще услуги</a>
 					</div>
-					<div class="header-baner">
-						<div class="header-baner__slogan">
-							<div class="header-baner__text">Межевание участка</div>
-							<div class="header-check">
-								<div class="header-check-el">
-									<div class="header-check-ico">
-										<svg class="icon">
-											<use xlink:href="#checked"></use>
-										</svg>
-									</div>
-									<div class="header-check-text">Подготовка необходимой документации</div>
+					<div class="main-service__col">
+						<div class="main-service__title">Геодезические работы</div>
+						<div class="main-service__el">
+							<div class="main-service__cont">
+								<div class="main-service__el-title">Топографическая съемка</div>
+								<div class="main-service__title-sub"></div>
+								<div class="main-service__price-row">
+									<div class="main-service__price main-service__price--true">14 000 руб.</div>
+									<div class="main-service__price main-service__price--false">15 000 руб.</div>
 								</div>
-								<div class="header-check-el">
-									<div class="header-check-ico">
-										<svg class="icon">
-											<use xlink:href="#checked"></use>
-										</svg>
-									</div>
-									<div class="header-check-text">Соблюдение нормативов</div>
-								</div>
-								<div class="header-check-el">
-									<div class="header-check-ico">
-										<svg class="icon">
-											<use xlink:href="#checked"></use>
-										</svg>
-									</div>
-									<div class="header-check-text">Гарантия выполненных работ</div>
-								</div>
-								<div class="header-check-el">
-									<div class="header-check-ico">
-										<svg class="icon">
-											<use xlink:href="#checked"></use>
-										</svg>
-									</div>
-									<div class="header-check-text">Соблюдение сроков</div>
+								<div class="main-service__get">
+									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
+									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
 								</div>
 							</div>
-							<div class="header-baner__price">
-								<div class="header-baner__price-el header-baner__price--true">14 000 р.</div>
-								<div class="header-baner__price-el header-baner__price--false">15 000 р.</div>
-							</div>
-							<div class="header-baner__price-info">
-								<span>Подача в Росреестр – плюс 3 000 руб. к стоимости работ.</span>
-							</div>
-							<div class="header__get">
-								<div class="header__btn header__btn-more">Подробнее</div>
-								<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
+							<div class="main-service__img">
+								<div class="main-service__img-el" style="background-image:url('img/baner-6.png');"></div>
 							</div>
 						</div>
-						<div class="header-baner__img">
-							<img src="img/baner-1.png" alt="" />
+						<div class="main-service__el">
+							<div class="main-service__cont">
+								<div class="main-service__el-title">Кадастровая съемка</div>
+								<div class="main-service__title-sub"></div>
+								<div class="main-service__price-row">
+									<div class="main-service__price main-service__price--true">14 000 руб.</div>
+									<div class="main-service__price main-service__price--false">15 000 руб.</div>
+								</div>
+								<div class="main-service__get">
+									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
+									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+							<div class="main-service__img">
+								<div class="main-service__img-el" style="background-image:url('img/baner-4.png');"></div>
+							</div>
 						</div>
+						<div class="main-service__el">
+							<div class="main-service__cont">
+								<div class="main-service__el-title">Вынос границ в натуру</div>
+								<div class="main-service__title-sub"></div>
+								<div class="main-service__price-row">
+									<div class="main-service__price main-service__price--true">14 000 руб.</div>
+									<div class="main-service__price main-service__price--false">15 000 руб.</div>
+								</div>
+								<div class="main-service__get">
+									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
+									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+							<div class="main-service__img">
+								<div class="main-service__img-el" style="background-image:url('img/baner-6.png');"></div>
+							</div>
+						</div>
+						<div class="main-service__el">
+							<div class="main-service__cont">
+								<div class="main-service__el-title">Геодезическое сопровождение строительства</div>
+								<div class="main-service__title-sub"></div>
+								<div class="main-service__price-row">
+									<div class="main-service__price main-service__price--true">14 000 руб.</div>
+									<div class="main-service__price main-service__price--false">15 000 руб.</div>
+								</div>
+								<div class="main-service__get">
+									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
+									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+							<div class="main-service__img">
+								<div class="main-service__img-el" style="background-image:url('img/baner-6.png');"></div>
+							</div>
+						</div>
+						<a class="main-service__el-get" href="#">Eще услуги</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--service two column-->
-		<div class="section section--list">
+		<!--section-advance-->
+		<div class="section section-advance" id="advance">
 			<div class="main-cont">
-				<div class="section-title">Направления нашей деятельности</div>
-				<div class="section-title-sub">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
-				<div class="category">
-					<div class="category__el">
-						<div class="category__el--img">
-							<img src="img/category-kadastr.png" alt="" />
+				<div class="section-title">Почему выбирают нас</div>
+				<div class="advance">
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#attest"></use>
+							</svg>
 						</div>
-						<div class="category__el--title">Кадастровые работы</div>
-						<div class="category__el-info">
-							<a class="category__el--item" href="#">Межевой план</a>
-							<a class="category__el--item" href="#">Технический план</a>
-							<a class="category__el--item" href="#">Уточнение границ участка </a>
-						</div>
-						<a class="category__el-get" href="#">Eще услуги</a>
+						<div class="advance-text">Штат аттестованных кадастровых инженеров. Лицензии СРО.</div>
 					</div>
-					<div class="category__el">
-						<div class="category__el--img">
-							<img src="img/category-land.png" alt="" />
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#time"></use>
+							</svg>
 						</div>
-						<div class="category__el--title">Геодезические работы</div>
-						<div class="category__el-info">
-							<a class="category__el--item" href="#">Вынос границ земельного участка</a>
-							<a class="category__el--item" href="#">Топографическая съемка</a>
-							<a class="category__el--item" href="#">Кадастровая съемка </a>
+						<div class="advance-text">Оперативность решения вопросов.</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#worker"></use>
+							</svg>
 						</div>
-						<a class="category__el-get" href="#">Eще услуги</a>
+						<div class="advance-text">Все работы выполняются нашими штатными специалистами</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#money"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Окончательный расчет производится по факту выполнения работ.</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#posred"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Мы работаем без посредников, поэтому Вы экономите свои средства и время.</div>
+					</div>
+					<div class="advance-el">
+						<div class="advance-icon">
+							<svg class="icon">
+								<use xlink:href="#result"></use>
+							</svg>
+						</div>
+						<div class="advance-text">Более 1000 выполненных объектов по Москве и Московской области.</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--about-->
-		<div class="about wow fadeIn" style="background-image:url('img/our-gray.jpg');" data-wow-duration="1.75s" data-wow-delay="1s">
-			<div class="main-cont">
-				<div class="about-cont">
-					<div class="about-cont__title">О нашей компании</div>
-					<div class="about-cont__text">
-						<p>Компания «Центр геодезических и кадастровых услуг» (ЦГиКУ) – это динамично развивающаяся организация, начавшая свою работу в 2012 году, основным профилем которой является выполнение кадастровых и геодезических работ. За время деятельности компании
-							нами выполнены работы более чем на 5000 объектах по всей России.</p>
-						<p>Мы являемся постоянными подрядчиками ПАО Сбербанк, АО «Мосводоканал», АО «Дон-Строй Инвест», ГУП «Московское имущество», ЦУМ, ГБУ МО «МОСАВТОДОР», АШАН, LIEBHERR и др., что подтверждается благодарственными письмами.</p>
-						<p>Наши сотрудники - выпускники ведущих профильных ВУЗов страны, таких как Московский государственный университет геодезии и картографии (МИИГАиК), Государственный университет по землеустройству (ГУЗ). Все наши кадастровые инженеры имеют Аттестаты
-							кадастровых инженеров и состоят в СРО, таких как А СРО «Кадастровые инженеры», А СРО «ОПКД».</p>
-						<p>Показатель качества выполняемых нами услуг – долгосрочные и взаимовыгодные отношения как с крупными компаниями, так и с частными лицами. Выбирая нас, Вы можете быть уверены в грамотном и оперативном решении поставленных задач!</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!--.about.wow.fadeIn(style="background-image:url('img/our-gray.jpg')" data-wow-duration="1.75s" data-wow-delay="1s")
+.main-cont
+	.about-cont
+		.about-cont__title О нашей компании
+		.about-cont__text
+			p Компания «Центр геодезических и кадастровых услуг» (ЦГиКУ) – это динамично развивающаяся организация, начавшая свою работу в 2012 году, основным профилем которой является выполнение кадастровых и геодезических работ. За время деятельности компании нами выполнены работы более чем на 5000 объектах по всей России.
+			p Мы являемся постоянными подрядчиками ПАО Сбербанк, АО «Мосводоканал», АО «Дон-Строй Инвест», ГУП «Московское имущество», ЦУМ, ГБУ МО «МОСАВТОДОР», АШАН, LIEBHERR и др., что подтверждается благодарственными письмами.
+			p Наши сотрудники - выпускники ведущих профильных ВУЗов страны, таких как Московский государственный университет геодезии и картографии (МИИГАиК), Государственный университет по землеустройству (ГУЗ). Все наши кадастровые инженеры имеют Аттестаты кадастровых инженеров и состоят в СРО, таких как А СРО «Кадастровые инженеры», А СРО «ОПКД».
+			p Показатель качества выполняемых нами услуг – долгосрочные и взаимовыгодные отношения как с крупными компаниями, так и с частными лицами. Выбирая нас, Вы можете быть уверены в грамотном и оперативном решении поставленных задач!
+
+-->
 		<!--slider customer-->
 		<div class="section section--customer wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
 			<div class="section-title">Наши заказчики</div>
@@ -432,275 +597,25 @@
 				</div>
 			</div>
 		</div>
-		<!--advant-->
-		<div class="section section--advant wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="section-title">Наши преимущества</div>
-			<div class="main-cont">
-				<div class="advant">
-					<div class="advant-info">
-						<div class="advant-info__el">
-							<div class="advant-info__ico">
-								<svg class="icon">
-									<use xlink:href="#doc"></use>
-								</svg>
-							</div>
-							<div class="advant-info__cont">
-								<div class="advant-info__title">Точнее не бывает!</div>
-								<div class="advant-info__text">Измерение площади участка рулеткой даёт погрешность в десятки квадратных метров.</div>
-							</div>
-						</div>
-						<div class="advant-info__el">
-							<div class="advant-info__ico">
-								<svg class="icon">
-									<use xlink:href="#plan"></use>
-								</svg>
-							</div>
-							<div class="advant-info__cont">
-								<div class="advant-info__title">Работы «под ключ»</div>
-								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
-							</div>
-						</div>
-						<div class="advant-info__el">
-							<div class="advant-info__ico">
-								<svg class="icon">
-									<use xlink:href="#time"></use>
-								</svg>
-							</div>
-							<div class="advant-info__cont">
-								<div class="advant-info__title">Выезд сразу</div>
-								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
-							</div>
-						</div>
-						<div class="advant-info__el">
-							<div class="advant-info__ico">
-								<svg class="icon">
-									<use xlink:href="#money"></use>
-								</svg>
-							</div>
-							<div class="advant-info__cont">
-								<div class="advant-info__title">Консультации — 0 рублей</div>
-								<div class="advant-info__text">Стоять в очередях больше не нужно - мы все берем на себя!</div>
-							</div>
-						</div>
-					</div>
-					<div class="advant-img">
-						<img src="img/instr.jpg" alt="" />
-					</div>
-				</div>
-			</div>
-		</div>
 		<!--service-->
-		<div class="section section--service wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="main-cont">
-				<div class="section-title">Популярные услуги</div>
-				<div class="section-title-sub">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
-				<div class="service">
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get">Заказать</div>
-						</div>
-					</div>
-					<div class="service__el">
-						<div class="service__title">Уточнение границ земельного участка</div>
-						<div class="service__text">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.</div>
-						<div class="service__price">18 000 руб.</div>
-						<div class="service__get">
-							<div class="service__btn service__btn-more">Подробнее</div>
-							<div class="service__btn service__btn-get">Заказать</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--step work-->
-		<div class="section section-step" id="step">
-			<div class="section-filter"></div>
-			<div class="main-cont">
-				<div class="section-title">как мы работаем</div>
-				<div class="step">
-					<div class="step-row">
-						<div class="step-el">
-							<div class="step-content">
-								<div class="step-numb">01</div>
-								<div class="step-text">
-									<div class="step-text__title">Отправляете нам заявку</div>
-									<div class="step-text__descr">Наши кадастровые инженеры проведут для Вас бесплатную консультацию. Выбор даты и времени выезда геодезистов для обмеров.</div>
-								</div>
-							</div>
-							<div class="step-line">
-								<div class="step-dot"></div>
-							</div>
-						</div>
-					</div>
-					<div class="step-row step-row--right">
-						<div class="step-el">
-							<div class="step-line">
-								<div class="step-dot"></div>
-							</div>
-							<div class="step-content">
-								<div class="step-numb">02</div>
-								<div class="step-text">
-									<div class="step-text__title">Подписание договора</div>
-									<div class="step-text__descr">Наши сотрудники могут привезти подписанный нами договор в день производства обмеров, либо Вы можете приехать к нам в офис в удобное время.</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="step-row">
-						<div class="step-el">
-							<div class="step-content">
-								<div class="step-numb">03</div>
-								<div class="step-text">
-									<div class="step-text__title">Выезд геодезистов для обмеров.</div>
-									<div class="step-text__descr">Наши специалисты выезжают непосредственно на рабочий объек и проводят все необходимые работы.</div>
-								</div>
-							</div>
-							<div class="step-line">
-								<div class="step-dot"></div>
-							</div>
-						</div>
-					</div>
-					<div class="step-row step-row--right">
-						<div class="step-el">
-							<div class="step-line">
-								<div class="step-dot"></div>
-							</div>
-							<div class="step-content">
-								<div class="step-numb">04</div>
-								<div class="step-text">
-									<div class="step-text__title">Обработка результатов</div>
-									<div class="step-text__descr">Камеральная обработка произведенных обмеров, согласование с Вами результатов обмеров. Формирование кадастровой документации.</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="step-row">
-						<div class="step-el">
-							<div class="step-content">
-								<div class="step-numb">05</div>
-								<div class="step-text">
-									<div class="step-text__title">Передача Вам готовой документации.</div>
-									<div class="step-text__descr">Вы получаете на руки все необходимые документы, оформленные в соответсвии со всеми правилами и стандартами.</div>
-								</div>
-							</div>
-							<div class="step-line">
-								<div class="step-dot"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--news-->
-		<div class="section section--news wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="section-title">Новости</div>
-			<div class="main-cont">
-				<div class="news">
-					<div class="news__el">
-						<div class="news__el-date">18 июля 2017</div>
-						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
-						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">22 авгутса 2017</div>
-						<div class="news__el-title">Межевание участков, постановка на учет</div>
-						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">19 сентября 2014</div>
-						<div class="news__el-title">Подготовка технических планов</div>
-						<div class="news__el-text">Технический план квартиры, дома, помещения, сооружения, гаража, объекта незавершенного строительства. Технический план для ввода объекта в эксплуатацию. Акт обследования. Заключение кадастрового инженера...</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">03 апреля 2014</div>
-						<div class="news__el-title">Кадастровая съемка участков</div>
-						<div class="news__el-text">Кадастровая съемка участка, Акт выбора земельных участков, Ситуационный план, Схема расположения земельного участка на кадастровой карте...</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">18 июля 2017</div>
-						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
-						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">22 авгутса 2017</div>
-						<div class="news__el-title">Межевание участков, постановка на учет</div>
-						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--block footer-->
-		<!--.section.section--footer
+		<!--.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
 .main-cont
-	.section-title Оформите заказ
-	.section-title-sub Прием в офисе с понедельника по пятницу с 9:00 до 20:00, суббота: по предварительной записи, выходной: воскресенье.
-	.footer__wrap
-		.footer__el
-			.footer__icon
-				+icon("map","icon")
-			.footer__title В офисе
-			.footer__text г. Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
-		.footer__el
-			.footer__icon
-				+icon("phone-call","icon")
-			.footer__title По телефону
-			a(href="tel:+7 (495) 514-84-13").footer__text.footer__text--red +7 (495) 514-84-13
-			a(href="tel:+7 (495) 283-96-83").footer__text.footer__text--red +7 (495) 283-96-83
-		.footer__el
-			.footer__icon
-				+icon("mail","icon")
-			.footer__title По email
-			a(href="mailto:info@cgiku.ru").footer__text.footer__text--red info@cgiku.ru
-	.footer-get
-		.footer-get__el.modal-get(data-modal="order") Оставить заявку
+	.section-title Популярные услуги
+	.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+	.service
+		- for (var i=0;i<6;i++)
+			.service__el
+				.service__title Уточнение границ земельного участка
+				.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
+				.service__price 18 000 руб.
+				.service__get
+					.service__btn.service__btn-more Подробнее
+					.service__btn.service__btn-get Заказать
 
--->
-		<!--.footer-map
-h1 Карта
+
 
 
 -->
-		<!--section-contact-->
 		<div class="section section-contact" id="contact">
 			<div class="main-cont">
 				<div class="section-title">Наши контакты</div>
@@ -767,13 +682,59 @@ h1 Карта
 									</div>
 									<div class="contact-text">info@cgiku.ru</div>
 								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#metro"></use>
+										</svg>
+									</div>
+									<a class="contact-text" href="#">Как к нам проехать подробнее</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!--section-contact-end-->
 		</div>
-		<!--section-contact-end-->
+		<!--news-->
+		<div class="section section--news wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="section-title">Новости</div>
+			<div class="main-cont">
+				<div class="news">
+					<div class="news__el">
+						<div class="news__el-date">18 июля 2017</div>
+						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
+						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">22 авгутса 2017</div>
+						<div class="news__el-title">Межевание участков, постановка на учет</div>
+						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">19 сентября 2014</div>
+						<div class="news__el-title">Подготовка технических планов</div>
+						<div class="news__el-text">Технический план квартиры, дома, помещения, сооружения, гаража, объекта незавершенного строительства. Технический план для ввода объекта в эксплуатацию. Акт обследования. Заключение кадастрового инженера...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">03 апреля 2014</div>
+						<div class="news__el-title">Кадастровая съемка участков</div>
+						<div class="news__el-text">Кадастровая съемка участка, Акт выбора земельных участков, Ситуационный план, Схема расположения земельного участка на кадастровой карте...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">18 июля 2017</div>
+						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
+						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
+					</div>
+					<div class="news__el">
+						<div class="news__el-date">22 авгутса 2017</div>
+						<div class="news__el-title">Межевание участков, постановка на учет</div>
+						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="footer">
 			<div class="footer-menu">
 				<div class="main-cont">
@@ -898,7 +859,6 @@ h1 Карта
 				</div>
 			</div>
 		</div>
-		<!--block footer end-->
 		<!--build:js js/combined.js-->
 		<script src="bower/jquery/dist/jquery.js"></script>
 		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
