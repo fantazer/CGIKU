@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	//smooth scroll
+	$(document).on('click', 'a[href^="#"]', function (event) {
+			event.preventDefault();
+			$('html, body').animate({
+					scrollTop: $($.attr(this, 'href')).offset().top - 50
+			}, 1500);
+	});
+	//smooth scroll===end
 
 	//range slider
   $(".calc-range").ionRangeSlider({
@@ -313,7 +321,6 @@ $(window).load(function () {
 	 dots: false,
 	 autoplay : false,
 	 singleItem:true,
-	 loop:true,
 	 nav:true,
 	 navText:[
 			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
