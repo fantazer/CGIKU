@@ -358,19 +358,30 @@ $(window).load(function () {
 	);
 
 	$(".slider-header-baner").owlCarousel({
-	 items : 1,
-	 margin:20,
-	 autoHeight : true,
-	 dots: false,
-	 autoplay : false,
-	 singleItem:true,
-	 loop:true,
-	 //animateOut: 'fadeOut',
-	 nav:true,
-	 navText:[
-			'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
-			'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
-	 ]
+		 items : 1,
+		 margin:20,
+		 autoHeight : true,
+		 dots: false,
+		 autoplay : false,
+		 singleItem:true,
+		 loop:true,
+		 //animateOut: 'fadeOut',
+		 nav:true,
+		 navText:[
+				'<svg class="slider-control"><use xlink:href="#arrow-left"></use></svg>',
+				'<svg class="slider-control"><use xlink:href="#arrow-right"></use></svg>'
+		 ]
+	 }
+	);
+	$(".questions-slider").owlCarousel({
+		 items : 1,
+		 margin:20,
+		 autoHeight : true,
+		 dots: true,
+		 autoplay : true,
+		 singleItem:true,
+		 loop:true,
+		 //animateOut: 'fadeOut',
 	 }
 	);
 	//slider el === end

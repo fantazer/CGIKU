@@ -215,16 +215,19 @@ body
 	fw()
 
 .section-title-sub
+	+below(1024px)
+		margin-bottom: 30px
 	+below(768px)
 		margin-top: 0px
-		margin-bottom: 30px
 		width: 80%
+	@extend .type--lg
 	text-align: center
 	width: 60%
 	margin: 0 auto
 	margin-top: -40px
 	margin-bottom: 80px
 	line-height: 1.5
+
 
 
 .service__el
@@ -1497,15 +1500,34 @@ $step = #b3b2b2
 			top initial
 			left initial
 .footer-info
-	padding: 20px 0
+	padding: 40px 0
 
 .footer-info-wrap
-	+below(768px)
-		fw()
-	flex(between)
+	+below(640px)
+		width: 100%
+		order 1
+	width: 20%
+.footer-list
+	+below(640px)
+		width: 100%
+		order 2
+	f()
+	fw()
+	width: 75%
+	margin-top: 20px
+.footer-list__el
+	+below(640px)
+		text-align: center
+		display: none
+	width: 30%
+	margin-bottom: 20px
+	font-weight:700
+	color black
 
 .footer-info__phone
 	@extend .nav-phone-el
+	margin-top: 10px
+	fw()
 	+below(768px)
 		margin-left: 0
 		width: 100%
@@ -1558,12 +1580,18 @@ $step = #b3b2b2
 
 .section--main-service
 	.section-title
+		+below(768px)
+			font-size: 20px
 		font-size: 30px
 	.section-title-sub
+		+below(768px)
+			font-size: 18px
 		font-size: 24px
 
 
 .main-service__title
+	+below(768px)
+		margin-bottom: 30px
 	@extend .type--xl
 	text-align: center
 	color black
@@ -1575,22 +1603,47 @@ $step = #b3b2b2
 	justify-content: space-between
 
 .main-service__col
-	width: 48%
+	+below(1024px)
+		width: 50%
+	+below(960px)
+		width: 70%
+		margin: 0 auto
+		margin-bottom: 30px
+	+below(640px)
+		width: 100%
+	&:first-child
+		+below(960px)
+			border 0
+		border-right 1px solid #e8e4e4
+	width: 50%
+	padding: 10px
 	f()
 	fl()
 	justify-content: centers
 
 .main-service__el-title
+	+below(960px)
+		text-align: center
+		font-size: 18px
+	+below(768px)
+		font-size: 16px
 	margin-bottom: 10px
 	@extend .type--lg
 	color black
 	font-size: 19px
 .main-service__title-sub
+	+below(960px)
+		text-align: center
 	@extend .type--md
 	color black
 	margin-bottom: 20px
 
 .main-service__el
+	+below(1024px)
+		padding: 15px
+	+below(960px)
+		fw()
+		justify-content: center
 	f()
 	padding: 30px
 	justify-content: space-between
@@ -1600,35 +1653,41 @@ $step = #b3b2b2
 	min-height:250px
 
 .main-service__cont
+	+below(960px)
+		width: 100%
+		order 2
 	width: 65%
 	f()
 	justify-content: center
 	fl()
 .main-service__price-row
-	+below(1024px)
-		width: 400px
-		justify-content: center
-		margin: 0 auto
-	+below(640px)
+	+below(960px)
 		width: 100%
+		flex(mid)
 	flex(between)
 	width: 85%
 	align-self: flex-start
 .main-service__price
 	+below(1024px)
-		font-size: 38px
-	+below(768px)
-		font-size: 28px
+		font-size: 20px
+	+below(960px)
+		text-align: center
+	+below(640px)
+		font-size: 19px
 	width: 100%
 	font-size: 22px
-	color black
+	color $green
 	font-weight: bold
 	margin-bottom: 20px
 //.main-service__price--true
 .main-service__price--false
+	+below(1024px)
+		margin-left: 10px
 	text-decoration: line-through
-	color #cac5c5
+	color #ed9872
 .main-service__get
+	+below(960px)
+		flex(mid)
 	+below(768px)
 		flex(mid)
 	+below(640px)
@@ -1656,6 +1715,10 @@ $step = #b3b2b2
 	//box-shadow 0 9px 18px rgba(242, 0, 34, 0.6)
 //.modal-get
 .main-service__img
+	+below(960px)
+		width: 100%
+		height: 200px
+		order 1
 	width: 35%
 .main-service__img-el
 	bg-full()
@@ -1665,8 +1728,90 @@ $step = #b3b2b2
 
 
 .main-service__el-get
+	+below(768px)
+		margin: 20px auto 0 auto
 	@extend .btn--lg
 	@extend .btn--mark
 	padding: 15px 60px
 	font-size: 14px
 	margin: 40px auto 0 auto
+
+.text--green
+	color $green
+
+.text--red
+	color #ed9872
+
+.section-advance
+	padding 0
+
+.contact-text--link
+	text-decoration: underline
+
+.questions__name
+	@extend .type--lg
+	margin-bottom: 10px
+	color black
+.questions__title
+	color black
+	@extend .type--md
+	margin-bottom: 30px
+
+.questions__el
+	padding-bottom: 30px
+.questions__el-wrap
+	+below(768px)
+		padding: 20px
+	padding: 60px 40px
+	bsh()
+	background: white
+.questions
+	.owl-dots
+		margin-top: 0
+	.owl-dot
+		background #c3c0c0
+	.owl-dot.active
+		background: black
+
+.questions-list__get
+	@extend .btn--md
+	@extend .btn--light
+
+.questions-more
+	padding: 60px 0 0 0
+	flex(mid)
+	fl()
+
+.questions-title-sub
+	text-align: center
+	@extend .type--lg
+	color black
+	margin-bottom: 20px
+
+.questions-list
+	+below(640px)
+		width: 100%
+	width: 400px
+	margin: 30px auto
+
+.questions-list__el
+	color black
+	display: block
+	text-align: center
+	margin-bottom: 10px
+	text-decoration: underline
+
+
+.footer-container
+	+below(640px)
+		fw()
+	f()
+	justify-content: space-between
+
+.questions__el-get
+	@extend .btn--md
+	@extend .btn--light
+
+.row-btn--center
+	flex(mid)
+	margin-top: 40px
