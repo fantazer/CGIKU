@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--colors-tabs-->
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<!--icons-->
+		<link rel="shortcut icon" href="img/fav/favicon.ico" />
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<!--build:css css/vendor.css-->
+		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
+		<link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
+		<link rel="stylesheet" href="bower/wow/css/libs/animate.css" />
+		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.css" />
+		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.skinNice.css" />
+		<!--endbuild-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<!--block header-->
+		<div class="head-container">
+			<!--header-->
+			<div class="header">
+				<div class="top-line">
+					<div class="main-cont">
+						<div class="top-line-wrap">
+							<a class="main-logo" href="/">
+								<img class="logo--full" src="img/logo-dark.png" alt="" />
+								<img class="logo--short" src="img/logo-short.png" alt="" />
+							</a>
+							<div class="top-line-info">
+								<div class="top-line-el__wrap">
+									<div class="top-line-el">
+										<div class="top-line-el-title">Работа горячей линии:</div>
+										<div class="top-line-el-info">Ежедневно c 9-00 ч. до 20-00 ч.</div>
+									</div>
+									<div class="top-line-el">
+										<div class="top-line-el-title">Прием онлайн-заявок:</div>
+										<div class="top-line-el-info top-line-el-info--call modal-get" data-modal="order">
+											<svg class="icon">
+												<use xlink:href="#phone"></use>
+											</svg>
+											<span>Круглосуточно</span>
+										</div>
+									</div>
+								</div>
+								<div class="top-line__contact">
+									<div class="top-line-loc">
+										<div class="top-line-loc-el">
+											<div class="top-line-loc-icon">
+												<svg class="icon">
+													<use xlink:href="#metro"></use>
+												</svg>
+											</div>
+											<div class="top-line-loc-text">Варшавская</div>
+										</div>
+										<div class="top-line-loc-el">
+											<div class="top-line-loc-icon">
+												<svg class="icon">
+													<use xlink:href="#metro"></use>
+												</svg>
+											</div>
+											<div class="top-line-loc-text">Каширская</div>
+										</div>
+									</div>
+									<div class="nav-phone">
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header-end-->
+			<!--nav-->
+			<div class="nav">
+				<div class="main-cont">
+					<div class="nav-wrap">
+						<div class="nav-toggle">
+							<svg class="icon">
+								<use xlink:href="#menu"></use>
+							</svg>
+						</div>
+						<div class="menu-wrap">
+							<div class="menu">
+								<div class="menu-el">
+									<a href="#">
+										<span>Главная</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el-service">
+									<a href="#">
+										<span>Услуги
+											<svg class="icon">
+												<use xlink:href="#arrow-down"></use>
+											</svg>
+										</span>
+									</a>
+									<div class="menu-el__sub">
+										<a class="menu-el__sub-el" href="#">Кадастровые работы</a>
+										<a class="menu-el__sub-el" href="#">Геодезические работы</a>
+									</div>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>О компании</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Прайс-лист</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Наши лицензии</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Контакты</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el--mark">
+									<a href="#">
+										<span>Акции</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--.nav-phone
+				a(href="tel:+7 (495) 514-84-13").nav-phone-el
+					+icon("phone-call","icon")
+					| +7 (495) 514-84-13
+				-->
+					</div>
+				</div>
+			</div>
+			<!--nav-end-->
+		</div>
+		<!--block header end-->
+		<div class="lp-baner">
+			<div class="lp-baner__img" style="background-image:url('img/lp-item-3.jpg');"></div>
+			<div class="lp-baner-filter lp-baner-filter--light"></div>
+			<div class="main-cont">
+				<div class="lp-baner__content">
+					<div class="lp-baner__title">Уточнение
+						<br>границ земельного участка</div>
+					<div class="lp-baner__title-sub">Установите точные границы участка на местности как можно скорее, и Вы избавитесь от возможных проблем в будущем!</div>
+					<div class="header__get">
+						<a class="header__btn header__btn-more" href="#why">Подробнее</a>
+						<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--why you need this-->
+		<div class="section section--why" id="why">
+			<div class="main-cont">
+				<div class="section-wrap">
+					<div class="section-call section-call--mid">
+						<div class="section-title section-title--left">Что это такое ?</div>
+						<div class="box">
+							<p>Уточнение границ земельного участка (межевание) – это кадастровые работы, включающие в себя: проведение геодезических измерений на участке (определение точных координат участка на местности); подготовку межевого плана кадастровым инженером; согласование
+								границ с соседями и подачу согласованного межевого плана в Росреестр.</p>
+							<p>Результатом работ является занесение сведений о фактическом местоположении границ земельного участка в Единый государственный реестр недвижимости (ЕГРН).</p>
+						</div>
+					</div>
+					<div class="section-call section-call--img">
+						<img src="img/lp-item-5.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--from begin-->
+		<div class="section section--start" style="background-image:url('img/lp-item-6.jpg');">
+			<div class="main-cont">
+				<div class="section-wrap">
+					<div class="section-call section-call--img"></div>
+					<div class="section-call">
+						<div class="section-title section-title--left">Зачем это нужно ?</div>
+						<div class="box">
+							<p>Проведение кадастровых работ по межеванию необходимо в случае, если сведения о координатах поворотных точек (границах) земельного участка отсутствуют в ЕГРН. Даже если земельному участку уже присвоен кадастровый номер (так называемый ранее учтенный
+								земельный участок), сведения о границах участка на местности (координатах поворотных точек) могут отсутствовать в реестре.</p>
+							<p>Для проверки следует зайти на ресурс Публичная кадастровая карта
+								<a href="http://pkk5.rosreestr.ru/">http://pkk5.rosreestr.ru/</a> и вбить в поисковую строку кадастровый номер Вашего земельного участка. Далее нажать на кнопку «Найти». Если ресурс выдаст информацию о земельном участке, но при этом будет написано «Без координат границ», то границы
+								земельного участка НЕ УТОЧНЕНЫ и необходимо сделать межевание.</p>
+							<p>Рекомендуем не откладывать проведение межевания на долгий срок. Нередки случаи, когда собственники земельных участков, которые проводят межевание позже своих соседей, лишаются части площади из-за того, что границы соседних участков уже установлены
+								и оставшейся площади между соседних границ просто не хватает. Заставить соседей изменить границы можно только через суд – это долго, хлопотно, ухудшит отношения с соседями, и не факт, что суд встанет на Вашу сторону. Наиболее правильным является
+								одновременное межевание всех соседних участков (а еще лучше, всего СНТ или садового товарищества).</p>
+							<p class="attanintion">
+								<b>ВАЖНО:</b> Также ВАЖНО знать, что с 01.01.2018 г. запрещаются любые сделки с земельными участками, в отношении которых в ЕГРН отсутствуют сведения о местоположении границ. То есть без проведения межевания нельзя будет провести регистрационные
+								действия по купле-продаже, наследованию, дарению земельных участков и т.п.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--service-->
+		<div class="section section--calc">
+			<div class="main-cont">
+				<div class="section-title">Стоимость наших работ</div>
+				<div class="section-title-sub">При необходимости согласования границ с ДГИ г. Москвы стоимость увеличивается на 5000 руб</div>
+				<div class="calc">
+					<input class="calc-range" type="range" placeholder="" />
+					<div class="calc-range__wrap">
+						<div class="calc-range-val">
+							<div class="calc-range-numb">10 000</div>
+							<div class="calc-range-pay">руб</div>
+						</div>
+					</div>
+					<div class="calc-text">Цена услуги за один участок</div>
+				</div>
+				<div class="cost-inform cost-inform--calc">Указанные здесь цены являются окончательными и зависят только от площади объекта. Если Вы не хотите тратить свое время на подачу и получение документов из Росреестра, мы выполним это за Вас. Такая услуга «под ключ» будет стоить 5000 руб. В этом случае
+					от Вас дополнительно потребуется нотариальная доверенность (форму доверенности Вам предоставит наш кадастровый инженер).</div>
+			</div>
+		</div>
+		<!--need doc-->
+		<div class="section section--doc">
+			<div class="main-cont">
+				<div class="section-title">Что войдет в стоимость работ ?</div>
+				<div class="section-title-sub">Геодезические обмеры земельного участка.</div>
+				<div class="doc">
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#house-plan-scale"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Обмеры внешнего контура здания</div>
+						<div class="doc__text">Позволяют установить фактическое местоположение границ земельного участка, координаты его поворотных точек и площадь.</div>
+					</div>
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#protractor"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Заказ сведений ЕГРН.</div>
+						<div class="doc__text">Необходим для проведения процедуры согласования границ участка с соседними землепользователями и землевладельцами.</div>
+					</div>
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#file"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Формирование акта согласования границ.</div>
+						<div class="doc__text">Документ который отображает основные элементы конструкций одного уровня здания.</div>
+					</div>
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#save-disk"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Формирование межевого плана на электронном цифровом носителе (диск), заверенного усиленной электронной подписью кадастрового инженера.</div>
+						<div class="doc__text">Необходим для внесения в ЕГРН сведений о местоположении границ земельного участка, то есть для государственного кадастрового учета земельного участка.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--need doc-->
+		<div class="section section--doc">
+			<div class="main-cont">
+				<div class="section-title">Какие нужны документы?</div>
+				<div class="section-title-sub">Максимальный перечень необходимых документов</div>
+				<div class="doc doc--three">
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#attest"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Свидетельство о праве собственности на земельный участок (выписка ЕГРН).</div>
+						<div class="doc__text">Необходимо для подтверждения права собственности на земельный участок.</div>
+					</div>
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#plan"></use>
+							</svg>
+						</div>
+						<div class="doc__title">План земельного участка
+							<br> (при наличии).</div>
+						<div class="doc__text">Необходим для подтверждения конфигурации земельного участка.</div>
+					</div>
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#doc"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Паспортные данные собственника земельного участка (СНИЛС).</div>
+						<div class="doc__text">Документы, необходимые для подтверждения Вашей личности.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--step work-->
+		<div class="section section-step" id="step">
+			<div class="section-filter"></div>
+			<div class="main-cont">
+				<div class="section-title">как мы работаем</div>
+				<div class="step">
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">01</div>
+								<div class="step-text">
+									<div class="step-text__descr">Отправляете нам заявку или звоните.Получаете бесплатную консультацию от кадастрового инженера.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">02</div>
+								<div class="step-text">
+									<div class="step-text__descr">Направляете нам электронные копии Ваших документов или приезжаете с ними к нам в офис.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">03</div>
+								<div class="step-text">
+									<div class="step-text__descr">Анализируем документы, готовим проект Договора, согласовываем с Вами дату и время приезда геодезистов для проведения измерений.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">04</div>
+								<div class="step-text">
+									<div class="step-text__descr">В назначенное время геодезисты приезжают к Вам, передают Договор и производят измерения.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">05</div>
+								<div class="step-text">
+									<div class="step-text__descr">Составляем акт согласования границ. Согласование границ с соседями.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">06</div>
+								<div class="step-text">
+									<div class="step-text__descr">Формируем межевой план.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">07</div>
+								<div class="step-text">
+									<div class="step-text__descr">Передаем Вам готовый межевой план.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--contact-form-->
+		<!--.contact-form
+.section-title Оставьте свою заявку
+.section-title-sub Оформите обращение с помощью этой формы, мы перезвоним <br>Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
+.main-cont
+	form.validate-form( action="javascript:void(null);")
+		.input-row
+			input(type="text" name="name" placeholder="Ваше имя").input
+		.input-row
+			input(type="text" name="phone" placeholder="Ваш телефон").input
+		//.input-row
+			textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+		//.agree-row
+			.check-el
+				label.style-label.style-label--checkbox
+					input(type="checkbox" name="agree").sytle-input
+					.sytle-input-element
+						+icon("checked","icon-check")
+					.sytle-input-text=text
+			.agree-row__text Согласен с
+				a(href="#") условиями обработки персональных данных
+		input(type="submit" value="Отправить заявку").modal-send
+
+-->
+		<!--price-->
+		<!--.section.section--price.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+.main-cont
+	.section-title Стоимость наших работ
+	.section-title-sub Подача в Росреестр – плюс 3 000 руб. к стоимости работ
+	.cost
+		.cost__el
+			.cost__el-img(style="background-image:url('img/house-size-1.png')")
+			.cost__el-title Площадь дома
+				span до 50 кв.м
+			.cost__el-text (садовый дом, баня, гараж)
+			.cost__el-price 10 000 руб.
+			.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+		.cost__el
+			.cost__el-img(style="background-image:url('img/house-size-2.png')")
+			.cost__el-title Площадь дома
+				span от 51 до 100 кв.м
+			.cost__el-text (дачный дом , жилое строение)
+			.cost__el-price 14 000 руб.
+			.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+		.cost__el
+			.cost__el-img(style="background-image:url('img/house-size-3.png')")
+			.cost__el-title Площадь дома
+				span от 101 до 200 кв.м
+			.cost__el-text (жилой дом)
+			.cost__el-price 20 000 руб.
+			.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+		.cost__el
+			.cost__el-img(style="background-image:url('img/house-size-4.png')")
+			.cost__el-title Площадь дома
+				span от 201 кв.м
+			.cost__el-text (коттедж)
+			.cost__el-price 25 000 руб.
+			.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+
+	.cost-inform Указанные здесь цены являются окончательными и зависят только от площади объекта. Единственный платёж, который Вам придётся уплатить, это гос. пошлина в размере 350 руб., взимаемая Росреестром при подаче технического плана.
+
+
+
+-->
+		<!--service-->
+		<!--.section.section--calc
+.main-cont
+	.section-title Выберите площадь дома
+	.section-title-sub Подача в Росреестр – плюс 3 000 руб. к стоимости работ.
+	.calc
+		input(type="range" placeholder=""  class="calc-range")
+		.calc-range__wrap
+			.calc-range-val
+				.calc-range-numb 10 000
+				.calc-range-pay руб
+		.calc-text Цена услуги
+
+-->
+		<!--service-->
+		<!--.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+.main-cont
+	.section-title Популярные услуги
+	.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+	.service
+		- for (var i=0;i<6;i++)
+			.service__el
+				.service__title Уточнение границ земельного участка
+				.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
+				.service__price 18 000 руб.
+				.service__get
+					.service__btn.service__btn-more Подробнее
+					.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+
+-->
+		<!--slider certificate-->
+		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="filter"></div>
+			<div class="section-title">Наши сертификаты</div>
+			<div class="main-cont">
+				<div class="slider-certificate owl-carousel">
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-1.jpg" rel="group-elemen">
+							<img src="img/cert-1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-2.jpg" rel="group-elemen">
+							<img src="img/cert-2.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-3.jpg" rel="group-elemen">
+							<img src="img/cert-3.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-4.jpg" rel="group-elemen">
+							<img src="img/cert-4.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-5.jpg" rel="group-elemen">
+							<img src="img/cert-5.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-6.jpg" rel="group-elemen">
+							<img src="img/cert-6.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-7.jpg" rel="group-elemen">
+							<img src="img/cert-7.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-8.jpg" rel="group-elemen">
+							<img src="img/cert-8.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-9.jpg" rel="group-elemen">
+							<img src="img/cert-9.jpg" alt="" />
+						</a>
+					</div>
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-10.jpg" rel="group-elemen">
+							<img src="img/cert-10.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block footer-->
+		<!--.section.section--footer
+.main-cont
+	.section-title Оформите заказ
+	.section-title-sub Прием в офисе с понедельника по пятницу с 9:00 до 20:00, суббота: по предварительной записи, выходной: воскресенье.
+	.footer__wrap
+		.footer__el
+			.footer__icon
+				+icon("map","icon")
+			.footer__title В офисе
+			.footer__text г. Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
+		.footer__el
+			.footer__icon
+				+icon("phone-call","icon")
+			.footer__title По телефону
+			a(href="tel:+7 (495) 514-84-13").footer__text.footer__text--red +7 (495) 514-84-13
+			a(href="tel:+7 (495) 283-96-83").footer__text.footer__text--red +7 (495) 283-96-83
+		.footer__el
+			.footer__icon
+				+icon("mail","icon")
+			.footer__title По email
+			a(href="mailto:info@cgiku.ru").footer__text.footer__text--red info@cgiku.ru
+	.footer-get
+		.footer-get__el.modal-get(data-modal="order") Оставить заявку
+
+-->
+		<!--.footer-map
+h1 Карта
+
+
+-->
+		<!--section-contact-->
+		<div class="section section-contact" id="contact">
+			<div class="main-cont">
+				<div class="section-title">Наши контакты</div>
+				<div class="contact">
+					<div class="contact-form contact-form--footer">
+						<div class="main-form">
+							<div class="form-title">Оставьте вашу заявку</div>
+							<div class="form-title-sub">Мы свяжемся с вам в кратчайшее время</div>
+							<form class="validate-form form--footer" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="form-footer-send" type="submit" value="Отправить заявку" />
+							</form>
+						</div>
+						<div class="contact-info">
+							<div class="map">
+								<script text/javascript="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;amp;width=100%&amp;amp;height=400&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
+							</div>
+							<div class="contact-row-wrap">
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#placeholder"></use>
+										</svg>
+									</div>
+									<div class="contact-text">Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#phone-call"></use>
+										</svg>
+									</div>
+									<div class="contact-text">+7 (495) 514-84-13</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#mail"></use>
+										</svg>
+									</div>
+									<div class="contact-text">info@cgiku.ru</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#metro"></use>
+										</svg>
+									</div>
+									<a class="contact-text" href="#">Как к нам проехать подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section-contact-end-->
+		<div class="footer">
+			<div class="footer-menu">
+				<div class="main-cont">
+					<div class="menu">
+						<div class="menu-el">
+							<a href="#">
+								<span>Главная</span>
+							</a>
+						</div>
+						<div class="menu-el menu-el-service">
+							<a href="#">
+								<span>Услуги</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>О компании</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Прайс-лист</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Наши лицензии</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Контакты</span>
+							</a>
+						</div>
+						<div class="menu-el menu-el--mark">
+							<a href="#">
+								<span>Акции</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="main-cont">
+					<div class="footer-info-wrap">
+						<a class="footer-info__logo" href="/">
+							<img class="logo--full" src="img/logo-dark.png" alt="" />
+						</a>
+						<div class="footer-info__phone">
+							<a class="footer-info__phone" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+							<a class="footer-info__phone" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="scroll-up">
+			<svg class="icon">
+				<use xlink:href="#arrow-up"></use>
+			</svg>
+		</div>
+		<div class="modal-layer">
+			<div class="modal-cont">
+				<div class="modal-filter"></div>
+				<div class="modal-wrap">
+					<div class="modal" data-modal="order">
+						<div class="modal-content modal-content--fogot">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-title">Бесплатная консультация</div>
+							<div class="modal-text">Обращаетесь к нам впервые?
+								<br> Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+							<form class="validate-form" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="modal-send" type="submit" value="Отправить заявку" />
+							</form>
+						</div>
+					</div>
+					<div class="modal" data-modal="true">
+						<div class="modal-content modal-content--true">
+							<svg class="icon">
+								<use xlink:href="#interface"></use>
+							</svg>
+							<div class="modal-text-true">Ваша заявка принята</div>
+						</div>
+					</div>
+					<div class="modal" data-modal="next">
+						<div class="modal-content modal-content--truesend">
+							<svg class="icon">
+								<use xlink:href="#interface"></use>
+							</svg>
+							<div class="modal-text-truesend">Ваша заявка принята!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block footer end-->
+		<!--build:js js/combined.js-->
+		<script src="bower/jquery/dist/jquery.js"></script>
+		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
+		<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="bower/fancybox/dist/jquery.fancybox.js"></script>
+		<script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="bower/wow/dist/wow.min.js"></script>
+		<script src="bower/ion.rangeSlider/js/ion.rangeSlider.js"></script>
+		<script src="bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+		<!--script(src="js/jquery.smoothscroll.js")-->
+		<!-- endbuild-->
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>

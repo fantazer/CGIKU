@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--colors-tabs-->
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<!--icons-->
+		<link rel="shortcut icon" href="img/fav/favicon.ico" />
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<div class="main-cont">
+			<div class="calculator">
+				<div class="calculator__wrap">
+					<div class="calculator-row__name">Цена биткоина</div>
+					<input class="input calc-price" type="text" placeholder="" />
+					<div class="calculator-row__name">Сколько отдам денег</div>
+					<input class="input calc-count" type="text" placeholder="" value="100000" />
+					<div class="calculator-row__name">За сколько продам один биткоин</div>
+					<input class="input calc-sale" type="text" placeholder="" />
+				</div>
+				<div class="calculator__total">
+					<div class="calculator__total--text">Итого:</div>
+					<!--.calculator__row
+			.calculator__text Потратил на покупку
+			.calculator__val.calculator__total--val
+				span 0
+				| руб
+			-->
+					<div class="calculator__row">
+						<div class="calculator__text">Сколько получу биткоинов</div>
+						<div class="calculator__val calculator__total--numbBit">
+							<span>0</span>шт</div>
+					</div>
+					<div class="calculator__row">
+						<div class="calculator__text">Сколько буду продавать</div>
+						<div class="calculator__val calculator__total--item">
+							<span>0</span>шт.</div>
+					</div>
+					<div class="calculator__row">
+						<div class="calculator__text">Минимальная цена перепродажи</div>
+						<div class="calculator__val calculator__total--sale">
+							<span>0</span>руб</div>
+					</div>
+					<div class="calculator__row">
+						<div class="calculator__text">Сколько я получу прибыли</div>
+						<div class="calculator__val calculator__total--get">
+							<span>0</span>руб</div>
+					</div>
+					<div class="calc-get-row">
+						<div class="calc-get">Расчитать</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>
