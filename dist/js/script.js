@@ -1,5 +1,39 @@
+(function($){
+    $(window).load(function(){
+        $("a[rel='m_PageScroll2id']").mPageScroll2id({
+				    offset:200,
+				    highlightClass:"left-nav-el-active"
+				});
+				console.log('hii');
+    });
+ })(jQuery);
+
 $(document).ready(function(){
 
+
+	//calc
+	$('.calc-get').click(function(){
+		var price = $('.calc-price').val()*1;  // Цена биткоина
+
+		var numbBit = (($('.calc-count').val()*1) / ($('.calc-price').val()*1))/100 * 99; // Сколько купил
+		 $('.calculator__total--numbBit span').html(numbBit);
+
+
+		var numbSale = ((numbBit/100 * 99)); // сколько буду продавать
+		 $('.calculator__total--item span').html(numbSale);
+
+		//var countSale = $('.calc-count').val()*1 + (($('.calc-count').val()*1) - (numbSale*price));
+		var countSale =($('.calc-count').val()*1) / numbSale;
+		 $('.calculator__total--sale span').html(countSale); // Минимальная цена перепродажи
+
+
+		var delta =(numbSale*($('.calc-sale').val()*1)) -  $('.calc-count').val()*1; // Прибыль
+
+		 $('.calculator__total--get span').html(delta);
+		 //$('.calculator__total--get span').html(getVal);
+
+	});
+	//calc-end
 	//smooth scroll
 	$(document).on('click', 'a[href^="#"]', function (event) {
 			event.preventDefault();
@@ -12,29 +46,21 @@ $(document).ready(function(){
 	//range slider
   $(".calc-range").ionRangeSlider({
  		values: [
- 			50,
- 			100,
- 			200,
- 			300,
- 			400
+ 			800,
+ 			1000,
+ 			2000,
  		],
  		grid: true,
  		postfix: " кв.м",
  		onChange: function (data) {
- 				if(data.from_value == 50){
- 					$('.calc-range-numb').text('10 000 ');
- 				}
- 				if(data.from_value == 100){
+ 				if(data.from_value == 800){
  					$('.calc-range-numb').text('14 000 ');
  				}
- 				if(data.from_value == 200){
+ 				if(data.from_value == 1000){
+ 					$('.calc-range-numb').text('15 000 ');
+ 				}
+ 				if(data.from_value == 2000){
  					$('.calc-range-numb').text('20 000 ');
- 				}
- 				if(data.from_value == 300){
- 					$('.calc-range-numb').text('25 000 ');
- 				}
- 				if(data.from_value == 400){
- 					$('.calc-range-numb').text('30 000 ');
  				}
     }
  	});
@@ -378,7 +404,7 @@ $(window).load(function () {
 		 margin:20,
 		 autoHeight : true,
 		 dots: true,
-		 autoplay : true,
+		 autoplay : false,
 		 singleItem:true,
 		 loop:true,
 		 //animateOut: 'fadeOut',

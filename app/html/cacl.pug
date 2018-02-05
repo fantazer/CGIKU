@@ -1,0 +1,44 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.main-cont
+
+	.calculator
+		.calculator__wrap
+			.calculator-row__name Цена биткоина
+			input(type="text" placeholder="").input.calc-price
+			.calculator-row__name Сколько отдам денег
+			input(type="text" placeholder="" value="100000").input.calc-count
+			.calculator-row__name За сколько продам один биткоин
+			input(type="text" placeholder="").input.calc-sale
+		.calculator__total
+			.calculator__total--text Итого:
+			//.calculator__row
+				.calculator__text Потратил на покупку
+				.calculator__val.calculator__total--val
+					span 0
+					| руб
+			.calculator__row
+				.calculator__text Сколько получу биткоинов
+				.calculator__val.calculator__total--numbBit
+					span 0
+					| шт
+			.calculator__row
+				.calculator__text Сколько буду продавать
+				.calculator__val.calculator__total--item
+					span 0
+					| шт.
+			.calculator__row
+				.calculator__text Минимальная цена перепродажи
+				.calculator__val.calculator__total--sale
+					span 0
+					| руб
+			.calculator__row
+				.calculator__text Сколько я получу прибыли
+				.calculator__val.calculator__total--get
+					span 0
+					| руб
+			.calc-get-row
+				.calc-get Расчитать
+include ./block_html/_script.pug

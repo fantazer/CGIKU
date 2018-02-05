@@ -199,10 +199,7 @@ body
 	p
 		font-size: 13px
 
-.about
-	+below(768px)
-		background: #bf0005
-	bg-full()
+
 
 .baner
 	padding: 2% 0
@@ -219,8 +216,10 @@ body
 		margin-bottom: 30px
 	+below(768px)
 		margin-top: 0px
-		width: 80%
-	@extend .type--lg
+		width: 95%
+	+below(640px)
+		font-size: 13px
+	@extend .type--md
 	text-align: center
 	width: 60%
 	margin: 0 auto
@@ -385,11 +384,15 @@ body
 .owl-carousel
 	position relative
 .owl-prev
+	+below(1440px)
+		left -5%
 	+below(1200px)
 		left 2%
 		display: none
 	left -10%
 .owl-next
+	+below(1440px)
+		right -5%
 	+below(1200x)
 		right 2%
 		display: none
@@ -814,6 +817,8 @@ $step = #b3b2b2
 		justify-content flex-start
 	padding 20px
 	font-size 14px
+	f()
+	align-items: center
 .step-line
 	+below(768px)
 		display none
@@ -910,8 +915,10 @@ $step = #b3b2b2
 .content
 	+below(768px)
 		fw()
+		margin-bottom: 30px
 	f()
 	justify-content: space-between
+	margin-bottom: 80px
 
 .content__toolbar
 	+below(768px)
@@ -1142,14 +1149,15 @@ $step = #b3b2b2
 			width: 100%
 	bg-full()
 
-/*.section--why
-	padding: 150px 0
-
-.section--start
-	padding: 150px 0
 
 .section--doc
-	padding: 150px 0*/
+	h3
+		padding: 20px
+		background: #f7f7f7
+		margin-bottom: 20px
+		font-size: 16px
+	p
+		margin-bottom: 20px
 
 .doc
 	+below(1023px)
@@ -1196,7 +1204,13 @@ $step = #b3b2b2
 	top -25px
 	margin-left: 0px
 
+.calc
+	+below(768px)
+		width: 80%
+		margin: 0 auto
 .calc-range-val
+	+below(768px)
+		font-size: 20px
 	flex(mid)
 	text-align: center
 	font-size: 40px
@@ -1499,8 +1513,10 @@ $step = #b3b2b2
 			position: static
 			top initial
 			left initial
+
 .footer-info
 	padding: 40px 0
+	border-top:1px solid #f3f2f2
 
 .footer-info-wrap
 	+below(640px)
@@ -1743,7 +1759,7 @@ $step = #b3b2b2
 	color #ed9872
 
 .section-advance
-	padding 0
+	padding-bottom 0
 
 .contact-text--link
 	text-decoration: underline
@@ -1815,3 +1831,183 @@ $step = #b3b2b2
 .row-btn--center
 	flex(mid)
 	margin-top: 40px
+
+.menu__list
+	padding: 0
+	a
+		padding: 0
+		text-transform: initial
+		text-align: left
+	.sub-menu
+		padding-left: 20px
+		width: 100%
+		position: static
+		display: block
+
+.table
+	min-width 290px
+	display: block
+	overflow: auto
+
+.article__el
+	padding: 20px
+	margin-bottom: 20px
+	border-raius 10px
+	box-shadow 0px 2px 5px #f4f4f4
+	display: block
+
+.article__title
+	font-size: 18px
+	color black
+	font-weight:bold
+
+.article__text
+	margin-top: 20px
+	line-height: 1.6
+
+.nav-links
+	margin: 20px 0
+
+.page-numbers
+	padding: 10px
+	border 1px solid #cccccc
+	display: inline-block
+
+.page-numbers.current
+	border 1px solid black
+
+.questions-items
+	padding: 20px
+	margin-bottom: 20px
+	border-raius 10px
+	box-shadow 0px 2px 5px #f4f4f4
+	display: block
+
+.questions-items__name
+	font-size: 18px
+	color black
+	font-weight:bold
+	margin-bottom: 20px
+
+.questions-items__title
+	margin-bottom: 20px
+	color black
+	font-style italic
+	line-height: 1.6
+
+.questions-items__text
+	line-height: 1.6
+
+.footer-list__menu
+	+below(640px)
+		display: none
+	list-style none
+	padding-left: 0
+	display: block
+	display: flex
+	justify-content:space-between
+	flex-wrap wrap
+	.menu-item
+		color black
+		width: 30%
+		text-transform: uppercase
+		margin-bottom: 20px
+
+.towns-list
+	display: flex
+	justify-content:center
+	flex-wrap wrap
+
+.towns-list__el
+	display: inline-block
+	padding: 5px 10px
+	margin: 5px
+	border-radius 10px
+	background: #f7f7f7
+
+.about-content
+	display: flex
+	justify-content: space-between
+	flex-wrap wrap
+
+.about-text
+	+below(768px)
+		order 2
+		width: 100%
+	width: 48%
+.about-img
+	width: 48%
+	+below(768px)
+		order 1
+		width: 100%
+		margin-bottom: 20px
+.section--about
+	padding-top: 0
+
+.section--towns
+	+below(768px)
+		display: none
+
+//NOTE!!! REMOVE CALC
+.calculator
+	padding-top: 200px
+	flex(mid)
+	fl()
+.calculator__wrap
+	width: 400px
+	input
+		width: 100%
+		margin-bottom: 20px
+.calculator__total
+	color black
+	font-size: 20px
+	margin-bottom: 20px
+.calc-get
+	@extend .btn--md
+	@extend .btn--mark
+	margin: 0 auto
+.calc-get-row
+	flex(mid)
+.calculator__row
+	width: 100%
+	flex(between)
+	margin-bottom: 10px
+.calculator__total
+	center(580px,10px)
+.calculator__total--text
+	font-weight:bold
+	margin-bottom: 20px
+.calculator__text
+	font-size: 14px
+	span
+		font-weight:bold
+.calculator__val
+	span
+		display: inline-block
+		margin-right: 10px
+
+//NOTE!!! REMOVE CALC === end
+
+.cost-inform--calc
+	background: white
+	margin-top: 40px
+
+.doc--three
+	.doc__el
+		+below(640px)
+			width: 100%
+		width: 31%
+		padding: 40px
+
+.section-call--mid
+	flex(mid)
+	fl()
+	.section-title
+		width: 100%
+
+section--calc
+	padding: 140px 0
+
+.irs-single
+	+below(768px)
+		font-size: 14px

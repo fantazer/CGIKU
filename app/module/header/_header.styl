@@ -177,7 +177,7 @@
 .nav-toggle
 	flex(mid)
 	cp()
-	+above(768px)
+	+above(769px)
 		display none
 	.icon
 		fill black
@@ -266,7 +266,7 @@
 	margin-bottom: 20px
 	
 .logo--short
-	+above(767px)
+	+above(769px)
 		display: none
 
 .logo--full
@@ -294,12 +294,14 @@
 			display: block
 			width: 100%
 
-.menu-item
-	@extend .menu-el
-	display: block
+.menu-wrap
+	.menu-item
+		@extend .menu-el
+		display: block
 
 .sub-menu
 	@extend .menu-el__sub
+
 
 .header-baner__price-info
 	width: 100%

@@ -1,0 +1,279 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+
+.lp-baner
+	.lp-baner__img(style="background-image:url('img/lp-item-3.jpg')")
+	.lp-baner-filter.lp-baner-filter--light
+	.main-cont
+		.lp-baner__content
+			.lp-baner__title Уточнение <br>границ земельного участка
+			.lp-baner__title-sub Установите точные границы участка на местности как можно скорее, и Вы избавитесь  от возможных проблем в будущем!
+			.header__get
+				a(href="#why").header__btn.header__btn-more Подробнее
+				.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
+
+//why you need this
+.section.section--why#why
+	.main-cont
+		.section-wrap
+			.section-call.section-call--mid
+				.section-title.section-title--left Что это такое ?
+				.box
+					p Уточнение границ земельного участка (межевание) – это кадастровые работы, включающие в себя: проведение геодезических измерений на участке (определение точных координат участка на местности); подготовку межевого плана кадастровым инженером; согласование границ с соседями и подачу согласованного межевого плана в Росреестр.
+					p Результатом работ является занесение сведений о фактическом местоположении границ земельного участка в Единый государственный реестр недвижимости (ЕГРН).
+
+			.section-call.section-call--img
+				img(src="img/lp-item-5.jpg", alt="")
+
+//from begin
+.section.section--start(style="background-image:url('img/lp-item-6.jpg')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--img
+			.section-call
+				.section-title.section-title--left Зачем это нужно ?
+				.box
+					p Проведение кадастровых работ по межеванию необходимо в случае, если сведения о координатах поворотных точек (границах) земельного участка отсутствуют в ЕГРН. Даже если земельному участку уже присвоен кадастровый номер (так называемый ранее учтенный земельный участок), сведения о границах участка на местности (координатах поворотных точек) могут отсутствовать в реестре.
+
+					p Для проверки следует зайти на ресурс Публичная кадастровая карта <a href="http://pkk5.rosreestr.ru/">http://pkk5.rosreestr.ru/</a> и вбить в поисковую строку кадастровый номер Вашего земельного участка. Далее нажать на кнопку «Найти». Если ресурс выдаст информацию о земельном участке, но при этом будет написано «Без координат границ», то границы земельного участка НЕ УТОЧНЕНЫ и необходимо сделать межевание.
+
+					p Рекомендуем не откладывать проведение межевания на долгий срок. Нередки случаи, когда собственники земельных участков, которые проводят межевание позже своих соседей, лишаются части площади из-за того, что границы соседних участков уже установлены и оставшейся площади между соседних границ просто не хватает. Заставить соседей изменить границы можно только через суд – это долго, хлопотно, ухудшит отношения с соседями, и не факт, что суд встанет на Вашу сторону. Наиболее правильным является одновременное межевание всех соседних участков (а еще лучше, всего СНТ или садового товарищества).
+
+					p.attanintion <b>ВАЖНО:</b> Также ВАЖНО знать, что с 01.01.2018 г. запрещаются любые сделки с земельными участками, в отношении которых в ЕГРН отсутствуют сведения о местоположении границ. То есть без проведения межевания нельзя будет провести регистрационные действия по купле-продаже, наследованию, дарению земельных участков и т.п.
+
+//service
+.section.section--calc
+	.main-cont
+		.section-title Стоимость наших работ
+		.section-title-sub При необходимости согласования границ с ДГИ г. Москвы стоимость увеличивается на 5000 руб
+		.calc
+			input(type="range" placeholder=""  class="calc-range")
+			.calc-range__wrap
+				.calc-range-val
+					.calc-range-numb 10 000
+					.calc-range-pay руб
+			.calc-text Цена услуги за один участок
+
+		.cost-inform.cost-inform--calc Указанные здесь цены являются окончательными и зависят только от площади объекта. Если Вы не хотите тратить свое время на подачу и получение документов из Росреестра, мы выполним это за Вас. Такая услуга «под ключ» будет стоить 5000 руб. В этом случае от Вас дополнительно потребуется нотариальная доверенность (форму доверенности Вам предоставит наш кадастровый инженер).
+
+//need doc
+.section.section--doc
+	.main-cont
+		.section-title Что войдет в стоимость работ ?
+		.section-title-sub Геодезические обмеры земельного участка.
+		.doc
+			.doc__el
+				.doc__icon
+					+icon("house-plan-scale","icon")
+				.doc__title Обмеры внешнего контура здания
+				.doc__text Позволяют установить фактическое местоположение границ земельного участка, координаты его поворотных точек и площадь.
+			.doc__el
+				.doc__icon
+					+icon("protractor","icon")
+				.doc__title Заказ сведений ЕГРН.
+				.doc__text Необходим для проведения процедуры согласования границ участка с соседними землепользователями и землевладельцами.
+			.doc__el
+				.doc__icon
+					+icon("file","icon")
+				.doc__title Формирование акта согласования границ.
+				.doc__text Документ который отображает основные элементы конструкций одного уровня здания.
+			.doc__el
+				.doc__icon
+					+icon("save-disk","icon")
+				.doc__title Формирование межевого плана на электронном цифровом носителе (диск), заверенного усиленной электронной подписью кадастрового инженера.
+				.doc__text Необходим для внесения в ЕГРН сведений о местоположении границ земельного участка, то есть для государственного кадастрового учета земельного участка.
+
+//need doc
+.section.section--doc
+	.main-cont
+		.section-title Какие нужны документы?
+		.section-title-sub Максимальный перечень необходимых документов
+		.doc.doc--three
+			.doc__el
+				.doc__icon
+					+icon("attest","icon")
+				.doc__title Свидетельство о праве собственности на земельный участок (выписка ЕГРН).
+				.doc__text Необходимо для подтверждения права собственности на земельный участок.
+			.doc__el
+				.doc__icon
+					+icon("plan","icon")
+				.doc__title План земельного участка <br> (при наличии).
+				.doc__text Необходим для подтверждения конфигурации земельного участка.
+			.doc__el
+				.doc__icon
+					+icon("doc","icon")
+				.doc__title Паспортные данные собственника земельного участка (СНИЛС).
+				.doc__text Документы, необходимые для подтверждения Вашей личности.
+
+//step work
+#step.section.section-step
+	.section-filter
+	.main-cont
+		.section-title как мы работаем
+		.step
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 01
+						.step-text
+							.step-text__descr Отправляете нам заявку или звоните.Получаете бесплатную консультацию от кадастрового инженера.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 02
+						.step-text
+							.step-text__descr Направляете нам электронные копии Ваших документов или приезжаете с ними к нам в офис.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 03
+						.step-text
+							.step-text__descr Анализируем документы, готовим проект Договора, согласовываем с Вами дату и время приезда геодезистов для проведения измерений.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 04
+						.step-text
+							.step-text__descr В назначенное время геодезисты приезжают к Вам, передают Договор и производят измерения.
+
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 05
+						.step-text
+							.step-text__descr Составляем акт согласования границ. Согласование границ с соседями.
+					.step-line
+						.step-dot
+
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 06
+						.step-text
+							.step-text__descr Формируем межевой план.
+
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 07
+						.step-text
+							.step-text__descr Передаем Вам готовый межевой план.
+					.step-line
+						.step-dot
+
+//contact-form
+//.contact-form
+	.section-title Оставьте свою заявку
+	.section-title-sub Оформите обращение с помощью этой формы, мы перезвоним <br>Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
+	.main-cont
+		form.validate-form( action="javascript:void(null);")
+			.input-row
+				input(type="text" name="name" placeholder="Ваше имя").input
+			.input-row
+				input(type="text" name="phone" placeholder="Ваш телефон").input
+			//.input-row
+				textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+			//.agree-row
+				.check-el
+					label.style-label.style-label--checkbox
+						input(type="checkbox" name="agree").sytle-input
+						.sytle-input-element
+							+icon("checked","icon-check")
+						.sytle-input-text=text
+				.agree-row__text Согласен с
+					a(href="#") условиями обработки персональных данных
+			input(type="submit" value="Отправить заявку").modal-send
+
+//price
+//.section.section--price.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.main-cont
+		.section-title Стоимость наших работ
+		.section-title-sub Подача в Росреестр – плюс 3 000 руб. к стоимости работ
+		.cost
+			.cost__el
+				.cost__el-img(style="background-image:url('img/house-size-1.png')")
+				.cost__el-title Площадь дома
+					span до 50 кв.м
+				.cost__el-text (садовый дом, баня, гараж)
+				.cost__el-price 10 000 руб.
+				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+			.cost__el
+				.cost__el-img(style="background-image:url('img/house-size-2.png')")
+				.cost__el-title Площадь дома
+					span от 51 до 100 кв.м
+				.cost__el-text (дачный дом , жилое строение)
+				.cost__el-price 14 000 руб.
+				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+			.cost__el
+				.cost__el-img(style="background-image:url('img/house-size-3.png')")
+				.cost__el-title Площадь дома
+					span от 101 до 200 кв.м
+				.cost__el-text (жилой дом)
+				.cost__el-price 20 000 руб.
+				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+			.cost__el
+				.cost__el-img(style="background-image:url('img/house-size-4.png')")
+				.cost__el-title Площадь дома
+					span от 201 кв.м
+				.cost__el-text (коттедж)
+				.cost__el-price 25 000 руб.
+				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+
+		.cost-inform Указанные здесь цены являются окончательными и зависят только от площади объекта. Единственный платёж, который Вам придётся уплатить, это гос. пошлина в размере 350 руб., взимаемая Росреестром при подаче технического плана.
+
+
+
+//service
+//.section.section--calc
+	.main-cont
+		.section-title Выберите площадь дома
+		.section-title-sub Подача в Росреестр – плюс 3 000 руб. к стоимости работ.
+		.calc
+			input(type="range" placeholder=""  class="calc-range")
+			.calc-range__wrap
+				.calc-range-val
+					.calc-range-numb 10 000
+					.calc-range-pay руб
+			.calc-text Цена услуги
+
+//service
+//.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.main-cont
+		.section-title Популярные услуги
+		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+		.service
+			- for (var i=0;i<6;i++)
+				.service__el
+					.service__title Уточнение границ земельного участка
+					.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
+					.service__price 18 000 руб.
+					.service__get
+						.service__btn.service__btn-more Подробнее
+						.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+
+//slider certificate
+.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.filter
+	.section-title Наши сертификаты
+	.main-cont
+		.slider-certificate.owl-carousel
+			- for (var i=1;i<11;i++)
+				.slider__el
+					a(href="img/cert-" + i + ".jpg" rel="group-elemen").fancybox
+						img(src="img/cert-" + i + ".jpg", alt="")
+
++footer()
+
+include ./block_html/_script.pug
