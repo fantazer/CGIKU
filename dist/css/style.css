@@ -5065,6 +5065,24 @@ section--calc {
     font-size: 14px;
   }
 }
+.section--why {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section-call--white {
+  padding: 40px;
+  background: #fff;
+}
+.section--left-bg {
+  background-position: left;
+}
+.section--start-sm .section-title {
+  margin-bottom: 30px;
+}
+.section--start-sm p {
+  font-size: 14px;
+}
 @-webkit-keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);
