@@ -638,15 +638,15 @@ body
 
 .modal-close
 	+below(768px)
-		top 20px
-		right 20px
+		top 15px
+		right 15px
 	position: absolute
 	top: 20px
 	right: 20px
 	cp()
 	.icon
 		+below(768px)
-			size 18px
+			size 15px
 		size 20px
 
 .modal-open
@@ -1096,6 +1096,8 @@ $step = #b3b2b2
 	width: 50%
 
 .lp-baner__title
+	+below(1024px)
+		font-size: 38px
 	+below(768px)
 		text-align: center
 	+below(640px)
@@ -1205,7 +1207,7 @@ $step = #b3b2b2
 	margin-left: 0px
 
 .calc
-	+below(768px)
+	+below(1280px)
 		width: 80%
 		margin: 0 auto
 .calc-range-val
@@ -1274,7 +1276,7 @@ $step = #b3b2b2
 	f()
 	fw()
 	justify-content: space-between
-	margin-bottom: 80px
+	margin-bottom: 40px
 
 .cost__el
 	+below(1024px)
@@ -1695,7 +1697,8 @@ $step = #b3b2b2
 	color $green
 	font-weight: bold
 	margin-bottom: 20px
-//.main-service__price--true
+.main-service__price--true
+	color $green
 .main-service__price--false
 	+below(1024px)
 		margin-left: 10px
@@ -1994,6 +1997,8 @@ $step = #b3b2b2
 
 .doc--three
 	.doc__el
+		+below(768px)
+			padding: 20px
 		+below(640px)
 			width: 100%
 		width: 31%
@@ -2020,10 +2025,101 @@ section--calc
 	background: white
 
 .section--left-bg
-	background-position: left
+	background-position: 30%
 
 .section--start-sm
 	.section-title
 		margin-bottom: 30px
 	p
 		font-size: 14px
+
+.lp-baner__img--borderland
+	background-size: contain
+	background-position: right
+	+below(768px)
+		background-image: url('../img/lp-1--white.jpg')!important;
+
+.get-sale__btn
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+		padding: 20px
+	@extend .btn--md
+	@extend .btn--mark
+	background-color $red
+	color white
+	padding: 20px 60px
+	font-weight bold
+
+.get-sale-row
+	flex(mid)
+	margin-bottom: 40px
+
+.modal-sale__title
+	+below(640px)
+		font-size: 16px
+	border-bottom: 1px solid $border-color
+	padding: 30px 20px
+	color black
+	font-weight:bold
+	font-size: 18px
+	text-align: center
+.modal--sale
+	+below(640px)
+		width: 100%
+		max-width 100%
+	max-width 640px
+	width 640px
+	.modal-content
+		padding: 0
+	.row-btn--center
+		margin-top: 0
+.modal-sale__list
+	+below(640px)
+		padding: 10px
+	padding: 20px 20px 0px 20px
+
+.modal-sale__el
+	+below(640px)
+		fw()
+		flex(mid)
+		fl()
+	flex(between)
+	line-height: 1.4
+	margin-bottom: 20px
+
+.modal-sale__el-icon
+	+below(768px)
+		margin-right: 0
+	margin-right: 30px
+	.icon
+		size 60px
+
+.modal-sale__el-text
+	padding-top: 15px
+	color black
+.modal-sale__el-text-sub
+	display: block
+	margin-top: 5px
+	padding-top: 5px
+	border-top:1px solid $border-color
+.modal-sale__text
+	background: #fff0b3
+	padding: 20px
+	p
+		line-height: 1.4
+		margin-bottom: 0
+		font-size: 12px
+.modal-sale__text-add
+	padding: 20px
+	font-size: 12px
+	text-align: center
+
+.modal-sale-get
+	@extend .btn--md
+	@extend .btn--mark
+	background-color $red
+	color white
+	font-weight bold
+	padding: 15px 80px
+	margin-bottom: 20px
