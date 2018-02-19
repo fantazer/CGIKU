@@ -22,6 +22,7 @@ $blue = #0095c6
 $red = #5da06b
 $gray = #efefef
 $green = #5da06b
+$yellow = #ffdf6d
 
 $main-text-color = #585858
 $link-color = #5a5a5a
@@ -201,6 +202,24 @@ btnStyleLight(br-btn,color-btn)
 		box-shadow 0 9px 18px rgb(146, 171, 151)
 	&:active
 		background-color $red
+		outline 0!important
+	input[type="submit"]
+		border 0
+	.nav-icon
+		fill white
+
+.btn--yellow
+	@extend .btn
+	color black
+	background $yellow
+	border 1px solid $yellow
+	.nav-icon
+		fill white
+	&:hover
+		background-color darken($yellow,10)
+		box-shadow 0 9px 18px rgb(146, 171, 151)
+	&:active
+		background-color $yellow
 		outline 0!important
 	input[type="submit"]
 		border 0

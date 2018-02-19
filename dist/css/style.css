@@ -594,6 +594,7 @@ p {
 .btn--lg,
 .btn--mobile,
 .btn--mark,
+.btn--yellow,
 .btn--light,
 .btn--grey,
 .btn--dotted,
@@ -634,6 +635,7 @@ p {
 .btn--lg:hover,
 .btn--mobile:hover,
 .btn--mark:hover,
+.btn--yellow:hover,
 .btn--light:hover,
 .btn--grey:hover,
 .btn--dotted:hover,
@@ -704,7 +706,6 @@ p {
 .main-service__btn-get,
 .main-service__el-get,
 .calc-get,
-.get-sale__btn,
 .modal-sale-get {
   color: #5da06b;
   background: #fff;
@@ -720,7 +721,6 @@ p {
 .main-service__btn-get .nav-icon,
 .main-service__el-get .nav-icon,
 .calc-get .nav-icon,
-.get-sale__btn .nav-icon,
 .modal-sale-get .nav-icon {
   fill: #fff;
 }
@@ -734,7 +734,6 @@ p {
 .main-service__btn-get:hover,
 .main-service__el-get:hover,
 .calc-get:hover,
-.get-sale__btn:hover,
 .modal-sale-get:hover {
   background-color: #5da06b;
   color: #fff;
@@ -751,7 +750,6 @@ p {
 .main-service__btn-get:active,
 .main-service__el-get:active,
 .calc-get:active,
-.get-sale__btn:active,
 .modal-sale-get:active {
   background-color: #5da06b;
   outline: 0 !important;
@@ -766,7 +764,6 @@ p {
 .main-service__btn-get input[type="submit"],
 .main-service__el-get input[type="submit"],
 .calc-get input[type="submit"],
-.get-sale__btn input[type="submit"],
 .modal-sale-get input[type="submit"] {
   border: 0;
 }
@@ -780,8 +777,36 @@ p {
 .main-service__btn-get .nav-icon,
 .main-service__el-get .nav-icon,
 .calc-get .nav-icon,
-.get-sale__btn .nav-icon,
 .modal-sale-get .nav-icon {
+  fill: #fff;
+}
+.btn--yellow,
+.get-sale__btn {
+  color: #111;
+  background: #ffdf6d;
+  border: 1px solid #ffdf6d;
+}
+.btn--yellow .nav-icon,
+.get-sale__btn .nav-icon {
+  fill: #fff;
+}
+.btn--yellow:hover,
+.get-sale__btn:hover {
+  background-color: #ffd43a;
+  -webkit-box-shadow: 0 9px 18px #92ab97;
+          box-shadow: 0 9px 18px #92ab97;
+}
+.btn--yellow:active,
+.get-sale__btn:active {
+  background-color: #ffdf6d;
+  outline: 0 !important;
+}
+.btn--yellow input[type="submit"],
+.get-sale__btn input[type="submit"] {
+  border: 0;
+}
+.btn--yellow .nav-icon,
+.get-sale__btn .nav-icon {
   fill: #fff;
 }
 .btn--disable {
@@ -5124,8 +5149,6 @@ section--calc {
   }
 }
 .get-sale__btn {
-  background-color: #5da06b;
-  color: #fff;
   padding: 20px 60px;
   font-weight: bold;
 }
@@ -5253,9 +5276,13 @@ section--calc {
   padding: 20px;
 }
 .modal-sale__text p {
+  text-align: center;
   line-height: 1.4;
   margin-bottom: 0;
-  font-size: 12px;
+}
+.modal-sale__text p span {
+  display: block;
+  font-weight: 700;
 }
 .modal-sale__text-add {
   padding: 20px;
