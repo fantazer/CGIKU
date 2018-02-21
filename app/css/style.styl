@@ -1055,6 +1055,8 @@ $step = #b3b2b2
 	width: 100%
 
 .lp-baner
+	+below(1024px)
+		height: calc(100vh - 100px)
 	height: calc(100vh - 160px)
 	position: relative
 	width: 100%
@@ -1085,7 +1087,10 @@ $step = #b3b2b2
 
 
 .lp-baner__content
+	+below(1280px)
+		padding-left: 20px
 	+below(768px)
+		padding-left: 0
 		width: 70%
 		margin: 0 auto
 	+below(640px)
@@ -1096,8 +1101,8 @@ $step = #b3b2b2
 	width: 50%
 
 .lp-baner__title
-	+below(1024px)
-		font-size: 38px
+	+below(1280px)
+		font-size: 32px
 	+below(768px)
 		text-align: center
 	+below(640px)
@@ -2033,11 +2038,9 @@ section--calc
 	p
 		font-size: 14px
 
-.lp-baner__img--borderland
-	background-size: contain
-	background-position: right
+/*.lp-baner__img--borderland
 	+below(768px)
-		background-image: url('../img/lp-1--white.jpg')!important;
+		background-image: url('../img/lp-1--white.jpg')!important;*/
 
 .get-sale__btn
 	+below(640px)
@@ -2125,3 +2128,19 @@ section--calc
 	font-weight bold
 	padding: 15px 80px
 	margin-bottom: 20px
+
+.img-worker
+	width: 80%
+
+.lp-baner__wrap
+	flex(between)
+	width: 100%
+.lp-baner__image
+	width: 45%
+	+below(768px)
+		display: none
+.lp-baner__image-el
+	width: 100%
+	padding: 45%
+	bg-full()
+	background-size contain

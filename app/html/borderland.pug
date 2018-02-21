@@ -4,15 +4,19 @@ include block_html/_include.pug
 +header()
 
 .lp-baner
-	.lp-baner__img.lp-baner__img--borderland(style="background-image:url('img/neighbor-bg.jpg')")
+	.lp-baner__img.lp-baner__img--borderland
 	.lp-baner-filter.lp-baner-filter--light
 	.main-cont
-		.lp-baner__content
-			.lp-baner__title Уточнение <br>границ земельного участка
-			.lp-baner__title-sub Установите точные границы участка на местности как можно скорее, и Вы избавитесь  от возможных проблем в будущем!
-			.header__get
-				a(href="#why").header__btn.header__btn-more Подробнее
-				.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
+		.lp-baner__wrap
+			.lp-baner__content
+				.lp-baner__title Уточнение <br>границ земельного участка
+				.lp-baner__title-sub Установите точные границы участка на местности как можно скорее, и Вы избавитесь  от возможных проблем в будущем!
+				.header__get
+					a(href="#why").header__btn.header__btn-more Подробнее
+					.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
+			.lp-baner__image
+				.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
+				//img(src="img/lp-item-5.jpg", alt="")
 
 //why you need this
 .section.section--why#why
@@ -25,7 +29,7 @@ include block_html/_include.pug
 					p Результатом работ является занесение сведений о фактическом местоположении границ земельного участка в Единый государственный реестр недвижимости (ЕГРН).
 
 			.section-call.section-call--img
-				img(src="img/man.jpg", alt="")
+				img(src="img/worker.png", alt="").img-worker
 
 //from begin
 .section.section--start.section--start-sm.section--left-bg(style="background-image:url('img/lp-item-9.jpg')")
