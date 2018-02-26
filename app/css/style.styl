@@ -1056,7 +1056,7 @@ $step = #b3b2b2
 
 .lp-baner
 	+below(1024px)
-		height: calc(100vh - 100px)
+		height: calc(100vh - 140px)
 	height: calc(100vh - 160px)
 	position: relative
 	width: 100%
@@ -1072,7 +1072,7 @@ $step = #b3b2b2
 	left: 0
 	width: 100%
 	height: 100%
-	//background: red
+	background: #ffffffba
 
 .lp-baner__img
 	//+below(768px)
@@ -1215,6 +1215,8 @@ $step = #b3b2b2
 	+below(1280px)
 		width: 80%
 		margin: 0 auto
+	+below(640px)
+		width: 95%
 .calc-range-val
 	+below(768px)
 		font-size: 20px
@@ -2038,9 +2040,17 @@ section--calc
 	p
 		font-size: 14px
 
-/*.lp-baner__img--borderland
-	+below(768px)
-		background-image: url('../img/lp-1--white.jpg')!important;*/
+.lp-baner__img--borderland
+	+below(480px)
+		background-position-x: 90%
+
+	background-position: right
+
+.lp-baner--borderland
+	.lp-baner-filter
+		+below(968px)
+			display: block
+		display: none
 
 .get-sale__btn
 	+below(640px)
@@ -2144,3 +2154,39 @@ section--calc
 	padding: 45%
 	bg-full()
 	background-size contain
+
+.irs-bar-edge,
+.irs-bar
+	height: 15px
+	border-top: 1px solid #cfa910;
+	border-bottom: 1px solid #cfa910;
+	background:#cfa910;
+	background: linear-gradient(to top, rgb(250, 222, 111) 0%,rgb(255, 227, 117) 100%);
+.irs-bar-edge
+	border-left: 1px solid #cfa910;
+.irs-line-mid
+	height: 15px
+.irs-line
+	height: 15px
+.irs-grid-text
+	+below(640px)
+		font-size: 8px
+	font-size: 16px
+	margin-left: -4%
+.irs-grid
+	bottom -2px
+.irs-grid-pol
+	background: #605d5d
+
+.calc-text--attansion
+	display: none
+	span
+		br(10px)
+		padding: 7px 20px
+		background: $green
+		display: inline-block
+		margin-bottom: 10px
+		color white
+.irs-from, .irs-to, .irs-single
+	+below(640px)
+		top: 0 !important

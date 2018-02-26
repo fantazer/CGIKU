@@ -3,8 +3,8 @@ include block_html/_include.pug
 
 +header()
 
-.lp-baner
-	.lp-baner__img.lp-baner__img--borderland
+.lp-baner.lp-baner--borderland
+	.lp-baner__img.lp-baner__img--borderland(style="background-image:url('img/sosed.png')")
 	.lp-baner-filter.lp-baner-filter--light
 	.main-cont
 		.lp-baner__wrap
@@ -14,7 +14,7 @@ include block_html/_include.pug
 				.header__get
 					a(href="#why").header__btn.header__btn-more Подробнее
 					.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
-			.lp-baner__image
+			//.lp-baner__image
 				.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
 				//img(src="img/lp-item-5.jpg", alt="")
 
@@ -56,8 +56,10 @@ include block_html/_include.pug
 			input(type="range" placeholder=""  class="calc-range")
 			.calc-range__wrap
 				.calc-range-val
-					.calc-range-numb 10 000
+					.calc-range-numb 0
 					.calc-range-pay руб
+			.calc-text.calc-text--attansion
+				span свыше 2000 кв.м. цена определяется индивидуально
 			.calc-text Цена услуги за один участок
 
 		.cost-inform.cost-inform--calc Указанные здесь цены являются окончательными и зависят только от площади объекта. Если Вы не хотите тратить свое время на подачу и получение документов из Росреестра, мы выполним это за Вас. Такая услуга «под ключ» будет стоить 5000 руб. В этом случае от Вас дополнительно потребуется нотариальная доверенность (форму доверенности Вам предоставит наш кадастровый инженер).

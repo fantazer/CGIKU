@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
 		<link rel="stylesheet" href="bower/wow/css/libs/animate.css" />
 		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.css" />
-		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.skinNice.css" />
+		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css" />
 		<!--endbuild-->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-edit.css" />
@@ -156,8 +156,8 @@
 			<!--nav-end-->
 		</div>
 		<!--block header end-->
-		<div class="lp-baner">
-			<div class="lp-baner__img lp-baner__img--borderland"></div>
+		<div class="lp-baner lp-baner--borderland">
+			<div class="lp-baner__img lp-baner__img--borderland" style="background-image:url('img/sosed.png');"></div>
 			<div class="lp-baner-filter lp-baner-filter--light"></div>
 			<div class="main-cont">
 				<div class="lp-baner__wrap">
@@ -170,10 +170,11 @@
 							<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
 						</div>
 					</div>
-					<div class="lp-baner__image">
-						<div class="lp-baner__image-el" style="background-image:url('img/lp-item-5.jpg');"></div>
-						<!--img(src="img/lp-item-5.jpg", alt="")-->
-					</div>
+					<!--.lp-baner__image
+			.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
+			//img(src="img/lp-item-5.jpg", alt="")
+			
+			-->
 				</div>
 			</div>
 		</div>
@@ -228,9 +229,12 @@
 					<input class="calc-range" type="range" placeholder="" />
 					<div class="calc-range__wrap">
 						<div class="calc-range-val">
-							<div class="calc-range-numb">10 000</div>
+							<div class="calc-range-numb">0</div>
 							<div class="calc-range-pay">руб</div>
 						</div>
+					</div>
+					<div class="calc-text calc-text--attansion">
+						<span>свыше 2000 кв.м. цена определяется индивидуально</span>
 					</div>
 					<div class="calc-text">Цена услуги за один участок</div>
 				</div>

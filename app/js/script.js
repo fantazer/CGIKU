@@ -46,21 +46,32 @@ $(document).ready(function(){
 	//range slider
   $(".calc-range").ionRangeSlider({
  		values: [
- 			800,
- 			1000,
- 			2000,
+ 			"0 кв.м.",
+ 			"400 кв.м.",
+ 			"800 кв.м.",
+ 			"1000 кв.м.",
+ 			"1200 кв.м.",
+ 			"1600 кв.м.",
+ 			"2000 кв.м."
  		],
  		grid: true,
- 		postfix: " кв.м",
  		onChange: function (data) {
- 				if(data.from_value == 800){
+ 				if(data.from_value == "0 кв.м."){
+ 					$('.calc-range-numb').text('0');
+ 				}
+ 				if(data.from_value == "400 кв.м."){
  					$('.calc-range-numb').text('14 000 ');
  				}
- 				if(data.from_value == 1000){
+ 				if(data.from_value == "1000 кв.м."){
  					$('.calc-range-numb').text('15 000 ');
  				}
- 				if(data.from_value == 2000){
+ 				if(data.from_value == "1200 кв.м."){
  					$('.calc-range-numb').text('20 000 ');
+ 				}
+ 				if(data.from_value == "2000 кв.м."){
+ 					$('.calc-text--attansion').show();
+ 				} else {
+ 					$('.calc-text--attansion').hide();
  				}
     }
  	});

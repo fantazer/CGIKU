@@ -3389,8 +3389,8 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .lp-baner {
-    height: -webkit-calc(100vh - 100px);
-    height: calc(100vh - 100px);
+    height: -webkit-calc(100vh - 140px);
+    height: calc(100vh - 140px);
   }
 }
 .lp-baner .main-cont {
@@ -3411,6 +3411,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(255,255,255,0.729);
 }
 .lp-baner__img {
   background-size: cover;
@@ -3638,6 +3639,11 @@ body {
   .calc {
     width: 80%;
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .calc {
+    width: 95%;
   }
 }
 .calc-range-val {
@@ -5151,9 +5157,22 @@ section--calc {
 .section--start-sm p {
   font-size: 14px;
 }
-/*.lp-baner__img--borderland
-	+below(768px)
-		background-image: url('../img/lp-1--white.jpg')!important;*/
+.lp-baner__img--borderland {
+  background-position: right;
+}
+@media only screen and (max-width: 480px) {
+  .lp-baner__img--borderland {
+    background-position-x: 90%;
+  }
+}
+.lp-baner--borderland .lp-baner-filter {
+  display: none;
+}
+@media only screen and (max-width: 968px) {
+  .lp-baner--borderland .lp-baner-filter {
+    display: block;
+  }
+}
 .get-sale__btn {
   padding: 20px 60px;
   font-weight: bold;
@@ -5335,6 +5354,59 @@ section--calc {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+}
+.irs-bar-edge,
+.irs-bar {
+  height: 15px;
+  border-top: 1px solid #cfa910;
+  border-bottom: 1px solid #cfa910;
+  background: #cfa910;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fade6f), to(#ffe375));
+  background: -webkit-linear-gradient(bottom, #fade6f 0%, #ffe375 100%);
+  background: linear-gradient(to top, #fade6f 0%, #ffe375 100%);
+}
+.irs-bar-edge {
+  border-left: 1px solid #cfa910;
+}
+.irs-line-mid {
+  height: 15px;
+}
+.irs-line {
+  height: 15px;
+}
+.irs-grid-text {
+  font-size: 16px;
+  margin-left: -4%;
+}
+@media only screen and (max-width: 640px) {
+  .irs-grid-text {
+    font-size: 8px;
+  }
+}
+.irs-grid {
+  bottom: -2px;
+}
+.irs-grid-pol {
+  background: #605d5d;
+}
+.calc-text--attansion {
+  display: none;
+}
+.calc-text--attansion span {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 7px 20px;
+  background: #5da06b;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #fff;
+}
+@media only screen and (max-width: 640px) {
+  .irs-from,
+  .irs-to,
+  .irs-single {
+    top: 0 !important;
+  }
 }
 @-webkit-keyframes slideInDown {
   from {
