@@ -3641,7 +3641,7 @@ body {
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .calc {
     width: 95%;
   }
@@ -5096,6 +5096,7 @@ body {
 .cost-inform--calc {
   background: #fff;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .doc--three .doc__el {
   width: 31%;
@@ -5376,7 +5377,11 @@ section--calc {
 }
 .irs-grid-text {
   font-size: 16px;
-  margin-left: -4%;
+}
+@media only screen and (max-width: 768px) {
+  .irs-grid-text {
+    font-size: 10px;
+  }
 }
 @media only screen and (max-width: 640px) {
   .irs-grid-text {

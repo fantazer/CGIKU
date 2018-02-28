@@ -46,11 +46,11 @@ $(document).ready(function(){
 	//range slider
   $(".calc-range").ionRangeSlider({
  		values: [
- 			"0 кв.м.",
  			"400 кв.м.",
+ 			"600 кв.м.",
  			"800 кв.м.",
  			"1000 кв.м.",
- 			"1200 кв.м.",
+ 			"1400 кв.м.",
  			"1600 кв.м.",
  			"2000 кв.м."
  		],
@@ -62,10 +62,13 @@ $(document).ready(function(){
  				if(data.from_value == "400 кв.м."){
  					$('.calc-range-numb').text('14 000 ');
  				}
+ 				if(data.from_value == "800 кв.м."){
+ 					$('.calc-range-numb').text('14 000 ');
+ 				}
  				if(data.from_value == "1000 кв.м."){
  					$('.calc-range-numb').text('15 000 ');
  				}
- 				if(data.from_value == "1200 кв.м."){
+ 				if(data.from_value == "1400 кв.м."){
  					$('.calc-range-numb').text('20 000 ');
  				}
  				if(data.from_value == "2000 кв.м."){
