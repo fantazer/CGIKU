@@ -80,6 +80,42 @@ $(document).ready(function(){
  	});
 	//range slider===end
 
+	//range slider
+  $(".calc-range--topograf").ionRangeSlider({
+ 		values: [
+ 			"800 кв.м.",
+ 			"600 кв.м.",
+ 			"800 кв.м.",
+ 			"1000 кв.м.",
+ 			"1400 кв.м.",
+ 			"1600 кв.м.",
+ 			"2000 кв.м."
+ 		],
+ 		grid: true,
+ 		onChange: function (data) {
+ 				if(data.from_value == "0 кв.м."){
+ 					$('.calc-range-numb').text('0');
+ 				}
+ 				if(data.from_value == "400 кв.м."){
+ 					$('.calc-range-numb').text('14 000 ');
+ 				}
+ 				if(data.from_value == "800 кв.м."){
+ 					$('.calc-range-numb').text('14 000 ');
+ 				}
+ 				if(data.from_value == "1000 кв.м."){
+ 					$('.calc-range-numb').text('15 000 ');
+ 				}
+ 				if(data.from_value == "1400 кв.м."){
+ 					$('.calc-range-numb').text('20 000 ');
+ 				}
+ 				if(data.from_value == "2000 кв.м."){
+ 					$('.calc-text--attansion').show();
+ 				} else {
+ 					$('.calc-text--attansion').hide();
+ 				}
+    }
+ 	});
+	//range slider===end
 
 	//drop menu
 	var hideToggle = function(targetClick,toggleEl) {
@@ -302,7 +338,7 @@ $(document).ready(function(){
 }
 
 	console.log(detectIE());
-	if (detectIE() <= 14 && detectIE()) {
+	if (detectIE() <= 10 && detectIE()) {
 		$('body').empty();
 		$('body').prepend('' +
 		 '<div class="old-browser">' +
@@ -311,8 +347,8 @@ $(document).ready(function(){
 		'</div>');
 	}
 
-	//for init SVG 
-	svg4everybody();
+	//for init SVG
+	//svg4everybody();
 	// ==== clear storage =====
 	 localStorage.clear();
 	 sessionStorage.clear();
@@ -321,7 +357,7 @@ $(document).ready(function(){
 	 });
 	// ==== clear storage end =====
 
-	
+
 	/* ###### For SlideToggle Elements  ######*/
 	/*var hideToggle = function(targetClick,toggleEl) {
 		$(targetClick).click(function(event){
@@ -430,7 +466,8 @@ $(window).load(function () {
 {
 	'use strict';
 
-	var file  = 'img/pack.html',
+	//var file  = '/wp-content/themes/CGIKU/img/pack.html',
+	var file  = '/img/pack.html',
 		revision = 1;
 
 	if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )

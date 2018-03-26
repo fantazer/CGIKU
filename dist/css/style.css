@@ -5413,6 +5413,17 @@ section--calc {
     top: 0 !important;
   }
 }
+.lp-baner__title-status {
+  padding: 10px 20px;
+  background: #f1f1f1;
+  color: #111;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: bold;
+  display: inline-block;
+}
 @-webkit-keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);
