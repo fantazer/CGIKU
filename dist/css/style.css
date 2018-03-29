@@ -3863,7 +3863,8 @@ body {
   margin-bottom: 40px;
   font-weight: bold;
 }
-.cost-inform {
+.cost-inform,
+.calc-ur-pay {
   width: 70%;
   margin: 0 auto;
   padding: 20px 40px;
@@ -3874,7 +3875,8 @@ body {
   text-align: center;
 }
 @media only screen and (max-width: 640px) {
-  .cost-inform {
+  .cost-inform,
+  .calc-ur-pay {
     width: 100%;
     margin-bottom: 40px;
     padding: 10px 20px;
@@ -5093,7 +5095,8 @@ body {
   display: inline-block;
   margin-right: 10px;
 }
-.cost-inform--calc {
+.cost-inform--calc,
+.calc-ur-pay {
   background: #fff;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -5160,6 +5163,11 @@ section--calc {
 }
 .section--start-lg {
   padding: 200px 0;
+}
+@media only screen and (max-width: 768px) {
+  .section--start-lg {
+    padding: 30px 0;
+  }
 }
 .section--start-lg .section-title {
   margin-bottom: 30px;
@@ -5432,6 +5440,78 @@ section--calc {
   margin-bottom: 40px;
   font-weight: bold;
   display: inline-block;
+}
+.section-title--add {
+  text-align: center;
+}
+.section--calc--topograf .section-title-sub {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.section--calc--topograf .section-title--add {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section--calc--topograf .section-title--add span {
+  display: inline-block;
+  background: #fff;
+  padding: 10px 20px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  color: #111;
+}
+.section--calc--topograf .section-title {
+  margin-bottom: 20px;
+}
+.calc-ur-pay {
+  text-align: left;
+}
+.calc-ur-pay-title {
+  font-weight: bold;
+  color: #111;
+}
+.calc-ur-pay-list ul {
+  margin: 0;
+}
+.calc-ur-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.calc-ur-cont .cost-inform--calc {
+  width: 48%;
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.calc-ur-cont .calc-ur-pay {
+  width: 48%;
 }
 @-webkit-keyframes slideInDown {
   from {

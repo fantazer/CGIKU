@@ -97,16 +97,16 @@ $(document).ready(function(){
  					$('.calc-range-numb').text('0');
  				}
  				if(data.from_value == "400 кв.м."){
- 					$('.calc-range-numb').text('14 000 ');
+ 					$('.calc-range-numb').text('10 000 ');
  				}
  				if(data.from_value == "800 кв.м."){
- 					$('.calc-range-numb').text('14 000 ');
+ 					$('.calc-range-numb').text('10 000 ');
  				}
  				if(data.from_value == "1000 кв.м."){
  					$('.calc-range-numb').text('15 000 ');
  				}
  				if(data.from_value == "1400 кв.м."){
- 					$('.calc-range-numb').text('20 000 ');
+ 					$('.calc-range-numb').text('15 000 ');
  				}
  				if(data.from_value == "2000 кв.м."){
  					$('.calc-text--attansion').show();
@@ -467,7 +467,7 @@ $(window).load(function () {
 	'use strict';
 
 	//var file  = '/wp-content/themes/CGIKU/img/pack.html',
-	var file  = '/img/pack.html',
+	var file  = 'img/pack.html',
 		revision = 1;
 
 	if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
