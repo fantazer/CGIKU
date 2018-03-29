@@ -5158,6 +5158,15 @@ section--calc {
 .section--start-sm p {
   font-size: 14px;
 }
+.section--start-lg {
+  padding: 200px 0;
+}
+.section--start-lg .section-title {
+  margin-bottom: 30px;
+}
+.section--start-lg p {
+  font-size: 14px;
+}
 .lp-baner__img--borderland {
   background-position: right;
 }
