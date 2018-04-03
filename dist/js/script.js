@@ -83,7 +83,6 @@ $(document).ready(function(){
 	//range slider
   $(".calc-range--topograf").ionRangeSlider({
  		values: [
- 			"800 кв.м.",
  			"600 кв.м.",
  			"800 кв.м.",
  			"1000 кв.м.",
@@ -96,7 +95,7 @@ $(document).ready(function(){
  				if(data.from_value == "0 кв.м."){
  					$('.calc-range-numb').text('0');
  				}
- 				if(data.from_value == "400 кв.м."){
+ 				if(data.from_value == "600 кв.м."){
  					$('.calc-range-numb').text('10 000 ');
  				}
  				if(data.from_value == "800 кв.м."){

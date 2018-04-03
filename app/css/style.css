@@ -3863,8 +3863,7 @@ body {
   margin-bottom: 40px;
   font-weight: bold;
 }
-.cost-inform,
-.calc-ur-pay {
+.cost-inform {
   width: 70%;
   margin: 0 auto;
   padding: 20px 40px;
@@ -3875,8 +3874,7 @@ body {
   text-align: center;
 }
 @media only screen and (max-width: 640px) {
-  .cost-inform,
-  .calc-ur-pay {
+  .cost-inform {
     width: 100%;
     margin-bottom: 40px;
     padding: 10px 20px;
@@ -5095,12 +5093,6 @@ body {
   display: inline-block;
   margin-right: 10px;
 }
-.cost-inform--calc,
-.calc-ur-pay {
-  background: #fff;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .doc--three .doc__el {
   width: 31%;
   padding: 40px;
@@ -5470,19 +5462,46 @@ section--calc {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   color: #111;
+  font-size: 20px;
+  font-weight: bold;
 }
 .section--calc--topograf .section-title {
   margin-bottom: 20px;
 }
+.cost-inform--calc {
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #faeaa8;
+  margin-top: 20px;
+  color: #111;
+}
 .calc-ur-pay {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 20px 40px 20px;
+  line-height: 1.8;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   text-align: left;
+  background: #fff;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .calc-ur-pay {
+    width: 100%;
+  }
 }
 .calc-ur-pay-title {
   font-weight: bold;
   color: #111;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .calc-ur-pay-list ul {
-  margin: 0;
+  margin: 20px 0;
 }
 .calc-ur-cont {
   display: -webkit-box;
@@ -5495,7 +5514,6 @@ section--calc {
           justify-content: space-between;
 }
 .calc-ur-cont .cost-inform--calc {
-  width: 48%;
   text-align: left;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5511,7 +5529,12 @@ section--calc {
           align-items: center;
 }
 .calc-ur-cont .calc-ur-pay {
-  width: 48%;
+  width: 55%;
+}
+@media only screen and (max-width: 768px) {
+  .calc-ur-cont .calc-ur-pay {
+    width: 100%;
+  }
 }
 @-webkit-keyframes slideInDown {
   from {

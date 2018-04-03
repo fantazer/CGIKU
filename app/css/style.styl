@@ -1998,10 +1998,7 @@ $step = #b3b2b2
 
 //NOTE!!! REMOVE CALC === end
 
-.cost-inform--calc
-	background: white
-	margin-top: 40px
-	margin-bottom: 40px
+
 .doc--three
 	.doc__el
 		+below(768px)
@@ -2227,29 +2224,47 @@ section--calc
 			padding: 10px 20px
 			br(10px)
 			color black
+			font-size: 20px
+			font-weight:bold
 	.section-title
 		margin-bottom: 20px
 
-
+.cost-inform--calc
+	background: white
+	padding: 10px
+	br(10px)
+	background: #faeaa8
+	margin-top: 20px
+	color black
 .calc-ur-pay
-	@extend .cost-inform--calc
-	@extend .cost-inform
+	+below(768px)
+		width: 100%
+	width: 70%
+	margin: 0 auto
+	padding: 20px 20px 40px 20px
+	line-height: 1.8
+	br(10px)
 	text-align: left
-
+	background: white
+	margin-top: 40px
 
 .calc-ur-pay-title
 	font-weight: bold
 	color black
+	font-size: 20px
+	margin-bottom: 20px
+	text-align: center
 .calc-ur-pay-list
 	ul
-		margin: 0
+		margin: 20px 0
 
 .calc-ur-cont
 	f()
 	justify-content: space-between
 	.cost-inform--calc
-		width: 48%
 		text-align: left
 		flex(mid)
 	.calc-ur-pay
-		width: 48%
+		+below(768px)
+			width: 100%
+		width: 55%
