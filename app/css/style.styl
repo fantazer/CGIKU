@@ -77,6 +77,8 @@ body
 .section
 	+below(768px)
 		padding: 30px 0
+	+below(640px)
+		padding-bottom: 0
 	padding: 100px 0
 
 
@@ -1228,6 +1230,11 @@ $step = #b3b2b2
 	padding: 15px 50px
 	br(20px)
 
+.calc-range-val--lg
+	font-size: 52px
+	+below(768px)
+		font-size: 20px
+
 .calc-range__wrap
 	flex(mid)
 	color black
@@ -2031,6 +2038,10 @@ section--calc
 .section--left-bg
 	background-position: 30%
 
+.section--left-contain
+	-webkit-background-size: contain
+	background-size: contain
+	background-position: left center
 .section--start-sm
 	.section-title
 		margin-bottom: 30px
@@ -2236,6 +2247,9 @@ section--calc
 	background: #faeaa8
 	margin-top: 20px
 	color black
+
+.cost-inform--calc-gray
+	background: #f1f1f1
 .calc-ur-pay
 	+below(768px)
 		width: 100%
@@ -2268,3 +2282,7 @@ section--calc
 		+below(768px)
 			width: 100%
 		width: 55%
+
+.lp-baner__title--think
+	text-transform: none
+	font-weight: bold

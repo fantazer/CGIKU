@@ -1777,6 +1777,11 @@ body {
     padding: 30px 0;
   }
 }
+@media only screen and (max-width: 640px) {
+  .section {
+    padding-bottom: 0;
+  }
+}
 .title,
 .about-cont__title,
 .city-title {
@@ -3672,6 +3677,14 @@ body {
     font-size: 20px;
   }
 }
+.calc-range-val--lg {
+  font-size: 52px;
+}
+@media only screen and (max-width: 768px) {
+  .calc-range-val--lg {
+    font-size: 20px;
+  }
+}
 .calc-range__wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5147,6 +5160,10 @@ section--calc {
 .section--left-bg {
   background-position: 30%;
 }
+.section--left-contain {
+  background-size: contain;
+  background-position: left center;
+}
 .section--start-sm .section-title {
   margin-bottom: 30px;
 }
@@ -5477,6 +5494,9 @@ section--calc {
   margin-top: 20px;
   color: #111;
 }
+.cost-inform--calc-gray {
+  background: #f1f1f1;
+}
 .calc-ur-pay {
   width: 70%;
   margin: 0 auto;
@@ -5535,6 +5555,10 @@ section--calc {
   .calc-ur-cont .calc-ur-pay {
     width: 100%;
   }
+}
+.lp-baner__title--think {
+  text-transform: none;
+  font-weight: bold;
 }
 @-webkit-keyframes slideInDown {
   from {
