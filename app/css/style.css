@@ -5559,6 +5559,12 @@ section--calc {
 .lp-baner__title--think {
   text-transform: none;
   font-weight: bold;
+  font-size: 58px;
+}
+@media only screen and (max-width: 768px) {
+  .lp-baner__title--think {
+    font-size: 32px;
+  }
 }
 @-webkit-keyframes slideInDown {
   from {
