@@ -5186,6 +5186,7 @@ section--calc {
 }
 .lp-baner__img--borderland {
   background-position: right;
+  background-size: contain;
 }
 @media only screen and (max-width: 480px) {
   .lp-baner__img--borderland {
