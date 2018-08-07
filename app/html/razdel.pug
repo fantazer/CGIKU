@@ -1,0 +1,197 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+
+//banner
+.lp-baner.lp-baner--borderland
+	.lp-baner__img.lp-baner__img--borderland(style="background-image:url('img/razdel.png')")
+	//.lp-baner-filter--green
+	.main-cont
+		.lp-baner__wrap
+			.lp-baner__content
+				.lp-baner__title Раздел земельного участка
+				.lp-baner__title-sub Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади (для юридических лиц).
+				.header__get
+					a(href="#why").header__btn.header__btn-more Подробнее
+					.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
+			//.lp-baner__image
+				.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
+				//img(src="img/lp-item-5.jpg", alt="")
+
+//Что это такое
+.section.section--why.section--why-topograf#why.section--contain(style="background-image:url('img/baner-22.jpg')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--mid
+				.section-title.section-title--left Что это такое ?
+				.box
+					p Раздел земельного участка – это кадастровые работы по образованию нескольких новых земельных участков путем раздела исходного земельного участка, который в итоге прекращает свое существование.
+					p В ходе выполнения работ кадастровым инженером подготавливается межевой план, который подается в Росреестр. Результатом работ является занесение сведений о вновь образованных земельных участках в Единый государственный реестр недвижимости (ЕГРН).
+
+//Зачем это нужно
+.section.section--start.section--start-lg.section--left-bg(style="background-image:url('img/razdel-2.png')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--img
+			.section-call
+				.section-title.section-title--left Зачем это нужно ?
+				.box
+					p Раздел земельного участка нужен, когда собственнику такого участка необходимо произвести раздел имущества, продать / подарить часть участка или произвести раздел дома, расположенного на таком земельном участке.
+					p.attanintion ! ВАЖНО: земельный участок может быть поделен только при условии того, что его границы уже уточнены (то есть имеются на публичной кадастровой карте). Кроме того, на делимый земельный участок должно быть зарегистрировано право собственности.
+
+					p Необходимо учитывать, что образуемые земельные участки не должны быть меньше или превышать предельно допустимые минимальные или максимальные размеры, установленные в Вашем районе Органом местного самоуправления.
+
+//Цены
+.section.section--price
+	.main-cont
+		.section-title Стоимость наших работ
+		.section-title-sub Работаем в Москве и во всех районах Московской области.
+		.cost.cost--three
+			.cost__el
+				.cost__el-img(style="background-image:url('img/razdel-price-1.jpg')")
+				.cost__el-title Площадь участка
+					span 1000 кв.м.
+				.cost__el-text.cost__el-text--mark Без геодезических обмеров
+				.cost__el-text 10 рабочих дней
+				.cost__el-price 10 000 руб.
+				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+			.cost__el
+				.cost__el-img(style="background-image:url('img/razdel-price-2.jpg')")
+				.cost__el-title Площадь участка
+					span 1000 кв.м.
+				.cost__el-text.cost__el-text--mark С геодезическими обмерами
+				.cost__el-text 10 рабочих дней
+				.cost__el-price 15 000 руб.
+				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+			.cost__el
+				.cost__el-img(style="background-image:url('img/razdel-price-3.jpg')")
+				.cost__el-title Площадь участка
+					span более 1000 кв.м.
+				.cost__el-text.cost__el-text--mark Зависит от площади  участка
+				.cost__el-text Индивидуально
+				.cost__el-price от 15 000 руб.
+				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
+
+//Что войдет в стоимость
+.section.section--doc
+	.main-cont
+		.section-title Что войдет в стоимость работ ?
+		.section-title-sub
+		//.section-title-sub Геодезические обмеры земельного участка.
+		.doc.doc--three
+			.doc__el
+				.doc__icon
+					+icon("land","icon")
+				.doc__title Геодезические обмеры границы раздела земельного участка
+				.doc__text Позволяют установить фактическое местоположение границ образуемых земельных участков, координаты их поворотных точек и площадь.
+			.doc__el
+				.doc__icon
+					+icon("case","icon")
+				.doc__title Заказ сведений ЕГРН
+				.doc__text Для анализа местоположения границ соседних земельных участков относительно Вашего участка.
+
+			.doc__el
+				.doc__icon
+					+icon("information","icon")
+				.doc__title Формирование межевого плана на электронном цифровом носителе (диск), заверенного усиленной электронной подписью кадастрового инженера.
+				.doc__text Необходим для внесения в ЕГРН сведений о местоположении границ земельного участка, то есть для государственного кадастрового учета земельного участка.
+
+//Документы
+.section.section--doc
+	.main-cont
+		.section-title Какие нужны документы?
+		.section-title-sub Максимальный перечень необходимых документов
+		.doc.doc--three
+			.doc__el
+				.doc__icon
+					+icon("attest","icon")
+				.doc__title Свидетельство о праве собственности на земельный участок (выписка ЕГРН)
+				.doc__text Необходимо для подтверждения права собственности на земельный участок
+			.doc__el
+				.doc__icon
+					+icon("doc","icon")
+				.doc__title Паспортные данные собственника земельного участка, СНИЛС
+				.doc__text Документы, необходимые для подтверждения Вашей личности.
+			.doc__el
+				.doc__icon
+					+icon("plan","icon")
+				.doc__title Письменное согласие собственника земельного участка
+				.doc__text В согласии указывается количество образуемых участков и их площадь.
+
+//Как мы работаем
+#step.section.section-step
+	.section-filter
+	.main-cont
+		.section-title как мы работаем
+		.step
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 01
+						.step-text
+							.step-text__descr Отправляете нам заявку или звоните. Получаете бесплатную консультацию от кадастрового инженера.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 02
+						.step-text
+							.step-text__descr Направляете нам электронные копии Ваших документов или приезжаете с ними к нам в офис.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 03
+						.step-text
+							.step-text__descr Анализируем документы, готовим проект Договора, согласовываем с Вами дату и время приезда геодезистов для проведения измерений.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 04
+						.step-text
+							.step-text__descr В назначенное время геодезисты приезжают к Вам, передают Договор и производят измерения.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 05
+						.step-text
+							.step-text__descr Составляем акт согласования границ. Согласование границ с соседями.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 06
+						.step-text
+							.step-text__descr Формируем межевой план.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 07
+						.step-text
+							.step-text__descr Передаем Вам готовый межевой план.
+					.step-line
+						.step-dot
+
+//slider certificate
+.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.filter
+	.section-title Наши сертификаты
+	.main-cont
+		.slider-certificate.owl-carousel
+			- for (var i=1;i<11;i++)
+			.slider__el
+				a(href="img/cert-" + i + ".jpg" rel="group-elemen").fancybox
+					img(src="img/cert-" + i + ".jpg", alt="")
+
++footer()
+include ./block_html/_script.pug

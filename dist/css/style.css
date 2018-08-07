@@ -440,14 +440,16 @@ h4 {
 .type--main,
 h3,
 p,
-body {
+body,
+ol li {
   font-size: 14px;
 }
 @media only screen and (max-width: 768px) {
   .type--main,
   h3,
   p,
-  body {
+  body,
+  ol li {
     font-size: 12px;
   }
 }
@@ -3410,13 +3412,13 @@ body {
   width: 100%;
   height: 100%;
 }
-.lp-baner-filter {
+.lp-baner-filter--green {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255,255,255,0.729);
+  background: rgba(93,160,107,0.7);
 }
 .lp-baner__img {
   background-size: cover;
@@ -3427,6 +3429,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.lp-baner__img--top {
+  background-position: center top;
 }
 .lp-baner__content {
   margin-top: -30px;
@@ -5186,7 +5191,7 @@ section--calc {
 }
 .lp-baner__img--borderland {
   background-position: right;
-  background-size: contain;
+  background-size: cover;
 }
 @media only screen and (max-width: 480px) {
   .lp-baner__img--borderland {
@@ -5451,6 +5456,11 @@ section--calc {
   font-weight: bold;
   display: inline-block;
 }
+@media only screen and (max-width: 640px) {
+  .lp-baner__title-status {
+    text-align: center;
+  }
+}
 .section-title--add {
   text-align: center;
 }
@@ -5487,12 +5497,11 @@ section--calc {
   margin-bottom: 20px;
 }
 .cost-inform--calc {
-  background: #fff;
   padding: 10px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   background: #faeaa8;
-  margin-top: 20px;
+  margin: 20px auto;
   color: #111;
 }
 .cost-inform--calc-gray {
@@ -5566,6 +5575,205 @@ section--calc {
   .lp-baner__title--think {
     font-size: 32px;
   }
+}
+.section--why-topograf {
+  padding: 200px 0;
+  background-position: right;
+  background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+  .section--why-topograf {
+    padding: 50px 0;
+    background-position: -20% 0;
+    background-color: #ebebf3;
+  }
+}
+.section--why-borderland {
+  padding: 200px 0;
+  background-position: right;
+  background-size: contain;
+}
+@media only screen and (max-width: 768px) {
+  .section--why-borderland {
+    background-image: none !important;
+    padding: 50px 0;
+  }
+}
+.lp-baner--contain {
+  background-size: contain;
+  background-position: right;
+}
+@media only screen and (max-width: 768px) {
+  .lp-baner--contain {
+    background-image: none !important;
+  }
+}
+.personal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media only screen and (max-width: 640px) {
+  .personal {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.personal__el {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 640px) {
+  .personal__el {
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+.personal__el-img-wrap {
+  width: 32%;
+}
+@media only screen and (max-width: 640px) {
+  .personal__el-img-wrap {
+    width: 100%;
+  }
+}
+.personal__el-img {
+  padding: 60% 30%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: top center;
+}
+@media only screen and (max-width: 1024px) {
+  .personal__el-img {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .personal__el-img {
+    background-size: cover;
+  }
+}
+.personal__el-info {
+  width: 65%;
+  padding: 40px;
+  background: #fff;
+}
+@media only screen and (max-width: 640px) {
+  .personal__el-info {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .personal__el-info {
+    padding: 20px;
+  }
+}
+.personal__el-title {
+  font-size: 24px;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 640px) {
+  .personal__el-title {
+    font-size: 18px;
+  }
+}
+.personal__el-position {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.personal__el-text ul {
+  padding-left: 20px;
+}
+.personal__el-text ul li {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.personal-content {
+  background: #f1f1f1;
+  padding: 60px 0;
+}
+@media only screen and (max-width: 640px) {
+  .personal-content {
+    padding: 20px 0;
+  }
+}
+.lp-baner__title--sm {
+  font-size: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .lp-baner__title--sm {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .lp-baner__title--sm {
+    font-size: 24px;
+  }
+}
+ol li {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #111;
+  font-size: 16px;
+}
+.section--contain {
+  background-size: contain;
+}
+.lp-baner--dark .lp-baner__title {
+  color: #fff;
+  font-weight: bold;
+}
+.lp-baner--dark .lp-baner__title-sub {
+  color: #fff;
+}
+.header__btn-get--yellow {
+  background: #ffdf6d;
+  color: #111;
+}
+.section-call--full {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section--bg {
+  position: relative;
+  color: #fff;
+}
+.section--bg .lp-baner-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #ff4136;
 }
 @-webkit-keyframes slideInDown {
   from {

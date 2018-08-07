@@ -4,8 +4,7 @@ include block_html/_include.pug
 +header()
 
 .lp-baner
-	.lp-baner__img(style="background-image:url('img/lp-2.jpg')")
-	.lp-baner-filter.lp-baner-filter--light
+	.lp-baner__img.lp-baner--contain(style="background-image:url('img/baner-9.png')")
 	.main-cont
 		.lp-baner__content
 			.lp-baner__title Оформление <br> технического плана дома
@@ -15,7 +14,7 @@ include block_html/_include.pug
 				.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
 
 //why you need this
-.section.section--why#why
+.section.section--why.section--why-borderland#why(style="background-image:url('img/baner-10.png')")
 	.main-cont
 		.section-wrap
 			.section-call
@@ -25,11 +24,11 @@ include block_html/_include.pug
 					p До 2017 года все постройки на садовых и дачных участках (в СНТ и ДНТ) можно было зарегистрировать по декларации. С 2017 для их регистрации в Ростреестре необходим технический план.
 					p Технический план подается в Росреестр (можно через МФЦ). По итогам проверки Росреестром технического плана собственнику выдаётся выписка ЕГРН на здание, подтверждающая право собственности на постройку. С этого момента постройка считается официально зарегистрированной.
 
-			.section-call.section-call--img
+			//.section-call.section-call--img
 					img(src="img/lp-4.jpg", alt="")
 
 //from begin
-.section.section--start(style="background-image:url('img/lp-5.jpg')")
+.section.section--start(style="background-image:url('img/baner-11.png')")
 	.main-cont
 		.section-wrap
 			.section-call.section-call--img

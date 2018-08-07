@@ -1068,13 +1068,13 @@ $step = #b3b2b2
 		width: 100%
 		height: 100%
 
-.lp-baner-filter
+.lp-baner-filter--green
 	position: absolute
 	top 0
 	left: 0
 	width: 100%
 	height: 100%
-	background: #ffffffba
+	background: rgba(93, 160, 107, 0.7)
 
 .lp-baner__img
 	//+below(768px)
@@ -1086,7 +1086,8 @@ $step = #b3b2b2
 	width: 100%
 	height: 100%
 	//filter blur(10px)
-
+.lp-baner__img--top
+	background-position: center top
 
 .lp-baner__content
 	+below(1280px)
@@ -2061,7 +2062,7 @@ section--calc
 	+below(480px)
 		background-position-x: 90%
 	background-position: right
-	background-size: contain
+	background-size: cover
 .lp-baner--borderland
 	.lp-baner-filter
 		+below(968px)
@@ -2209,6 +2210,8 @@ section--calc
 		top: 0 !important
 
 .lp-baner__title-status
+	+below(640px)
+		text-align: center
 	padding: 10px 20px
 	background: #f1f1f1
 	color black
@@ -2240,11 +2243,10 @@ section--calc
 		margin-bottom: 20px
 
 .cost-inform--calc
-	background: white
 	padding: 10px
 	br(10px)
 	background: #faeaa8
-	margin-top: 20px
+	margin: 20px auto
 	color black
 
 .cost-inform--calc-gray
@@ -2288,3 +2290,147 @@ section--calc
 	font-size: 58px
 	+below(768px)
 		font-size: 32px
+
+.section--why-topograf
+	padding: 200px 0
+	background-position: right
+	background-size: cover
+	+below(768px)
+		//background-image: none!important
+		padding: 50px 0
+		background-position: -20% 0
+		background-color: #ebebf3
+
+.section--why-borderland
+	padding: 200px 0
+	background-position: right
+	background-size: contain
+	+below(768px)
+		background-image: none!important
+		padding: 50px 0
+
+.lp-baner--contain
+	background-size: contain
+	background-position: right
+	+below(768px)
+		background-image: none!important
+	//background-color: #ebebf3
+
+.personal
+	+below(640px)
+		max-width:480px
+		margin-left: auto
+		margin-right: auto
+	flex(between)
+	fw()
+.personal__el
+	+below(640px)
+		fl()
+	width: 100%
+	f()
+	justify-content: space-between
+	//fl()
+	margin-bottom: 40px
+.personal__el-img-wrap
+	+below(640px)
+		width: 100%
+	width: 32%
+	//margin-right: 5%
+.personal__el-img
+	+below(1024px)
+		height: auto
+	+below(640px)
+		background-size: cover
+	padding: 60% 30%
+	width: 100%
+	height: 100%
+	bg-full()
+	//background-size: contain
+	background-position: top center
+.personal__el-info
+	+below(640px)
+		width: 100%
+	+below(480px)
+		padding: 20px
+	width: 65%
+	padding: 40px
+	background: white
+.personal__el-title
+	+below(640px)
+		font-size: 18px
+	font-size: 24px
+	color black
+	font-weight:bold
+	margin-bottom: 10px
+
+.personal__el-position
+	font-weight:bold
+	margin-bottom: 20px
+.personal__el-text
+	ul
+		padding-left: 20px
+		li
+			line-height: 1.6
+			//font-size: 12px
+			margin-bottom: 10px
+.personal-content
+	+below(640px)
+		padding: 20px 0
+	background: #f1f1f1
+	padding: 60px 0
+
+.lp-baner__title--sm
+	+below(768px)
+		font-size: 26px
+	+below(640px)
+		font-size: 24px
+	font-size: 40px
+
+ol
+	li
+		line-height: 1.6
+		margin-bottom: 10px
+		color #111
+		@extend .type--main
+		font-size: 16px
+
+.section--contain
+	background-size: contain
+
+.lp-baner--dark
+	.lp-baner__title
+		color white
+		font-weight: bold
+	.lp-baner__title-sub
+		color white
+
+.header__btn-get--yellow
+	background: $yellow
+	color black
+
+//add new template
+
+.section-call--full
+	width: 100%
+	bg-full()
+.section--bg
+	position: relative
+	color: white
+	.lp-baner-filter
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top 0
+		background: red
+//add new template
+
+.cost__el-text--mark
+	padding: 5px 10px
+	background:#fff0b3
+	color black
+	br(10px)
+
+.cost--three
+	.cost__el
+		width: 32%

@@ -114,6 +114,34 @@ $(document).ready(function(){
  				}
     }
  	});
+
+ 	//range slider
+  $(".calc-range--mistake").ionRangeSlider({
+ 		values: [
+ 			"800 кв.м",
+ 			"1000 кв.м.",
+ 			"1400 кв.м.",
+ 			"1600 кв.м.",
+ 			"2000 кв.м."
+ 		],
+ 		grid: true,
+ 		onChange: function (data) {
+ 				if(data.from_value == "800 кв.м."){
+ 					$('.calc-range-numb').text('15 000 ');
+ 				}
+ 				if(data.from_value == "1000 кв.м."){
+ 					$('.calc-range-numb').text('18 000 ');
+ 				}
+ 				if(data.from_value == "1400 кв.м."){
+ 					$('.calc-range-numb').text('20 000 ');
+ 				}
+ 				if(data.from_value == "2000 кв.м."){
+ 					$('.calc-text--attansion').show();
+ 				} else {
+ 					$('.calc-text--attansion').hide();
+ 				}
+    }
+ 	});
 	//range slider===end
 
 	//drop menu
