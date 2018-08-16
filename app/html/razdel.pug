@@ -5,12 +5,12 @@ include block_html/_include.pug
 
 //banner
 .lp-baner.lp-baner--borderland
-	.lp-baner__img.lp-baner__img--borderland(style="background-image:url('img/razdel.png')")
+	.lp-baner__img.lp-baner--contain(style="background-image:url('img/razdel.jpg')")
 	//.lp-baner-filter--green
 	.main-cont
 		.lp-baner__wrap
 			.lp-baner__content
-				.lp-baner__title Раздел земельного участка
+				.lp-baner__title.lp-baner__title--fat Раздел земельного участка
 				.lp-baner__title-sub Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади (для юридических лиц).
 				.header__get
 					a(href="#why").header__btn.header__btn-more Подробнее
@@ -20,7 +20,7 @@ include block_html/_include.pug
 				//img(src="img/lp-item-5.jpg", alt="")
 
 //Что это такое
-.section.section--why.section--why-topograf#why.section--contain(style="background-image:url('img/baner-22.jpg')")
+#why.section.section--why.section--contain.section--mobile(style="background-image:url('img/razdel-3.jpg')")
 	.main-cont
 		.section-wrap
 			.section-call.section-call--mid
