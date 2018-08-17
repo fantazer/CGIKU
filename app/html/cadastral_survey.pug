@@ -4,9 +4,9 @@ include block_html/_include.pug
 +header()
 
 //banner
-.lp-baner.lp-baner--borderland
-	.lp-baner__img.lp-baner--contain(style="background-image:url('img/baner-23.jpg')")
-	//.lp-baner-filter--green
+.lp-baner.lp-baner--borderland.lp-baner__mobile
+	.lp-baner__img.lp-baner--cover(style="background-image:url('img/baner-23.jpg')")
+	.lp-baner-filter--dark
 	.main-cont
 		.lp-baner__wrap
 			.lp-baner__content
@@ -15,9 +15,6 @@ include block_html/_include.pug
 				.header__get
 					a(href="#why").header__btn.header__btn-more Подробнее
 					.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
-			//.lp-baner__image
-				.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
-				//img(src="img/lp-item-5.jpg", alt="")
 
 //Что это такое
 #why.section.section--why.section--contain.section--mobile(style="background-image:url('img/baner-24.jpg')")
@@ -30,7 +27,7 @@ include block_html/_include.pug
 					p Кадастровая съемка выполняется специальными приборами: электронными тахеометрами и спутниковой-геодезической аппаратурой, которые позволяют измерять высоты, углы и расстояния.
 
 //Зачем это нужно
-.section.section--start.section--start-lg.section--survey(style="background-image:url('img/baner-25.jpg')")
+.section.section--start.section--survey(style="background-image:url('img/baner-25.jpg')")
 	.main-cont
 		.section-wrap
 			.section-call.section-call--img
@@ -72,8 +69,8 @@ include block_html/_include.pug
 				.cost__el-title Площадь участка
 					span более 1000 кв.м.
 				.cost__el-text.cost__el-text--mark Индивидуально
-				.cost__el-text 10 рабочих дней
-				.cost__el-price 15 000 руб.
+				.cost__el-text Индивидуально
+				.cost__el-price от 10 000 руб.
 				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
 
 
@@ -105,7 +102,7 @@ include block_html/_include.pug
 	.main-cont
 		.section-title Какие нужны документы?
 		.section-title-sub Максимальный перечень необходимых документов
-		.doc.doc--three
+		.doc.doc--two
 			.doc__el
 				.doc__icon
 					+icon("attest","icon")
@@ -114,7 +111,7 @@ include block_html/_include.pug
 			.doc__el
 				.doc__icon
 					+icon("doc","icon")
-				.doc__title Паспортные данные собственника земельного участка, СНИЛС
+				.doc__title паспортные данные заказчика или реквизиты компании - Для заключения договора.
 				.doc__text Документы, необходимые для подтверждения Вашей личности.
 			//.doc__el
 				.doc__icon

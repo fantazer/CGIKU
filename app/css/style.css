@@ -2905,7 +2905,7 @@ body {
 }
 .section-title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 40px;
   color: #111;
   text-transform: uppercase;
@@ -3420,6 +3420,19 @@ body {
   height: 100%;
   background: rgba(93,160,107,0.7);
 }
+.lp-baner-filter--dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25,46,29,0.7);
+}
+@media only screen and (min-width: 769px) {
+  .lp-baner-filter--dark {
+    display: none;
+  }
+}
 .lp-baner__img {
   background-size: cover;
   background-repeat: no-repeat;
@@ -3847,6 +3860,9 @@ body {
 @media only screen and (max-width: 768px) {
   .cost__el-img {
     margin-bottom: 0;
+    width: 150px;
+    height: 150px;
+    padding: 25%;
   }
 }
 .cost__el-title {
@@ -3880,6 +3896,11 @@ body {
   color: #111;
   margin-bottom: 40px;
   font-weight: bold;
+}
+@media only screen and (max-width: 640px) {
+  .cost__el-price {
+    margin-bottom: 20px;
+  }
 }
 .cost-inform {
   width: 70%;
@@ -5130,6 +5151,36 @@ body {
     width: 100%;
   }
 }
+.doc--two {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.doc--two .doc__el {
+  width: 32%;
+  margin: 0 10px;
+}
+@media only screen and (max-width: 768px) {
+  .doc--two .doc__el {
+    width: 46%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .doc--two .doc__el {
+    width: 100%;
+    max-width: 380px;
+  }
+}
 .section-call--mid {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5193,13 +5244,6 @@ section--calc {
 }
 .section--start-lg p {
   font-size: 14px;
-}
-.section--start-lg ul li,
-.section--start-lg ol li {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #111;
-  margin-bottom: 10px;
 }
 .lp-baner__img--borderland {
   background-position: right;
@@ -5624,6 +5668,15 @@ section--calc {
     background-image: none !important;
   }
 }
+.lp-baner--cover {
+  background-size: cover;
+  background-position: right;
+}
+@media only screen and (max-width: 768px) {
+  .lp-baner--cover {
+    background-image: none !important;
+  }
+}
 .personal {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5828,6 +5881,7 @@ ol li {
 @media only screen and (max-width: 768px) {
   .cost--two .cost__el {
     width: 46%;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -5857,6 +5911,36 @@ ol li {
 @media only screen and (max-width: 1024px) {
   .section--survey {
     background-position: 20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lp-baner__mobile .lp-baner__img {
+    background-image: url("../img/kadastr.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .lp-baner__mobile .lp-baner__title {
+    color: #fff;
+  }
+  .lp-baner__mobile .lp-baner__title-sub {
+    color: #fff;
+    opacity: 0.7;
+  }
+}
+ul li,
+ol li {
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  ul li,
+  ol li {
+    font-size: 14px;
   }
 }
 @-webkit-keyframes slideInDown {
