@@ -5622,6 +5622,18 @@ section--calc {
     width: 100%;
   }
 }
+.calc-ur-cont--mark .calc-ur-pay {
+  -webkit-box-shadow: 0px 3px 8px #e3e3e3;
+          box-shadow: 0px 3px 8px #e3e3e3;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+.calc-ur-cont--mark .calc-ur-pay-text {
+  text-align: center;
+}
+.calc-ur-cont--mark .cost-inform--calc {
+  text-align: center;
+}
 .lp-baner__title--think {
   text-transform: none;
   font-weight: bold;
