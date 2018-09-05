@@ -2043,6 +2043,33 @@ $step = #b3b2b2
 	justify-content: center
 	align-items: stretch
 
+.doc--line
+	display: block
+	max-width: 768px
+	margin-left: auto
+	margin-right: auto
+.doc__el--line
+	+below(640px)
+		flex-flow column
+	width: 100%
+	margin-bottom: 20px
+	flex-flow row
+	align-items: center
+	.doc__icon
+		+below(640px)
+			margin-bottom: 20px
+			margin-right: 0
+		margin-right: 30px
+		margin-bottom: 0
+	.doc__title
+		+below(640px)
+			text-align: center
+		text-align: left
+		margin-bottom: 10px
+	.doc__text
+		+below(640px)
+			text-align: center
+		text-align: left
 .section-call--mid
 	flex(mid)
 	fl()
@@ -2529,3 +2556,10 @@ ul,ol
 		font-size: 16px
 		+below(768px)
 			font-size: 14px
+
+.section--union
+	+below(1200px)
+		background-position: 15% right
+
+.section--clear-bottom
+	padding-bottom: 0

@@ -19,7 +19,7 @@ include block_html/_include.pug
 
 
 //Что это такое
-#why.section.section--why.section--contain.section--mobile(style="background-image:url('img/baner-27.jpg')")
+#why.section.section--why.section--union.section--mobile(style="background-image:url('img/baner-27.jpg')")
 	.main-cont
 		.section-wrap
 			.section-call.section-call--mid
@@ -55,7 +55,7 @@ include block_html/_include.pug
 		.cost.cost--two
 			.cost__el
 				.cost__el-img(style="background-image:url('img/survey-pay-3.jpg')")
-				.cost__el-title Площадь участка
+				.cost__el-title Площадь образуемого участка
 					span до 2000 кв.м.
 				.cost__el-text.cost__el-text--mark 10 раб. дней
 				.cost__el-text зависит от площади и местоположения
@@ -63,7 +63,7 @@ include block_html/_include.pug
 				.service__btn.service__btn-get.modal-get(data-modal="order") Заказать
 			.cost__el
 				.cost__el-img(style="background-image:url('img/survey-pay-2.jpg')")
-				.cost__el-title Площадь участка
+				.cost__el-title Площадь образуемого участка
 					span более 2000 кв.м.
 				.cost__el-text.cost__el-text--mark Индивидуально
 				.cost__el-text Индивидуально
@@ -76,27 +76,24 @@ include block_html/_include.pug
 				.cost-inform--calc Если Вы не хотите тратить свое время на подачу и получение документов из Росреестра, мы выполним это за Вас. Такая услуга «под ключ» будет стоить 5000 руб. В этом случае от Вас дополнительно потребуется нотариальная доверенность (форму доверенности Вам предоставит наш кадастровый инженер).
 
 //Что войдет в стоимость
-.section.section--doc
+.section.section--doc.section--clear-bottom
 	.main-cont
 		.section-title Что войдет в стоимость работ ?
 		.section-title-sub
 		//.section-title-sub Геодезические обмеры земельного участка.
-		.doc.doc--three
-			.doc__el
-				.doc__icon
-					+icon("field-place","icon")
-				.doc__title Полевые работы
-				.doc__text Производится кадастровая съемка на земельном участке
-			.doc__el
+		.doc.doc--line
+			.doc__el.doc__el--line
 				.doc__icon
 					+icon("case","icon")
-				.doc__title Заказ сведений ЕГРН
-				.doc__text Для анализа местоположения границ соседних земельных участков относительно Вашего участка.
-			.doc__el
+				.doc__content
+					.doc__title Заказ сведений ЕГРН
+					.doc__text Для анализа местоположения границ соседних земельных участков относительно Вашего участка.
+			.doc__el.doc__el--line
 				.doc__icon
 					+icon("save-disk","icon")
-				.doc__title Формирование межевого плана на электронном цифровом носителе (диск)
-				.doc__text Межевой план, заверенный усиленной  электронной подписью кадастрового инженера, необходим для внесения в ЕГРН сведений о местоположении границ земельного участка.
+				.doc__content
+					.doc__title Формирование межевого плана на электронном цифровом носителе (диск), заверенного усиленной электронной подписью кадастрового инженера.
+					.doc__text Необходим для внесения в ЕГРН сведений о местоположении границ вновь образуемого земельного участка, то есть для государственного кадастрового учета земельного участка.
 
 //Документы
 .section.section--doc
