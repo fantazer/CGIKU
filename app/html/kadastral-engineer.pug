@@ -1,0 +1,150 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+
+.lp-baner.lp-baner--borderland.lp-baner--dark
+	.lp-baner__img(style="background-image:url('img/baner-37.jpg')")
+	.lp-baner-filter--green
+	.main-cont
+		.lp-baner__wrap
+			.lp-baner__content
+				.lp-baner__title.lp-baner__title--sm Услуги кадастрового инженера
+				.lp-baner__title-sub Понадобились услуги кадастрового инженера? Мы с удовольствием ответим на все Ваши вопросы.
+
+				.header__get
+					a(href="#why").header__btn.header__btn-more Подробнее
+					.header__btn.header__btn-get.header__btn-get--yellow.modal-get(data-modal="order") Заказать
+			//.lp-baner__image
+				.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
+				//img(src="img/lp-item-5.jpg", alt="")
+
+//Что это такое
+#why.section.section--kadast-eng(style="background-image:url('img/baner-38.jpg')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--mid
+				.section-title.section-title--left Кто такой кадастровый инженер?
+				.box
+					p Кадастровый инженер – это специалист, обладающий техническими и юридическими знаниями, получивший квалификационный аттестат на право заниматься кадастровой деятельностью.
+
+					p Деятельность кадастрового инженера можно сравнить с деятельностью нотариуса. Кадастровый инженер подготавливает документы для внесения изменений в Единый государственный реестр недвижимости (ЕГРН), и свидетельствует о достоверности данных и сведений в этих документах.
+
+//Когда нужны услуги
+.section.section-step
+	.main-cont
+		.section-title В каких случаях нужны услуги кадастрового инженера?
+		.solution
+			.solution__el
+				.solution__el-icon
+					+icon("measuring-tools","icon")
+				.solution__el-title При установлении границ (межевании) земельного участка, формировании земельного участка, разделе земельного участка, объединении нескольких смежных земельных участков
+				.solution__el-text Любые действия, связанные с внесением и/или изменением в ЕГРН каких-либо сведений о земельном участке (земельных участках), требующие подготовку межевого плана.
+			.solution__el
+				.solution__el-icon
+					+icon("house-country","icon")
+				.solution__el-title При постановке на кадастровый учет дачного дома / помещения / машино-места, перепланировке помещения, реконструкции здания, при снятии объекта капитального строительства с кадастрового учета и т.д.
+				.solution__el-text Любые действия, связанные с внесением и/или изменением в ЕГРН каких-либо сведений об объекте капитального строительства, требующие подготовку технического плана или акта обследования
+			.solution__el
+				.solution__el-icon
+					+icon("design","icon")
+				.solution__el-title При исправлении реестровой (кадастровой) ошибки об объекте недвижимости в сведениях ЕГРН
+				.solution__el-text Для исправления реестровой ошибки кадастровым инженером формируется новый межевой или технический план, на основании которого Росреестр вносит в ЕГРН корректные сведения в отношении объекта недвижимого имущества.
+			.solution__el
+				.solution__el-icon
+					+icon("house-plan","icon")
+				.solution__el-title При подготовке карты (плана) объекта землеустройства
+				.solution__el-text Для внесения или изменения в ЕГРН сведений о границах санитарно-защитных зон, а также о границах населенных пунктов и муниципальных образований.
+			.solution__el
+				.solution__el-icon
+					+icon("agreement","icon")
+				.solution__el-title При оформлении договора долгосрочной аренды на нежилое помещение (на срок от 1 года)
+				.solution__el-text Для внесения в ЕГРН сведений о передаваемом в аренду помещении кадастровым инженером формируется технический план по учету изменений помещения в связи с образованием его части (частей).
+			.solution__el
+				.solution__el-icon
+					+icon("gavel","icon")
+				.solution__el-title При проведении судебной землеустроительной экспертизы
+				.solution__el-text Для внесения в ЕГРН сведений о передаваемом в аренду помещении кадастровым инженером формируется технический план по учету изменений помещения в связи с образованием его части (частей).
+
+//from begin
+.section.section--start.section--lg(style="background-image:url('img/baner-11.png')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--img
+			.section-call
+				.section-title.section-title--left Cтоимость и сроки
+				.box
+					p Стоимость и сроки зависят от вида услуги, объема работ, площади участка (здания или помещения) и т.д., и определяются индивидуально. Чтобы узнать точную стоимость и сроки свяжитесь с нами удобным для Вас способом (заявка на сайте, телефон, онлайн-чат, электронная почта).
+
+					p.attanintion Консультации по телефону бесплатны, выездная консультация на объекте Заказчика стоит 5 000 руб. Стоимость и сроки на наиболее популярные стандартные услуги Вы можете посмотреть в нашем Прайс-листе  (около 30 позиций).
+					p За дополнительную плату возможно срочное выполнение работ.
+
+
+
+//Как мы работаем
+#step.section.section-step
+	.section-filter
+	.main-cont
+		.section-title как мы работаем
+		.step
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 01
+						.step-text
+							.step-text__descr Отправляете нам заявку или звоните. Получаете бесплатную консультацию от кадастрового инженера.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 02
+						.step-text
+							.step-text__descr Направляете нам электронные копии Ваших документов или приезжаете с ними к нам в офис.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 03
+						.step-text
+							.step-text__descr Анализируем документы, готовим проект Договора, согласовываем с Вами дату и время приезда геодезистов для проведения измерений.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 04
+						.step-text
+							.step-text__descr В назначенное время геодезисты приезжают к Вам, передают Договор и производят измерения.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 05
+						.step-text
+							.step-text__descr Кадастровый инженер формирует необходимую техническую документацию (межевой план, технический план, акт обследования или землеустроительную экспертизу).
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 06
+						.step-text
+							.step-text__descr Передаем Вам готовый документ.
+//slider certificate
+.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.filter
+	.section-title Наши сертификаты
+	.main-cont
+		.slider-certificate.owl-carousel
+			- for (var i=1;i<11;i++)
+			.slider__el
+				a(href="img/cert-" + i + ".jpg" rel="group-elemen").fancybox
+					img(src="img/cert-" + i + ".jpg", alt="")
+
++footer()
+include ./block_html/_script.pug

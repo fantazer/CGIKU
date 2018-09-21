@@ -2901,12 +2901,12 @@ body {
 }
 .section-step {
   position: relative;
-  background: #efefef;
+  background: #f9f9f9;
 }
 .section-title {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 40px;
+  font-size: 32px;
   color: #111;
   text-transform: uppercase;
   font-weight: 700;
@@ -3418,7 +3418,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(93,160,107,0.7);
+  background: rgba(20,60,28,0.7);
 }
 .lp-baner-filter--dark {
   position: absolute;
@@ -3471,7 +3471,7 @@ body {
 }
 .lp-baner__title {
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 42px;
   color: #111;
   margin-bottom: 30px;
   line-height: 1.4;
@@ -6013,6 +6013,76 @@ ol li {
 }
 .section--clear-bottom {
   padding-bottom: 0;
+}
+.solution {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .solution {
+    margin-bottom: 0px;
+  }
+}
+.solution__el {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  width: 49%;
+  padding: 30px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 640px) {
+  .solution__el {
+    width: 100%;
+  }
+}
+.solution__el-icon .icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  fill: #5da06b;
+}
+.solution__el-title {
+  line-height: 1.6;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 20px;
+}
+.solution__el-text {
+  line-height: 1.6;
+}
+.section--lg {
+  padding: 150px 0;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 768px) {
+  .section--lg {
+    padding: 50px 0;
+  }
+}
+.section--kadast-eng {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position: center right;
+  background-size: contain;
+  padding: 150px 0;
+}
+@media only screen and (max-width: 768px) {
+  .section--kadast-eng {
+    padding: 50px;
+    background: none;
+  }
 }
 @-webkit-keyframes slideInDown {
   from {
