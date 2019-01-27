@@ -11,29 +11,7 @@
 $(document).ready(function(){
 
 
-	//calc
-	$('.calc-get').click(function(){
-		var price = $('.calc-price').val()*1;  // Цена биткоина
 
-		var numbBit = (($('.calc-count').val()*1) / ($('.calc-price').val()*1))/100 * 99; // Сколько купил
-		 $('.calculator__total--numbBit span').html(numbBit);
-
-
-		var numbSale = ((numbBit/100 * 99)); // сколько буду продавать
-		 $('.calculator__total--item span').html(numbSale);
-
-		//var countSale = $('.calc-count').val()*1 + (($('.calc-count').val()*1) - (numbSale*price));
-		var countSale =($('.calc-count').val()*1) / numbSale;
-		 $('.calculator__total--sale span').html(countSale); // Минимальная цена перепродажи
-
-
-		var delta =(numbSale*($('.calc-sale').val()*1)) -  $('.calc-count').val()*1; // Прибыль
-
-		 $('.calculator__total--get span').html(delta);
-		 //$('.calculator__total--get span').html(getVal);
-
-	});
-	//calc-end
 	//smooth scroll
 	$(document).on('click', 'a[href^="#"]', function (event) {
 			event.preventDefault();
@@ -488,6 +466,108 @@ $(window).load(function () {
 	 }
 	);
 	//slider el === end
+
+	//increment field
+	$('.incr__minus').click(function () {
+			var $input = $(this).parent().find('.incr__val span');
+			var count = parseInt($input.html()) - 1;
+			count = count < 2 ? 1 : count;
+			$input.html(count);
+	});
+
+	$('.incr__plus').click(function () {
+			var $input = $(this).parent().find('.incr__val span');
+			var count = parseInt($input.html()) + 1;
+			count = count > 100 ? 100 : count;
+			$input.html(count);
+	});
+	//increment field end
+
+	//calculator
+	$('.select-beauty').niceSelect();
+	
+	$( ".calculator__item select" ).change(function(){
+		$('.calculator-msg').removeClass('calculator-msg--active');
+		var curentCat = $(".calculator__item select option:selected").val();
+
+		$('.calculator__sub').each(function(){
+			if($(this).data('subcalc')===curentCat){
+				$(this).addClass('calculator__sub--active');
+			}else {
+				$(this).removeClass('calculator__sub--active');
+			}
+		});
+
+		var cost = $(".calculator__item select option:selected").data('cost');
+		var msg = $(".calculator__item select option:selected").data('msg');
+
+		if(cost){
+			$('.calculator-total__val').text(cost);
+		}
+		if(msg) {
+			$('.calculator-msg').each(function () {
+				if ($(this).data('msg') === msg) {
+					$(this).addClass('calculator-msg--active');
+				} else {
+					$(this).removeClass('calculator-msg--active');
+				}
+			});
+		}
+
+		$('.elements-icr-block--vinos .incr__nav').click(function(){
+				var currentIncr = $(this).closest('.incr').find('.incr__val span').text()
+				if(currentIncr > 20) {
+					$('.calculator-total__val').text( 8000 + (currentIncr - 20)*400 + ' р');
+				} else {
+					$('.calculator-total__val').text( 8000 + ' р');
+				}
+		});
+
+		$('.elements-icr-block--megevanieSNT .incr__nav').click(function(){
+				var currentIncr = $(this).closest('.incr').find('.incr__val span').text()
+				$('.calculator-total__val').text( 69000 + currentIncr*1000 + ' р');
+		});
+
+		//Переключение между физ и юрлиц
+		$('.calulator__type-ur').click(function(){
+			$('.calculator__item--topograf').hide();
+			$('.calculator-total__val').text("Индивидуально");
+		});
+
+		$('.calulator__type-fiz').click(function(){
+			$('.calculator__item--topograf').show();
+			$('.calculator-total__val').text(curentVal);
+		});
+
+		//Вывод с обмером и без
+		$('.calculator__item--megplan select').change(function(){
+			var obmer = $(".calculator__item--megplan select option:selected").text();
+			if(obmer == 'до 1000 кв.м на 2 новых участка'){
+				$('.calulator__type').show()
+			}else {
+				$('.calulator__type').hide()
+			}
+			console.log(obmer);
+		});
+
+		//Переключение между с обмером и без
+		$('.calulator__type-work').click(function(){
+			$('.calculator-total__val').text(curentVal);
+		});
+
+		$('.calulator__type-unwork').click(function(){
+			$('.calculator-total__val').text("15 000 р");
+		});
+		
+		var curentVal = $(".calculator__sub--active select option:selected").val();
+		$('.calculator-total__val').text(curentVal);
+
+	});
+
+
+	
+	//calculator===end
+
 })
 ;( function( window, document )
 {

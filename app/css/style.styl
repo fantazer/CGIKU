@@ -1074,7 +1074,7 @@ $step = #b3b2b2
 	left: 0
 	width: 100%
 	height: 100%
-	background: rgba(20, 60, 28, 0.7)
+	background: rgba(20, 60, 28, 0.45)
 
 
 .lp-baner-filter--dark
@@ -1130,7 +1130,8 @@ $step = #b3b2b2
 .lp-baner__title-sub
 	+below(768px)
 		text-align: center
-	line-height: 1.4
+	@extend .type--md
+	line-height: 1.6
 	margin-bottom: 30px
 
 .section-wrap
@@ -1233,6 +1234,9 @@ $step = #b3b2b2
 .calc-range-val
 	+below(768px)
 		font-size: 20px
+		padding: 20px 10px
+	+below(480px)
+		width: 100%
 	flex(mid)
 	text-align: center
 	font-size: 40px
@@ -1240,11 +1244,18 @@ $step = #b3b2b2
 	background: #fade6f
 	padding: 15px 50px
 	br(20px)
-
+	span
+		+below(768px)
+			font-size: 14px
+		font-size: 24px
+		margin: 0 10px
+		display: inline-block
 .calc-range-val--lg
 	font-size: 52px
 	+below(768px)
 		font-size: 20px
+
+
 
 .calc-range__wrap
 	flex(mid)
@@ -1982,7 +1993,7 @@ $step = #b3b2b2
 		display: none
 
 //NOTE!!! REMOVE CALC
-.calculator
+/*.calculator
 	padding-top: 200px
 	flex(mid)
 	fl()
@@ -2017,7 +2028,7 @@ $step = #b3b2b2
 .calculator__val
 	span
 		display: inline-block
-		margin-right: 10px
+		margin-right: 10px*/
 
 //NOTE!!! REMOVE CALC === end
 
@@ -2298,6 +2309,8 @@ section--calc
 		margin-bottom: 20px
 
 .cost-inform--calc
+	+below(480px)
+		text-align: center!important
 	padding: 10px
 	br(10px)
 	background: #faeaa8
@@ -2477,9 +2490,20 @@ ol
 	.lp-baner__title-sub
 		color white
 
+.lp-baner__title--lg
+	font-size: 54px
+	+below(768px)
+		font-size: 26px
+	+below(640px)
+		font-size: 24px
 .header__btn-get--yellow
 	background: $yellow
 	color black
+
+.lp-baner__img--right-left
+	background-position: center right
+	+below(768px)
+		background-position: center left
 
 //add new template
 
@@ -2602,10 +2626,154 @@ ul,ol
 	background-repeat: no-repeat
 
 .section--kadast-eng
-	+below(768px)
-		padding: 50px
+	+below(1024px)
+		padding: 30px 0
 		background: none
 	bg-full()
 	background-position: center right
-	background-size: contain
 	padding: 150px 0
+
+.section
+	position: relative
+.section-call
+	z-index 2
+.section-wrap__img
+	+below(1400px)
+		background-position: 70%
+	+below(640px)
+		display: none
+	position: absolute
+	right 0
+	top 0
+	width: 100%
+	height: 100%
+	bg-full()
+	background-size: right
+
+.calc-ur-pay--light
+	padding-bottom:10px
+
+//calc
+.nice-select
+	margin-bottom: 20px
+	display: block
+	color #000000
+	font-size 14px
+	font-weight 700
+	line-height:auto
+	.list
+		width: calc(100% )
+		left 0px
+		br(0)
+		border 0px solid $border-color
+		border-top 0
+		margin-top: 0
+		max-height 400px
+		overflow-y: auto
+		li
+			white-space nowrap
+			overflow hidden
+			text-overflow ellipsis
+	.current //max width dots
+		white-space nowrap
+		overflow hidden
+		text-overflow ellipsis
+		display inline-block
+
+select.select-beauty
+	display: none!important
+
+.nice-select:active, .nice-select.open, .nice-select:focus
+	border 1px solid $border-color
+
+.clear
+	cf()
+
+.calculator
+	max-width 640px
+	padding: 40px
+	border 1px solid $border-color
+	background: #f8f8f8
+	border-radius: 10px
+	.nice-select
+		width: 100%
+		.list
+			li
+				width: 100%
+.calculator__head
+	margin-bottom: 10px
+
+.calculator__head-title
+	margin-bottom: 20px
+
+.calculator__sub
+	display: none
+
+.calculator__sub--active
+	display: block
+
+.calculator__sub-title
+	margin-bottom: 20px
+
+.calculator-total
+	flex(between)
+	margin-top: 20px
+.calculator-total__title
+	font-size: 16px
+	font-weight:700
+	color black
+
+.calculator-total__val
+	font-size: 24px
+	font-weight:700
+	color black
+
+.calculator-msg
+	line-height: 1.4
+	margin-top: 20px
+	margin-left: auto
+	font-size: 12px
+	display: none
+.calculator-msg--active
+	display: block
+
+.incr
+	+below(768px)
+		margin-bottom: 20px
+	f()
+	justify-content: space-between
+	position relative
+	width 120px
+.incr__nav
+	flex(mid)
+	tr(background )
+	size 40px
+	border 0
+	background $green
+	color white
+	font-size: 20px
+	font-weight: 700
+	user-select none
+	.icon
+		size 12px
+		fill #b3b3b3
+	&:hover
+		cp()
+		background-color lighten($green,20)
+		border 0
+		.icon
+			fill white
+	&:active
+		background-color lighten($green,10)
+.incr__val
+	flex(mid)
+	position relative
+	tr(all)
+	color black
+	margin: 0 10px
+	font-weight:700
+	user-select none
+
+.calulator__type-el
+	margin-bottom: 20px
+//calc===end

@@ -1,0 +1,147 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+
+.lp-baner.lp-baner--borderland.lp-baner--dark
+	.lp-baner__img.lp-baner__img--right-left(style="background-image:url('img/baner-43.jpg')")
+	.lp-baner-filter--green
+	.main-cont
+		.lp-baner__wrap
+			.lp-baner__content
+				.lp-baner__title.lp-baner__title--think Услуги геодезиста
+				.lp-baner__title-sub.lp-baner__title-sub--lg Понадобились услуги геодезиста? <br> Мы с удовольствием ответим на все Ваши вопросы.
+
+				.header__get
+					a(href="#why").header__btn.header__btn-more Подробнее
+					.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
+			//.lp-baner__image
+				.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
+				//img(src="img/lp-item-5.jpg", alt="")
+
+//Что это такое
+#why.section.section--kadast-eng
+	.section-wrap__img(style="background-image:url('img/baner-44.jpg')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--mid
+				.section-title.section-title--left Зачем нужен геодезист?
+				.box
+					p Кадастровый инженер – это специалист, обладающий техническими и юридическими знаниями, получивший квалификационный аттестат на право заниматься кадастровой деятельностью.
+
+					p Деятельность кадастрового инженера можно сравнить с деятельностью нотариуса. Кадастровый инженер подготавливает документы для внесения изменений в Единый государственный реестр недвижимости (ЕГРН), и свидетельствует о достоверности данных и сведений в этих документах.
+					p <strong>Юридическим лицам</strong> не всегда есть необходимость держать в штате геодезиста, который будет занят ежедневно. Это связано с тем что, часть геодезических работ (например, передача высотных отметок и разметка от существующих конструкций) может быть выполнена прорабом или мастером. Но полностью без геодезиста обойтись не получится. Чтобы не держать в штате высокооплачиваемого специалиста, который не может быть загружен на 100%, и не покупать дорогостоящее оборудование, которое будет находиться в простое, есть возможность приглашать геодезистов нашей компании на разовые работы. В нашем штате находятся настоящие профессионалы в области геодезии, которые оперативно справятся с любой поставленной задачей.
+//Когда нужны услуги
+.section.section-step
+	.main-cont
+		.section-title Наиболее популярные геодезические услуги
+		.solution
+			.solution__el
+				.solution__el-icon
+					+icon("house-rule","icon")
+				.solution__el-title Геодезия в строительстве
+				.solution__el-text Для соблюдения геометрических параметров проектных решений в ходе строительства.
+			.solution__el
+				.solution__el-icon
+					+icon("total-station","icon")
+				.solution__el-title Топографическая съемка
+				.solution__el-text Для отражения текущего состояния местности и определения с точностью до сантиметров таких параметров, как: размеры объектов на участке, расстояния между объектами, перепад высот рельефа.
+			.solution__el
+				.solution__el-icon
+					+icon("land","icon")
+				.solution__el-title Кадастровая съемка
+				.solution__el-text Для определения границ земельного участка с целью постановки такого земельного участка на государственный кадастровый учет.
+			.solution__el
+				.solution__el-icon
+					+icon("image","icon")
+				.solution__el-title Вынос границ земельного участка
+				.solution__el-text Для определения на местности точного местоположения границ земельного участка, сведения о котором содержатся в ЕГРН (Едином государственном реестре недвижимости).
+			.solution__el
+				.solution__el-icon
+					+icon("camera","icon")
+				.solution__el-title Исполнительная съемка
+				.solution__el-text Для определения фактических геометрических параметров объекта строительства и сравнения полученной информации с проектом.
+			.solution__el
+				.solution__el-icon
+					+icon("field-place","icon")
+				.solution__el-title В ландшафтном дизайне
+				.solution__el-text
+					em - топографическая съемка
+					p Для составления исходного материала, на основании которого можно производить проектные работы по благоустройству участка.
+					em - вынос дорог и элементов благоустройства
+					p Разметка на местности проектных решений.
+			.solution__el
+				.solution__el-icon
+					+icon("trees","icon")
+				.solution__el-title Подеревная съемка
+				.solution__el-text Для определения местоположения, толщины, высоты и породы каждого дерева в лесном массиве и для каждого отдельно стоящего дерева.
+			.solution__el
+				.solution__el-icon
+					+icon("house-country","icon")
+				.solution__el-title Фасадная съемка
+				.solution__el-text Для получения информации о габаритах, высотном и плановом положении конструкций фасада.
+
+//service
+.section.section--calc.section--calc--topograf
+	.main-cont
+		.section-title Стоимость наших работ
+		.section-title-sub Работаем в Москве и во всех районах Московской области.
+		.calc
+			//input(type="range" placeholder=""  class="calc-range--topograf")
+			.calc-range__wrap
+				.calc-range-val.calc-range-val--lg
+					span от
+					.calc-range-numb 10 000
+					span руб./день
+			.calc-text Цена за одну бригаду
+		.calc-ur-cont
+			.calc-ur-pay.calc-ur-pay--light
+				.calc-ur-pay-cont
+					.calc-ur-pay-text Стоимость и сроки зависят от состава работ. Чтобы узнать точную стоимость на интересующие Вас работы свяжитесь с нами удобным для Вас способом (заявка на сайте, телефон, онлайн-чат, электронная почта).
+				.cost-inform--calc.cost-inform--calc-gray Консультации по телефону бесплатны
+
+
+//Как мы работаем
+#step.section.section-step
+	.section-filter
+	.main-cont
+		.section-title как мы работаем
+		.step
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 01
+						.step-text
+							.step-text__descr Отправляете нам заявку или звоните. Получаете бесплатную консультацию
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 02
+						.step-text
+							.step-text__descr Анализируем документы, готовим проект Договора, согласовываем с Вами дату и время приезда геодезиста для проведения измерений.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 03
+						.step-text
+							.step-text__descr В назначенное время геодезист приезжает к Вам, передаёт Договор и производит необходимые работы.
+					.step-line
+						.step-dot
+
+//slider certificate
+.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.filter
+	.section-title Наши сертификаты
+	.main-cont
+		.slider-certificate.owl-carousel
+			- for (var i=1;i<11;i++)
+			.slider__el
+				a(href="img/cert-" + i + ".jpg" rel="group-elemen").fancybox
+					img(src="img/cert-" + i + ".jpg", alt="")
+
++footer()
+include ./block_html/_script.pug

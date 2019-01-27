@@ -26,6 +26,7 @@
     "wow": "wowjs#^1.1.2",
     "ion.rangeSlider": "ionrangeslider#^2.2.0",
     "page-scroll-to-id": "^1.5.8",
-    "bPopup": "bpopup#^0.11.0"
+    "bPopup": "bpopup#^0.11.0",
+    "jquery-nice-select": "^1.1.0"
   }
 }

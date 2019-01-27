@@ -1,0 +1,297 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+.main-cont
+	.bread-wrap
+		.bread
+			a(href="#").bread__el Пункт 1
+			a(href="#").bread__el Пункт 2
+
+//content
+.main-cont
+	.content
+		.content__toolbar
+			.search
+				form( action="javascript:void(null);")
+					input(type="text" name="name" placeholder="Ваш запрос").input.input--search
+					button(type="submit").button--search
+						+icon("magnifying-glass","icon")
+
+			.toolbar
+				.toolbar__title Популярные услгуи
+				-
+					var items = [
+					'Уточнение земельного участка',
+					'Межевой план',
+					'Топографическая съемка',
+					'Исполнительная съемка',
+					'Раздел земельного участка',
+					'Уточнение местоположения границ и/или площади земельного участка',
+					'Геодезическое сопровождение строительства',
+					'Технический план',
+					'Кадастровые работы по Москве'
+					];
+				each item in items
+					a(href="#").toolbar__el #{item}
+			.toolbar
+				.toolbar__title Нормативная документация
+				-
+					var items = [
+					'Геодезическая деятельность',
+					'Кадастровая деятельность'
+					];
+				each item in items
+					a(href="#").toolbar__el #{item}
+
+			//.toolbar
+				.toolbar__title Нормативная документация
+				-
+					var items = [
+					'Пример кадастрового паспорта квартиры',
+					'Образец межевого плана земельного участка',
+					'Обязательно ли делать межевание земельного участка'
+					];
+				each item in items
+					a(href="#").toolbar__el #{item}
+		.content__info
+			h1 Калькулятор
+			.calculator
+				.calculator__head
+					.calculator__head-title Выберите тип услуги
+					.calculator__item
+						select.select-beauty
+							option(value="megevanie") Межевание (уточнение границ) земельного участка
+							option(value="mnogokvar") Образование земельного участка под многоквартирным домом
+							option(value="megPlan") Межевой план на раздел земельного участка
+							option(value="obedin") Межевой план на объединение земельных участков
+							option(value="oshibka") Исправление реестровой (кадастровой) ошибки
+							option(value="megevanieSNT" data-cost="70000 р") Межевание земель общего пользования в СНТ/ДНТ
+							option(value="techplanDom") Технический план дома
+							option(value="techplanKv" data-cost="от 10 000 р" data-msg="techplanKv") Технический план квартиры
+							option(value="pereplan" data-cost="от 10 000 р" data-msg="pereplan") Перепланировка помещения
+							option(value="chastPom") Технический план части помещения (для заключения договора аренды)
+							option(value="mashMest" data-cost="10 000 р") Технический план машино-места
+							option(value="aktObsl" data-cost="от 8 000 р") Акт обследования (снятие с кад. учета объекта кап. строительства)
+							option(value="topograf") Топографическая съемка
+							option(value="vinosGran" data-cost="8000 р" data-msg="vinosGran") Вынос границ земельного участка
+							option(value="kadSemka" data-msg="kadSemka") Кадастровая съемка
+						.clear
+
+				//Межевание (уточнение границ) земельного участка
+				.calculator__sub.calculator__sub--active(data-subcalc="megevanie")
+					.calculator__sub-title Выберите площадь участка
+					.calculator__item
+						select.select-beauty
+							option(value="14 000 р") до 800 кв.м
+							option(value="15 000 р") от 801 кв.м до 1000 кв.м
+							option(value="20 000 р") от 1001 кв.м до 2000 кв.м
+						.clear
+
+				//Образование земельного участка под многоквартирным домом
+				.calculator__sub(data-subcalc="mnogokvar")
+					.calculator__sub-title Выберите площадь участка
+					.calculator__item
+						select.select-beauty
+							option(value="70 000 р") до 0,5 га
+							option(value="индивидуально") более 0,5 га
+						.clear
+
+				//Образование земельного участка под многоквартирным домом
+				.calculator__sub(data-subcalc="megPlan")
+					.calculator__sub-title Межевой план на раздел земельного участка
+					.calculator__item.calculator__item--megplan
+						select.select-beauty
+							option(value="10 000 р") до 1000 кв.м на 2 новых участка
+							option(value="индивидуально") более 1000 кв.м на 2 новых участка
+						.clear
+					.calulator__type
+						.calulator__type-el.calulator__type-work
+							.check-el
+								label.style-label.style-label--radio
+									input(type="radio" name="group-1" checked).sytle-input
+									.sytle-input-element
+										.icon-radio
+									.sytle-input-text Без выполнения геодезических обмеров.
+						.calulator__type-el.calulator__type-unwork
+							.check-el
+								label.style-label.style-label--radio
+									input(type="radio" name="group-1").sytle-input
+									.sytle-input-element
+										.icon-radio
+									.sytle-input-text С геодезическими обмерами.
+				//Межевой план на объединение земельных участков
+				.calculator__sub(data-subcalc="obedin")
+					.calculator__sub-title Выберите площадь участка
+					.calculator__item
+						select.select-beauty
+							option(value="10 000 р") до 2000 кв.м
+							option(value="индивидуально") более 2000 кв.м
+						.clear
+
+				//Исправление реестровой (кадастровой) ошибки
+				.calculator__sub(data-subcalc="oshibka")
+					.calculator__sub-title Выберите площадь участка
+					.calculator__item
+						select.select-beauty
+							option(value="15 000 р") до 800 кв.м
+							option(value="18 000 р") от 801 кв.м до 1000 кв.м
+							option(value="20 000 р") от 1001 кв.м до 2000 кв.м
+						.clear
+
+				//Технический план дома
+				.calculator__sub(data-subcalc="techplanDom")
+					.calculator__sub-title Выберите площадь дома
+					.calculator__item
+						select.select-beauty
+							option(value="10 000 р") до 50 кв.м
+							option(value="14 000 р") от 51 до 100 кв.м
+							option(value="18 000 р") от 101 до 200 кв.м
+							option(value="22 000 р") от 201 кв.м
+						.clear
+
+				//Технический план части помещения (для заключения договора аренды)
+				.calculator__sub(data-subcalc="chastPom")
+					.calculator__sub-title Выберите площадь помещения
+					.calculator__item
+						select.select-beauty
+							option(value="10 000-15 000 р") до 100 кв.м
+							option(value="25 000 р") от 101 до 300 кв.м
+							option(value="40 000 р") от 301 до 1000 кв.м
+							option(value="индивидуально") более 1000 кв.м р
+						.clear
+
+				//Кадастровая съемка
+				.calculator__sub(data-subcalc="kadSemka")
+					.calculator__sub-title Выберите площадь участка
+					.calculator__item
+						select.select-beauty
+							option(value="от 10 000") до 1 га
+							option(value="индивидуально") свыше 1 га
+						.clear
+
+				//Вынос границ земельного участка
+				.calculator__sub(data-subcalc="vinosGran")
+					.calculator__sub-title Выберите кол-во точек
+					.elements-icr-block.elements-icr-block--vinos
+						.incr
+							.incr__minus.incr__minus--vinosGran.incr__nav -
+							.incr__val
+								span 1
+								.incr__val-coner
+							.incr__plus.incr__nav +
+
+				//Межевание земель общего пользования в СНТ/ДНТ
+				.calculator__sub(data-subcalc="megevanieSNT")
+					.calculator__sub-title кол-во участков в СНТ
+					.elements-icr-block.elements-icr-block--megevanieSNT
+						.incr
+							.incr__minus.incr__minus--vinosGran.incr__nav -
+							.incr__val
+								span 1
+								.incr__val-coner
+							.incr__plus.incr__nav +
+
+				//Топографическая съемка
+				.calculator__sub(data-subcalc="topograf")
+					.calulator__type
+						.calulator__type-el.calulator__type-fiz
+							.check-el
+								label.style-label.style-label--radio
+									input(type="radio" name="group" checked).sytle-input
+									.sytle-input-element
+										.icon-radio
+									.sytle-input-text Физ. лицо
+						.calulator__type-el.calulator__type-ur
+							.check-el
+								label.style-label.style-label--radio
+									input(type="radio" name="group").sytle-input
+									.sytle-input-element
+										.icon-radio
+									.sytle-input-text Юр. лицо
+					.calculator__sub-title Выберите площадь помещения
+					.calculator__item.calculator__item--topograf
+						select.select-beauty
+							option(value="10 000 р") до 800 кв.м
+							option(value="15 000 р") от 801 до 1500 кв.м
+							option(value="индивидуально") более 1501 кв.м
+						.clear
+
+
+				.calculator-total
+					.calculator-total__title Цена услуги:
+					.calculator-total__val 14 000 р
+
+				//Технический план квартиры
+				.calculator-msg(data-msg="techplanKv")
+					sup *
+					|	Стоимость зависит от площади квартиры и необходимости производства обмеров.
+
+				//Перепланировка помещения
+				.calculator-msg(data-msg="pereplan")
+					sup *
+					|  Стоимость зависит от площади помещения и необходимости производства обмеров.
+
+				//Кадастровая съемка
+				.calculator-msg(data-msg="kadSemka")
+					sup *
+					|  Стоимость зависит от площади и местоположения участка.
+
+				//Вынос границ земельного участка
+				.calculator-msg(data-msg="vinosGran")
+					sup *
+					|  Стоимость минимального выезда 8000 руб.
+
+//contact-form
+.contact-form
+	.section-title Оставьте свою заявку
+	.section-title-sub Оформите обращение с помощью этой формы, мы перезвоним <br>Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!
+	.main-cont
+		form.validate-form( action="javascript:void(null);")
+			.input-row
+				input(type="text" name="name" placeholder="Ваше имя").input
+			.input-row
+				input(type="text" name="phone" placeholder="Ваш телефон").input
+			//.input-row
+				textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+			//.agree-row
+				.check-el
+					label.style-label.style-label--checkbox
+						input(type="checkbox" name="agree").sytle-input
+						.sytle-input-element
+							+icon("checked","icon-check")
+						.sytle-input-text=text
+				.agree-row__text Согласен с
+					a(href="#") условиями обработки персональных данных
+			input(type="submit" value="Отправить заявку").modal-send
+
+//service
+//.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.main-cont
+		.section-title Популярные услуги
+		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+		.service
+			- for (var i=0;i<6;i++)
+				.service__el
+					.service__title Уточнение границ земельного участка
+					.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
+					.service__price 18 000 руб.
+					.service__get
+						.service__btn.service__btn-more Подробнее
+						.service__btn.service__btn-get Заказать
+
+
+//slider certificate
+.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+	.filter
+	.section-title Наши сертификаты
+	.main-cont
+		.slider-certificate.owl-carousel
+			- for (var i=1;i<11;i++)
+			.slider__el
+				a(href="img/cert-" + i + ".jpg" rel="group-elemen").fancybox
+					img(src="img/cert-" + i + ".jpg", alt="")
+
++footer()
+
+include ./block_html/_script.pug

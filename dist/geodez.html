@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--colors-tabs-->
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<!--icons-->
+		<link rel="shortcut icon" href="img/fav/favicon.ico" />
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<!--block footer end-->
+		<!--block header-->
+		<div class="head-container">
+			<!--header-->
+			<div class="header">
+				<div class="top-line">
+					<div class="main-cont">
+						<div class="top-line-wrap">
+							<a class="main-logo" href="/">
+								<img class="logo--full" src="img/logo-dark.png" alt="" />
+								<img class="logo--short" src="img/logo-short.png" alt="" />
+							</a>
+							<div class="top-line-info">
+								<div class="top-line-el__wrap">
+									<div class="top-line-el">
+										<div class="top-line-el-title">Работа горячей линии:</div>
+										<div class="top-line-el-info">Ежедневно c 9-00 ч. до 20-00 ч.</div>
+									</div>
+									<div class="top-line-el">
+										<div class="top-line-el-title">Прием онлайн-заявок:</div>
+										<div class="top-line-el-info top-line-el-info--call modal-get" data-modal="order">
+											<svg class="icon">
+												<use xlink:href="#phone"></use>
+											</svg>
+											<span>Круглосуточно</span>
+										</div>
+									</div>
+								</div>
+								<div class="top-line__contact">
+									<div class="top-line-loc">
+										<div class="top-line-loc-el">
+											<div class="top-line-loc-icon">
+												<svg class="icon">
+													<use xlink:href="#metro"></use>
+												</svg>
+											</div>
+											<div class="top-line-loc-text">Варшавская</div>
+										</div>
+										<div class="top-line-loc-el">
+											<div class="top-line-loc-icon">
+												<svg class="icon">
+													<use xlink:href="#metro"></use>
+												</svg>
+											</div>
+											<div class="top-line-loc-text">Каширская</div>
+										</div>
+									</div>
+									<div class="nav-phone">
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header-end-->
+			<!--nav-->
+			<div class="nav">
+				<div class="main-cont">
+					<div class="nav-wrap">
+						<div class="nav-toggle">
+							<svg class="icon">
+								<use xlink:href="#menu"></use>
+							</svg>
+						</div>
+						<div class="menu-wrap">
+							<div class="menu">
+								<div class="menu-el">
+									<a href="#">
+										<span>Главная</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el-service">
+									<a href="#">
+										<span>Услуги
+											<svg class="icon">
+												<use xlink:href="#arrow-down"></use>
+											</svg>
+										</span>
+									</a>
+									<div class="menu-el__sub">
+										<a class="menu-el__sub-el" href="#">Кадастровые работы</a>
+										<a class="menu-el__sub-el" href="#">Геодезические работы</a>
+									</div>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>О компании</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Прайс-лист</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Наши лицензии</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Контакты</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el--mark">
+									<a href="#">
+										<span>Акции</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--.nav-phone
+				a(href="tel:+7 (495) 514-84-13").nav-phone-el
+					+icon("phone-call","icon")
+					| +7 (495) 514-84-13
+				-->
+					</div>
+				</div>
+			</div>
+			<!--nav-end-->
+		</div>
+		<!--block header end-->
+		<div class="lp-baner lp-baner--borderland lp-baner--dark">
+			<div class="lp-baner__img lp-baner__img--right-left" style="background-image:url('img/baner-43.jpg');"></div>
+			<div class="lp-baner-filter--green"></div>
+			<div class="main-cont">
+				<div class="lp-baner__wrap">
+					<div class="lp-baner__content">
+						<div class="lp-baner__title lp-baner__title--think">Услуги геодезиста</div>
+						<div class="lp-baner__title-sub lp-baner__title-sub--lg">Понадобились услуги геодезиста?
+							<br> Мы с удовольствием ответим на все Ваши вопросы.</div>
+						<div class="header__get">
+							<a class="header__btn header__btn-more" href="#why">Подробнее</a>
+							<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
+						</div>
+					</div>
+					<!--.lp-baner__image
+			.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
+			//img(src="img/lp-item-5.jpg", alt="")
+			
+			-->
+				</div>
+			</div>
+		</div>
+		<!--Что это такое-->
+		<div class="section section--kadast-eng" id="why">
+			<div class="section-wrap__img" style="background-image:url('img/baner-44.jpg');"></div>
+			<div class="main-cont">
+				<div class="section-wrap">
+					<div class="section-call section-call--mid">
+						<div class="section-title section-title--left">Зачем нужен геодезист?</div>
+						<div class="box">
+							<p>Кадастровый инженер – это специалист, обладающий техническими и юридическими знаниями, получивший квалификационный аттестат на право заниматься кадастровой деятельностью.</p>
+							<p>Деятельность кадастрового инженера можно сравнить с деятельностью нотариуса. Кадастровый инженер подготавливает документы для внесения изменений в Единый государственный реестр недвижимости (ЕГРН), и свидетельствует о достоверности данных и сведений
+								в этих документах.</p>
+							<p>
+								<strong>Юридическим лицам</strong> не всегда есть необходимость держать в штате геодезиста, который будет занят ежедневно. Это связано с тем что, часть геодезических работ (например, передача высотных отметок и разметка от существующих конструкций) может
+								быть выполнена прорабом или мастером. Но полностью без геодезиста обойтись не получится. Чтобы не держать в штате высокооплачиваемого специалиста, который не может быть загружен на 100%, и не покупать дорогостоящее оборудование, которое будет
+								находиться в простое, есть возможность приглашать геодезистов нашей компании на разовые работы. В нашем штате находятся настоящие профессионалы в области геодезии, которые оперативно справятся с любой поставленной задачей.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Когда нужны услуги-->
+		<div class="section section-step">
+			<div class="main-cont">
+				<div class="section-title">Наиболее популярные геодезические услуги</div>
+				<div class="solution">
+					<div class="solution__el">
+						<div class="solution__el-icon">
+							<svg class="icon">
+								<use xlink:href="#house-rule"></use>
+							</svg>
+						</div>
+						<div class="solution__el-title">Геодезия в строительстве</div>
+						<div class="solution__el-text">Для соблюдения геометрических параметров проектных решений в ходе строительства.</div>
+					</div>
+					<div class="solution__el">
+						<div class="solution__el-icon">
+							<svg class="icon">
+								<use xlink:href="#total-station"></use>
+							</svg>
+						</div>
+						<div class="solution__el-title">Топографическая съемка</div>
+						<div class="solution__el-text">Для отражения текущего состояния местности и определения с точностью до сантиметров таких параметров, как: размеры объектов на участке, расстояния между объектами, перепад высот рельефа.</div>
+					</div>
+					<div class="solution__el">
+						<div class="solution__el-icon">
+							<svg class="icon">
+								<use xlink:href="#land"></use>
+							</svg>
+						</div>
+						<div class="solution__el-title">Кадастровая съемка</div>
+						<div class="solution__el-text">Для определения границ земельного участка с целью постановки такого земельного участка на государственный кадастровый учет.</div>
+					</div>
+					<div class="solution__el">
+						<div class="solution__el-icon">
+							<svg class="icon">
+								<use xlink:href="#image"></use>
+							</svg>
+						</div>
+						<div class="solution__el-title">Вынос границ земельного участка</div>
+						<div class="solution__el-text">Для определения на местности точного местоположения границ земельного участка, сведения о котором содержатся в ЕГРН (Едином государственном реестре недвижимости).</div>
+					</div>
+					<div class="solution__el">
+						<div class="solution__el-icon">
+							<svg class="icon">
+								<use xlink:href="#camera"></use>
+							</svg>
+						</div>
+						<div class="solution__el-title">Исполнительная съемка</div>
+						<div class="solution__el-text">Для определения фактических геометрических параметров объекта строительства и сравнения полученной информации с проектом.</div>
+					</div>
+					<div class="solution__el">
+						<div class="solution__el-icon">
+							<svg class="icon">
+								<use xlink:href="#field-place"></use>
+							</svg>
+						</div>
+						<div class="solution__el-title">В ландшафтном дизайне</div>
+						<div class="solution__el-text">
+							<em>- топографическая съемка</em>
+							<p>Для составления исходного материала, на основании которого можно производить проектные работы по благоустройству участка.</p>
+							<em>- вынос дорог и элементов благоустройства</em>
+							<p>Разметка на местности проектных решений.</p>
+						</div>
+					</div>
+					<div class="solution__el">
+						<div class="solution__el-icon">
+							<svg class="icon">
+								<use xlink:href="#trees"></use>
+							</svg>
+						</div>
+						<div class="solution__el-title">Подеревная съемка</div>
+						<div class="solution__el-text">Для определения местоположения, толщины, высоты и породы каждого дерева в лесном массиве и для каждого отдельно стоящего дерева.</div>
+					</div>
+					<div class="solution__el">
+						<div class="solution__el-icon">
+							<svg class="icon">
+								<use xlink:href="#house-country"></use>
+							</svg>
+						</div>
+						<div class="solution__el-title">Фасадная съемка</div>
+						<div class="solution__el-text">Для получения информации о габаритах, высотном и плановом положении конструкций фасада.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--service-->
+		<div class="section section--calc section--calc--topograf">
+			<div class="main-cont">
+				<div class="section-title">Стоимость наших работ</div>
+				<div class="section-title-sub">Работаем в Москве и во всех районах Московской области.</div>
+				<div class="calc">
+					<!--input(type="range" placeholder=""  class="calc-range--topograf")-->
+					<div class="calc-range__wrap">
+						<div class="calc-range-val calc-range-val--lg">
+							<span>от</span>
+							<div class="calc-range-numb">10 000</div>
+							<span>руб./день</span>
+						</div>
+					</div>
+					<div class="calc-text">Цена за одну бригаду</div>
+				</div>
+				<div class="calc-ur-cont">
+					<div class="calc-ur-pay calc-ur-pay--light">
+						<div class="calc-ur-pay-cont">
+							<div class="calc-ur-pay-text">Стоимость и сроки зависят от состава работ. Чтобы узнать точную стоимость на интересующие Вас работы свяжитесь с нами удобным для Вас способом (заявка на сайте, телефон, онлайн-чат, электронная почта).</div>
+						</div>
+						<div class="cost-inform--calc cost-inform--calc-gray">Консультации по телефону бесплатны</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Как мы работаем-->
+		<div class="section section-step" id="step">
+			<div class="section-filter"></div>
+			<div class="main-cont">
+				<div class="section-title">как мы работаем</div>
+				<div class="step">
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">01</div>
+								<div class="step-text">
+									<div class="step-text__descr">Отправляете нам заявку или звоните. Получаете бесплатную консультацию</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">02</div>
+								<div class="step-text">
+									<div class="step-text__descr">Анализируем документы, готовим проект Договора, согласовываем с Вами дату и время приезда геодезиста для проведения измерений.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">03</div>
+								<div class="step-text">
+									<div class="step-text__descr">В назначенное время геодезист приезжает к Вам, передаёт Договор и производит необходимые работы.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--slider certificate-->
+		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="filter"></div>
+			<div class="section-title">Наши сертификаты</div>
+			<div class="main-cont">
+				<div class="slider-certificate owl-carousel">
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-11.jpg" rel="group-elemen">
+							<img src="img/cert-11.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block footer-->
+		<!--.section.section--footer
+.main-cont
+	.section-title Оформите заказ
+	.section-title-sub Прием в офисе с понедельника по пятницу с 9:00 до 20:00, суббота: по предварительной записи, выходной: воскресенье.
+	.footer__wrap
+		.footer__el
+			.footer__icon
+				+icon("map","icon")
+			.footer__title В офисе
+			.footer__text г. Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
+		.footer__el
+			.footer__icon
+				+icon("phone-call","icon")
+			.footer__title По телефону
+			a(href="tel:+7 (495) 514-84-13").footer__text.footer__text--red +7 (495) 514-84-13
+			a(href="tel:+7 (495) 283-96-83").footer__text.footer__text--red +7 (495) 283-96-83
+		.footer__el
+			.footer__icon
+				+icon("mail","icon")
+			.footer__title По email
+			a(href="mailto:info@cgiku.ru").footer__text.footer__text--red info@cgiku.ru
+	.footer-get
+		.footer-get__el.modal-get(data-modal="order") Оставить заявку
+
+-->
+		<!--.footer-map
+h1 Карта
+
+
+-->
+		<!--section-contact-->
+		<div class="section section-contact" id="contact">
+			<div class="main-cont">
+				<div class="section-title">Наши контакты</div>
+				<div class="contact">
+					<div class="contact-form contact-form--footer">
+						<div class="main-form">
+							<div class="form-title">Оставьте вашу заявку</div>
+							<div class="form-title-sub">Мы свяжемся с вам в кратчайшее время</div>
+							<form class="validate-form form--footer" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="form-footer-send" type="submit" value="Отправить заявку" />
+							</form>
+						</div>
+						<div class="contact-info">
+							<div class="map">
+								<script text/javascript="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;amp;width=100%&amp;amp;height=400&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
+							</div>
+							<div class="contact-row-wrap">
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#placeholder"></use>
+										</svg>
+									</div>
+									<div class="contact-text">Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#phone-call"></use>
+										</svg>
+									</div>
+									<div class="contact-text">+7 (495) 514-84-13</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#mail"></use>
+										</svg>
+									</div>
+									<div class="contact-text">info@cgiku.ru</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#metro"></use>
+										</svg>
+									</div>
+									<a class="contact-text" href="#">Как к нам проехать подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section-contact-end-->
+		<div class="footer">
+			<div class="footer-menu">
+				<div class="main-cont">
+					<div class="menu">
+						<div class="menu-el">
+							<a href="#">
+								<span>Главная</span>
+							</a>
+						</div>
+						<div class="menu-el menu-el-service">
+							<a href="#">
+								<span>Услуги</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>О компании</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Прайс-лист</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Наши лицензии</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Контакты</span>
+							</a>
+						</div>
+						<div class="menu-el menu-el--mark">
+							<a href="#">
+								<span>Акции</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="main-cont">
+					<div class="footer-info-wrap">
+						<a class="footer-info__logo" href="/">
+							<img class="logo--full" src="img/logo-dark.png" alt="" />
+						</a>
+						<div class="footer-info__phone">
+							<a class="footer-info__phone" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+							<a class="footer-info__phone" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="scroll-up">
+			<svg class="icon">
+				<use xlink:href="#arrow-up"></use>
+			</svg>
+		</div>
+		<div class="modal-layer">
+			<div class="modal-cont">
+				<div class="modal-filter"></div>
+				<div class="modal-wrap">
+					<div class="modal" data-modal="order">
+						<div class="modal-content modal-content--fogot">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-title">Заявка</div>
+							<div class="modal-text">Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+							<form class="validate-form" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="modal-send" type="submit" value="Отправить заявку" />
+							</form>
+						</div>
+					</div>
+					<div class="modal" data-modal="true">
+						<div class="modal-content modal-content--true">
+							<svg class="icon">
+								<use xlink:href="#interface"></use>
+							</svg>
+							<div class="modal-text-true">Ваша заявка принята</div>
+						</div>
+					</div>
+					<div class="modal" data-modal="next">
+						<div class="modal-content modal-content--truesend">
+							<svg class="icon">
+								<use xlink:href="#interface"></use>
+							</svg>
+							<div class="modal-text-truesend">Ваша заявка принята!</div>
+						</div>
+					</div>
+					<div class="modal modal--sale" data-modal="sale">
+						<div class="modal-content">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-sale__title">Закажите больше одной услуги и получите скидку:</div>
+							<div class="modal-sale__wrap">
+								<div class="modal-sale__list">
+									<div class="modal-sale__el">
+										<div class="modal-sale__el-icon">
+											<svg class="icon">
+												<use xlink:href="#gift--color"></use>
+											</svg>
+										</div>
+										<div class="modal-sale__el-text">Технический план строения до 100 кв.м. (14 000 руб.) и межевой план земельного участка до 8 соток (14 000 руб.)
+											<div class="modal-sale__el-text-sub">Общая стоимость
+												<span class="main-service__price--false">28 000</span>
+												<span class="main-service__price--true">24 000 руб.</span>- Скидка 4000 руб.</div>
+										</div>
+									</div>
+									<div class="modal-sale__el">
+										<div class="modal-sale__el-icon">
+											<svg class="icon">
+												<use xlink:href="#gift--color"></use>
+											</svg>
+										</div>
+										<div class="modal-sale__el-text">Технический план строения до 100 кв.м. (14 000 руб.) и технический план строения до 50 кв.м. (10 000 руб.)
+											<div class="modal-sale__el-text-sub">Общая стоимость
+												<span class="main-service__price--false">28 000</span>
+												<span class="main-service__price--true">24 000 руб.</span>- Скидка 4000 руб.</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-sale__text">
+									<p>Объединитесь с соседями! При единовременном заказе на межевание или технические планы соседних участков у нас гарантированно предоставляются скидки. Размер скидки зависит от объёма необходимых работ.
+										<br> При повторном обращении — скидки от 10%.
+										<br>
+										<span>За подробностями обращайтесь по телефону!</span>
+									</p>
+								</div>
+								<div class="modal-sale__text-add">Внимание! На услуги стоимостью 10 000 руб. и меньше скидки не распространяются!</div>
+								<div class="row-btn--center">
+									<div class="modal-sale-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal modal--sale" data-modal="sale--border">
+						<div class="modal-content">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-sale__title">Закажите больше одной услуги и получите скидку:</div>
+							<div class="modal-sale__wrap">
+								<div class="modal-sale__list">
+									<div class="modal-sale__el">
+										<div class="modal-sale__el-icon">
+											<svg class="icon">
+												<use xlink:href="#gift--color"></use>
+											</svg>
+										</div>
+										<div class="modal-sale__el-text">Межевой план земельного участка до 8 соток (14 000 руб.) и технический план строения до 100 кв.м.(14 000 руб.)
+											<div class="modal-sale__el-text-sub">Общая стоимость
+												<span class="main-service__price--false">28 000</span>
+												<span class="main-service__price--true">24 000 руб.</span>- Скидка 4000 руб.</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-sale__text">
+									<p>Объединитесь с соседями! При единовременном заказе на межевание или технические планы соседних участков у нас гарантированно предоставляются скидки. Размер скидки зависит от объёма необходимых работ.
+										<br> При повторном обращении — скидки от 10%.
+										<br>
+										<span>За подробностями обращайтесь по телефону!</span>
+									</p>
+								</div>
+								<div class="modal-sale__text-add">Внимание! На услуги стоимостью 10 000 руб. и меньше скидки не распространяются!</div>
+								<div class="row-btn--center">
+									<div class="modal-sale-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>
