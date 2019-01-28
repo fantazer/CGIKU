@@ -2678,7 +2678,7 @@ ul,ol
 		white-space nowrap
 		overflow hidden
 		text-overflow ellipsis
-		display inline-block
+		display block
 
 select.select-beauty
 	display: none!important
@@ -2690,6 +2690,11 @@ select.select-beauty
 	cf()
 
 .calculator
+	+below(768px)
+		margin:20px auto
+	+below(640px)
+		padding: 20px
+		margin-bottom: 40px
 	max-width 640px
 	padding: 40px
 	border 1px solid $border-color
@@ -2699,11 +2704,27 @@ select.select-beauty
 		width: 100%
 		.list
 			li
+				white-space normal
+				border-bottom 1px solid $border-color
 				width: 100%
+				line-height: 1.4
+				height: auto
+				margin-bottom: 0
+				f()
+				align-items: center
+				padding: 10px
+			.current
+				width: 100%
+				overflow: hidden
 .calculator__head
+	+below(640px)
+		margin-bottom: 0
 	margin-bottom: 10px
 
 .calculator__head-title
+	+below(640px)
+		font-size: 12px
+		text-align: center
 	margin-bottom: 20px
 
 .calculator__sub
@@ -2713,12 +2734,26 @@ select.select-beauty
 	display: block
 
 .calculator__sub-title
+	+below(640px)
+		font-size: 12px
+		text-align: center
+	line-height: 1.4
 	margin-bottom: 20px
 
 .calculator-total
+	+below(640px)
+		flex(mid)
+		fl()
+		margin-top: 0
+		padding-top: 20px
+		border-top: 1px solid #e5e5e5
 	flex(between)
 	margin-top: 20px
 .calculator-total__title
+	+below(640px)
+		margin-bottom: 10px
+		font-weight: 400
+		font-size: 14px
 	font-size: 16px
 	font-weight:700
 	color black
@@ -2729,11 +2764,14 @@ select.select-beauty
 	color black
 
 .calculator-msg
+	+below(640px)
+		text-align: center
 	line-height: 1.4
 	margin-top: 20px
 	margin-left: auto
 	font-size: 12px
 	display: none
+
 .calculator-msg--active
 	display: block
 
@@ -2776,4 +2814,11 @@ select.select-beauty
 
 .calulator__type-el
 	margin-bottom: 20px
+	.sytle-input-text
+		+below(640px)
+			font-size: 12px
+
+.elements-icr-block
+	+below(640px)
+		flex(mid)
 //calc===end
