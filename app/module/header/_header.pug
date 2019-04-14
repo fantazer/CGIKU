@@ -13,26 +13,21 @@ mixin header()
 								.top-line-el__wrap
 									.top-line-el
 										.top-line-el-title Работа горячей линии:
-										.top-line-el-info Ежедневно c 9-00 ч. до 20-00 ч.
+										.top-line-el-info.top-line-el-info--light Ежедневно c 9-00 ч. до 20-00 ч.
 									.top-line-el
 										.top-line-el-title Прием онлайн-заявок:
 										.top-line-el-info.top-line-el-info--call.modal-get(data-modal="order")
 											+icon("phone","icon")
 											span Круглосуточно
 								.top-line__contact
-									.top-line-loc
-										.top-line-loc-el
-											.top-line-loc-icon
-												+icon("metro","icon")
-											.top-line-loc-text Варшавская
-										.top-line-loc-el
-											.top-line-loc-icon
-												+icon("metro","icon")
-											.top-line-loc-text Каширская
 									.nav-phone
 										a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 514-84-13
 										a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 283-96-83
-
+									.top-line-loc
+										a(href="#").top-calc
+											.top-calc__icon
+												+icon("calculator-fat","icon")
+											.top-calc__text Калькулятор услуг
 		//header-end
 
 		//nav

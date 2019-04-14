@@ -1296,14 +1296,16 @@ $step = #b3b2b2
 	br(10px)
 
 .top-line-el-info--call
-	box-shadow 0px 3px 0px #305432
-	cp()
-	f()
+	//box-shadow 0px 3px 0px #305432
+	//cp()
+	//f()
+	background: none
+	color black
 	.icon
 		size 15px
-		fill white
+		fill $green
 		margin-right: 10px
-
+		display: none
 .cost
 	+below(1024px)
 		justify-content: space-around
@@ -1996,7 +1998,7 @@ $step = #b3b2b2
 /*.calculator
 	padding-top: 200px
 	flex(mid)
-	fl()
+	fl()*/
 .calculator__wrap
 	width: 400px
 	input
@@ -2028,7 +2030,7 @@ $step = #b3b2b2
 .calculator__val
 	span
 		display: inline-block
-		margin-right: 10px*/
+		margin-right: 10px
 
 //NOTE!!! REMOVE CALC === end
 
@@ -2822,3 +2824,67 @@ select.select-beauty
 	+below(640px)
 		flex(mid)
 //calc===end
+
+.top-calc
+	f()
+	align-items: center
+	border-radius 20px
+	border 1px solid $green
+	overflow: hidden
+	tr(all)
+	&:hover
+		.top-calc__text
+			background: darken($green,10)
+	.icon
+		size 26px
+		fill $green
+		padding-left: 5px
+	color black
+	up()
+	font-size: 12px
+.top-calc__icon
+	height: 35px
+	width: 45px
+	flex(mid)
+.top-calc__text
+	height: 100%
+	background: $green
+	color white
+	flex(mid)
+	padding: 0 20px
+	tr(all)
+
+.top-line-el-info--light
+	background: none
+	color black
+
+
+//water
+.main-cont-sm
+	center(960px,10)
+
+.text-block
+	padding: 30px 30px 40px 30px
+	line-height: 1.8
+	br(10px)
+	text-align: left
+	background: white
+	bsh()
+.section--text
+	bg-full()
+
+.text-block
+	li
+		font-size: 14px
+
+.doc--left
+	.doc__el
+		display: block
+	.doc__title
+		text-align: left
+		text-transform: none
+	.doc__text
+		text-align: left
+		line-height: 1.8
+		font-size: 13px
+//water === end

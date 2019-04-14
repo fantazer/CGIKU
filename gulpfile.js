@@ -232,7 +232,7 @@ gulp.task('min:js',function(){
 
 gulp.task('pug', function() {
 		//gulp.src(['app/html/*.pug','app/module/**/*.pug',])
-		gulp.src(['app/html/calc.pug'])
+		gulp.src(['app/html/water.pug'])
 				//.pipe(changed('app/', {extension: '.html'}))
 				//.pipe(cache('pug'))
 				.pipe(pugInheritance({basedir: 'app/html/',skip:'node_modules/'}))
@@ -455,8 +455,8 @@ gulp.task('build:ftp',function(){
 				'copy:css',
 				'min:css',
 				'min:js',
-				'screenshot',
-				'img',
+				//'screenshot',
+				//'img',
 				//'svg',
 				'make',
 				//'zip',

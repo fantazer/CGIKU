@@ -10,7 +10,29 @@
 
 $(document).ready(function(){
 
+		//calc
+	$('.calc-get').click(function(){
+		var price = $('.calc-price').val()*1;  // Цена биткоина
 
+		var numbBit = (($('.calc-count').val()*1) / ($('.calc-price').val()*1))/100 * 99; // Сколько купил
+		 $('.calculator__total--numbBit span').html(numbBit);
+
+
+		var numbSale = ((numbBit/100 * 99)); // сколько буду продавать
+		 $('.calculator__total--item span').html(numbSale);
+
+		//var countSale = $('.calc-count').val()*1 + (($('.calc-count').val()*1) - (numbSale*price));
+		var countSale =($('.calc-count').val()*1) / numbSale;
+		 $('.calculator__total--sale span').html(countSale); // Минимальная цена перепродажи
+
+
+		var delta =(numbSale*($('.calc-sale').val()*1)) -  $('.calc-count').val()*1; // Прибыль
+
+		 $('.calculator__total--get span').html(delta);
+		 //$('.calculator__total--get span').html(getVal);
+
+	});
+	//calc-end
 
 	//smooth scroll
 	$(document).on('click', 'a[href^="#"]', function (event) {
