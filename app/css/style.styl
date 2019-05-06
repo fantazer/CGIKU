@@ -77,8 +77,6 @@ body
 .section
 	+below(768px)
 		padding: 30px 0
-	+below(640px)
-		padding-bottom: 0
 	padding: 100px 0
 
 
@@ -225,7 +223,6 @@ body
 	text-align: center
 	width: 60%
 	margin: 0 auto
-	margin-top: -40px
 	margin-bottom: 80px
 	line-height: 1.5
 
@@ -333,6 +330,8 @@ body
 	+below(640px)
 		width: 100%
 		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
 	@extend .btn--md
 	padding: 20px 60px
 	font-weight bold
@@ -610,7 +609,8 @@ body
 	opacity .1
 	transition transform .8s, opacity 1s
 	max-width 550px
-
+	br(10px)
+	overflow: hidden
 .modal-content
 	+below(768px)
 		padding: 20px
@@ -623,6 +623,7 @@ body
 	background: white
 	position: relative
 	padding: 40px
+
 	+below(768px)
 		width: 80%
 
@@ -777,11 +778,12 @@ $step = #b3b2b2
 	+below(768px)
 		font-size: 20px
 		margin-bottom: 30px
+	up()
+	line-height: 1.4
 	text-align: center
 	margin-bottom: 40px
 	font-size: 32px
 	color black
-	up()
 	font-weight:700
 
 .step
@@ -1134,6 +1136,17 @@ $step = #b3b2b2
 	line-height: 1.6
 	margin-bottom: 30px
 
+.lp-baner__title-sub--mark
+	+below(640px)
+		font-size: 12px
+		padding: 10px
+	padding: 15px
+	br(10px)
+	border: 2px solid #ffdf6d
+	background: #fff0bb
+	font-size: 14px
+	line-height: 1.8
+	color black
 .section-wrap
 	f()
 	fw()
@@ -1141,7 +1154,7 @@ $step = #b3b2b2
 	justify-content: space-between
 
 .section-call
-	+below(640px)
+	+below(768px)
 		width: 100%
 	width: 50%
 
@@ -1199,11 +1212,11 @@ $step = #b3b2b2
 	fl()
 	width: 24%
 	padding: 40px 20px
-
+	background: white
 .doc__icon
 	margin-bottom: 30px
 	.icon
-		fill $green
+		fill #5870ae
 		size 90px
 
 .doc__title
@@ -1217,8 +1230,17 @@ $step = #b3b2b2
 	margin-bottom: 30px
 
 .doc__text
-	line-height: 1.4
+	line-height: 1.6
 	text-align: center
+
+.doc__link
+	+below(640px)
+		display: block
+		text-align: center
+	display: inline-block
+	margin-top: 20px
+	text-decoration: underline
+	color $sky
 
 .irs-from, .irs-to, .irs-single
 	font-size: 24px
@@ -1252,10 +1274,8 @@ $step = #b3b2b2
 		display: inline-block
 .calc-range-val--lg
 	font-size: 52px
-	+below(768px)
+	+below(640px)
 		font-size: 20px
-
-
 
 .calc-range__wrap
 	flex(mid)
@@ -1267,7 +1287,7 @@ $step = #b3b2b2
 
 .calc-text
 	text-align: center
-
+	line-height: 1.8
 .section--calc
 	background: #f1f1f1
 
@@ -1775,7 +1795,8 @@ $step = #b3b2b2
 	background-color $red
 	color white
 	//box-shadow 0 9px 18px rgba(242, 0, 34, 0.6)
-//.modal-get
+.modal-get
+	cp()
 .main-service__img
 	+below(960px)
 		width: 100%
@@ -2474,6 +2495,12 @@ section--calc
 		font-size: 24px
 	font-size: 40px
 
+.lp-baner__title--xs
+	+below(640px)
+		font-size: 20px
+	text-transform: none
+	font-size: 36px
+	font-weight: 600
 ol
 	li
 		line-height: 1.6
@@ -2501,6 +2528,7 @@ ol
 .header__btn-get--yellow
 	background: $yellow
 	color black
+	border-color transparent
 
 .lp-baner__img--right-left
 	background-position: center right
@@ -2861,15 +2889,19 @@ select.select-beauty
 
 //water
 .main-cont-sm
-	center(960px,10)
+	center(960px,10px)
 
 .text-block
+	+below(640px)
+		padding: 10px
+		box-shadow 0 0 0
 	padding: 30px 30px 40px 30px
 	line-height: 1.8
 	br(10px)
+	bsh()
 	text-align: left
 	background: white
-	bsh()
+	margin-bottom: 30px
 .section--text
 	bg-full()
 
@@ -2888,3 +2920,10 @@ select.select-beauty
 		line-height: 1.8
 		font-size: 13px
 //water === end
+
+.modal-info
+	padding: 20px
+	background: #f6f6f6
+	li
+		font-size: 14px
+

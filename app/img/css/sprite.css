@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 61.1923em 2441.9em;
+    background-size: 78.8em 2887.3em;
 }
 
 .no-svg .icon:before {
@@ -26,8 +26,17 @@
 
 
 
-  .icon.arrow-down:before {
+  .icon.air-freight:before {
       background-position: 0em -48.1em;
+      width: 51.199928em;
+      height: 51.1em;
+  }
+
+
+
+
+  .icon.arrow-down:before {
+      background-position: 0em -99.2em;
       width: 12.9em;
       height: 12.9em;
   }
@@ -36,7 +45,7 @@
 
 
   .icon.arrow-left:before {
-      background-position: 0em -61em;
+      background-position: 0em -112.1em;
       width: 47.7175em;
       height: 47.7175em;
   }
@@ -45,7 +54,7 @@
 
 
   .icon.arrow-right:before {
-      background-position: 0em -108.8em;
+      background-position: 0em -159.9em;
       width: 47.7175em;
       height: 47.7175em;
   }
@@ -54,7 +63,7 @@
 
 
   .icon.arrow-up:before {
-      background-position: 0em -156.6em;
+      background-position: 0em -207.7em;
       width: 6.4em;
       height: 6.4em;
   }
@@ -63,7 +72,7 @@
 
 
   .icon.attest:before {
-      background-position: 0em -163em;
+      background-position: 0em -214.1em;
       width: 6em;
       height: 6em;
   }
@@ -71,8 +80,17 @@
 
 
 
+  .icon.binoculars:before {
+      background-position: 0em -220.1em;
+      width: 64em;
+      height: 64em;
+  }
+
+
+
+
   .icon.calculator:before {
-      background-position: 0em -169em;
+      background-position: 0em -284.1em;
       width: 6em;
       height: 6em;
   }
@@ -81,7 +99,7 @@
 
 
   .icon.calculator-fat:before {
-      background-position: 0em -175em;
+      background-position: 0em -290.1em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -90,7 +108,7 @@
 
 
   .icon.camera:before {
-      background-position: 0em -226.2em;
+      background-position: 0em -341.3em;
       width: 51.199799999999996em;
       height: 51.199799999999996em;
   }
@@ -99,7 +117,7 @@
 
 
   .icon.cancel:before {
-      background-position: 0em -277.4em;
+      background-position: 0em -392.5em;
       width: 47.519999999999996em;
       height: 47.519999999999996em;
   }
@@ -107,8 +125,17 @@
 
 
 
+  .icon.car:before {
+      background-position: 0em -440.1em;
+      width: 46.8em;
+      height: 46.8em;
+  }
+
+
+
+
   .icon.case:before {
-      background-position: 0em -325em;
+      background-position: 0em -486.9em;
       width: 6em;
       height: 6em;
   }
@@ -117,7 +144,7 @@
 
 
   .icon.checked:before {
-      background-position: 0em -331em;
+      background-position: 0em -492.9em;
       width: 2.6em;
       height: 2.6em;
   }
@@ -126,7 +153,7 @@
 
 
   .icon.close:before {
-      background-position: 0em -333.6em;
+      background-position: 0em -495.5em;
       width: 5.4422em;
       height: 5.4422em;
   }
@@ -135,7 +162,7 @@
 
 
   .icon.coins:before {
-      background-position: 0em -339.1em;
+      background-position: 0em -501em;
       width: 6em;
       height: 6em;
   }
@@ -144,7 +171,7 @@
 
 
   .icon.compass:before {
-      background-position: 0em -345.1em;
+      background-position: 0em -507em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -153,7 +180,7 @@
 
 
   .icon.design:before {
-      background-position: 0em -396.3em;
+      background-position: 0em -558.2em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -162,7 +189,7 @@
 
 
   .icon.doc:before {
-      background-position: 0em -447.5em;
+      background-position: 0em -609.4em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -171,7 +198,7 @@
 
 
   .icon.field:before {
-      background-position: 0em -498.7em;
+      background-position: 0em -660.6em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -180,7 +207,7 @@
 
 
   .icon.field-place:before {
-      background-position: 0em -549.9em;
+      background-position: 0em -711.8em;
       width: 41.1723em;
       height: 41.1723em;
   }
@@ -189,7 +216,7 @@
 
 
   .icon.file:before {
-      background-position: 0em -591.1em;
+      background-position: 0em -753em;
       width: 6em;
       height: 6em;
   }
@@ -198,7 +225,7 @@
 
 
   .icon.garbage:before {
-      background-position: 0em -597.1em;
+      background-position: 0em -759em;
       width: 5.9em;
       height: 5.9em;
   }
@@ -207,7 +234,7 @@
 
 
   .icon.gavel:before {
-      background-position: 0em -603em;
+      background-position: 0em -764.9em;
       width: 45.609300000000005em;
       height: 45.609300000000005em;
   }
@@ -216,7 +243,7 @@
 
 
   .icon.gift--color:before {
-      background-position: 0em -648.7em;
+      background-position: 0em -810.6em;
       width: 51.198899999999995em;
       height: 51.198899999999995em;
   }
@@ -225,7 +252,7 @@
 
 
   .icon.hand:before {
-      background-position: 0em -699.9em;
+      background-position: 0em -861.8em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -234,7 +261,7 @@
 
 
   .icon.heart:before {
-      background-position: 0em -751.1em;
+      background-position: 0em -913em;
       width: 47.170100000000005em;
       height: 47.170100000000005em;
   }
@@ -243,7 +270,7 @@
 
 
   .icon.house:before {
-      background-position: 0em -798.3em;
+      background-position: 0em -960.2em;
       width: 48.619600000000005em;
       height: 48.619600000000005em;
   }
@@ -252,7 +279,7 @@
 
 
   .icon.house-country:before {
-      background-position: 0em -847em;
+      background-position: 0em -1008.9em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -261,7 +288,7 @@
 
 
   .icon.house-network:before {
-      background-position: 0em -898.2em;
+      background-position: 0em -1060.1em;
       width: 50.8em;
       height: 50.8em;
   }
@@ -270,7 +297,7 @@
 
 
   .icon.house-plan:before {
-      background-position: 0em -949em;
+      background-position: 0em -1110.9em;
       width: 51.2001em;
       height: 51.2001em;
   }
@@ -279,7 +306,7 @@
 
 
   .icon.house-plan-scale:before {
-      background-position: 0em -1000.3em;
+      background-position: 0em -1162.2em;
       width: 15.190999999999999em;
       height: 15.190999999999999em;
   }
@@ -288,7 +315,7 @@
 
 
   .icon.house-plans:before {
-      background-position: 0em -1015.5em;
+      background-position: 0em -1177.4em;
       width: 17.4em;
       height: 17.4em;
   }
@@ -297,7 +324,7 @@
 
 
   .icon.house-rule:before {
-      background-position: 0em -1032.9em;
+      background-position: 0em -1194.8em;
       width: 51.1em;
       height: 51.1em;
   }
@@ -306,7 +333,7 @@
 
 
   .icon.idea:before {
-      background-position: 0em -1084em;
+      background-position: 0em -1245.9em;
       width: 51.1999em;
       height: 51.1999em;
   }
@@ -315,7 +342,7 @@
 
 
   .icon.image:before {
-      background-position: 0em -1135.2em;
+      background-position: 0em -1297.1em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -324,7 +351,7 @@
 
 
   .icon.information:before {
-      background-position: 0em -1186.4em;
+      background-position: 0em -1348.3em;
       width: 6em;
       height: 6em;
   }
@@ -333,7 +360,7 @@
 
 
   .icon.interface:before {
-      background-position: 0em -1192.4em;
+      background-position: 0em -1354.3em;
       width: 49.04em;
       height: 49.04em;
   }
@@ -342,7 +369,7 @@
 
 
   .icon.key:before {
-      background-position: 0em -1241.5em;
+      background-position: 0em -1403.4em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -351,7 +378,7 @@
 
 
   .icon.land:before {
-      background-position: 0em -1292.7em;
+      background-position: 0em -1454.6em;
       width: 6.4em;
       height: 6.4em;
   }
@@ -359,8 +386,17 @@
 
 
 
+  .icon.law:before {
+      background-position: 0em -1461em;
+      width: 51.1em;
+      height: 51.1em;
+  }
+
+
+
+
   .icon.like:before {
-      background-position: 0em -1299.1em;
+      background-position: 0em -1512.1em;
       width: 49.019999999999996em;
       height: 49.019999999999996em;
   }
@@ -369,7 +405,7 @@
 
 
   .icon.magnifying-glass:before {
-      background-position: 0em -1348.2em;
+      background-position: 0em -1561.2em;
       width: 45.1em;
       height: 45.1em;
   }
@@ -378,7 +414,7 @@
 
 
   .icon.mail:before {
-      background-position: 0em -1393.3em;
+      background-position: 0em -1606.3em;
       width: 48.33em;
       height: 48.33em;
   }
@@ -387,7 +423,7 @@
 
 
   .icon.map:before {
-      background-position: 0em -1441.7em;
+      background-position: 0em -1654.7em;
       width: 5.5em;
       height: 5.5em;
   }
@@ -396,7 +432,7 @@
 
 
   .icon.measuring-tools:before {
-      background-position: 0em -1447.2em;
+      background-position: 0em -1660.2em;
       width: 2.9514em;
       height: 2.9514em;
   }
@@ -405,7 +441,7 @@
 
 
   .icon.menu:before {
-      background-position: 0em -1450.2em;
+      background-position: 0em -1663.2em;
       width: 45.9em;
       height: 45.9em;
   }
@@ -414,7 +450,7 @@
 
 
   .icon.metro:before {
-      background-position: 0em -1496.1em;
+      background-position: 0em -1709.1em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -423,7 +459,7 @@
 
 
   .icon.money:before {
-      background-position: 0em -1547.3em;
+      background-position: 0em -1760.3em;
       width: 6em;
       height: 6em;
   }
@@ -431,8 +467,26 @@
 
 
 
+  .icon.mountain:before {
+      background-position: 0em -1766.3em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
+  .icon.museum:before {
+      background-position: 0em -1817.5em;
+      width: 78.8em;
+      height: 78.8em;
+  }
+
+
+
+
   .icon.phone:before {
-      background-position: 0em -1553.3em;
+      background-position: 0em -1896.3em;
       width: 48.056em;
       height: 48.056em;
   }
@@ -441,7 +495,7 @@
 
 
   .icon.phone-call:before {
-      background-position: 0em -1601.4em;
+      background-position: 0em -1944.4em;
       width: 47.3806em;
       height: 47.3806em;
   }
@@ -449,8 +503,17 @@
 
 
 
+  .icon.pines:before {
+      background-position: 0em -1991.8em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
   .icon.placeholder:before {
-      background-position: 0em -1648.8em;
+      background-position: 0em -2043em;
       width: 47.7em;
       height: 47.7em;
   }
@@ -459,7 +522,7 @@
 
 
   .icon.plan:before {
-      background-position: 0em -1696.5em;
+      background-position: 0em -2090.7em;
       width: 5.9em;
       height: 5.9em;
   }
@@ -468,7 +531,7 @@
 
 
   .icon.planning:before {
-      background-position: 0em -1702.4em;
+      background-position: 0em -2096.6em;
       width: 49em;
       height: 49em;
   }
@@ -477,7 +540,7 @@
 
 
   .icon.posred:before {
-      background-position: 0em -1751.4em;
+      background-position: 0em -2145.6em;
       width: 26.4355em;
       height: 26.4355em;
   }
@@ -486,7 +549,7 @@
 
 
   .icon.protractor:before {
-      background-position: 0em -1777.9em;
+      background-position: 0em -2172.1em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -495,7 +558,7 @@
 
 
   .icon.result:before {
-      background-position: 0em -1829.1em;
+      background-position: 0em -2223.3em;
       width: 6em;
       height: 6em;
   }
@@ -503,8 +566,17 @@
 
 
 
+  .icon.sardines:before {
+      background-position: 0em -2229.3em;
+      width: 51.2em;
+      height: 51.2em;
+  }
+
+
+
+
   .icon.save-disk:before {
-      background-position: 0em -1835.1em;
+      background-position: 0em -2280.5em;
       width: 61.1923em;
       height: 61.1923em;
   }
@@ -513,7 +585,7 @@
 
 
   .icon.share:before {
-      background-position: 0em -1896.3em;
+      background-position: 0em -2341.7em;
       width: 48.160000000000004em;
       height: 48.160000000000004em;
   }
@@ -522,7 +594,7 @@
 
 
   .icon.soc-facebook:before {
-      background-position: 0em -1944.5em;
+      background-position: 0em -2389.9em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -531,7 +603,7 @@
 
 
   .icon.soc-google:before {
-      background-position: 0em -1995.7em;
+      background-position: 0em -2441.1em;
       width: 9.6669em;
       height: 9.6669em;
   }
@@ -540,7 +612,7 @@
 
 
   .icon.soc-in:before {
-      background-position: 0em -2005.4em;
+      background-position: 0em -2450.8em;
       width: 43.011700000000005em;
       height: 43.011700000000005em;
   }
@@ -549,7 +621,7 @@
 
 
   .icon.soc-instagram:before {
-      background-position: 0em -2048.5em;
+      background-position: 0em -2493.9em;
       width: 29.1319em;
       height: 29.1319em;
   }
@@ -558,7 +630,7 @@
 
 
   .icon.soc-ok:before {
-      background-position: 0em -2077.7em;
+      background-position: 0em -2523.1em;
       width: 9.5481em;
       height: 9.5481em;
   }
@@ -567,7 +639,7 @@
 
 
   .icon.soc-twitter:before {
-      background-position: 0em -2087.3em;
+      background-position: 0em -2532.7em;
       width: 41.015499999999996em;
       height: 41.015499999999996em;
   }
@@ -576,7 +648,7 @@
 
 
   .icon.soc-vk:before {
-      background-position: 0em -2128.4em;
+      background-position: 0em -2573.8em;
       width: 51.2em;
       height: 51.2em;
   }
@@ -585,7 +657,7 @@
 
 
   .icon.soc-youtube:before {
-      background-position: 0em -2179.6em;
+      background-position: 0em -2625em;
       width: 6.4em;
       height: 6.4em;
   }
@@ -594,7 +666,7 @@
 
 
   .icon.star:before {
-      background-position: 0em -2186em;
+      background-position: 0em -2631.4em;
       width: 49.0727em;
       height: 49.0727em;
   }
@@ -603,7 +675,7 @@
 
 
   .icon.time:before {
-      background-position: 0em -2235.1em;
+      background-position: 0em -2680.5em;
       width: 6em;
       height: 6em;
   }
@@ -612,7 +684,7 @@
 
 
   .icon.topograf:before {
-      background-position: 0em -2241.1em;
+      background-position: 0em -2686.5em;
       width: 51.1999em;
       height: 51.1999em;
   }
@@ -621,7 +693,7 @@
 
 
   .icon.total-station:before {
-      background-position: 0em -2292.3em;
+      background-position: 0em -2737.7em;
       width: 51.1em;
       height: 51.1em;
   }
@@ -630,7 +702,7 @@
 
 
   .icon.trees:before {
-      background-position: 0em -2343.4em;
+      background-position: 0em -2788.8em;
       width: 48.0007em;
       height: 48.0007em;
   }
@@ -639,7 +711,7 @@
 
 
   .icon.worker:before {
-      background-position: 0em -2391.5em;
+      background-position: 0em -2836.9em;
       width: 50.3607em;
       height: 50.3607em;
   }

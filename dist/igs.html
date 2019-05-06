@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<!--create by ANATOLY KUZNETSOV-->
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<!--colors-tabs-->
+		<meta name="theme-color" content="#000" />
+		<meta name="msapplication-navbutton-color" content="#000" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+		<!--icons-->
+		<link rel="shortcut icon" href="img/fav/favicon.ico" />
+		<!--SEO-->
+		<title>Document</title>
+		<meta name="description" itemprop="description" content="" />
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<!--block footer end-->
+		<!--block header-->
+		<div class="head-container">
+			<!--header-->
+			<div class="header">
+				<div class="top-line">
+					<div class="main-cont">
+						<div class="top-line-wrap">
+							<a class="main-logo" href="/">
+								<img class="logo--full" src="img/logo-dark.png" alt="" />
+								<img class="logo--short" src="img/logo-short.png" alt="" />
+							</a>
+							<div class="top-line-info">
+								<div class="top-line-el__wrap">
+									<div class="top-line-el">
+										<div class="top-line-el-title">Работа горячей линии:</div>
+										<div class="top-line-el-info top-line-el-info--light">Ежедневно c 9-00 ч. до 20-00 ч.</div>
+									</div>
+									<div class="top-line-el">
+										<div class="top-line-el-title">Прием онлайн-заявок:</div>
+										<div class="top-line-el-info top-line-el-info--call modal-get" data-modal="order">
+											<svg class="icon">
+												<use xlink:href="#phone"></use>
+											</svg>
+											<span>Круглосуточно</span>
+										</div>
+									</div>
+								</div>
+								<div class="top-line__contact">
+									<div class="nav-phone">
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
+									</div>
+									<div class="top-line-loc">
+										<a class="top-calc" href="#">
+											<div class="top-calc__icon">
+												<svg class="icon">
+													<use xlink:href="#calculator-fat"></use>
+												</svg>
+											</div>
+											<div class="top-calc__text">Калькулятор услуг</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header-end-->
+			<!--nav-->
+			<div class="nav">
+				<div class="main-cont">
+					<div class="nav-wrap">
+						<div class="nav-toggle">
+							<svg class="icon">
+								<use xlink:href="#menu"></use>
+							</svg>
+						</div>
+						<div class="menu-wrap">
+							<div class="menu">
+								<div class="menu-el">
+									<a href="#">
+										<span>Главная</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el-service">
+									<a href="#">
+										<span>Услуги
+											<svg class="icon">
+												<use xlink:href="#arrow-down"></use>
+											</svg>
+										</span>
+									</a>
+									<div class="menu-el__sub">
+										<a class="menu-el__sub-el" href="#">Кадастровые работы</a>
+										<a class="menu-el__sub-el" href="#">Геодезические работы</a>
+									</div>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>О компании</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Прайс-лист</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Наши лицензии</span>
+									</a>
+								</div>
+								<div class="menu-el">
+									<a href="#">
+										<span>Контакты</span>
+									</a>
+								</div>
+								<div class="menu-el menu-el--mark">
+									<a href="#">
+										<span>Акции</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!--.nav-phone
+				a(href="tel:+7 (495) 514-84-13").nav-phone-el
+					+icon("phone-call","icon")
+					| +7 (495) 514-84-13
+				-->
+					</div>
+				</div>
+			</div>
+			<!--nav-end-->
+		</div>
+		<!--block header end-->
+		<div class="lp-baner lp-baner--borderland">
+			<div class="lp-baner__img" style="background-image:url('img/igs/igs-1.jpg');"></div>
+			<!--.lp-baner-filter--green-->
+			<div class="main-cont">
+				<div class="lp-baner__wrap">
+					<div class="lp-baner__content">
+						<div class="lp-baner__title lp-baner__title--xs">Уведомление о планируемых строительстве или реконструкции объекта ИЖС или садового дома</div>
+						<div class="lp-baner__title-sub lp-baner__title-sub--mark">
+							<strong>Что это такое ?</strong> Это основной документ, подтверждающим Ваше право на строительство или реконструкцию дома на загородном участке.</div>
+						<div class="header__get">
+							<a class="header__btn header__btn-more" href="#why">Подробнее</a>
+							<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
+						</div>
+					</div>
+					<!--.lp-baner__image
+			.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
+			//img(src="img/lp-item-5.jpg", alt="")
+			
+			-->
+				</div>
+			</div>
+		</div>
+		<!--Что это такое-->
+		<div class="section" id="why">
+			<div class="section-wrap__img lp-baner--contain" style="background-image:url('img/igs/igs-4.jpg');"></div>
+			<div class="main-cont">
+				<div class="section-wrap">
+					<div class="section-call section-call--mid">
+						<div class="text-block">
+							<div class="section-title section-title--left">зачем это нужно?</div>
+							<div class="box">
+								<p>Без полученного уведомления о планируемом строительстве или реконструкции объекта ИЖС или садового дома невозможно провести процедуру постановки на кадастровый учет и регистрации права на загородный дом (жилой или садовый), а также Ваш дом могут
+									признать самовольной постройкой и потребуют ее сноса. Кроме того, собственник земельного участка, на котором расположена незарегистрированная постройка, может столкнуться со штрафами от Федеральной налоговой службы за неуплату налогов. Немаловажным
+									моментом является и тот факт, что с 1 января 2018 года запрещается купля-продажа, дарение, наследование и т.д. в отношении незарегистрированных зданий.</p>
+								<p>С полученным уведомлением о планируемом строительстве собственнику объекта ИЖС или садового дома необходимо обратиться к кадастровому инженеру за изготовлением технического плана здания, который в итоге следует подать в Росреестр с целью внесения
+									сведений о доме в Единый государственный реестр недвижимости (ЕГРН). Только после этих действий Ваша постройка будет считаться зарегистрированной!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Зачем это нужно-->
+		<div class="section section--start section--survey" style="background-image:url('img/igs/igs-5.jpg');">
+			<div class="main-cont">
+				<div class="section-wrap">
+					<div class="section-call section-call--img"></div>
+					<div class="section-call">
+						<div class="section-title section-title--left">На каких основаниях это делается?</div>
+						<div class="box">
+							<p>С вступлением поправок в Градостроительный кодекс РФ (Федеральный закон №340-ФЗ от 03.08.2018), с 03.08.2018 года отменяется получение разрешении на строительство частного дома. Теперь перед началом строительства загородного дома (жилого или садового)
+								собственнику земельного участка необходимо подать уведомление о планируемом строительстве (п.1 ст. 51.1 Градостроительного кодекса РФ). То же самое касается реконструкции загородного дома. Форма такого уведомления официально утверждена Приказом
+								Министерства строительства и жилищно-коммунального хозяйства РФ №591/пр от 19.09.2018 г.</p>
+							<p class="attanintion">
+								<strong>!ВАЖНО:</strong> ранее существовавшие понятия «жилой дом» и «индивидуальный жилой дом» теперь приравниваются к одному общему понятию «объект ИЖС». Уведомление следует получать только на объекты ИЖС и на садовые дома. На капитальные объекты вспомогательного
+								пользования (гараж, баня, хоз.блок, летняя кухня, беседка, сарай) получение Уведомления не требуется при наличии на участке зарегистрированного основного объекта (объекта ИЖС или садового дома), к которому остальные объекты можно отнести как «вспомогательные».</p>
+							<p>Под объектом ИЖС понимается отдельно стоящее здание с количеством надземных этажей не более чем 3, высотой не более 20 метров, которое состоит из комнат и помещений вспомогательного использования, предназначенных для удовлетворения гражданами бытовых
+								и иных нужд, связанных с их проживанием в таком здании, и не предназначено для раздела на самостоятельные объекты недвижимости.</p>
+							<p>Садовым домом признается здание сезонного использования, предназначенное для удовлетворения гражданами бытовых и иных нужд, связанных с их временным пребыванием в таком здании.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Это нужно знать-->
+		<div class="section section--text" style="background-image:url('img/igs/igs-7.jpg');">
+			<div class="main-cont-sm">
+				<div class="section-title">как подать уведомление?</div>
+				<div class="text-block">
+					<p>На объекты, расположенные в Москве, уведомление подается застройщиком на бумажном носителе в службу «одного окна» Мосгосстройнадзора, либо посредством направления застройщиком в Мосгосстройнадзор почтового отправления с уведомлением о вручении. Подача
+						уведомления через Интернет-портал гос.услуг в настоящее время пока не реализована.</p>
+					<p>Для объектов, расположенных в Московской области, уведомление подается застройщиком либо через Интернет-портал гос.услуг Московской области, либо на бумажном носителе через МФЦ.
+						<span class="link--mark modal-get" data-modal="igs-1">Подробнее</span>
+					</p>
+					<p class="attanintion">
+						<strong>!ВАЖНО:</strong> В течении 7 рабочих дней со дня поступления уведомления производится его проверка на предмет соответствия всех указанных параметров постройки нормам законодательства и допустимости размещения постройки на Вашем участке.</p>
+					<p>По итогам положительной проверки поданного уведомления Вам выдается уведомление о соответствии указанных в уведомлении о планируемом строительстве параметров объекта ИЖС или садового дома установленным параметрам и допустимости размещения объекта
+						ИЖС или садового дома на земельном участке, которое дает Вам право на строительство заявленной постройки и действительно в течении 10-ти лет. Данное право сохраняется при переходе прав на земельный участок и объект ИЖС или садовый дом.</p>
+					<p>Если же в результате проверки уведомления будут выявлены замечания, то Вам выдадут ЛИБО уведомление о несоответствии указанных в уведомлении о планируемых строительстве параметров объекта ИЖС или садового дома установленным параметрам и (или) недопустимости
+						размещения объекта ИЖС или садового дома на земельном участке, ЛИБО уведомление о возврате уведомления о планируемом строительстве и прилагаемых к нему документов без рассмотрения</p>
+				</div>
+			</div>
+		</div>
+		<!--Что войдет в стоимость-->
+		<div class="section section--doc section--fill" style="background-image:url('img/igs/concrete-texture.png');">
+			<div class="main-cont-sm">
+				<div class="section-title">нужны ли согласования?</div>
+				<div class="text-block">
+					<p>Перед подачей уведомления следует обратить внимание расположен ли Ваш земельный участок в границах зон с особыми условиями использования территории, в т.ч. в границах полос воздушных подходов аэродрома.</p>
+					<p>Узнать об ограничениях в отношении земельного участка можно самостоятельно, обратившись к Интернет-ресурсу Публичная кадастровая карта
+						<a href="https://pkk5.rosreestr.ru/" class="link--mark">https://pkk5.rosreestr.ru/ </a> , либо через Информационную систему обеспечения градостроительной деятельности города Москвы (ИАИС ОГД)
+						<a href="https://isogd.mos.ru" class="link--mark">https://isogd.mos.ru </a>.</p>
+					<p>При подаче уведомления о планируемом строительстве или реконструкции может возникнуть необходимость в получении согласований у таких инстанций, как:</p>
+				</div>
+			</div>
+			<div class="doc doc--line">
+				<div class="doc__el doc__el--line">
+					<div class="doc__icon">
+						<svg class="icon">
+							<use xlink:href="#air-freight"></use>
+						</svg>
+					</div>
+					<div class="doc__content">
+						<div class="doc__title">Росавиация</div>
+						<div class="doc__text">Если земельный участок попадает в границы полос воздушных подходов аэродромов. Данная информация размещена на официальном сайте Центрального МТУ РОСАВИАЦИИ</div>
+						<a class="doc__link" href="http://mtuvtcrfavt.ru/documents/670.html">Подробнее</a>
+					</div>
+				</div>
+				<div class="doc__el doc__el--line">
+					<div class="doc__icon">
+						<svg class="icon">
+							<use xlink:href="#mountain"></use>
+						</svg>
+					</div>
+					<div class="doc__content">
+						<div class="doc__title">Роснедра</div>
+						<div class="doc__text">Выдача согласования регулируется Федеральным агентством по недропользованию. Информация по согласованию размещена на официальном сайте Роснедр</div>
+						<a class="doc__link" href="http://www.rosnedra.gov.ru/article/10290.html ">Подробнее</a>
+					</div>
+				</div>
+				<div class="doc__el doc__el--line">
+					<div class="doc__icon">
+						<svg class="icon">
+							<use xlink:href="#museum"></use>
+						</svg>
+					</div>
+					<div class="doc__content">
+						<div class="doc__title">Культурное наследие</div>
+						<div class="doc__text">Если земельный участок попадает в границы зон охраны культурного значения или объекта культурного наследия. В Москве согласование производится с Департаментом культурного наследия города Москвы, в Московской области – с Главным управлением культурного
+							наследия Московской области.</div>
+					</div>
+				</div>
+				<div class="doc__el doc__el--line">
+					<div class="doc__icon">
+						<svg class="icon">
+							<use xlink:href="#pines"></use>
+						</svg>
+					</div>
+					<div class="doc__content">
+						<div class="doc__title">Лесфонд</div>
+						<div class="doc__text">Если земельный участок попадает в границы земель лесного фонда. Выдача согласования регулируется Федеральным агентством лесного хозяйства.</div>
+					</div>
+				</div>
+				<div class="doc__el doc__el--line">
+					<div class="doc__icon">
+						<svg class="icon">
+							<use xlink:href="#sardines"></use>
+						</svg>
+					</div>
+					<div class="doc__content">
+						<div class="doc__title">Рыболовство</div>
+						<div class="doc__text">Если земельный участок попадает в границы водоохранной или санитарно-защитной зоны водного объекта. Выдача согласования регулируется Федеральным агентством по рыболовству.</div>
+					</div>
+				</div>
+				<div class="doc__el doc__el--line">
+					<div class="doc__icon">
+						<svg class="icon">
+							<use xlink:href="#car"></use>
+						</svg>
+					</div>
+					<div class="doc__content">
+						<div class="doc__title">Автодор</div>
+						<div class="doc__text">Если земельный участок попадает в границы полос отвода или санитарно-защитные зоны автодорог местного, регионального или федерального значения. В Москве согласование производится с Департаментом транспорта и развития дорожно-транспортной инфраструктуры
+							города Москвы, в Московской области – с Мосавтодором. За автодороги федерального значения отвечает Росавтодор.</div>
+					</div>
+				</div>
+				<div class="doc__el doc__el--line">
+					<div class="doc__icon">
+						<svg class="icon">
+							<use xlink:href="#binoculars"></use>
+						</svg>
+					</div>
+					<div class="doc__content">
+						<div class="doc__title">Войсковые части</div>
+						<div class="doc__text">Если земельный участок расположен рядом с войсковой частью.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Зачем это нужно-->
+		<div class="section section--start section--survey" style="background-image:url('img/igs/igs-6.jpg');">
+			<div class="main-cont">
+				<div class="section-wrap">
+					<div class="section-call section-call--img"></div>
+					<div class="section-call">
+						<div class="section-title section-title--left">я построил дом. что дальше?</div>
+						<div class="box">
+							<p>По завершении строительства или реконструкции объекта ИЖС или садового дома, застройщику следует направить извещение об окончании строительства. Для объектов г.Москвы - на бумажном носителе в службу «одного окна» Мосгосстройнадзора, либо посредством
+								направления застройщиком в Мосгосстройнадзор почтового отправления с уведомлением о вручении. Для объектов Московской области - через Интернет-портал гос.услуг Московской области, либо на бумажном носителе через МФЦ.
+								<span class="link--mark modal-get"
+								  data-modal="igs-2">Подробнее</span>
+							</p>
+							<p>В течении 7 рабочих дней со дня поступления извещения об окончании строительства производится его проверка на предмет соответствия построенного объекта параметрам, указанным в уведомлении о планируемом строительстве. В ходе проверки также может
+								быть произведен выезд представителя органа исполнительной власти на земельный участок с целью визуального осмотра построенного/реконструированного объекта ИЖС или садового дома.</p>
+							<p>По итогам положительной проверки поданного извещения об окончании строительства застройщику выдается уведомление о соответствии построенного объекта ИЖС или садового дома.</p>
+							<p>Если же Вам будет выдано уведомление о НЕ соответствии построенного объекта ИЖС или садового дома, то Вы обязаны будете выполнить одно из следующих действий:</p>
+							<ol>
+								<li>дополнительно получить разрешение на отклонение от предельных параметром разрешенного строительства;</li>
+								<li>обратиться в суд за признанием поданного им извещения об окончании строительства,</li>
+								<li>обратиться в суд за признанием права собственности на самовольную постройку (ст. 222 Градостроительного кодекса РФ);</li>
+								<li>снести постройку.</li>
+							</ol>
+							<p>После получения уведомления о соответствии построенного/реконструированного объекта ИЖС или садового дома, Вы можете обращается в Росреестр для постановки на кадастровый учет и регистрации права на построенный объект.
+								<span class="link--mark modal-get"
+								  data-modal="igs-3">Подробнее</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--service-->
+		<div class="section section--calc section--calc--topograf">
+			<div class="main-cont">
+				<div class="section-title">Стоимость наших работ</div>
+				<div class="section-title-sub">Работаем в Москве и во всех районах Московской области.</div>
+				<div class="calc">
+					<!--input(type="range" placeholder=""  class="calc-range--topograf")-->
+					<div class="calc-range__wrap">
+						<div class="calc-range-val calc-range-val--lg">
+							<span>от</span>
+							<div class="calc-range-numb">10 000</div>
+							<span>руб</span>
+						</div>
+					</div>
+					<div class="calc-text">Цена за одно уведомление
+						<br> от 10 раб.дней</div>
+				</div>
+				<div class="calc-ur-cont">
+					<div class="calc-ur-pay calc-ur-pay--light">
+						<div class="calc-ur-pay-cont">
+							<div class="calc-ur-pay-text">
+								<p>Стоимость и сроки работ зависят от количества необходимых согласований.</p>
+								<div class="cost-inform--calc cost-inform--calc-gray">Консультации по телефону бесплатны</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Что войдет в стоимость-->
+		<div class="section section--doc section--clear-bottom">
+			<div class="main-cont">
+				<div class="section-title">Что войдет в стоимость работ ?</div>
+				<div class="section-title-sub"></div>
+				<!--.section-title-sub Геодезические обмеры земельного участка.-->
+				<div class="doc doc--line">
+					<div class="doc__el doc__el--line">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#idea"></use>
+							</svg>
+						</div>
+						<div class="doc__content">
+							<div class="doc__title">Заказ сведений ЕГРН.</div>
+							<div class="doc__text">Для анализа сведений об объекте.</div>
+						</div>
+					</div>
+					<div class="doc__el doc__el--line">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#information"></use>
+							</svg>
+						</div>
+						<div class="doc__content">
+							<div class="doc__title">Подача уведомления о планируемых строительстве или реконструкции объекта ИЖС или садового дома</div>
+						</div>
+					</div>
+					<div class="doc__el doc__el--line">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#plan"></use>
+							</svg>
+						</div>
+						<div class="doc__content">
+							<div class="doc__title">Согласования размещения объекта с необходимыми организациями (при необходимости)</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Документы-->
+		<div class="section section--doc">
+			<div class="main-cont">
+				<div class="section-title">Какие нужны документы?</div>
+				<div class="section-title-sub">Максимальный перечень необходимых документов</div>
+				<div class="doc doc--three doc--left">
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#doc"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Паспортные данные заинтересованного лица (СНИЛС) или реквизиты компании.</div>
+						<div class="doc__text">Документы, необходимые для подтверждения Вашей личности.</div>
+					</div>
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#compass"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Проект здания с указанием отступов от границ земельного участка.</div>
+						<div class="doc__text">Для определения параметров здания, планируемого к возведению.</div>
+					</div>
+					<div class="doc__el">
+						<div class="doc__icon">
+							<svg class="icon">
+								<use xlink:href="#law"></use>
+							</svg>
+						</div>
+						<div class="doc__title">Нотариально заверенная доверенность на нашего представителя (форму Вам выдаст наш кадастровый инженер).</div>
+						<div class="doc__text">Для предоставления Ваших интересов.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Как мы работаем-->
+		<div class="section section-step" id="step">
+			<div class="section-filter"></div>
+			<div class="main-cont">
+				<div class="section-title">как мы работаем</div>
+				<div class="step">
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">01</div>
+								<div class="step-text">
+									<div class="step-text__descr">Отправляете нам заявку или звоните. Получаете бесплатную консультацию от кадастрового инженера.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">02</div>
+								<div class="step-text">
+									<div class="step-text__descr">Направляете нам электронные копии Ваших документов или приезжаете с ними к нам в офис.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">03</div>
+								<div class="step-text">
+									<div class="step-text__descr">Анализируем документы, готовим проект договора.</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">04</div>
+								<div class="step-text">
+									<div class="step-text__descr">Подаём уведомление о планируемом строительстве или реконструкции</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row">
+						<div class="step-el">
+							<div class="step-content">
+								<div class="step-numb">05</div>
+								<div class="step-text">
+									<div class="step-text__descr">Согласовываем размещение объекта ИЖС или садового дома с нужными организациями (при необходимости).</div>
+								</div>
+							</div>
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+						</div>
+					</div>
+					<div class="step-row step-row--right">
+						<div class="step-el">
+							<div class="step-line">
+								<div class="step-dot"></div>
+							</div>
+							<div class="step-content">
+								<div class="step-numb">06</div>
+								<div class="step-text">
+									<div class="step-text__descr">Передаём Вам утверждённое уведомление о соответствии указанных в уведомлении о планируемом строительстве параметров объекта ИЖС или садового дома установленным параметрам и допустимости размещения объекта ИЖС или садового дома на земельном участке.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--slider certificate-->
+		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
+			<div class="filter"></div>
+			<div class="section-title">Наши сертификаты</div>
+			<div class="main-cont">
+				<div class="slider-certificate owl-carousel">
+					<div class="slider__el">
+						<a class="fancybox" href="img/cert-11.jpg" rel="group-elemen">
+							<img src="img/cert-11.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--block footer-->
+		<!--.section.section--footer
+.main-cont
+	.section-title Оформите заказ
+	.section-title-sub Прием в офисе с понедельника по пятницу с 9:00 до 20:00, суббота: по предварительной записи, выходной: воскресенье.
+	.footer__wrap
+		.footer__el
+			.footer__icon
+				+icon("map","icon")
+			.footer__title В офисе
+			.footer__text г. Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
+		.footer__el
+			.footer__icon
+				+icon("phone-call","icon")
+			.footer__title По телефону
+			a(href="tel:+7 (495) 514-84-13").footer__text.footer__text--red +7 (495) 514-84-13
+			a(href="tel:+7 (495) 283-96-83").footer__text.footer__text--red +7 (495) 283-96-83
+		.footer__el
+			.footer__icon
+				+icon("mail","icon")
+			.footer__title По email
+			a(href="mailto:info@cgiku.ru").footer__text.footer__text--red info@cgiku.ru
+	.footer-get
+		.footer-get__el.modal-get(data-modal="order") Оставить заявку
+
+-->
+		<!--.footer-map
+h1 Карта
+
+
+-->
+		<!--section-contact-->
+		<div class="section section-contact" id="contact">
+			<div class="main-cont">
+				<div class="section-title">Наши контакты</div>
+				<div class="contact">
+					<div class="contact-form contact-form--footer">
+						<div class="main-form">
+							<div class="form-title">Оставьте вашу заявку</div>
+							<div class="form-title-sub">Мы свяжемся с вам в кратчайшее время</div>
+							<form class="validate-form form--footer" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="form-footer-send" type="submit" value="Отправить заявку" />
+							</form>
+						</div>
+						<div class="contact-info">
+							<div class="map">
+								<script text/javascript="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;amp;width=100%&amp;amp;height=400&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
+							</div>
+							<div class="contact-row-wrap">
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#placeholder"></use>
+										</svg>
+									</div>
+									<div class="contact-text">Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#phone-call"></use>
+										</svg>
+									</div>
+									<div class="contact-text">+7 (495) 514-84-13</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#mail"></use>
+										</svg>
+									</div>
+									<div class="contact-text">info@cgiku.ru</div>
+								</div>
+								<div class="contact-row">
+									<div class="contact-icon">
+										<svg class="icon">
+											<use xlink:href="#metro"></use>
+										</svg>
+									</div>
+									<a class="contact-text" href="#">Как к нам проехать подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--section-contact-end-->
+		<div class="footer">
+			<div class="footer-menu">
+				<div class="main-cont">
+					<div class="menu">
+						<div class="menu-el">
+							<a href="#">
+								<span>Главная</span>
+							</a>
+						</div>
+						<div class="menu-el menu-el-service">
+							<a href="#">
+								<span>Услуги</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>О компании</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Прайс-лист</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Наши лицензии</span>
+							</a>
+						</div>
+						<div class="menu-el">
+							<a href="#">
+								<span>Контакты</span>
+							</a>
+						</div>
+						<div class="menu-el menu-el--mark">
+							<a href="#">
+								<span>Акции</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="main-cont">
+					<div class="footer-info-wrap">
+						<a class="footer-info__logo" href="/">
+							<img class="logo--full" src="img/logo-dark.png" alt="" />
+						</a>
+						<div class="footer-info__phone">
+							<a class="footer-info__phone" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+							<a class="footer-info__phone" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="scroll-up">
+			<svg class="icon">
+				<use xlink:href="#arrow-up"></use>
+			</svg>
+		</div>
+		<div class="modal-layer">
+			<div class="modal-cont">
+				<div class="modal-filter"></div>
+				<div class="modal-wrap">
+					<div class="modal" data-modal="order">
+						<div class="modal-content modal-content--fogot">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-title">Заявка</div>
+							<div class="modal-text">Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+							<form class="validate-form" action="javascript:void(null);">
+								<div class="input-row">
+									<input class="input" type="text" name="name" placeholder="Ваше имя" />
+								</div>
+								<div class="input-row">
+									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
+								</div>
+								<div class="input-row">
+									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+								</div>
+								<div class="agree-row">
+									<div class="check-el">
+										<label class="style-label style-label--checkbox">
+											<input class="sytle-input" type="checkbox" name="agree" />
+											<div class="sytle-input-element">
+												<svg class="icon-check">
+													<use xlink:href="#checked"></use>
+												</svg>
+											</div>
+											<div class="sytle-input-text"></div>
+										</label>
+									</div>
+									<div class="agree-row__text">Согласен с
+										<a href="#">условиями обработки персональных данных</a>
+									</div>
+								</div>
+								<input class="modal-send" type="submit" value="Отправить заявку" />
+							</form>
+						</div>
+					</div>
+					<div class="modal" data-modal="true">
+						<div class="modal-content modal-content--true">
+							<svg class="icon">
+								<use xlink:href="#interface"></use>
+							</svg>
+							<div class="modal-text-true">Ваша заявка принята</div>
+						</div>
+					</div>
+					<div class="modal" data-modal="next">
+						<div class="modal-content modal-content--truesend">
+							<svg class="icon">
+								<use xlink:href="#interface"></use>
+							</svg>
+							<div class="modal-text-truesend">Ваша заявка принята!</div>
+						</div>
+					</div>
+					<div class="modal modal--sale" data-modal="sale">
+						<div class="modal-content">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-sale__title">Закажите больше одной услуги и получите скидку:</div>
+							<div class="modal-sale__wrap">
+								<div class="modal-sale__list">
+									<div class="modal-sale__el">
+										<div class="modal-sale__el-icon">
+											<svg class="icon">
+												<use xlink:href="#gift--color"></use>
+											</svg>
+										</div>
+										<div class="modal-sale__el-text">Технический план строения до 100 кв.м. (14 000 руб.) и межевой план земельного участка до 8 соток (14 000 руб.)
+											<div class="modal-sale__el-text-sub">Общая стоимость
+												<span class="main-service__price--false">28 000</span>
+												<span class="main-service__price--true">24 000 руб.</span>- Скидка 4000 руб.</div>
+										</div>
+									</div>
+									<div class="modal-sale__el">
+										<div class="modal-sale__el-icon">
+											<svg class="icon">
+												<use xlink:href="#gift--color"></use>
+											</svg>
+										</div>
+										<div class="modal-sale__el-text">Технический план строения до 100 кв.м. (14 000 руб.) и технический план строения до 50 кв.м. (10 000 руб.)
+											<div class="modal-sale__el-text-sub">Общая стоимость
+												<span class="main-service__price--false">28 000</span>
+												<span class="main-service__price--true">24 000 руб.</span>- Скидка 4000 руб.</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-sale__text">
+									<p>Объединитесь с соседями! При единовременном заказе на межевание или технические планы соседних участков у нас гарантированно предоставляются скидки. Размер скидки зависит от объёма необходимых работ.
+										<br> При повторном обращении — скидки от 10%.
+										<br>
+										<span>За подробностями обращайтесь по телефону!</span>
+									</p>
+								</div>
+								<div class="modal-sale__text-add">Внимание! На услуги стоимостью 10 000 руб. и меньше скидки не распространяются!</div>
+								<div class="row-btn--center">
+									<div class="modal-sale-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal modal--sale" data-modal="sale--border">
+						<div class="modal-content">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-sale__title">Закажите больше одной услуги и получите скидку:</div>
+							<div class="modal-sale__wrap">
+								<div class="modal-sale__list">
+									<div class="modal-sale__el">
+										<div class="modal-sale__el-icon">
+											<svg class="icon">
+												<use xlink:href="#gift--color"></use>
+											</svg>
+										</div>
+										<div class="modal-sale__el-text">Межевой план земельного участка до 8 соток (14 000 руб.) и технический план строения до 100 кв.м.(14 000 руб.)
+											<div class="modal-sale__el-text-sub">Общая стоимость
+												<span class="main-service__price--false">28 000</span>
+												<span class="main-service__price--true">24 000 руб.</span>- Скидка 4000 руб.</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-sale__text">
+									<p>Объединитесь с соседями! При единовременном заказе на межевание или технические планы соседних участков у нас гарантированно предоставляются скидки. Размер скидки зависит от объёма необходимых работ.
+										<br> При повторном обращении — скидки от 10%.
+										<br>
+										<span>За подробностями обращайтесь по телефону!</span>
+									</p>
+								</div>
+								<div class="modal-sale__text-add">Внимание! На услуги стоимостью 10 000 руб. и меньше скидки не распространяются!</div>
+								<div class="row-btn--center">
+									<div class="modal-sale-get modal-get" data-modal="order">Заказать</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal modal--sale" data-modal="igs-1">
+						<div class="modal-content">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-sale__title">Информация</div>
+							<div class="modal-info">
+								<p>В уведомлении указываются такие сведения, как:</p>
+								<ol>
+									<li>ФИО, паспортные данные, адрес застройщика, контактные данные для связи с застройщиком</li>
+									<li>адрес объекта, кадастровый номер земельного участка</li>
+									<li>сведения о правах застройщика на земельный участок</li>
+									<li>сведения о виде разрешенного использования земельного участка</li>
+									<li>сведения о планируемых параметрах объекта ИЖС или садового дома (в т.ч. об отступах от границ земельного участка),</li>
+									<li>сведения о том, что объект ИЖС или садовый дом не предназначен для раздела на самостоятельные объекты недвижимости.</li>
+								</ol>
+								<p>К уведомлению необходимо приложить следующие документы:</p>
+								<ol>
+									<li>правоустанавливающие документы на земельный участок</li>
+									<li>описание внешнего облика объекта ИЖС или садового дома (в случае, если строительство или реконструкция объекта ИЖС или садового дома планируется в границах территории исторического поселения федерального или регионального значения)</li>
+									<li>нотариальная доверенность (если документы подаются представителем застройщика).</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<div class="modal modal--sale" data-modal="igs-2">
+						<div class="modal-content">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-sale__title">Информация</div>
+							<div class="modal-info">
+								<p>К извещению об окончании строительства прилагаются следующие документы:</p>
+								<ol>
+									<li>правоустанавливающие документы на земельный участок,</li>
+									<li>технический план объекта ИЖС или садового дома (в электронном виде на диске)</li>
+									<li>соглашение о распределении долей в праве общей собственности на объект ИЖС или садовый дом (в случае, если земельный участок принадлежит нескольким лицам на праве общей долевой собственности)</li>
+									<li>нотариальная доверенность (если документы подаются представителем застройщика).</li>
+								</ol>
+								<p class="attanintion">
+									<strong>ВАЖНО!:</strong> Технический план объекта подготавливается только аттестованным кадастровым инженером, входящим в СРО кадастровых инженеров и имеющим усиленную квалифицированную электронную подпись.</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal modal--sale" data-modal="igs-3">
+						<div class="modal-content">
+							<div class="modal-close">
+								<svg class="icon">
+									<use xlink:href="#close"></use>
+								</svg>
+							</div>
+							<div class="modal-sale__title">Информация</div>
+							<div class="modal-info">
+								<p>В Росреестр предоставляются следующие документы:</p>
+								<ol>
+									<li>технический план объекта ИЖС или садового дома (в электронном виде на диске) с включенным в его состав полученным уведомлением о соответствии построенного/реконструированного объекта ИЖС или садового дом (для этого застройщику необходимо повторно
+										обратиться к кадастровому инженеру)</li>
+									<li>нотариальная доверенность на подачу и получение документов из Росреестра (если документы подаются представителем собственника земельного участка, на котором построен объект)</li>
+									<li>квитанция об оплаченной гос.пошлине за регистрацию права (350 руб. для физ.лиц).</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>

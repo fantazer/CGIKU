@@ -1784,11 +1784,6 @@ body {
     padding: 30px 0;
   }
 }
-@media only screen and (max-width: 640px) {
-  .section {
-    padding-bottom: 0;
-  }
-}
 .title,
 .about-cont__title,
 .city-title {
@@ -2021,7 +2016,6 @@ body {
   text-align: center;
   width: 60%;
   margin: 0 auto;
-  margin-top: -40px;
   margin-bottom: 80px;
   line-height: 1.5;
 }
@@ -2224,6 +2218,9 @@ body {
   .header__btn {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .header__btn:last-child {
+    margin-bottom: 0;
   }
 }
 .header__btn-more {
@@ -2690,6 +2687,9 @@ body {
   -webkit-transition: -webkit-transform 0.8s, opacity 1s;
           transition: transform 0.8s, opacity 1s;
   max-width: 550px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .modal {
@@ -2909,11 +2909,12 @@ body {
   background: #f9f9f9;
 }
 .section-title {
+  text-transform: uppercase;
+  line-height: 1.4;
   text-align: center;
   margin-bottom: 40px;
   font-size: 32px;
   color: #111;
-  text-transform: uppercase;
   font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
@@ -3505,6 +3506,22 @@ body {
     text-align: center;
   }
 }
+.lp-baner__title-sub--mark {
+  padding: 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  border: 2px solid #ffdf6d;
+  background: #fff0bb;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #111;
+}
+@media only screen and (max-width: 640px) {
+  .lp-baner__title-sub--mark {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
 .section-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3522,7 +3539,7 @@ body {
 .section-call {
   width: 50%;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .section-call {
     width: 100%;
   }
@@ -3619,6 +3636,7 @@ body {
           flex-flow: column;
   width: 24%;
   padding: 40px 20px;
+  background: #fff;
 }
 @media only screen and (max-width: 1024px) {
   .doc__el {
@@ -3635,7 +3653,7 @@ body {
   margin-bottom: 30px;
 }
 .doc__icon .icon {
-  fill: #5da06b;
+  fill: #5870ae;
   width: 90px;
   height: 90px;
 }
@@ -3653,8 +3671,20 @@ body {
   }
 }
 .doc__text {
-  line-height: 1.4;
+  line-height: 1.6;
   text-align: center;
+}
+.doc__link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: #5870ae;
+}
+@media only screen and (max-width: 640px) {
+  .doc__link {
+    display: block;
+    text-align: center;
+  }
 }
 .irs-from,
 .irs-to,
@@ -3719,7 +3749,7 @@ body {
 .calc-range-val--lg {
   font-size: 52px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   .calc-range-val--lg {
     font-size: 20px;
   }
@@ -3746,6 +3776,7 @@ body {
 }
 .calc-text {
   text-align: center;
+  line-height: 1.8;
 }
 .section--calc {
   background: #f1f1f1;
@@ -4738,6 +4769,9 @@ body {
 .main-service__btn-get {
   background-color: #5da06b;
   color: #fff;
+}
+.modal-get:hover {
+  cursor: pointer;
 }
 .main-service__img {
   width: 35%;
@@ -5875,6 +5909,16 @@ section--calc {
     font-size: 24px;
   }
 }
+.lp-baner__title--xs {
+  text-transform: none;
+  font-size: 36px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 640px) {
+  .lp-baner__title--xs {
+    font-size: 20px;
+  }
+}
 ol li {
   line-height: 1.6;
   margin-bottom: 10px;
@@ -5907,6 +5951,7 @@ ol li {
 .header__btn-get--yellow {
   background: #ffdf6d;
   color: #111;
+  border-color: transparent;
 }
 .lp-baner__img--right-left {
   background-position: center right;
@@ -6525,7 +6570,7 @@ select.select-beauty {
   padding-right: 0;
   position: relative;
   width: 100%;
-  padding: 0 10;
+  padding: 0 10px;
 }
 .main-cont-sm:before,
 .main-cont-sm:after {
@@ -6545,10 +6590,18 @@ select.select-beauty {
   line-height: 1.8;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  text-align: left;
-  background: #fff;
   -webkit-box-shadow: 0px 3px 8px #e3e3e3;
           box-shadow: 0px 3px 8px #e3e3e3;
+  text-align: left;
+  background: #fff;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 640px) {
+  .text-block {
+    padding: 10px;
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
+  }
 }
 .section--text {
   background-size: cover;
@@ -6569,6 +6622,13 @@ select.select-beauty {
   text-align: left;
   line-height: 1.8;
   font-size: 13px;
+}
+.modal-info {
+  padding: 20px;
+  background: #f6f6f6;
+}
+.modal-info li {
+  font-size: 14px;
 }
 @-webkit-keyframes slideInDown {
   from {
