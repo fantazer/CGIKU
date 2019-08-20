@@ -2347,7 +2347,7 @@ section--calc
 		width: 100%
 	width: 70%
 	margin: 0 auto
-	padding: 20px 20px 40px 20px
+	padding: 20px
 	line-height: 1.8
 	br(10px)
 	text-align: left
@@ -2384,6 +2384,8 @@ section--calc
 		text-align: center
 	.cost-inform--calc
 		text-align: center
+
+
 
 .lp-baner__title--think
 	text-transform: none
@@ -2927,3 +2929,42 @@ select.select-beauty
 	li
 		font-size: 14px
 
+
+.list-wrap
+	flex(between)
+	align-items:stretch
+	fw()
+.list-el
+	+below(640px)
+		width: 100%
+		&:first-child
+			margin-bottom: 30px
+	width: 48%
+	@extend .text-block
+	overflow: hidden
+.list-el-head
+	+below(640px)
+		margin-top: -10px
+	f()
+	margin-bottom: 30px
+	border-bottom 1px solid #ebebeb
+	width calc(100% + 60px)
+	margin-left: -30px
+	padding: 30px
+	background: #f5f5f5
+	margin-top: -30px
+.list-el-icon
+	margin-right: 20px
+	.icon
+		+below(640px)
+			size 40px
+		size 60px
+		fill $green
+
+.list-el__title
+	font-weight: 700
+	color black
+
+.list-el-icon--false
+	.icon
+		fill red

@@ -15,7 +15,15 @@
 		<!--SEO-->
 		<title>Document</title>
 		<meta name="description" itemprop="description" content="" />
-		<link rel="stylesheet" href="css/vendor.css">
+		<!--build:css css/vendor.css-->
+		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.css" />
+		<link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.css" />
+		<link rel="stylesheet" href="bower/wow/css/libs/animate.css" />
+		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.css" />
+		<link rel="stylesheet" href="bower/ion.rangeSlider/css/ion.rangeSlider.skinHTML5.css" />
+		<link rel="stylesheet" href="bower/jquery-nice-select/css/nice-select.css" />
+		<!--endbuild-->
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-edit.css" />
 	</head>
@@ -141,215 +149,123 @@
 			<!--nav-end-->
 		</div>
 		<!--block header end-->
-		<div class="lp-baner lp-baner--borderland">
-			<div class="lp-baner__img" style="background-image:url('img/igs/igs-1.jpg');"></div>
-			<!--.lp-baner-filter--green-->
+		<!--banner-->
+		<div class="lp-baner lp-baner--borderland lp-baner__mobile">
+			<div class="lp-baner__img lp-baner--cover" style="background-image:url('img/zone/zone-1.jpg');"></div>
+			<div class="lp-baner-filter--dark"></div>
 			<div class="main-cont">
 				<div class="lp-baner__wrap">
 					<div class="lp-baner__content">
-						<div class="lp-baner__title lp-baner__title--xs">Уведомление о планируемых строительстве или реконструкции объекта ИЖС или садового дома</div>
-						<div class="lp-baner__title-sub lp-baner__title-sub--mark">
-							<strong>Что это такое ?</strong> Это основной документ, подтверждающим Ваше право на строительство или реконструкцию дома на загородном участке.</div>
+						<div class="lp-baner__title lp-baner__title--fat">Карта (план) санитарно-защитной зоны</div>
+						<div class="lp-baner__title-sub">Закажите план санитарно-защитной зоны по всем правилам! Работаем по всей Москве и Московской области.</div>
 						<div class="header__get">
 							<a class="header__btn header__btn-more" href="#why">Подробнее</a>
 							<div class="header__btn header__btn-get modal-get" data-modal="order">Заказать</div>
 						</div>
 					</div>
-					<!--.lp-baner__image
-			.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
-			//img(src="img/lp-item-5.jpg", alt="")
-			
-			-->
 				</div>
 			</div>
 		</div>
 		<!--Что это такое-->
-		<div class="section" id="why">
-			<div class="section-wrap__img lp-baner--contain" style="background-image:url('img/igs/igs-4.jpg');"></div>
+		<div class="section section--why section--union section--mobile" id="why" style="background-image:url('img/zone/zone-2.jpg');">
 			<div class="main-cont">
 				<div class="section-wrap">
 					<div class="section-call section-call--mid">
 						<div class="text-block">
-							<div class="section-title section-title--left">зачем это нужно?</div>
+							<div class="section-title section-title--left">Что это такое?</div>
 							<div class="box">
-								<p>Без полученного уведомления о планируемом строительстве или реконструкции объекта ИЖС или садового дома невозможно провести процедуру постановки на кадастровый учет и регистрации права на загородный дом (жилой или садовый), а также Ваш дом могут
-									признать самовольной постройкой и потребуют ее сноса. Кроме того, собственник земельного участка, на котором расположена незарегистрированная постройка, может столкнуться со штрафами от Федеральной налоговой службы за неуплату налогов. Немаловажным
-									моментом является и тот факт, что с 1 января 2018 года запрещается купля-продажа, дарение, наследование и т.д. в отношении незарегистрированных зданий.</p>
-								<p>С полученным уведомлением о планируемом строительстве собственнику объекта ИЖС или садового дома необходимо обратиться к кадастровому инженеру за изготовлением технического плана здания, который в итоге следует подать в Росреестр с целью внесения
-									сведений о доме в Единый государственный реестр недвижимости (ЕГРН). Только после этих действий Ваша постройка будет считаться зарегистрированной!</p>
+								<p>Карта (план) санитарно-защитной зоны представляет собой подготовленный кадастровым инженером документ, содержащий в себе графическое и текстовое описание местоположения и размеров границ санитарно-защитной зоны на местности. По итогам проверки
+									Росреестром карты (плана) сведения о санитарно-защитной зоне вносятся в Единый государственный реестр недвижимости (ЕГРН), и с этого момента санитарно-защитная зона считается официально зарегистрированной.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="section section--why" id="why">
+		<!--Зачем это нужно?-->
+		<div class="section section--text" style="background-image:url('img/baner-15.png');">
+			<div class="main-cont-sm">
+				<div class="section-title">Зачем это нужно?</div>
+				<div class="text-block">
+					<p>Санитарно-защитная зона (СЗЗ) – это разновидность зоны с особыми условиями использования территорий, которая устанавливается в отношении действующего, планируемого к строительству, реконструируемого объекта капитального строительства, являющегося
+						источником химического, физического, биологического воздействия на среду обитания человека, превышающего санитарно-эпидемиологические требования (Постановление Правительства РФ №222 от 03.03.2018 "Об утверждении Правил установления санитарно-защитных
+						зон и использования земельных участков, расположенных в границах санитарно-защитных зон").</p>
+					<p>Внесение в ЕГРН сведений о санитарно-защитной зоне позволит понять где проходит граница «защитного барьера», обеспечивающего уровень безопасности населения при эксплуатации предприятия. В границах установленной санитарно-защитной зоны</p>
+				</div>
+				<div class="list-wrap">
+					<div class="list-el">
+						<div class="list-el-head">
+							<div class="list-el-icon">
+								<svg class="icon">
+									<use xlink:href="#interface"></use>
+								</svg>
+							</div>
+							<div class="list-el__title">В границах установленной санитарно-защитной зоны ДОПУСКАЕТСЯ размещение:</div>
+						</div>
+						<ul>
+							<li>административных зданий;</li>
+							<li>научно-исследовательских лабораторий;</li>
+							<li>закрытых спортивно-оздоровительных сооружений;</li>
+							<li>поликлиник;</li>
+							<li>бань, прачечных;</li>
+							<li>объектов торговли и общественного питания;</li>
+							<li>гостиниц;</li>
+							<li>гаражей, стоянок автотранспорта;</li>
+							<li>пожарных депо;</li>
+							<li>сооружений для подготовки технической воды;</li>
+							<li>автозаправочных станций;</li>
+							<li>станций тех обслуживания автомобилей;</li>
+							<li>ЛЭП, а также иных подземных и наземных коммуникаций.</li>
+						</ul>
+					</div>
+					<div class="list-el">
+						<div class="list-el-head">
+							<div class="list-el-icon list-el-icon--false">
+								<svg class="icon">
+									<use xlink:href="#cancel"></use>
+								</svg>
+							</div>
+							<div class="list-el__title">В границах установленной санитарно-защитной зоны ЗАПРЕЩАЕТСЯ создание таких объектов, как:</div>
+						</div>
+						<ul>
+							<li> объекты ИЖС;</li>
+							<li> коттеджная застройка, садоводческие товарищества;</li>
+							<li> садово-огородные участки;</li>
+							<li> открытые спортивные сооружения;</li>
+							<li> детские образовательные учреждения, организации детского отдыха и оздоровления;</li>
+							<li> лечебно-профилактические и оздоровительные учреждения общего пользования;</li>
+							<li> объекты по производству лекарственных веществ, склады фармацевтических продуктов;</li>
+							<li> объекты, связанные с использованием питьевой воды, если установление СЗЗ приведет к нарушению ее безопасности и качества;</li>
+							<li> объекты, связанные с использованием и хранением пищевой и сельхоз продукции, если установление СЗЗ приведет к нарушению качества и безопасности такой продукции.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Зачем это нужно-->
+		<div class="section section--start section--survey" style="background-image:url('img/zone/zone-3.jpg');">
 			<div class="main-cont">
 				<div class="section-wrap">
-					<div class="section-call section-call--mid">
+					<div class="section-call section-call--img"></div>
+					<div class="section-call">
 						<div class="section-title section-title--left">На каких основаниях это делается?</div>
 						<div class="box">
-							<p>С вступлением поправок в Градостроительный кодекс РФ (Федеральный закон №340-ФЗ от 03.08.2018), с 03.08.2018 года отменяется получение разрешении на строительство частного дома. Теперь перед началом строительства загородного дома (жилого или садового)
-								собственнику земельного участка необходимо подать уведомление о планируемом строительстве (п.1 ст. 51.1 Градостроительного кодекса РФ). То же самое касается реконструкции загородного дома. Форма такого уведомления официально утверждена Приказом
-								Министерства строительства и жилищно-коммунального хозяйства РФ №591/пр от 19.09.2018 г.</p>
-							<p class="attanintion">
-								<strong>!ВАЖНО:</strong> ранее существовавшие понятия «жилой дом» и «индивидуальный жилой дом» теперь приравниваются к одному общему понятию «объект ИЖС». Уведомление следует получать только на объекты ИЖС и на садовые дома. На капитальные объекты вспомогательного
-								пользования (гараж, баня, хоз.блок, летняя кухня, беседка, сарай) получение Уведомления не требуется при наличии на участке зарегистрированного основного объекта (объекта ИЖС или садового дома), к которому остальные объекты можно отнести как «вспомогательные».</p>
-							<p>Под объектом ИЖС понимается отдельно стоящее здание с количеством надземных этажей не более чем 3, высотой не более 20 метров, которое состоит из комнат и помещений вспомогательного использования, предназначенных для удовлетворения гражданами бытовых
-								и иных нужд, связанных с их проживанием в таком здании, и не предназначено для раздела на самостоятельные объекты недвижимости.</p>
-							<p>Садовым домом признается здание сезонного использования, предназначенное для удовлетворения гражданами бытовых и иных нужд, связанных с их временным пребыванием в таком здании.</p>
+							<p>Размер и границы санитарно-защитной зоны устанавливаются проектной документацией, которая подлежит разработке специализированными проектными организациями, имеющими соответствующие лицензии.</p>
+							<p>Согласно СанПиН 2.2.1/2.1.1.1200-03 «Санитарно-защитные зоны и санитарная классификация предприятий, сооружений и иных объектов» в проекте санитарно-защитной зоны должны быть определены:</p>
+							<ul>
+								<li> размер и границы санитарно-защитной зоны;</li>
+								<li> мероприятия по защите населения от воздействия выбросов вредных химических примесей в атмосферный воздух и физического воздействия;</li>
+								<li> функциональное зонирование территории санитарно-защитной зоны и режим ее использования.</li>
+							</ul>
+							<p>Карта (план) санитарно-защитной зоны подготавливается на основании предоставленной заказчиком проектной документацией на установление санитарно-защитной зоны.</p>
+							<p>Далее поэтапно осуществляются следующие действия:</p>
+							<ol>
+								<li>Проект вместе с подготовленной кадастровым инженером картой (планом) передается заказчиком во ФБУЗ «Центр гигиены и эпидемиологии», который по результатам положительной проверки выпускает Экспертное заключение о соответствии государственным санитарно-эпидемиологическим
+									правилам и нормам и Санитарно-эпидемиологическое заключение.</li>
+								<li>Карта (план) подается на утверждение в Роспотребнадзор, который по результатам положительной проверки выпускает Распоряжение об утверждении санитарно-защитной зоны, которое устанавливает границы и режим санитарно-защитной зоны.</li>
+								<li>В порядке информационного обмена из Роспотребнадзора карта (план) передается в Росреестр для внесения в ЕГРН сведений о санитарно-защитной зоне.</li>
+							</ol>
 						</div>
-					</div>
-					<div class="section-call section-call--img">
-						<img src="img/igs/doc-1.jpg" alt="" />
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--Это нужно знать-->
-		<div class="section section--text" style="background-image:url('img/igs/igs-7.jpg');">
-			<div class="main-cont-sm">
-				<div class="section-title">как подать уведомление?</div>
-				<div class="text-block">
-					<p>На объекты, расположенные в Москве, уведомление подается застройщиком на бумажном носителе в службу «одного окна» Мосгосстройнадзора, либо посредством направления застройщиком в Мосгосстройнадзор почтового отправления с уведомлением о вручении. Подача
-						уведомления через Интернет-портал гос.услуг в настоящее время пока не реализована.</p>
-					<p>Для объектов, расположенных в Московской области, уведомление подается застройщиком либо через Интернет-портал гос.услуг Московской области, либо на бумажном носителе через МФЦ.
-						<span class="link--mark modal-get" data-modal="igs-1">Подробнее</span>
-					</p>
-					<p class="attanintion">
-						<strong>!ВАЖНО:</strong> В течении 7 рабочих дней со дня поступления уведомления производится его проверка на предмет соответствия всех указанных параметров постройки нормам законодательства и допустимости размещения постройки на Вашем участке.</p>
-					<p>По итогам положительной проверки поданного уведомления Вам выдается уведомление о соответствии указанных в уведомлении о планируемом строительстве параметров объекта ИЖС или садового дома установленным параметрам и допустимости размещения объекта
-						ИЖС или садового дома на земельном участке, которое дает Вам право на строительство заявленной постройки и действительно в течении 10-ти лет. Данное право сохраняется при переходе прав на земельный участок и объект ИЖС или садовый дом.</p>
-					<p>Если же в результате проверки уведомления будут выявлены замечания, то Вам выдадут ЛИБО уведомление о несоответствии указанных в уведомлении о планируемых строительстве параметров объекта ИЖС или садового дома установленным параметрам и (или) недопустимости
-						размещения объекта ИЖС или садового дома на земельном участке, ЛИБО уведомление о возврате уведомления о планируемом строительстве и прилагаемых к нему документов без рассмотрения</p>
-				</div>
-			</div>
-		</div>
-		<!--Что войдет в стоимость-->
-		<div class="section section--doc section--fill" style="background-image:url('img/igs/concrete-texture.png');">
-			<div class="main-cont-sm">
-				<div class="section-title">нужны ли согласования?</div>
-				<div class="text-block">
-					<p>Перед подачей уведомления следует обратить внимание расположен ли Ваш земельный участок в границах зон с особыми условиями использования территории, в т.ч. в границах полос воздушных подходов аэродрома.</p>
-					<p>Узнать об ограничениях в отношении земельного участка можно самостоятельно, обратившись к Интернет-ресурсу Публичная кадастровая карта
-						<a href="https://pkk5.rosreestr.ru/" class="link--mark">https://pkk5.rosreestr.ru/ </a> , либо через Информационную систему обеспечения градостроительной деятельности города Москвы (ИАИС ОГД)
-						<a href="https://isogd.mos.ru" class="link--mark">https://isogd.mos.ru </a>.</p>
-					<p>При подаче уведомления о планируемом строительстве или реконструкции может возникнуть необходимость в получении согласований у таких инстанций, как:</p>
-				</div>
-			</div>
-			<div class="doc doc--line">
-				<div class="doc__el doc__el--line">
-					<div class="doc__icon">
-						<svg class="icon">
-							<use xlink:href="#air-freight"></use>
-						</svg>
-					</div>
-					<div class="doc__content">
-						<div class="doc__title">Росавиация</div>
-						<div class="doc__text">Если земельный участок попадает в границы полос воздушных подходов аэродромов. Данная информация размещена на официальном сайте Центрального МТУ РОСАВИАЦИИ</div>
-						<a class="doc__link" href="http://mtuvtcrfavt.ru/documents/670.html">Подробнее</a>
-					</div>
-				</div>
-				<div class="doc__el doc__el--line">
-					<div class="doc__icon">
-						<svg class="icon">
-							<use xlink:href="#mountain"></use>
-						</svg>
-					</div>
-					<div class="doc__content">
-						<div class="doc__title">Роснедра</div>
-						<div class="doc__text">Выдача согласования регулируется Федеральным агентством по недропользованию. Информация по согласованию размещена на официальном сайте Роснедр</div>
-						<a class="doc__link" href="http://www.rosnedra.gov.ru/article/10290.html ">Подробнее</a>
-					</div>
-				</div>
-				<div class="doc__el doc__el--line">
-					<div class="doc__icon">
-						<svg class="icon">
-							<use xlink:href="#museum"></use>
-						</svg>
-					</div>
-					<div class="doc__content">
-						<div class="doc__title">Культурное наследие</div>
-						<div class="doc__text">Если земельный участок попадает в границы зон охраны культурного значения или объекта культурного наследия. В Москве согласование производится с Департаментом культурного наследия города Москвы, в Московской области – с Главным управлением культурного
-							наследия Московской области.</div>
-					</div>
-				</div>
-				<div class="doc__el doc__el--line">
-					<div class="doc__icon">
-						<svg class="icon">
-							<use xlink:href="#pines"></use>
-						</svg>
-					</div>
-					<div class="doc__content">
-						<div class="doc__title">Лесфонд</div>
-						<div class="doc__text">Если земельный участок попадает в границы земель лесного фонда. Выдача согласования регулируется Федеральным агентством лесного хозяйства.</div>
-					</div>
-				</div>
-				<div class="doc__el doc__el--line">
-					<div class="doc__icon">
-						<svg class="icon">
-							<use xlink:href="#sardines"></use>
-						</svg>
-					</div>
-					<div class="doc__content">
-						<div class="doc__title">Рыболовство</div>
-						<div class="doc__text">Если земельный участок попадает в границы водоохранной или санитарно-защитной зоны водного объекта. Выдача согласования регулируется Федеральным агентством по рыболовству.</div>
-					</div>
-				</div>
-				<div class="doc__el doc__el--line">
-					<div class="doc__icon">
-						<svg class="icon">
-							<use xlink:href="#car"></use>
-						</svg>
-					</div>
-					<div class="doc__content">
-						<div class="doc__title">Автодор</div>
-						<div class="doc__text">Если земельный участок попадает в границы полос отвода или санитарно-защитные зоны автодорог местного, регионального или федерального значения. В Москве согласование производится с Департаментом транспорта и развития дорожно-транспортной инфраструктуры
-							города Москвы, в Московской области – с Мосавтодором. За автодороги федерального значения отвечает Росавтодор.</div>
-					</div>
-				</div>
-				<div class="doc__el doc__el--line">
-					<div class="doc__icon">
-						<svg class="icon">
-							<use xlink:href="#binoculars"></use>
-						</svg>
-					</div>
-					<div class="doc__content">
-						<div class="doc__title">Войсковые части</div>
-						<div class="doc__text">Если земельный участок расположен рядом с войсковой частью.</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section section--why">
-			<div class="main-cont">
-				<div class="section-wrap">
-					<div class="section-call section-call--mid">
-						<div class="section-title section-title--left">я построил дом. что дальше?</div>
-						<div class="box">
-							<p>По завершении строительства или реконструкции объекта ИЖС или садового дома, застройщику следует направить извещение об окончании строительства. Для объектов г.Москвы - на бумажном носителе в службу «одного окна» Мосгосстройнадзора, либо посредством
-								направления застройщиком в Мосгосстройнадзор почтового отправления с уведомлением о вручении. Для объектов Московской области - через Интернет-портал гос.услуг Московской области, либо на бумажном носителе через МФЦ.
-								<span class="link--mark modal-get"
-								  data-modal="igs-2">Подробнее</span>
-								<p>В течении 7 рабочих дней со дня поступления извещения об окончании строительства производится его проверка на предмет соответствия построенного объекта параметрам, указанным в уведомлении о планируемом строительстве. В ходе проверки также может
-									быть произведен выезд представителя органа исполнительной власти на земельный участок с целью визуального осмотра построенного/реконструированного объекта ИЖС или садового дома.</p>
-								<p>По итогам положительной проверки поданного извещения об окончании строительства застройщику выдается уведомление о соответствии построенного объекта ИЖС или садового дома.</p>
-								<p>Если же Вам будет выдано уведомление о НЕ соответствии построенного объекта ИЖС или садового дома, то Вы обязаны будете выполнить одно из следующих действий:</p>
-								<ol>
-									<li>дополнительно получить разрешение на отклонение от предельных параметром разрешенного строительства;</li>
-									<li>обратиться в суд за признанием поданного им извещения об окончании строительства,</li>
-									<li>обратиться в суд за признанием права собственности на самовольную постройку (ст. 222 Градостроительного кодекса РФ);</li>
-									<li>снести постройку.</li>
-								</ol>
-								<p>После получения уведомления о соответствии построенного/реконструированного объекта ИЖС или садового дома, Вы можете обращается в Росреестр для постановки на кадастровый учет и регистрации права на построенный объект.
-									<span class="link--mark modal-get"
-									  data-modal="igs-3">Подробнее</span>
-								</p>
-							</p>
-						</div>
-					</div>
-					<div class="section-call section-call--img">
-						<img src="img/igs/doc-2.jpg" alt="" />
 					</div>
 				</div>
 			</div>
@@ -360,24 +276,19 @@
 				<div class="section-title">Стоимость наших работ</div>
 				<div class="section-title-sub">Работаем в Москве и во всех районах Московской области.</div>
 				<div class="calc">
-					<!--input(type="range" placeholder=""  class="calc-range--topograf")-->
 					<div class="calc-range__wrap">
 						<div class="calc-range-val calc-range-val--lg">
 							<span>от</span>
-							<div class="calc-range-numb">10 000</div>
+							<div class="calc-range-numb">20 000</div>
 							<span>руб</span>
 						</div>
 					</div>
-					<div class="calc-text">Цена за одно уведомление
-						<br> от 10 раб.дней</div>
+					<div class="calc-text">Цена за один объект. Время исполнения 10 раб. дней</div>
 				</div>
 				<div class="calc-ur-cont">
-					<div class="calc-ur-pay calc-ur-pay--light">
+					<div class="calc-ur-pay">
 						<div class="calc-ur-pay-cont">
-							<div class="calc-ur-pay-text">
-								<p>Стоимость и сроки работ зависят от количества необходимых согласований.</p>
-								<div class="cost-inform--calc cost-inform--calc-gray">Консультации по телефону бесплатны</div>
-							</div>
+							<div class="calc-ur-pay-text type--center">Стоимость и сроки работ зависят от площади санитарно-защитной зоны.</div>
 						</div>
 					</div>
 				</div>
@@ -397,7 +308,7 @@
 							</svg>
 						</div>
 						<div class="doc__content">
-							<div class="doc__title">Заказ сведений ЕГРН.</div>
+							<div class="doc__title">Заказ сведений егрн.</div>
 							<div class="doc__text">Для анализа сведений об объекте.</div>
 						</div>
 					</div>
@@ -408,17 +319,17 @@
 							</svg>
 						</div>
 						<div class="doc__content">
-							<div class="doc__title">Подача уведомления о планируемых строительстве или реконструкции объекта ИЖС или садового дома</div>
+							<div class="doc__title">Анализ проекта на установление санитарно-защитной зоны.</div>
 						</div>
 					</div>
 					<div class="doc__el doc__el--line">
 						<div class="doc__icon">
 							<svg class="icon">
-								<use xlink:href="#plan"></use>
+								<use xlink:href="#compass"></use>
 							</svg>
 						</div>
 						<div class="doc__content">
-							<div class="doc__title">Согласования размещения объекта с необходимыми организациями (при необходимости)</div>
+							<div class="doc__title">Формирование карты (плана) санитарно-защитной зоны.</div>
 						</div>
 					</div>
 				</div>
@@ -428,34 +339,28 @@
 		<div class="section section--doc">
 			<div class="main-cont">
 				<div class="section-title">Какие нужны документы?</div>
-				<div class="section-title-sub">Максимальный перечень необходимых документов</div>
-				<div class="doc doc--three doc--left">
-					<div class="doc__el">
+				<div class="doc doc--line">
+					<div class="doc__el doc__el--line">
 						<div class="doc__icon">
 							<svg class="icon">
-								<use xlink:href="#doc"></use>
+								<use xlink:href="#design"></use>
 							</svg>
 						</div>
-						<div class="doc__title">Паспортные данные заинтересованного лица (СНИЛС) или реквизиты компании.</div>
-						<div class="doc__text">Документы, необходимые для подтверждения Вашей личности.</div>
+						<div class="doc__content">
+							<div class="doc__title">Реквизиты компании.</div>
+							<div class="doc__text">Для составления договора с Вами.</div>
+						</div>
 					</div>
-					<div class="doc__el">
+					<div class="doc__el doc__el--line">
 						<div class="doc__icon">
 							<svg class="icon">
-								<use xlink:href="#compass"></use>
+								<use xlink:href="#planning"></use>
 							</svg>
 						</div>
-						<div class="doc__title">Проект здания с указанием отступов от границ земельного участка.</div>
-						<div class="doc__text">Для определения параметров здания, планируемого к возведению.</div>
-					</div>
-					<div class="doc__el">
-						<div class="doc__icon">
-							<svg class="icon">
-								<use xlink:href="#law"></use>
-							</svg>
+						<div class="doc__content">
+							<div class="doc__title">Проект на установление санитарно-защитной зоны.</div>
+							<div class="doc__text">Для определения параметров санитарно-защитной зоны.</div>
 						</div>
-						<div class="doc__title">Нотариально заверенная доверенность на нашего представителя (форму Вам выдаст наш кадастровый инженер).</div>
-						<div class="doc__text">Для предоставления Ваших интересов.</div>
 					</div>
 				</div>
 			</div>
@@ -497,7 +402,7 @@
 							<div class="step-content">
 								<div class="step-numb">03</div>
 								<div class="step-text">
-									<div class="step-text__descr">Анализируем документы, готовим проект договора.</div>
+									<div class="step-text__descr">Анализируем документы, готовим проект Договора,</div>
 								</div>
 							</div>
 							<div class="step-line">
@@ -513,7 +418,7 @@
 							<div class="step-content">
 								<div class="step-numb">04</div>
 								<div class="step-text">
-									<div class="step-text__descr">Подаём уведомление о планируемом строительстве или реконструкции</div>
+									<div class="step-text__descr">Формируем карту (план) санитарно-защитной зоны.</div>
 								</div>
 							</div>
 						</div>
@@ -523,40 +428,13 @@
 							<div class="step-content">
 								<div class="step-numb">05</div>
 								<div class="step-text">
-									<div class="step-text__descr">Согласовываем размещение объекта ИЖС или садового дома с нужными организациями (при необходимости).</div>
+									<div class="step-text__descr">Передаём Вам готовую карту (план) санитарно-защитной зоны.</div>
 								</div>
 							</div>
 							<div class="step-line">
 								<div class="step-dot"></div>
 							</div>
 						</div>
-					</div>
-					<div class="step-row step-row--right">
-						<div class="step-el">
-							<div class="step-line">
-								<div class="step-dot"></div>
-							</div>
-							<div class="step-content">
-								<div class="step-numb">06</div>
-								<div class="step-text">
-									<div class="step-text__descr">Передаём Вам утверждённое уведомление о соответствии указанных в уведомлении о планируемом строительстве параметров объекта ИЖС или садового дома установленным параметрам и допустимости размещения объекта ИЖС или садового дома на земельном участке.</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--slider certificate-->
-		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="filter"></div>
-			<div class="section-title">Наши сертификаты</div>
-			<div class="main-cont">
-				<div class="slider-certificate owl-carousel">
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-11.jpg" rel="group-elemen">
-							<img src="img/cert-11.jpg" alt="" />
-						</a>
 					</div>
 				</div>
 			</div>
@@ -950,7 +828,18 @@ h1 Карта
 				</div>
 			</div>
 		</div>
-		<script src="js/combined.js"></script>
+		<!--build:js js/combined.js-->
+		<script src="bower/jquery/dist/jquery.js"></script>
+		<script src="bower/svg4everybody/dist/svg4everybody.js"></script>
+		<script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="bower/fancybox/dist/jquery.fancybox.js"></script>
+		<script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="bower/wow/dist/wow.min.js"></script>
+		<script src="bower/ion.rangeSlider/js/ion.rangeSlider.js"></script>
+		<script src="bower/page-scroll-to-id/jquery.malihu.PageScroll2id.js"></script>
+		<script src="bower/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+		<!--script(src="js/jquery.smoothscroll.js")-->
+		<!-- endbuild-->
 		<script src="js/script.js"></script>
 		<script src="js/script-edit.js"></script>
 	</body>

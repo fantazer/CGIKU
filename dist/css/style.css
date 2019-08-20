@@ -5657,7 +5657,7 @@ section--calc {
 .calc-ur-pay {
   width: 70%;
   margin: 0 auto;
-  padding: 20px 20px 40px 20px;
+  padding: 20px;
   line-height: 1.8;
   -webkit-border-radius: 10px;
           border-radius: 10px;
@@ -6585,7 +6585,8 @@ select.select-beauty {
     width: 960px;
   }
 }
-.text-block {
+.text-block,
+.list-el {
   padding: 30px 30px 40px 30px;
   line-height: 1.8;
   -webkit-border-radius: 10px;
@@ -6597,7 +6598,8 @@ select.select-beauty {
   margin-bottom: 30px;
 }
 @media only screen and (max-width: 640px) {
-  .text-block {
+  .text-block,
+  .list-el {
     padding: 10px;
     -webkit-box-shadow: 0 0 0;
             box-shadow: 0 0 0;
@@ -6608,7 +6610,8 @@ select.select-beauty {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.text-block li {
+.text-block li,
+.list-el li {
   font-size: 14px;
 }
 .doc--left .doc__el {
@@ -6629,6 +6632,79 @@ select.select-beauty {
 }
 .modal-info li {
   font-size: 14px;
+}
+.list-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.list-el {
+  width: 48%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 640px) {
+  .list-el {
+    width: 100%;
+  }
+  .list-el:first-child {
+    margin-bottom: 30px;
+  }
+}
+.list-el-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
+  width: -webkit-calc(100% + 60px);
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  padding: 30px;
+  background: #f5f5f5;
+  margin-top: -30px;
+}
+@media only screen and (max-width: 640px) {
+  .list-el-head {
+    margin-top: -10px;
+  }
+}
+.list-el-icon {
+  margin-right: 20px;
+}
+.list-el-icon .icon {
+  width: 60px;
+  height: 60px;
+  fill: #5da06b;
+}
+@media only screen and (max-width: 640px) {
+  .list-el-icon .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.list-el__title {
+  font-weight: 700;
+  color: #111;
+}
+.list-el-icon--false .icon {
+  fill: #ff4136;
 }
 @-webkit-keyframes slideInDown {
   from {
