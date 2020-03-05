@@ -1,0 +1,97 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+
+//banner
+.lp-baner.lp-baner--borderland.lp-baner__mobile
+	.lp-baner__img.lp-baner--cover(style="background-image:url('img/exception/exception-1.jpg')")
+	.lp-baner-filter--dark
+	.main-cont
+		.lp-baner__wrap
+			.lp-baner__content
+				.lp-baner__title.lp-baner__title--fat Исключение объекта из перечня налогообложения
+				.lp-baner__title-sub.lp-baner__title-sub--mark <strong>Важно:</strong> Мы вернем вам деньги за наши услуги, в случае неудовлетворения исковых требований. Вы ни чем не рискуете!
+				.header__get
+					a(href="#why").header__btn.header__btn-more Подробнее
+					.header__btn.header__btn-get.modal-get(data-modal="order") Заказать
+
+//Что это такое
+#why.section.section--why.section--union.section--mobile(style="background-image:url('img/exception/exception-4.jpg')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--mid
+				.text-block
+					.section-title.section-title--left Что это такое?
+					.box
+						p Ежегодно Правительство Москвы формирует Перечень объектов налогообложения, собственники которых платят налог на имущество исходя из кадастровой стоимости. Собственники таких объектов вправе как снижать установленную кадастровую стоимость, так и оспаривать законность и обоснованность включения их здания (помещения) в Перечень.
+
+//Зачем это нужно?
+.section.section--text(style="background-image:url('img/baner-17.jpg')")
+	.main-cont-sm
+		.section-title Зачем это нужно?
+		.text-block
+			p В случае исключения объекта из Перечня собственник получает возможность оплачивать налог на имущество исходя из его балансовой стоимости. В большинстве случаев экономия собственника составляет более 80% от первоначальной суммы налога.
+			p Кроме того, собственник вправе оспорить включение объекта за предыдущие налоговые периоды и вернуть ранее оплаченные денежные средства.
+		.section-title Основания для включения в перечень?
+		.text-block
+			p На территории г. Москвы налоговая база как кадастровая стоимость объектов недвижимого имущества определяется в отношении нежилых зданий (строений, сооружений) и помещений в них, которые отвечают хотя бы одному из следующих условий:
+			ul
+				li здание расположено на земельном участке, один из видов разрешенного использования которого предусматривает размещение офисных зданий делового, административного и коммерческого назначения, торговых объектов, объектов общественного питания и(или) бытового обслуживания;
+				li здание предназначено или фактически используется в целях делового, административного или коммерческого назначения.
+
+
+
+
+
+//Зачем это нужно
+.section.section--start.section--survey(style="background-image:url('img/exception/exception-3.jpg')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--img
+			.section-call
+				.text-block
+					.section-title.section-title--left Нормативно-правовые документы
+					.box
+						ul
+							li
+								a(href="https://www.mos.ru/upload/photobank/common/upload/28.11.2014_64-02-1613_14_Sobyanin_S.S._Apparat_Mera_i_Pravitelstva_Moskvy_be27349ab0338e2baf2b67b468f1c55b.pdf ") Постановление Правительства Москвы от 28.11.2014 №700-ПП
+							li
+								a(href="https://www.mos.ru/upload/documents/docs/1574-PP.pdf") Постановление Правительства Москвы № 1574-ПП от 26.11.2019 (на 2020 год)
+							br
+					.section-title.section-title--left как возможно оспорить?
+					.box
+						p Мы занимаемся данным направлением с 2016 года и имеем колоссальную положительную практику оспаривания нормативных актов Правительства Москвы. Ранее процедура оспаривания включала подачу искового заявления в Московский городской суд и апелляцию в Верховном суде РФ, с октября 2019 года апелляционные жалобы рассматриваются в Первом апелляционном суде общей юрисдикции. Примеры полученных нами решений:
+						ul
+							li
+								a(href="http://vsrf.ru/stor_pdf.php?id=1548614 ") Определение верховного суда РФ (пример 2017)
+							li
+								a(href="http://vsrf.ru/stor_pdf.php?id=1719808") Определение верховного суда РФ (пример 2018)
+							li
+								a(href="http://vsrf.ru/stor_pdf.php?id=1738070") Определение верховного суда РФ (пример 2019)
+							li
+								a(href="https://1ap.sudrf.ru/modules.php?name=sud_delo&srv_num=1&name_op=doc&number=193764&delo_id=5&new=5&text_number=1 ") Определение Первого апелляционного суда общей юрисдикции (пример 2020)
+
+//service
+.section.section--calc.section--calc--topograf
+	.main-cont
+		.section-title Стоимость наших работ
+		.section-title-sub Работаем в Москве и во всех районах Московской области.
+		.calc
+			.calc-range__wrap
+				.calc-range-val.calc-range-val--lg
+					span от
+					.calc-range-numb 50 000
+					span руб
+			.calc-text Стандартный срок рассмотрения дела - 3 месяца.
+		.calc-ur-cont
+			.calc-ur-pay
+				.calc-ur-pay-cont
+					.calc-ur-pay-text
+						p.lp-baner__title-sub--mark Стоимость услуг представителя в суде первой инстанции включена. В случае неудовлетворения исковых требований мы вернем вам деньги!
+						p Подача искового заявления в текущем налоговом периоде позволяет избежать уплаты налога на имущество в повышенном размере (мы готовы безвозмездно предоставить вам соответствующее юридическое сопровождение в ИФНС г. Москвы в рамках действующего договора).
+
+
+
++footer()
+include ./block_html/_script.pug

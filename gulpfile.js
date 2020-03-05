@@ -232,7 +232,7 @@ gulp.task('min:js',function(){
 
 gulp.task('pug', function() {
 		gulp.src(['app/html/*.pug','app/module/**/*.pug'])
-		//gulp.src(['app/html/sanitarzone.pug'])
+		//gulp.src(['app/html/exception.pug'])
 		//.pipe(changed('app/', {extension: '.html'}))
 				//.pipe(cache('pug'))
 				.pipe(pugInheritance({basedir: 'app/html/',skip:'node_modules/'}))

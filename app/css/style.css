@@ -3559,6 +3559,11 @@ body {
     font-size: 14px;
   }
 }
+.box a {
+  text-decoration: underline !important;
+  color: #5da06b;
+  font-weight: 700;
+}
 .section-call--img {
   display: -webkit-box;
   display: -webkit-flex;
