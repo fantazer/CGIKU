@@ -3514,7 +3514,7 @@ body {
   background: #fff0bb;
   font-size: 14px;
   line-height: 1.8;
-  color: #111;
+  color: #111 !important;
 }
 @media only screen and (max-width: 640px) {
   .lp-baner__title-sub--mark {
