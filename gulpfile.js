@@ -231,8 +231,8 @@ gulp.task('min:js',function(){
 // ########## make html ###############
 
 gulp.task('pug', function() {
-		gulp.src(['app/html/*.pug','app/module/**/*.pug'])
-		//gulp.src(['app/html/exception.pug'])
+		//gulp.src(['app/html/*.pug','app/module/**/*.pug'])
+		gulp.src(['app/html/remove.pug'])
 		//.pipe(changed('app/', {extension: '.html'}))
 				//.pipe(cache('pug'))
 				.pipe(pugInheritance({basedir: 'app/html/',skip:'node_modules/'}))
