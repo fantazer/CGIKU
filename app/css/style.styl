@@ -778,7 +778,7 @@ $step = #b3b2b2
 	+below(768px)
 		font-size: 20px
 		margin-bottom: 20px
-	up()
+	//up()
 	line-height: 1.4
 	text-align: center
 	margin-bottom: 40px
@@ -1135,7 +1135,7 @@ $step = #b3b2b2
 	@extend .type--md
 	line-height: 1.6
 	margin-bottom: 30px
-
+	display inline-block
 .lp-baner__title-sub--mark
 	+below(640px)
 		font-size: 12px
@@ -1174,6 +1174,8 @@ $step = #b3b2b2
 		text-decoration: underline !important
 		color #5da06b
 		font-weight: 700
+	.section-title
+		margin: 20px 0
 .section-call--img
 	+below(640px)
 		display: none
@@ -2438,20 +2440,20 @@ section--calc
 	+below(768px)
 		background-image: none!important
 .personal
-	+below(640px)
-		max-width:480px
-		margin-left: auto
-		margin-right: auto
-	flex(between)
-	fw()
+	display: grid
+	grid-template-columns: repeat(auto-fill, minmax(18rem,1fr))
 .personal__el
-	+below(640px)
-		fl()
 	width: 100%
-	f()
-	justify-content: space-between
+	padding: 35px 25px
+	br(10px)
+	tr(all)
 	//fl()
-	margin-bottom: 40px
+	&:hover
+		bsh()
+		.personal__el-img
+			filter unquote("grayscale(0%)")
+
+
 .personal__el-img-wrap
 	+below(640px)
 		width: 100%
@@ -2462,31 +2464,47 @@ section--calc
 		height: auto
 	+below(640px)
 		background-size: cover
-	padding: 60% 30%
-	width: 100%
-	height: 100%
 	bg-full()
+	round()
+	tr(all)
+	padding: 50% 10%
+	margin-bottom: 40px
 	//background-size: contain
 	background-position: top center
+	filter unquote("grayscale(100%)")
+
+.personal__el-img-wrap
+	position relative
+	width: 100%
+.personal__el-arrow
+	position absolute
+	size 60px
+	background: white
+	round()
+	flex(mid)
+	top 60%
+	right: 5px
+	.icon
+		size 18px
+		fill $green
+
 .personal__el-info
 	+below(640px)
 		width: 100%
 	+below(480px)
 		padding: 20px
-	width: 65%
-	padding: 40px
-	background: white
 .personal__el-title
 	+below(640px)
 		font-size: 18px
-	font-size: 24px
+	font-size: 18px
 	color black
 	font-weight:bold
 	margin-bottom: 10px
+	line-height: 1.6
 
 .personal__el-position
-	font-weight:bold
-	margin-bottom: 20px
+	line-height: 1.6
+
 .personal__el-text
 	ul
 		padding-left: 20px
@@ -2497,7 +2515,6 @@ section--calc
 .personal-content
 	+below(640px)
 		padding: 20px 0
-	background: #f1f1f1
 	padding: 60px 0
 
 .lp-baner__title--sm
@@ -3000,3 +3017,37 @@ select.select-beauty
 
 .section-wrap--start
 	align-items flex-start
+
+
+.personal-full
+	+below(480px)
+		fw()
+	f()
+	align-items: flex-start
+	margin-bottom: 50px
+.personal-full__img
+	+below(480px)
+		margin-bottom: 20px
+		width: 100%
+		padding: 70% 10%
+	width: 30%
+	bg-full()
+	br(10px)
+	padding: 22% 10%
+.personal-full__el-info
+	+below(480px)
+		width: 100%
+		margin-left: 0
+	width: 65%
+	margin-left: 5%
+
+.personal-full__el-title
+	@extend .type--xl
+	margin-bottom: 20px
+	font-weight: 700
+	color black
+
+.personal-full__el-position
+	padding-bottom: 20px
+	margin-bottom: 20px
+	border-bottom 1px solid #efefef
