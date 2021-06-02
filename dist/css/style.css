@@ -3457,7 +3457,7 @@ body {
   margin-top: -30px;
   z-index: 5;
   position: relative;
-  width: 50%;
+  width: 52%;
 }
 @media only screen and (max-width: 1280px) {
   .lp-baner__content {
@@ -6799,7 +6799,8 @@ select.select-beauty {
   background-position: center center;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  padding: 20% 10%;
+  padding: 22% 10%;
+  background-position: top center;
 }
 @media only screen and (max-width: 480px) {
   .personal-full__img {

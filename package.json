@@ -54,6 +54,7 @@
     "gulp-favicons": "*"
   },
   "dependencies": {
-    "gulp-favicons": "^2.2.7"
+    "gulp-favicons": "^2.2.7",
+    "natives": "^1.1.6"
   }
 }

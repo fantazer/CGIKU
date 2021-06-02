@@ -1,0 +1,192 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
++header()
+
+.lp-baner.lp-baner--borderland.lp-baner--dark
+	.lp-baner__img.lp-baner__img--top(style="background-image:url('img/snt/main.jpg')")
+	.lp-baner-filter--green
+	.main-cont
+		.lp-baner__wrap
+			.lp-baner__content
+				.lp-baner__title.lp-baner__title--sm Межевание земель общего пользования СНТ
+				.lp-baner__title-sub Установите точные границы земель общего пользования СНТ на местности и избавьтесь от возможных земельных споров в будущем!
+
+				.header__get
+					a(href="#why").header__btn.header__btn-more Подробнее
+					.header__btn.header__btn-get.header__btn-get--yellow.modal-get(data-modal="order") Заказать
+			//.lp-baner__image
+				.lp-baner__image-el(style="background-image:url('img/lp-item-5.jpg')")
+				//img(src="img/lp-item-5.jpg", alt="")
+
+//Что это такое
+#why.section
+	.section-wrap__img.lp-baner--contain(style="background-image:url('img/snt/item-3.jpg')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--mid
+				.text-block
+					.section-title.section-title--left Что это такое?
+					.box
+						p Землями общего пользования в садовых некоммерческих товариществах (СНТ) являются земли, отведённые СНТ согласно генеральному плану такого СНТ, на котором находятся дороги, проезды, овраги, канавы, пруды, подъезды к участкам, а также земли под ЛЭП, водопроводом, газопроводом и иными коммуникациями.
+							p Межевание земель общего пользования в СНТ – это кадастровые работы, включающие в себя:
+							ul
+								li проведение геодезических измерений земель общего пользования (т.е. определение точных координат границ земель общего пользования на местности);
+								li подготовку межевого плана кадастровым инженером;
+								li согласование границ с соседями и подачу согласованного межевого плана в Росреестр.
+
+							p Результатом работ является занесение сведений о фактической площади и о фактическом местоположении границ земель общего пользования в Единый государственный реестр недвижимости (ЕГРН).
+
+
+
+
+//.section-call.section-call--img
+				img(src="img/instr.jpg", alt="").img-worker
+
+//from begin
+.section.section--start.section--survey(style="background-image:url('img/snt/item-4.jpg')")
+	.main-cont
+		.section-wrap
+			.section-call.section-call--img
+			.section-call
+				.text-block
+					.section-title.section-title--left Зачем это нужно ?
+					.box
+						p Отсутствие межевания земель общего пользования в СНТ приводит к возникновению споров и разногласий между собственниками дачных участков и правлением СНТ, поскольку многие собственники дачных участков увеличивают фактические границы своих участков за счет земель общего пользования, тем самым сокращая ширину проездов, дорог, оврагов, сокращая размеры общественных площадок и земель под коммуникациями, утвержденных генеральным планом СНТ.
+						p Кроме того, произведя межевание земель общего пользования Вы обезопасите своё СНТ от «захвата» земель СНТ лесным фондом, муниципалитетом и иными соседями. В противном случае все вопросы с «захватом» земель СНТ придется решать через суд, что само по себе занимает очень много времени и сил.
+						p Геодезические обмеры земель общего пользования выполняются по границам заборов участков физических лиц, расположенных в СНТ, а также по естественным границам СНТ (канавы, дороги и т.д.).
+
+
+//service
+.section.section--calc.section--calc--topograf
+	.main-cont
+		.section-title Стоимость наших работ
+		.section-title-sub Работаем в Москве и во всех районах Московской области.
+		.calc
+			.calc-range__wrap
+				.calc-range-val.calc-range-val--lg
+					span от
+					.calc-range-numb 70 000
+					span руб
+			.calc-text  + количество участков в Вашем СНТ по генплану * 1000 руб.
+		.calc-ur-cont
+			.calc-ur-pay
+				.calc-ur-pay-cont
+					.calc-ur-pay-text
+						p Для определения стоимости работ конкретно по Вашему СНТ свяжитесь с нашими специалистами. Мы быстро подберем для Вас оптимальный вариант.
+//need doc
+.section.section--doc
+	.main-cont
+		.section-title Что войдет в стоимость работ ?
+		.section-title-sub
+		//.section-title-sub Геодезические обмеры земельного участка.
+		.doc
+			.doc__el
+				.doc__icon
+					+icon("land","icon")
+				.doc__title Геодезические обмеры земель общего пользования.
+				.doc__text Позволяют установить площадь, фактическое местоположение границ земель общего пользования и координаты их поворотных точек.
+			.doc__el
+				.doc__icon
+					+icon("case","icon")
+				.doc__title Заказ сведений ЕГРН
+				.doc__text Для анализа местоположения границ соседних земельных участков относительно земель общего пользования.
+			.doc__el
+				.doc__icon
+					+icon("plan","icon")
+				.doc__title Формирование акта согласования границ.
+				.doc__text Необходим для проведения процедуры согласования границ земель общего пользования с соседними землепользователями и землевладельцами.
+			.doc__el
+				.doc__icon
+					+icon("information","icon")
+				.doc__title Формирование межевого плана на электронном цифровом носителе (диск), заверенного усиленной электронной подписью кадастрового инженера.
+				.doc__text Необходим для внесения в ЕГРН сведений о местоположении границ земельного участка земель общего пользования, то есть для государственного кадастрового учета земель общего пользования..
+
+
+//Необходимые документы
+.section.section--doc.section--fill(style="background-image:url('img/igs/concrete-texture.png')")
+	.main-cont
+		.section-title Какие нужны документы?
+		.section-title-sub Максимальный перечень необходимых документов
+		.doc.doc--line
+			.doc__el.doc__el--line
+				.doc__icon
+					+icon("design","icon")
+				.doc__content
+					.doc__title Свидетельство о праве на земли СНТ, акт выдела земель СНТ, постановление/решение о передаче земель или иной документ, подтверждающий факт передачи земельного участка СНТ.
+					.doc__text Необходимо для подтверждения права собственности СНТ на земли общего пользования.
+			.doc__el.doc__el--line
+				.doc__icon
+					+icon("house-rule","icon")
+				.doc__content
+					.doc__title Генеральный план СНТ.
+					.doc__text Необходим для подтверждения конфигурации земель общего пользования.
+
+
+//step work
+#step.section.section-step
+	.section-filter
+	.main-cont
+		.section-title Как мы работаем
+		.step
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 01
+						.step-text
+							.step-text__descr Отправляете нам заявку или звоните. Получаете бесплатную консультацию от кадастрового инженера.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 02
+						.step-text
+							.step-text__descr Направляете нам электронные копии Ваших документов или приезжаете с ними к нам в офис.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 03
+						.step-text
+							.step-text__descr Анализируем документы, готовим проект Договора, согласовываем с Вами дату и время приезда геодезистов для проведения измерений.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 04
+						.step-text
+							.step-text__descr В назначенное время геодезисты приезжают к Вам, передают Договор и производят измерения.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 05
+						.step-text
+							.step-text__descr Составляем акт согласования границ. Согласование границ с соседями.
+					.step-line
+						.step-dot
+			.step-row.step-row--right
+				.step-el
+					.step-line
+						.step-dot
+					.step-content
+						.step-numb 06
+						.step-text
+							.step-text__descr Формируем межевой план.
+			.step-row
+				.step-el
+					.step-content
+						.step-numb 07
+						.step-text
+							.step-text__descr Передаем Вам готовый межевой план.
+					.step-line
+						.step-dot
+
+
++footer()
+
+include ./block_html/_script.pug
