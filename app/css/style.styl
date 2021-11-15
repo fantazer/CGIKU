@@ -2,12 +2,26 @@
 @import "variable/_function.styl"
 @import "variable/_fonts.styl"
 @import "variable/_ie.styl"
-@import "icon/sprite.css"
 @import "variable/_helper.styl"
+
+// ADD
+@import "grid/grid.css"
+@import "grid/extends.css"
+
+@import "variable/config/_config.styl"
+@import "variable/config/_grid.styl"
+
+@import "variable/config/_color.styl"
+@import "variable/config/_typography.styl"
+//@import "variable/config/_btn.styl"
+@import "variable/config/_input.styl"
+
+
+// ADD === end
+
 @import "variable/_default.styl"
 @import "variable/_elements.styl"
 @import "variable/_constant.styl"
-//@import "variable/_grid.styl"
 @import "../module/**/*"
 
 rupture.scale = 0 480px 768px 992px 1200px
@@ -612,20 +626,18 @@ body
 	br(10px)
 	overflow: hidden
 .modal-content
-	+below(768px)
-		padding: 20px
 	+below(640px)
-		max-height calc(100vh - 60px)
-		overflow-y scroll
-		padding: 20px 5px
-		width: 100%!important
-	//background: #2b8850
+		height: 100%
+		//overflow-y scroll
+		width: calc(100% - 40px)
+		padding: 20px
+	+below(340px)
+		padding: 24px 16px
+	margin: 60px auto
 	background: white
 	position: relative
-	padding: 40px
-
-	+below(768px)
-		width: 80%
+	padding: 32px
+	br(16px)
 
 .modal-content--register
 	width: 500px
@@ -634,10 +646,15 @@ body
 		margin-bottom: 20px
 
 .modal__show
-	+below(768px)
-		flex(mid)
+	//max-height 100%
 	opacity 1
-	transform translate(-50%,-50%)
+	transform scale(1) translateZ(0) translate3d(0, 0, 0)
+	position: relative
+	z-index 1000
+	left initial
+	top initial
+	transition transform .6s, opacity .8s
+	margin auto
 
 .modal-close
 	+below(768px)
@@ -664,8 +681,13 @@ body
 	width: 100%
 
 .modal-wrap
-	position: relative
+	position: fixed
+	width: 100%
 	height: 100%
+	overflow-y auto
+	display: flex
+	align-items center
+	justify-content center
 
 .modal-title
 	+below(768px)

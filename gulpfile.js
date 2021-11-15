@@ -42,7 +42,7 @@ var pugInheritance = require('gulp-pug-inheritance');
 var changed = require('gulp-changed');
 var pug = require('gulp-pug');
 var favicons = require("gulp-favicons");
-
+var gcmq = require('gulp-group-css-media-queries');
 
 // ########## make img ###############
 
@@ -188,17 +188,18 @@ gulp.task('prefix', function () {
 
 //Stylus
 gulp.task('stylus', function () {
-		return gulp.src(['app/css/**/*.styl','app/module/**/*.styl'])
-				.pipe(cache('stylus'))
-				.pipe(progeny({
-						regexp: /^\s*@import\s*(?:\(\w+\)\s*)?['"]([^'"]+)['"]/
-				}))
-				.pipe(filter(['**/*.styl', '!**/_*.styl']))
-				.pipe(stylus({
-						use:[rupture()],
-						'include css': true
-				})).on('error', errorhandler)
-				.pipe(gulp.dest('app/css/'))
+		return gulp.src(['app/css/**/**/*.styl','app/module/**/*.styl'])
+			.pipe(cache('stylus'))
+			.pipe(progeny({
+					regexp: /^\s*@import\s*(?:\(\w+\)\s*)?['"]([^'"]+)['"]/
+			}))
+			.pipe(filter(['**/*.styl', '!**/_*.styl']))
+			.pipe(stylus({
+					use:[rupture()],
+					'include css': true
+			})).on('error', errorhandler)
+			.pipe(gcmq())
+			.pipe(gulp.dest('app/css/'))
 });
 
 //css beautify
@@ -230,30 +231,31 @@ gulp.task('min:js',function(){
 
 // ########## make html ###############
 
-gulp.task('pug', function() {
-		gulp.src(['app/html/*.pug','app/module/**/*.pug'])
-		//gulp.src(['app/html/team-single.pug'])
-		//.pipe(changed('app/', {extension: '.html'}))
-				//.pipe(cache('pug'))
-				.pipe(pugInheritance({basedir: 'app/html/',skip:'node_modules/'}))
-				.pipe(progeny({
-						regexp: /^\s*@import\s*(?:\(\w+\)\s*)?['"]([^'"]+)['"]/
-				}))
-				.pipe(filter(['**/*.pug', '!**/_*.pug']))
-				.pipe(pug({
-						pretty: '\t',
-						cache:'true'
-				})
-				.on('error', errorhandler))
-				.pipe(prettify({
-						'unformatted': ['pre', 'code'],
-						'indent_with_tabs': true,
-						'preserve_newlines': true,
-						'brace_style': 'expand',
-						'end_with_newline': true
-				}))
-				.pipe(gulp.dest('app/'))
-				.on('end', browserSync.reload);
+gulp.task('pug', function () {
+	//gulp.src(['app/html/**/*.pug', 'app/module/**/*.pug',])
+		gulp.src(['app/html/main.pug','app/module/**/*.pug',])
+		.pipe(changed('dist', {extension: '.html'}))
+		.pipe(cache('pug'))
+		.pipe(pugInheritance({basedir: 'app/html', extension: '.pug', skip: 'node_modules', saveInTempFile: true}))
+
+		.pipe(filter(function (file) {
+			return !/\/_/.test(file.path) && !/^_/.test(file.relative);
+		}))
+		.pipe(pug({
+			pretty: '\t',
+			cache: 'true',
+			basedir: __dirname
+		})
+		.on('error', errorhandler))
+		.pipe(prettify({
+			'unformatted': ['pre', 'code'],
+			'indent_with_tabs': true,
+			'preserve_newlines': true,
+			'brace_style': 'expand',
+			'end_with_newline': true
+		}))
+		.pipe(gulp.dest('app/'))
+		.on('end', browserSync.reload);
 });
 
 gulp.task('include-pug',function(){
@@ -438,7 +440,7 @@ gulp.task('build',function(){
 				'min:css',
 				'min:js',
 				//'img',
-				'svg',
+				//'svg',
 				'make'
 				//'zip'
 		)
@@ -450,12 +452,12 @@ gulp.task('build:ftp',function(){
 				'pug',
 				'stylus',
 				'prefix',
-				'copy:font',
+				//'copy:font',
 				'copy:js',
 				'copy:css',
 				'min:css',
 				'min:js',
-				'screenshot',
+				//'screenshot',
 				'img',
 				//'svg',
 				'make',

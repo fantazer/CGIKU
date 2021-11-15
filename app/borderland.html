@@ -83,69 +83,43 @@
 			</div>
 			<!--header-end-->
 			<!--nav-->
-			<div class="nav">
-				<div class="main-cont">
-					<div class="nav-wrap">
-						<div class="nav-toggle">
-							<svg class="icon">
-								<use xlink:href="#menu"></use>
-							</svg>
-						</div>
-						<div class="menu-wrap">
-							<div class="menu">
-								<div class="menu-el">
-									<a href="#">
-										<span>Главная</span>
-									</a>
-								</div>
-								<div class="menu-el menu-el-service">
-									<a href="#">
-										<span>Услуги
-											<svg class="icon">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</span>
-									</a>
-									<div class="menu-el__sub">
-										<a class="menu-el__sub-el" href="#">Кадастровые работы</a>
-										<a class="menu-el__sub-el" href="#">Геодезические работы</a>
-									</div>
-								</div>
-								<div class="menu-el">
-									<a href="#">
-										<span>О компании</span>
-									</a>
-								</div>
-								<div class="menu-el">
-									<a href="#">
-										<span>Прайс-лист</span>
-									</a>
-								</div>
-								<div class="menu-el">
-									<a href="#">
-										<span>Наши лицензии</span>
-									</a>
-								</div>
-								<div class="menu-el">
-									<a href="#">
-										<span>Контакты</span>
-									</a>
-								</div>
-								<div class="menu-el menu-el--mark">
-									<a href="#">
-										<span>Акции</span>
-									</a>
-								</div>
-							</div>
-						</div>
-						<!--.nav-phone
+			<!--.nav
+	.main-cont
+		.nav-wrap
+			.nav-toggle
+				+icon("menu","icon")
+			.menu-wrap
+				.menu
+					.menu-el
+						a(href="#")
+							span Главная
+					.menu-el.menu-el-service
+						a(href="#")
+							span Услуги
+								+icon("arrow-down","icon")
+						.menu-el__sub
+							a(href="#").menu-el__sub-el Кадастровые работы
+							a(href="#").menu-el__sub-el Геодезические работы
+					.menu-el
+						a(href="#")
+							span О компании
+					.menu-el
+						a(href="#")
+							span Прайс-лист
+					.menu-el
+						a(href="#")
+							span Наши лицензии
+					.menu-el
+						a(href="#")
+							span Контакты
+					.menu-el.menu-el--mark
+						a(href="#")
+							span Акции
+			//.nav-phone
 				a(href="tel:+7 (495) 514-84-13").nav-phone-el
 					+icon("phone-call","icon")
 					| +7 (495) 514-84-13
-				-->
-					</div>
-				</div>
-			</div>
+	-->
 			<!--nav-end-->
 		</div>
 		<!--block header end-->
