@@ -231,20 +231,17 @@ gulp.task('min:js',function(){
 
 // ########## make html ###############
 
-gulp.task('pug', function () {
-	//gulp.src(['app/html/**/*.pug', 'app/module/**/*.pug',])
-		gulp.src(['app/html/main.pug','app/module/**/*.pug',])
-		.pipe(changed('dist', {extension: '.html'}))
-		.pipe(cache('pug'))
-		.pipe(pugInheritance({basedir: 'app/html', extension: '.pug', skip: 'node_modules', saveInTempFile: true}))
 
-		.pipe(filter(function (file) {
-			return !/\/_/.test(file.path) && !/^_/.test(file.relative);
+gulp.task('pug', function () {
+	gulp.src(['app/html/main.pug', 'app/module/**/*.pug',])
+		//.pipe(gulpif(global.watch, emitty.stream(global.emittyChangedFile)))
+		.pipe(progeny({
+			regexp: /^\s*@import\s*(?:\(\w+\)\s*)?['"]([^'"]+)['"]/
 		}))
+		.pipe(filter(['**/*.pug', '!**/_*.pug']))
 		.pipe(pug({
-			pretty: '\t',
-			cache: 'true',
-			basedir: __dirname
+			pretty: true,
+			cache: 'true'
 		})
 		.on('error', errorhandler))
 		.pipe(prettify({
@@ -257,6 +254,7 @@ gulp.task('pug', function () {
 		.pipe(gulp.dest('app/'))
 		.on('end', browserSync.reload);
 });
+
 
 gulp.task('include-pug',function(){
 		var FileCreate = JSON.parse(fs.readFileSync('./file.json'));

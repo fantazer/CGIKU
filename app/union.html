@@ -37,49 +37,39 @@
 		<div class="head-container">
 			<!--header-->
 			<div class="header">
-				<div class="top-line">
-					<div class="main-cont">
-						<div class="top-line-wrap">
-							<a class="main-logo" href="/">
-								<img class="logo--full" src="img/logo-dark.png" alt="" />
-								<img class="logo--short" src="img/logo-short.png" alt="" />
-							</a>
-							<div class="top-line-info">
-								<div class="top-line-el__wrap">
-									<div class="top-line-el">
-										<div class="top-line-el-title">Работа горячей линии:</div>
-										<div class="top-line-el-info top-line-el-info--light">Ежедневно c 9-00 ч. до 20-00 ч.</div>
-									</div>
-									<div class="top-line-el">
-										<div class="top-line-el-title">Прием онлайн-заявок:</div>
-										<div class="top-line-el-info top-line-el-info--call modal-get" data-modal="order">
-											<svg class="icon">
-												<use xlink:href="#phone"></use>
-											</svg>
-											<span>Круглосуточно</span>
-										</div>
-									</div>
-								</div>
-								<div class="top-line__contact">
-									<div class="nav-phone">
-										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
-										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
-									</div>
-									<div class="top-line-loc">
-										<a class="top-calc" href="#">
-											<div class="top-calc__icon">
-												<svg class="icon">
-													<use xlink:href="#calculator-fat"></use>
-												</svg>
-											</div>
-											<div class="top-calc__text">Калькулятор услуг</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="main-cont">
+					<div class="header-wrap">
+						<a class="logo" href="#">
+							<img class="logo--full" src="img/logo-dark.png" alt="" />
+						</a>
 					</div>
 				</div>
+				<!--.top-line
+		.main-cont
+			.top-line-wrap
+				a(href="/").main-logo
+					img(src="img/logo-dark.png", alt="").logo--full
+					img(src="img/logo-short.png", alt="").logo--short
+				.top-line-info
+						.top-line-el__wrap
+							.top-line-el
+								.top-line-el-title Работа горячей линии:
+								.top-line-el-info.top-line-el-info--light Ежедневно c 9-00 ч. до 20-00 ч.
+							.top-line-el
+								.top-line-el-title Прием онлайн-заявок:
+								.top-line-el-info.top-line-el-info--call.modal-get(data-modal="order")
+									+icon("phone","icon")
+									span Круглосуточно
+						.top-line__contact
+							.nav-phone
+								a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 514-84-13
+								a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 283-96-83
+							.top-line-loc
+								a(href="#").top-calc
+									.top-calc__icon
+										+icon("calculator-fat","icon")
+									.top-calc__text Калькулятор услуг
+		-->
 			</div>
 			<!--header-end-->
 			<!--nav-->

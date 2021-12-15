@@ -3,7 +3,20 @@ mixin header()
 	.head-container
 		//header
 		.header
-			.top-line
+			.main-cont
+				.header-wrap
+					a(href="#").logo
+						img(src="img/logo-dark.png", alt="").logo--full
+					.header-nav
+						a(href="#").header-nav__el.type--title.type--w500 Услуги
+						a(href="#").header-nav__el.type--title.type--w500 Цены
+						a(href="#").header-nav__el.type--title.type--w500 О нас
+						a(href="#").header-nav__el.type--title.type--w500 Акции
+						a(href="#").header-nav__el.type--title.type--w500 Контакты
+					.header-phone
+						a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 514-84-13
+						//a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 283-96-83
+			//.top-line
 				.main-cont
 					.top-line-wrap
 						a(href="/").main-logo

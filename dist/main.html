@@ -25,760 +25,528 @@
 
 	<body>
 		<!--block footer end-->
-		<!--block header-->
-		<div class="head-container">
-			<!--header-->
-			<div class="header">
-				<div class="top-line">
+		<div class="banner-main" style="background-image:url('img/baner-39.jpg');">
+			<!--block header-->
+			<div class="head-container">
+				<!--header-->
+				<div class="header">
 					<div class="main-cont">
-						<div class="top-line-wrap">
-							<a class="main-logo" href="/">
+						<div class="header-wrap">
+							<a class="logo" href="#">
 								<img class="logo--full" src="img/logo-dark.png" alt="" />
-								<img class="logo--short" src="img/logo-short.png" alt="" />
 							</a>
-							<div class="top-line-info">
-								<div class="top-line-el__wrap">
-									<div class="top-line-el">
-										<div class="top-line-el-title">Работа горячей линии:</div>
-										<div class="top-line-el-info top-line-el-info--light">Ежедневно c 9-00 ч. до 20-00 ч.</div>
-									</div>
-									<div class="top-line-el">
-										<div class="top-line-el-title">Прием онлайн-заявок:</div>
-										<div class="top-line-el-info top-line-el-info--call modal-get" data-modal="order">
-											<svg class="icon">
-												<use xlink:href="#phone"></use>
-											</svg>
-											<span>Круглосуточно</span>
-										</div>
-									</div>
-								</div>
-								<div class="top-line__contact">
-									<div class="nav-phone">
-										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
-										<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
-									</div>
-									<div class="top-line-loc">
-										<a class="top-calc" href="#">
-											<div class="top-calc__icon">
-												<svg class="icon">
-													<use xlink:href="#calculator-fat"></use>
-												</svg>
-											</div>
-											<div class="top-calc__text">Калькулятор услуг</div>
-										</a>
-									</div>
-								</div>
+							<div class="header-nav">
+								<a class="header-nav__el type--title type--w500" href="#">Услуги</a>
+								<a class="header-nav__el type--title type--w500" href="#">Цены</a>
+								<a class="header-nav__el type--title type--w500" href="#">О нас</a>
+								<a class="header-nav__el type--title type--w500" href="#">Акции</a>
+								<a class="header-nav__el type--title type--w500" href="#">Контакты</a>
 							</div>
+							<div class="header-phone">
+								<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+								<!--a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 283-96-83-->
+							</div>
+						</div>
+					</div>
+					<!--.top-line
+      .main-cont
+      	.top-line-wrap
+      		a(href="/").main-logo
+      			img(src="img/logo-dark.png", alt="").logo--full
+      			img(src="img/logo-short.png", alt="").logo--short
+      		.top-line-info
+      				.top-line-el__wrap
+      					.top-line-el
+      						.top-line-el-title Работа горячей линии:
+      						.top-line-el-info.top-line-el-info--light Ежедневно c 9-00 ч. до 20-00 ч.
+      					.top-line-el
+      						.top-line-el-title Прием онлайн-заявок:
+      						.top-line-el-info.top-line-el-info--call.modal-get(data-modal="order")
+      							+icon("phone","icon")
+      							span Круглосуточно
+      				.top-line__contact
+      					.nav-phone
+      						a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 514-84-13
+      						a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 283-96-83
+      					.top-line-loc
+      						a(href="#").top-calc
+      							.top-calc__icon
+      								+icon("calculator-fat","icon")
+      							.top-calc__text Калькулятор услуг
+      -->
+				</div>
+				<!--header-end-->
+				<!--nav-->
+				<!--.nav
+    .main-cont
+    	.nav-wrap
+    		.nav-toggle
+    			+icon("menu","icon")
+    		.menu-wrap
+    			.menu
+    				.menu-el
+    					a(href="#")
+    						span Главная
+    				.menu-el.menu-el-service
+    					a(href="#")
+    						span Услуги
+    							+icon("arrow-down","icon")
+    					.menu-el__sub
+    						a(href="#").menu-el__sub-el Кадастровые работы
+    						a(href="#").menu-el__sub-el Геодезические работы
+    				.menu-el
+    					a(href="#")
+    						span О компании
+    				.menu-el
+    					a(href="#")
+    						span Прайс-лист
+    				.menu-el
+    					a(href="#")
+    						span Наши лицензии
+    				.menu-el
+    					a(href="#")
+    						span Контакты
+    				.menu-el.menu-el--mark
+    					a(href="#")
+    						span Акции
+    		//.nav-phone
+    			a(href="tel:+7 (495) 514-84-13").nav-phone-el
+    				+icon("phone-call","icon")
+    				| +7 (495) 514-84-13
+    -->
+				<!--nav-end-->
+			</div>
+			<!--block header end-->
+			<div class="banner-main__content">
+				<div class="main-cont-sm">
+					<div class="f f-col f-aic">
+						<div class="type--xl type--w700 type--center type--black mb-32 type--title">
+							<span>Ваш надежный партнер в оформлении недвижимости и инженерных изысканий</div>
+						<div class="type--main type--center type--black wmax-500 mb-64 type--title">Качественные услуги от команды с многолетним опытом. Мы рещим вашу проблему уже сегодня.</div>
+						<div class="f gap-32 mb-48">
+							<div class="f f-aic gap-12">
+								<div class="round bg--mark"></div>
+								<span class="type--w600 type--black">Штат инженеров</span>
+							</div>
+							<div class="f f-aic gap-12">
+								<div class="round bg--mark"></div>
+								<span class="type--w600 type--black">Расчет по факту работ</span>
+							</div>
+							<div class="f f-aic gap-12">
+								<div class="round bg--mark"></div>
+								<span class="type--w600 type--black">Гарантия сроков</span>
+							</div>
+						</div>
+						<div class="f gap-12">
+							<div class="btn--md btn--mark btn--fix">Подробнее</div>
+							<div class="btn--md btn--light btn--fix">Заказать</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--header-end-->
-			<!--nav-->
-			<div class="nav">
+		</div>
+		<div class="main-cont">
+			<div class="type--center type--lg type--w700 type--title mt-100 mb-64">Каталог наших услуг</div>
+			<div class="g g-2 gap-24 mb-100">
+				<a class="bor bor--border p-48 f f-col br-8" href="#">
+					<div class="decorate bg--mark br-8 mb-48"></div>
+					<div class="type--md type--w700 type--title mb-24">Геодезические услуги</div>
+					<div class="type--main type--lh-1_6 mb-48">Геодезическое сопровождение строительства, исполнительная съемка, обмеры земельных участков и объектов капитального строительства, вынос в натуру, геодезические съемки.</div>
+					<div class="type--sm type--mark type--w700 mt-a">Подробнее</div>
+				</a>
+				<a class="bor bor--border p-48 f f-col br-8" href="#">
+					<div class="decorate bg--mark br-8 mb-48"></div>
+					<div class="type--md type--w700 type--title mb-24">Кадастровые услуги</div>
+					<div class="type--main type--lh-1_6 mb-48">Постановка на кадастровый учет, учет изменений объектов недвижимости, графическое описание санитарно-защитной зоны.</div>
+					<div class="type--sm type--mark type--w700 mt-a">Подробнее</div>
+				</a>
+				<a class="bor bor--border p-48 f f-col br-8" href="#">
+					<div class="decorate bg--mark br-8 mb-48"></div>
+					<div class="type--md type--w700 type--title mb-24">Юридические услуги</div>
+					<div class="type--main type--lh-1_6 mb-48">Регистрация прав (представление интересов в Росреестре), оптимизация налогообложения, уведомления о строительстве/сносе, экспертизы.</div>
+					<div class="type--sm type--mark type--w700 mt-a">Подробнее</div>
+				</a>
+				<a class="bor bor--border p-48 f f-col br-8" href="#">
+					<div class="decorate bg--mark br-8 mb-48"></div>
+					<div class="type--md type--w700 type--title mb-24">Инженерные изыскания для строительства</div>
+					<div class="type--main type--lh-1_6 mb-48">Геология, экология, топографическая съемка</div>
+					<div class="type--sm type--mark type--w700 mt-a">Подробнее</div>
+				</a>
+			</div>
+		</div>
+		<div class="bg--fieldBackground">
+			<div class="psv-100 mb-100">
 				<div class="main-cont">
-					<div class="nav-wrap">
-						<div class="nav-toggle">
-							<svg class="icon">
-								<use xlink:href="#menu"></use>
-							</svg>
+					<div class="type--center type--lg type--w700 type--title mb-64">Почему выбирают нас</div>
+					<div class="g g-3 gap-24 mb-64">
+						<div class="bor bor--border p-32 bg--white br-4">
+							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
+								<svg class="icon icon--lg icon--mark">
+									<use xlink:href="#attest"></use>
+								</svg>
+							</div>
+							<div class="type--w500 type--title">Штат аттестованных кадастровых инженеров. Лицензии СРО.</div>
 						</div>
-						<div class="menu-wrap">
-							<div class="menu">
-								<div class="menu-el">
-									<a href="#">
-										<span>Главная</span>
-									</a>
-								</div>
-								<div class="menu-el menu-el-service">
-									<a href="#">
-										<span>Услуги
-											<svg class="icon">
-												<use xlink:href="#arrow-down"></use>
-											</svg>
-										</span>
-									</a>
-									<div class="menu-el__sub">
-										<a class="menu-el__sub-el" href="#">Кадастровые работы</a>
-										<a class="menu-el__sub-el" href="#">Геодезические работы</a>
-									</div>
-								</div>
-								<div class="menu-el">
-									<a href="#">
-										<span>О компании</span>
-									</a>
-								</div>
-								<div class="menu-el">
-									<a href="#">
-										<span>Прайс-лист</span>
-									</a>
-								</div>
-								<div class="menu-el">
-									<a href="#">
-										<span>Наши лицензии</span>
-									</a>
-								</div>
-								<div class="menu-el">
-									<a href="#">
-										<span>Контакты</span>
-									</a>
-								</div>
-								<div class="menu-el menu-el--mark">
-									<a href="#">
-										<span>Акции</span>
-									</a>
-								</div>
+						<div class="bor bor--border p-32 bg--white br-4">
+							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
+								<svg class="icon icon--lg icon--mark">
+									<use xlink:href="#time"></use>
+								</svg>
 							</div>
+							<div class="type--w500 type--title">Оперативность решения самых сложных вопросов.</div>
 						</div>
-						<!--.nav-phone
-				a(href="tel:+7 (495) 514-84-13").nav-phone-el
-					+icon("phone-call","icon")
-					| +7 (495) 514-84-13
-				-->
-					</div>
-				</div>
-			</div>
-			<!--nav-end-->
-		</div>
-		<!--block header end-->
-		<!--.header-baner(style="background-image:url('img/img-5.jpg')")-->
-		<!--main-service-->
-		<div class="section section--main-service">
-			<div class="main-cont">
-				<div class="section-title">Наши самые популярные услуги</div>
-				<div class="section-title-sub">Сравните
-					<span class="text--green">наши цены &nbsp;</span>c&nbsp;
-					<span class="text--red">ценами конкурентов</span>
-				</div>
-				<div class="main-service">
-					<div class="main-service__col">
-						<div class="main-service__title">Кадастровые работы</div>
-						<div class="main-service__el">
-							<div class="main-service__cont">
-								<div class="main-service__el-title">Технический план дома</div>
-								<div class="main-service__title-sub">площадь дома до 100 кв. м</div>
-								<div class="main-service__price-row">
-									<div class="main-service__price main-service__price--true">14 000 руб.</div>
-									<div class="main-service__price main-service__price--false">15 000 руб.</div>
-								</div>
-								<div class="main-service__get">
-									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
-									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
-								</div>
+						<div class="bor bor--border p-32 bg--white br-4">
+							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
+								<svg class="icon icon--lg icon--mark">
+									<use xlink:href="#worker"></use>
+								</svg>
 							</div>
-							<div class="main-service__img">
-								<div class="main-service__img-el" style="background-image:url('img/service-el-1.jpg');"></div>
-							</div>
+							<div class="type--w500 type--title">Все работы выполняются нашими штатными специалистами</div>
 						</div>
-						<div class="main-service__el">
-							<div class="main-service__cont">
-								<div class="main-service__el-title">Межевание (уточнение границ) земельного участка</div>
-								<div class="main-service__title-sub">размер участка до 8 соток</div>
-								<div class="main-service__price-row">
-									<div class="main-service__price main-service__price--true">14 000 руб.</div>
-									<div class="main-service__price main-service__price--false">15 000 руб.</div>
-								</div>
-								<div class="main-service__get">
-									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
-									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
-								</div>
+						<div class="bor bor--border p-32 bg--white br-4">
+							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
+								<svg class="icon icon--lg icon--mark">
+									<use xlink:href="#money"></use>
+								</svg>
 							</div>
-							<div class="main-service__img">
-								<div class="main-service__img-el" style="background-image:url('img/service-el-3.jpg');"></div>
-							</div>
+							<div class="type--w500 type--title">Окончательный расчет производится по факту выполнения работ.</div>
 						</div>
-						<div class="main-service__el">
-							<div class="main-service__cont">
-								<div class="main-service__el-title">Исправление кадастровой (реестровой) ошибки</div>
-								<div class="main-service__title-sub">размер участка до 8 соток</div>
-								<div class="main-service__price-row">
-									<div class="main-service__price main-service__price--true">14 000 руб.</div>
-									<div class="main-service__price main-service__price--false">15 000 руб.</div>
-								</div>
-								<div class="main-service__get">
-									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
-									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
-								</div>
+						<div class="bor bor--border p-32 bg--white br-4">
+							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
+								<svg class="icon icon--lg icon--mark">
+									<use xlink:href="#posred"></use>
+								</svg>
 							</div>
-							<div class="main-service__img">
-								<div class="main-service__img-el" style="background-image:url('img/service-el-5.jpg');"></div>
+							<div class="type--w500 type--title">Мы работаем без посредников, поэтому Вы экономите свои средства и время.</div>
+						</div>
+						<div class="bor bor--border p-32 bg--white br-4">
+							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
+								<svg class="icon icon--lg icon--mark">
+									<use xlink:href="#result"></use>
+								</svg>
 							</div>
+							<div class="type--w500 type--title">Более 5000 выполненных объектов по Москве и Московской области.</div>
 						</div>
-						<div class="main-service__el">
-							<div class="main-service__cont">
-								<div class="main-service__el-title">Межевой план</div>
-								<div class="main-service__title-sub">на раздел, объединение и т.п.</div>
-								<div class="main-service__price-row">
-									<div class="main-service__price main-service__price--true">10 000 руб.</div>
-									<div class="main-service__price main-service__price--false">15 000 руб.</div>
-								</div>
-								<div class="main-service__get">
-									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
-									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
-								</div>
-							</div>
-							<div class="main-service__img">
-								<div class="main-service__img-el" style="background-image:url('img/service-el-7.jpg');"></div>
-							</div>
-						</div>
-						<a class="main-service__el-get" href="#">Eще услуги</a>
-					</div>
-					<div class="main-service__col">
-						<div class="main-service__title">Геодезические работы</div>
-						<div class="main-service__el">
-							<div class="main-service__cont">
-								<div class="main-service__el-title">Топографическая съемка</div>
-								<div class="main-service__title-sub">размер участка до 10 соток, 5 точек</div>
-								<div class="main-service__price-row">
-									<div class="main-service__price main-service__price--true">10 000 руб.</div>
-									<div class="main-service__price main-service__price--false">12 000 руб.</div>
-								</div>
-								<div class="main-service__get">
-									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
-									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
-								</div>
-							</div>
-							<div class="main-service__img">
-								<div class="main-service__img-el" style="background-image:url('img/service-el-2.jpg');"></div>
-							</div>
-						</div>
-						<div class="main-service__el">
-							<div class="main-service__cont">
-								<div class="main-service__el-title">Кадастровая съемка</div>
-								<div class="main-service__title-sub">площадь участка до 8 соток</div>
-								<div class="main-service__price-row">
-									<div class="main-service__price main-service__price--true">14 000 руб.</div>
-									<div class="main-service__price main-service__price--false">15 000 руб.</div>
-								</div>
-								<div class="main-service__get">
-									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
-									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
-								</div>
-							</div>
-							<div class="main-service__img">
-								<div class="main-service__img-el" style="background-image:url('img/service-el-4.jpg');"></div>
-							</div>
-						</div>
-						<div class="main-service__el">
-							<div class="main-service__cont">
-								<div class="main-service__el-title">Вынос границ в натуру</div>
-								<div class="main-service__title-sub">размер участка до 8 соток</div>
-								<div class="main-service__price-row">
-									<div class="main-service__price main-service__price--true">10 000 руб.</div>
-									<div class="main-service__price main-service__price--false">12 000 руб.</div>
-								</div>
-								<div class="main-service__get">
-									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
-									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
-								</div>
-							</div>
-							<div class="main-service__img">
-								<div class="main-service__img-el" style="background-image:url('img/service-el-6.jpg');"></div>
-							</div>
-						</div>
-						<div class="main-service__el">
-							<div class="main-service__cont">
-								<div class="main-service__el-title">Геодезическое сопровождение строительства</div>
-								<div class="main-service__title-sub">день работы бригады геодезистов</div>
-								<div class="main-service__price-row">
-									<div class="main-service__price main-service__price--true">10 000 руб.</div>
-									<div class="main-service__price main-service__price--false">15 000 руб.</div>
-								</div>
-								<div class="main-service__get">
-									<a class="main-service__btn main-service__btn-more" href="#">Подробнее</a>
-									<div class="main-service__btn main-service__btn-get modal-get" data-modal="order">Заказать</div>
-								</div>
-							</div>
-							<div class="main-service__img">
-								<div class="main-service__img-el" style="background-image:url('img/service-el-8.jpg');"></div>
-							</div>
-						</div>
-						<a class="main-service__el-get" href="#">Eще услуги</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--section-advance-->
-		<div class="section section-advance" id="advance">
-			<div class="main-cont">
-				<div class="section-title">Почему выбирают нас</div>
-				<div class="advance">
-					<div class="advance-el">
-						<div class="advance-icon">
-							<svg class="icon">
-								<use xlink:href="#attest"></use>
-							</svg>
-						</div>
-						<div class="advance-text">Штат аттестованных кадастровых инженеров. Лицензии СРО.</div>
-					</div>
-					<div class="advance-el">
-						<div class="advance-icon">
-							<svg class="icon">
-								<use xlink:href="#time"></use>
-							</svg>
-						</div>
-						<div class="advance-text">Оперативность решения вопросов.</div>
-					</div>
-					<div class="advance-el">
-						<div class="advance-icon">
-							<svg class="icon">
-								<use xlink:href="#worker"></use>
-							</svg>
-						</div>
-						<div class="advance-text">Все работы выполняются нашими штатными специалистами</div>
-					</div>
-					<div class="advance-el">
-						<div class="advance-icon">
-							<svg class="icon">
-								<use xlink:href="#money"></use>
-							</svg>
-						</div>
-						<div class="advance-text">Окончательный расчет производится по факту выполнения работ.</div>
-					</div>
-					<div class="advance-el">
-						<div class="advance-icon">
-							<svg class="icon">
-								<use xlink:href="#posred"></use>
-							</svg>
-						</div>
-						<div class="advance-text">Мы работаем без посредников, поэтому Вы экономите свои средства и время.</div>
-					</div>
-					<div class="advance-el">
-						<div class="advance-icon">
-							<svg class="icon">
-								<use xlink:href="#result"></use>
-							</svg>
-						</div>
-						<div class="advance-text">Более 1000 выполненных объектов по Москве и Московской области.</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--about-->
-		<!--.about.wow.fadeIn(style="background-image:url('img/our-gray.jpg')" data-wow-duration="1.75s" data-wow-delay="1s")
-.main-cont
-	.about-cont
-		.about-cont__title О нашей компании
-		.about-cont__text
-			p Компания «Центр геодезических и кадастровых услуг» (ЦГиКУ) – это динамично развивающаяся организация, начавшая свою работу в 2012 году, основным профилем которой является выполнение кадастровых и геодезических работ. За время деятельности компании нами выполнены работы более чем на 5000 объектах по всей России.
-			p Мы являемся постоянными подрядчиками ПАО Сбербанк, АО «Мосводоканал», АО «Дон-Строй Инвест», ГУП «Московское имущество», ЦУМ, ГБУ МО «МОСАВТОДОР», АШАН, LIEBHERR и др., что подтверждается благодарственными письмами.
-			p Наши сотрудники - выпускники ведущих профильных ВУЗов страны, таких как Московский государственный университет геодезии и картографии (МИИГАиК), Государственный университет по землеустройству (ГУЗ). Все наши кадастровые инженеры имеют Аттестаты кадастровых инженеров и состоят в СРО, таких как А СРО «Кадастровые инженеры», А СРО «ОПКД».
-			p Показатель качества выполняемых нами услуг – долгосрочные и взаимовыгодные отношения как с крупными компаниями, так и с частными лицами. Выбирая нас, Вы можете быть уверены в грамотном и оперативном решении поставленных задач!
-
--->
-		<!--slider customer-->
-		<div class="section section--customer wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="section-title">Наши заказчики</div>
-			<div class="main-cont">
-				<div class="slider-customer owl-carousel">
-					<div class="slider__el">
-						<img src="img/1-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/2-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/3-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/4-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/5-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/6-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/7-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/8-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/9-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/10-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/11-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/12-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/13-customer.jpg" alt="" />
-					</div>
-					<div class="slider__el">
-						<img src="img/14-customer.jpg" alt="" />
-					</div>
-				</div>
+		<div class="main-cont mb-100">
+			<div class="type--lg type--w700 type--title type--center mb-32">О нашей компании</div>
+			<img class="mb-32 w100 br-8" src="img/companyGroup.jpg" alt="" />
+			<div class="text">
+				<p>Компания «Центр геодезических и кадастровых услуг» (ЦГиКУ) – это динамично развивающаяся организация, начавшая свою работу в 2012 году, основным профилем которой является выполнение кадастровых и геодезических работ. За время деятельности компании
+					нами выполнены работы более чем на 5000 объектах по всей России.
+					<p>Мы являемся постоянными подрядчиками ПАО Сбербанк, АО «Мосводоканал», АО «Дон-Строй Инвест», ГУП «Московское имущество», ЦУМ, ГБУ МО «МОСАВТОДОР», АШАН, LIEBHERR и др., что подтверждается благодарственными письмами.</p>
+					<p>Наши сотрудники - выпускники ведущих профильных ВУЗов страны, таких как Московский государственный университет геодезии и картографии (МИИГАиК), Государственный университет по землеустройству (ГУЗ). Все наши кадастровые инженеры имеют Аттестаты кадастровых
+						инженеров и состоят в СРО, таких как А СРО «Кадастровые инженеры», А СРО «ОПКД».</p>
+				</p>
+			</div>
+		</div>
+		<div class="main-cont">
+			<div class="type--lg type--w700 type--title type--center mb-32">Наши заказчики</div>
+			<div class="g g-6 f-gap-20 mb-100">
+				<img class="customer-item filter--grayscale p-24 tr" src="img/1-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/2-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/3-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/4-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/5-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/6-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/7-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/8-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/9-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/10-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/11-customer.jpg" alt="" />
+				<img class="customer-item filter--grayscale p-24 tr" src="img/12-customer.jpg" alt="" />
 			</div>
 		</div>
 		<!--slider certificate-->
-		<div class="section section--certificate wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="filter"></div>
-			<div class="section-title">Наши сертификаты</div>
-			<div class="main-cont">
-				<div class="slider-certificate owl-carousel">
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-1.jpg" rel="group-elemen">
-							<img src="img/cert-1.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-2.jpg" rel="group-elemen">
-							<img src="img/cert-2.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-3.jpg" rel="group-elemen">
-							<img src="img/cert-3.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-4.jpg" rel="group-elemen">
-							<img src="img/cert-4.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-5.jpg" rel="group-elemen">
-							<img src="img/cert-5.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-6.jpg" rel="group-elemen">
-							<img src="img/cert-6.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-7.jpg" rel="group-elemen">
-							<img src="img/cert-7.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-8.jpg" rel="group-elemen">
-							<img src="img/cert-8.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-9.jpg" rel="group-elemen">
-							<img src="img/cert-9.jpg" alt="" />
-						</a>
-					</div>
-					<div class="slider__el">
-						<a class="fancybox" href="img/cert-10.jpg" rel="group-elemen">
-							<img src="img/cert-10.jpg" alt="" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--service-->
-		<!--.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+		<!--.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+.filter
+.section-title Наши сертификаты
 .main-cont
-	.section-title Популярные услуги
-	.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
-	.service
-		- for (var i=0;i<6;i++)
-			.service__el
-				.service__title Уточнение границ земельного участка
-				.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
-				.service__price 18 000 руб.
-				.service__get
-					.service__btn.service__btn-more Подробнее
-					.service__btn.service__btn-get Заказать
-
-
-
+	.slider-certificate.owl-carousel
+		- for (var i=1;i<11;i++)
+			.slider__el
+				a(href="img/cert-"+i+".jpg" rel="group-elemen").fancybox
+					img(src="img/cert-"+i+".jpg", alt="")
 
 -->
-		<div class="section section-contact" id="contact">
-			<div class="main-cont">
-				<div class="section-title">Наши контакты</div>
-				<div class="contact">
-					<div class="contact-form contact-form--footer">
-						<div class="main-form">
-							<div class="form-title">Оставьте вашу заявку</div>
-							<div class="form-title-sub">Мы свяжемся с вам в кратчайшее время</div>
-							<form class="validate-form form--footer" action="javascript:void(null);">
-								<div class="input-row">
-									<input class="input" type="text" name="name" placeholder="Ваше имя" />
-								</div>
-								<div class="input-row">
-									<input class="input" type="text" name="phone" placeholder="Ваш телефон" />
-								</div>
-								<div class="input-row">
-									<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
-								</div>
-								<div class="agree-row">
-									<div class="check-el">
-										<label class="style-label style-label--checkbox">
-											<input class="sytle-input" type="checkbox" name="agree" />
-											<div class="sytle-input-element">
-												<svg class="icon-check">
-													<use xlink:href="#checked"></use>
-												</svg>
-											</div>
-											<div class="sytle-input-text"></div>
-										</label>
-									</div>
-									<div class="agree-row__text">Согласен с
-										<a href="#">условиями обработки персональных данных</a>
-									</div>
-								</div>
-								<input class="form-footer-send" type="submit" value="Отправить заявку" />
-							</form>
-						</div>
-						<div class="contact-info">
-							<div class="map">
-								<script text/javascript="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;amp;width=100%&amp;amp;height=400&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
-							</div>
-							<div class="contact-row-wrap">
-								<div class="contact-row">
-									<div class="contact-icon">
-										<svg class="icon">
-											<use xlink:href="#placeholder"></use>
-										</svg>
-									</div>
-									<div class="contact-text">Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6</div>
-								</div>
-								<div class="contact-row">
-									<div class="contact-icon">
-										<svg class="icon">
-											<use xlink:href="#phone-call"></use>
-										</svg>
-									</div>
-									<div class="contact-text">+7 (495) 514-84-13</div>
-								</div>
-								<div class="contact-row">
-									<div class="contact-icon">
-										<svg class="icon">
-											<use xlink:href="#mail"></use>
-										</svg>
-									</div>
-									<div class="contact-text">info@cgiku.ru</div>
-								</div>
-								<div class="contact-row">
-									<div class="contact-icon">
-										<svg class="icon">
-											<use xlink:href="#metro"></use>
-										</svg>
-									</div>
-									<a class="contact-text contact-text--link" href="#">Как к нам проехать</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--section-contact-end-->
-		</div>
-		<!--news-->
-		<div class="section section--news wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="section-title">Новости</div>
-			<div class="main-cont">
-				<div class="news">
-					<div class="news__el">
-						<div class="news__el-date">18 июля 2017</div>
-						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
-						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">22 авгутса 2017</div>
-						<div class="news__el-title">Межевание участков, постановка на учет</div>
-						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">19 сентября 2014</div>
-						<div class="news__el-title">Подготовка технических планов</div>
-						<div class="news__el-text">Технический план квартиры, дома, помещения, сооружения, гаража, объекта незавершенного строительства. Технический план для ввода объекта в эксплуатацию. Акт обследования. Заключение кадастрового инженера...</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">03 апреля 2014</div>
-						<div class="news__el-title">Кадастровая съемка участков</div>
-						<div class="news__el-text">Кадастровая съемка участка, Акт выбора земельных участков, Ситуационный план, Схема расположения земельного участка на кадастровой карте...</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">18 июля 2017</div>
-						<div class="news__el-title">ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ</div>
-						<div class="news__el-text">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
-					</div>
-					<div class="news__el">
-						<div class="news__el-date">22 авгутса 2017</div>
-						<div class="news__el-title">Межевание участков, постановка на учет</div>
-						<div class="news__el-text">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--questions-->
-		<div class="section section--news wow fadeIn" data-wow-duration="2s" data-wow-delay=".75s">
-			<div class="section-title">Часто задаваемые вопросы</div>
-			<div class="section-title-sub">Просто о сложном</div>
-			<div class="main-cont">
-				<div class="questions">
-					<div class="questions-slider owl-carousel">
-						<div class="questions__el">
-							<div class="questions__el-wrap">
-								<div class="questions__name">Валерия Моисеева.</div>
-								<div class="questions__title">Здравствуйте! Поясните, пожалуйста, что такое кадастровая ошибка и как ее устранить?</div>
-								<div class="questions__text">
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-								</div>
-								<div class="row-btn--center">
-									<a class="questions__el-get" href="#">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						<div class="questions__el">
-							<div class="questions__el-wrap">
-								<div class="questions__name">Валерия Моисеева.</div>
-								<div class="questions__title">Здравствуйте! Поясните, пожалуйста, что такое кадастровая ошибка и как ее устранить?</div>
-								<div class="questions__text">
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-								</div>
-								<div class="row-btn--center">
-									<a class="questions__el-get" href="#">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						<div class="questions__el">
-							<div class="questions__el-wrap">
-								<div class="questions__name">Валерия Моисеева.</div>
-								<div class="questions__title">Здравствуйте! Поясните, пожалуйста, что такое кадастровая ошибка и как ее устранить?</div>
-								<div class="questions__text">
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-								</div>
-								<div class="row-btn--center">
-									<a class="questions__el-get" href="#">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						<div class="questions__el">
-							<div class="questions__el-wrap">
-								<div class="questions__name">Валерия Моисеева.</div>
-								<div class="questions__title">Здравствуйте! Поясните, пожалуйста, что такое кадастровая ошибка и как ее устранить?</div>
-								<div class="questions__text">
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-								</div>
-								<div class="row-btn--center">
-									<a class="questions__el-get" href="#">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						<div class="questions__el">
-							<div class="questions__el-wrap">
-								<div class="questions__name">Валерия Моисеева.</div>
-								<div class="questions__title">Здравствуйте! Поясните, пожалуйста, что такое кадастровая ошибка и как ее устранить?</div>
-								<div class="questions__text">
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-								</div>
-								<div class="row-btn--center">
-									<a class="questions__el-get" href="#">Подробнее</a>
-								</div>
-							</div>
-						</div>
-						<div class="questions__el">
-							<div class="questions__el-wrap">
-								<div class="questions__name">Валерия Моисеева.</div>
-								<div class="questions__title">Здравствуйте! Поясните, пожалуйста, что такое кадастровая ошибка и как ее устранить?</div>
-								<div class="questions__text">
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-									<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
-										ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.</p>
-								</div>
-								<div class="row-btn--center">
-									<a class="questions__el-get" href="#">Подробнее</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="questions-more">
-						<div class="questions-title-sub">Чтобы получить ответы на другие Ваши вопросы, читайте наши статьи:</div>
-						<div class="questions-list">
-							<a class="questions-list__el" href="#">Пример кадастрового паспорта квартиры</a>
-							<a class="questions-list__el" href="#">Образец межевого плана земельного участка</a>
-							<a class="questions-list__el" href="#">Обязательно ли делать межевание земельного участка</a>
-						</div>
-						<a class="questions-list__get" href="#">Все статьи</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="footer-menu">
-				<!--.main-cont
-		.menu
-			.menu-el
-				a(href="#")
-					span Главная
-			.menu-el.menu-el-service
-				a(href="#")
-					span Услуги
-			.menu-el
-				a(href="#")
-					span О компании
-			.menu-el
-				a(href="#")
-					span Прайс-лист
-			.menu-el
-				a(href="#")
-					span Наши лицензии
-			.menu-el
-				a(href="#")
-					span Контакты
-			.menu-el.menu-el--mark
-				a(href="#")
-					span Акции
-		-->
-			</div>
-			<div class="footer-info">
+		<!--service-->
+		<div class="bg--fieldBackground">
+			<div class="psv-100">
 				<div class="main-cont">
-					<div class="footer-container">
-						<div class="footer-list">
-							<div class="footer-list__el">пункт меню 0</div>
-							<div class="footer-list__el">пункт меню 1</div>
-							<div class="footer-list__el">пункт меню 2</div>
-							<div class="footer-list__el">пункт меню 3</div>
-							<div class="footer-list__el">пункт меню 4</div>
-							<div class="footer-list__el">пункт меню 5</div>
-							<div class="footer-list__el">пункт меню 6</div>
-							<div class="footer-list__el">пункт меню 7</div>
-							<div class="footer-list__el">пункт меню 8</div>
-							<div class="footer-list__el">пункт меню 9</div>
-							<div class="footer-list__el">пункт меню 10</div>
-							<div class="footer-list__el">пункт меню 11</div>
-							<div class="footer-list__el">пункт меню 12</div>
-							<div class="footer-list__el">пункт меню 13</div>
-							<div class="footer-list__el">пункт меню 14</div>
-						</div>
-						<div class="footer-info-wrap">
-							<a class="footer-info__logo" href="/">
-								<img class="logo--full" src="img/logo-dark.png" alt="" />
-							</a>
-							<div class="footer-info__phone">
-								<a class="footer-info__phone" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
-								<a class="footer-info__phone" href="tel:+7 (495) 514-84-13">+7 (495) 283-96-83</a>
+					<div class="type--center type--lg type--w700 type--title mb-32">Популярные услуги</div>
+					<div class="type--center w60 ml-a mr-a type--md mb-64">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
+					<div class="g g-2 f-gap-24">
+						<div class="p-32 bor bor--border f f-col bg--white br-8">
+							<div class="type--w500 type--title type--md mb-24">Уточнение границ земельного участка</div>
+							<div class="type--sm type--main mb-32 type--lh-1_6">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной</div>
+							<div class="type--md type--w700 mb-24 mt-a">18 000 руб</div>
+							<div class="f">
+								<div class="btn btn--md btn--light">Подробнее</div>
+								<div class="btn btn--md btn--mark ml-24">Заказать</div>
 							</div>
 						</div>
+						<div class="p-32 bor bor--border f f-col bg--white br-8">
+							<div class="type--w500 type--title type--md mb-24">Исправление реестровой ошибки</div>
+							<div class="type--sm type--main mb-32 type--lh-1_6">Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади </div>
+							<div class="type--md type--w700 mb-24 mt-a">22 000 руб</div>
+							<div class="f">
+								<div class="btn btn--md btn--light">Подробнее</div>
+								<div class="btn btn--md btn--mark ml-24">Заказать</div>
+							</div>
+						</div>
+						<div class="p-32 bor bor--border f f-col bg--white br-8">
+							<div class="type--w500 type--title type--md mb-24">Раздел земельного участка</div>
+							<div class="type--sm type--main mb-32 type--lh-1_6">Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади (для юридических лиц).</div>
+							<div class="type--md type--w700 mb-24 mt-a">14 000 руб</div>
+							<div class="f">
+								<div class="btn btn--md btn--light">Подробнее</div>
+								<div class="btn btn--md btn--mark ml-24">Заказать</div>
+							</div>
+						</div>
+						<div class="p-32 bor bor--border f f-col bg--white br-8">
+							<div class="type--w500 type--title type--md mb-24">Объединение земельных участков</div>
+							<div class="type--sm type--main mb-32 type--lh-1_6">Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади (для юридических лиц).</div>
+							<div class="type--md type--w700 mb-24 mt-a">26 000 руб</div>
+							<div class="f">
+								<div class="btn btn--md btn--light">Подробнее</div>
+								<div class="btn btn--md btn--mark ml-24">Заказать</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="psv-100">
+			<div class="main-cont">
+				<div class="type--center type--lg type--w700 type--title mb-32">Последние новости</div>
+				<div class="g g-3 f-gap-24">
+					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
+						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">18 июля 2021</div>
+						<div class="type--w500 type--title type--main mb-24">Упали цены на элитные новостройки</div>
+						<div class="type--sm mb-32 type--lh-1_6">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
+						<div class="type--sm type--mark">Подробнее</div>
+					</div>
+					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
+						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">20 авг 2021</div>
+						<div class="type--w500 type--title type--main mb-24">Межевание участков, постановка на учет</div>
+						<div class="type--sm mb-32 type--lh-1_6">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
+						<div class="type--sm type--mark">Подробнее</div>
+					</div>
+					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
+						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">22 авг 2021</div>
+						<div class="type--w500 type--title type--main mb-24">Обновлены сведения об утраченных и поврежденных пунктах государственной геодезической сети</div>
+						<div class="type--sm mb-32 type--lh-1_6">Сведения об утраченных и поврежденных пунктах государственной геодезической сети, а также об ...</div>
+						<div class="type--sm type--mark">Подробнее</div>
+					</div>
+					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
+						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">10 сент 2021</div>
+						<div class="type--w500 type--title type--main mb-24">Росреестр уточнил минимальный размер машино-мест</div>
+						<div class="type--sm mb-32 type--lh-1_6">Как пишет Парламентская газета, в России установлен минимальный допустимый размер машино-мест — ...</div>
+						<div class="type--sm type--mark">Подробнее</div>
+					</div>
+					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
+						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">18 июля 2021</div>
+						<div class="type--w500 type--title type--main mb-24">Упали цены на элитные новостройки</div>
+						<div class="type--sm mb-32 type--lh-1_6">По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...</div>
+						<div class="type--sm type--mark">Подробнее</div>
+					</div>
+					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
+						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">20 авг 2021</div>
+						<div class="type--w500 type--title type--main mb-24">Межевание участков, постановка на учет</div>
+						<div class="type--sm mb-32 type--lh-1_6">Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....</div>
+						<div class="type--sm type--mark">Подробнее</div>
+					</div>
+					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
+						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">22 авг 2021</div>
+						<div class="type--w500 type--title type--main mb-24">Обновлены сведения об утраченных и поврежденных пунктах государственной геодезической сети</div>
+						<div class="type--sm mb-32 type--lh-1_6">Сведения об утраченных и поврежденных пунктах государственной геодезической сети, а также об ...</div>
+						<div class="type--sm type--mark">Подробнее</div>
+					</div>
+					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
+						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">10 сент 2021</div>
+						<div class="type--w500 type--title type--main mb-24">Росреестр уточнил минимальный размер машино-мест</div>
+						<div class="type--sm mb-32 type--lh-1_6">Как пишет Парламентская газета, в России установлен минимальный допустимый размер машино-мест — ...</div>
+						<div class="type--sm type--mark">Подробнее</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mb-100">
+			<div class="main-cont">
+				<div class="type--center type--lg type--w700 type--title mb-32">Частые вопросы</div>
+				<div class="js-accordion">
+					<div class="accordion__el js-accordion-el">
+						<div class="accordion__el-head js-accordion-head">
+							<div class="accordion__el-head-text type--w500 type--title w80">Здравствуйте! Поясните пожалуйста что такое кадастровая ошибка и как ее устранить?</div>
+							<div class="accordion__el-head-icon"></div>
+						</div>
+						<div class="accordion__el-content text js-accordion-content">
+							<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
+								ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
+								<p>Для начала следует произвести геодезическую съемку как Вашего участка, так и смежного, с которым имеется пересечение. Исходя из произведенной геодезической съемки, следует понимать кто виноват в сложившемся пересечении границ. Если у смежных владельцев
+									вопросов не возникает и «виновник» дает согласие на отодвигание своих границ, то кадастровым инженером формируется межевой план по исправлению кадастровой ошибки.</p>
+								<p>Если же «виновник» не признает своей вины, то данный спор решается в судебном порядке.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="js-accordion">
+					<div class="accordion__el js-accordion-el">
+						<div class="accordion__el-head js-accordion-head">
+							<div class="accordion__el-head-text type--w500 type--title w80">Почему могут отказать в выдаче кадастрового паспорта?</div>
+							<div class="accordion__el-head-icon"></div>
+						</div>
+						<div class="accordion__el-content text js-accordion-content">
+							<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
+								ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
+								<p>Для начала следует произвести геодезическую съемку как Вашего участка, так и смежного, с которым имеется пересечение. Исходя из произведенной геодезической съемки, следует понимать кто виноват в сложившемся пересечении границ. Если у смежных владельцев
+									вопросов не возникает и «виновник» дает согласие на отодвигание своих границ, то кадастровым инженером формируется межевой план по исправлению кадастровой ошибки.</p>
+								<p>Если же «виновник» не признает своей вины, то данный спор решается в судебном порядке.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="js-accordion">
+					<div class="accordion__el js-accordion-el">
+						<div class="accordion__el-head js-accordion-head">
+							<div class="accordion__el-head-text type--w500 type--title w80">Возможно ли оформить земельный участок, на котором располагается жилой дом? На дом документы есть, а на участок отсутствуют. Участок находится в Московской области.</div>
+							<div class="accordion__el-head-icon"></div>
+						</div>
+						<div class="accordion__el-content text js-accordion-content">
+							<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
+								ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
+								<p>Для начала следует произвести геодезическую съемку как Вашего участка, так и смежного, с которым имеется пересечение. Исходя из произведенной геодезической съемки, следует понимать кто виноват в сложившемся пересечении границ. Если у смежных владельцев
+									вопросов не возникает и «виновник» дает согласие на отодвигание своих границ, то кадастровым инженером формируется межевой план по исправлению кадастровой ошибки.</p>
+								<p>Если же «виновник» не признает своей вины, то данный спор решается в судебном порядке.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="js-accordion">
+					<div class="accordion__el js-accordion-el">
+						<div class="accordion__el-head js-accordion-head">
+							<div class="accordion__el-head-text type--w500 type--title w80">Добрый день уважаемые инженеры! По документам у меня 6 соток. Но после проведения геодезической съемки выяснилось, что площадь участка составляет 8 соток с небольшим. </div>
+							<div class="accordion__el-head-icon"></div>
+						</div>
+						<div class="accordion__el-content text js-accordion-content">
+							<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
+								ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
+								<p>Для начала следует произвести геодезическую съемку как Вашего участка, так и смежного, с которым имеется пересечение. Исходя из произведенной геодезической съемки, следует понимать кто виноват в сложившемся пересечении границ. Если у смежных владельцев
+									вопросов не возникает и «виновник» дает согласие на отодвигание своих границ, то кадастровым инженером формируется межевой план по исправлению кадастровой ошибки.</p>
+								<p>Если же «виновник» не признает своей вины, то данный спор решается в судебном порядке.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="js-accordion">
+					<div class="accordion__el js-accordion-el">
+						<div class="accordion__el-head js-accordion-head">
+							<div class="accordion__el-head-text type--w500 type--title w80">Подскажите пожалуйста, является ли процедура межевания обязательной?</div>
+							<div class="accordion__el-head-icon"></div>
+						</div>
+						<div class="accordion__el-content text js-accordion-content">
+							<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
+								ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
+								<p>Для начала следует произвести геодезическую съемку как Вашего участка, так и смежного, с которым имеется пересечение. Исходя из произведенной геодезической съемки, следует понимать кто виноват в сложившемся пересечении границ. Если у смежных владельцев
+									вопросов не возникает и «виновник» дает согласие на отодвигание своих границ, то кадастровым инженером формируется межевой план по исправлению кадастровой ошибки.</p>
+								<p>Если же «виновник» не признает своей вины, то данный спор решается в судебном порядке.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="js-accordion">
+					<div class="accordion__el js-accordion-el">
+						<div class="accordion__el-head js-accordion-head">
+							<div class="accordion__el-head-text type--w500 type--title w80">Здравствуйте! У меня возникла проблема. При переезде с одного места жительства в другое были утеряны все документы на земельный участок. Участок 8 сот., ИЖС, находится в собственности. Хочу произвести межевание, а документов нет. Что делать?</div>
+							<div class="accordion__el-head-icon"></div>
+						</div>
+						<div class="accordion__el-content text js-accordion-content">
+							<p>Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой
+								ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
+								<p>Для начала следует произвести геодезическую съемку как Вашего участка, так и смежного, с которым имеется пересечение. Исходя из произведенной геодезической съемки, следует понимать кто виноват в сложившемся пересечении границ. Если у смежных владельцев
+									вопросов не возникает и «виновник» дает согласие на отодвигание своих границ, то кадастровым инженером формируется межевой план по исправлению кадастровой ошибки.</p>
+								<p>Если же «виновник» не признает своей вины, то данный спор решается в судебном порядке.</p>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="f bor bor-t bor--border">
+			<div class="w50 psv-64">
+				<div class="ml-a mr-a wmax-640">
+					<div class="type--w700 type--lg mb-24">Оставьте вашу заявку</div>
+					<div class="type--w700 type--xl type--mark mb-12">+7 (495) 514-84-13</div>
+					<div class="type--w600 mb-32">г. Москва, 1-ый Нагатинский проезд, д. 4, офис 210</div>
+					<!--.type--main.type--gray Мы свяжемся с вам в кратчайшее время-->
+					<div class="g g-2 gap-24 mb-24">
+						<div class="input-row">
+							<input class="input input--disable" type="text" placeholder="Ваше имя" />
+						</div>
+						<div class="input-row">
+							<input class="input input--disable" type="text" placeholder="Ваше имя" />
+						</div>
+					</div>
+					<div class="input-row mb-24">
+						<textarea class="input" name="info" cols="30" rows="5" placeholder="Сообщение"></textarea>
+					</div>
+					<div class="login-remember mb-48">
+						<div class="check-el">
+							<label class="style-label style-label--checkbox">
+								<input class="style-input" type="checkbox" />
+								<div class="style-input-element">
+									<svg class="icon">
+										<use xlink:href="#checked"></use>
+									</svg>
+								</div>
+								<div class="style-input-text">Я ознакомился с
+									<a href="#">политикой конфиденциальности</a>,
+									<a href="#">публичной офертой</a> и даю согласие на обработку моих персональных данных</div>
+							</label>
+						</div>
+					</div>
+					<div class="btn--md btn--light">Отправить заявку</div>
+				</div>
+			</div>
+			<div class="w50">
+				<div class="h100 w100">
+					<script text/javascript="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;amp;width=100%&amp;amp;height=100%&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
+				</div>
+			</div>
+		</div>
+		<div class="footer bg--dark psv-48">
+			<div class="main-cont">
+				<div class="row gap-24">
+					<div class="g-1-9">
+						<div class="g g-3 gap-24">
+							<div class="type--white type--sm type--typeSecondary">Главная</div>
+							<div class="type--white type--sm type--typeSecondary">Кадастровые работы</div>
+							<div class="type--white type--sm type--typeSecondary">Новости</div>
+							<div class="type--white type--sm type--typeSecondary">О компании</div>
+							<div class="type--white type--sm type--typeSecondary">Геодезические работы и услуги</div>
+							<div class="type--white type--sm type--typeSecondary">Вопрос-ответ</div>
+							<div class="type--white type--sm type--typeSecondary">Наши лицензии</div>
+							<div class="type--white type--sm type--typeSecondary">ПРАЙС-ЛИСТ</div>
+							<div class="type--white type--sm type--typeSecondary">Статьи</div>
+							<div class="type--white type--sm type--typeSecondary">Контакты</div>
+							<div class="type--white type--sm type--typeSecondary">Акции и Скидки</div>
+							<div class="type--white type--sm type--typeSecondary">Список услуг в городах</div>
+							<div class="type--white type--sm type--typeSecondary">Примеры работ</div>
+							<div class="type--white type--sm type--typeSecondary">Нормативная документация</div>
+							<div class="type--white type--sm type--typeSecondary">Благодарственные письма</div>
+							<div class="type--white type--sm type--typeSecondary">Результаты специальной оценки условий труда</div>
+							<div class="type--white type--sm type--typeSecondary">Политика в отношении обработки персональных данных</div>
+							<div class="type--white type--sm type--typeSecondary">Отзывы</div>
+						</div>
+					</div>
+					<div class="g-10-12">
+						<img class="mb-24" src="img/logo.png" alt="" />
+						<div class="type--mdx type--white type--w700 type--title mb-12">+7 (495) 514-84-13</div>
+						<div class="type--typeSecondary type--white type--w700 type--title">info@cgiku.ru</div>
 					</div>
 				</div>
 			</div>

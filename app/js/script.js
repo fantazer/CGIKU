@@ -585,10 +585,24 @@ $(window).load(function () {
 		$('.calculator-total__val').text(curentVal);
 
 	});
-
-
-	
 	//calculator===end
+
+	// accordion row toggle
+	var body = $('body')
+	body.on('click','.js-accordion-head', function(e){
+		console.log(223);
+		var current = $(this).closest('.js-accordion-el').index()
+		$(this).closest('.js-accordion').find('.js-accordion-el').each(function(){
+			if($(this).index()!=current){
+				 $(this).find('.js-accordion-head').removeClass('active')
+				 $(this).find('.js-accordion-content').slideUp('active')
+			}else{
+				 $(this).find('.js-accordion-content').slideToggle('active')
+				 $(this).find('.js-accordion-head').toggleClass('active')
+			}
+		})
+	});
+	// accordion row toggle === end
 
 })
 ;( function( window, document )

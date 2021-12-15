@@ -7,22 +7,32 @@
 	border 0
 	text-align: center
 	justify-content center
+	font-weight: 600
+	font-family Gotham
+
 	&.disable
 		pointer-events none
 		opacity: .4
 
+
 // btn size
 .btn--sm
 	@extend .type--sm
+	@extend .btn
 	padding 8px 14px
 
 .btn--md
 	@extend .type--main
+	@extend .btn
 	padding 16px 28px
 
 .btn--lg
 	@extend .type--lg
+	@extend .btn
 	padding 20px 36px
+
+.btn--fix
+	width: 200px
 
 .btn--mobile
 	+below(480px)
@@ -35,13 +45,29 @@
 
 // btn type
 .btn--mark
+	@extend .btn
 	color white
 	background $mark
 	&:hover
-		background-color lighten($mark,10)
+		background-color darken($mark,10)
 		color white!important
 	&:active
-		background-color lighten($mark,10)
+		background-color darken($mark,10)
+	input[type="submit"]
+		border 0
+	.icon
+		tr()
+		fill white
+
+.btn--yellow
+	@extend .btn
+	color white
+	background $yellow
+	&:hover
+		background-color darken($yellow,10)
+		color white!important
+	&:active
+		background-color darken($yellow,10)
 	input[type="submit"]
 		border 0
 	.icon
@@ -49,6 +75,7 @@
 		fill white
 
 .btn--light
+	@extend .btn
 	border 1px solid $mark
 	background-color #ffffff
 	color $mark

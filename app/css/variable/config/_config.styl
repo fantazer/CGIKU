@@ -1,6 +1,3 @@
-font('Nunito-Regular','Nunito', 400)
-font('Nunito-Bold','Nunito', 700)
-$font = 'Nunito', sans-serif
 
 //$windowSize = (xl lg md sm)
 $windowSize = ("xl" 1280),\
@@ -19,7 +16,8 @@ $listExtend = (4),\
 							(48 32 24),\
 							(64 48 24),\
 							(80 64 32),\
-							(100 68 36)
+							(100 68 36),\
+							(160 68 36)
 
 //padding percent
 $paddingPercent = (10 20 30 50)
@@ -40,7 +38,7 @@ $listType = ("xs" 12 10),\
 						("mdx" 24 20),\
 						("lg" 32 24),\
 						("lgx" 44 32),\
-						("xl" 64 44)
+						("xl" 58 42)
 
 //Icon size
 $listIcon = ("xs" 12),\
@@ -61,7 +59,7 @@ $listFw = (300 400 500 600 700 900)
 $listWmax = (500 545 640 820 1320)
 
 //color
-$mark = #5da06b
+$mark = #3fb157
 $green = #a9d96b
 $linkColor = black
 
@@ -71,6 +69,7 @@ $grayLight = #c4c5cc
 $graySnow = #ebebec
 
 $black = black
+$dark = #2a2d48
 $white = white
 $violet = #6b33b2
 $orange = #ff7b27
@@ -88,14 +87,14 @@ $typeDisable = #c8cad4
 //UI COLORS
 $borderHover = #bfc0c9
 $fieldBackground = #f1f2f6
-$border = $border-color = #dcdfe8
+$border = $border-color = #f0f0f0
 $overlay = rgba(32, 34, 44, 0.5)
 
 //STATE COLORS
 $stateErrorBG = #ffe1e6
 $stateError = #d00025
 
-$stateSuccessBG = #edfdd9
+$stateSuccessBG = #ebffef
 $stateSuccess = #5da600
 
 $stateWarningBG = #ffedd8
@@ -111,9 +110,12 @@ $colors = {
 	'graySnow':$graySnow,
 	'violet':$violet,
 	'orange':$orange,
+	'border':$border,
 	'blue':$blue,
 	'red':$red,
 	'black':$black,
+	'dark':$dark,
+
 	'typePrimary':$typePrimary,
 	'typeSecondary':$typeSecondary,
 	'typeDisable':$typeDisable,
@@ -123,4 +125,5 @@ $colors = {
 	'stateSuccess':$stateSuccess,
 	'stateWarningBG':$stateWarningBG,
 	'stateWarning':$stateWarning,
+	'fieldBackground':$fieldBackground,
 }

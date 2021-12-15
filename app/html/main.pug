@@ -1,183 +1,93 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
-+header()
-//.header-baner(style="background-image:url('img/img-5.jpg')")
+.banner-main(style="background-image:url('img/baner-39.jpg')")
+	+header()
+	.banner-main__content
+		.main-cont-sm
+			.f.f-col.f-aic
+				.type--xl.type--w700.type--center.type--black.mb-32.type--title <span>Ваш надежный партнер в оформлении недвижимости и инженерных изысканий
+				.type--main.type--center.type--black.wmax-500.mb-64.type--title Качественные услуги от команды с многолетним опытом. Мы рещим вашу проблему уже сегодня.
+				.f.gap-32.mb-48
+					.f.f-aic.gap-12
+						.round.bg--mark
+						span.type--w600.type--black Штат инженеров
+					.f.f-aic.gap-12
+						.round.bg--mark
+						span.type--w600.type--black Расчет по факту работ
+					.f.f-aic.gap-12
+						.round.bg--mark
+						span.type--w600.type--black Гарантия сроков
 
-//main-service
-.section.section--main-service
-	.main-cont
-		.section-title Наши самые популярные услуги
-		.section-title-sub Сравните
-			span.text--green наши цены &nbsp;
-			|c&nbsp;
-			span.text--red ценами конкурентов
-		.main-service
-			.main-service__col
-				.main-service__title Кадастровые работы
-				.main-service__el
-					.main-service__cont
-						.main-service__el-title Технический план дома
-						.main-service__title-sub площадь дома до 100 кв. м
-						.main-service__price-row
-							.main-service__price.main-service__price--true 14 000 руб.
-							.main-service__price.main-service__price--false 15 000 руб.
-						.main-service__get
-							a(href="#").main-service__btn.main-service__btn-more Подробнее
-							.main-service__btn.main-service__btn-get.modal-get(data-modal="order") Заказать
-					.main-service__img
-						.main-service__img-el(style="background-image:url('img/service-el-1.jpg')")
+				.f.gap-12
+					.btn--md.btn--mark.btn--fix Подробнее
+					.btn--md.btn--light.btn--fix Заказать
 
-				.main-service__el
-					.main-service__cont
-						.main-service__el-title Межевание (уточнение границ) земельного участка
-						.main-service__title-sub размер участка до 8 соток
-						.main-service__price-row
-							.main-service__price.main-service__price--true 14 000 руб.
-							.main-service__price.main-service__price--false 15 000 руб.
-						.main-service__get
-							a(href="#").main-service__btn.main-service__btn-more Подробнее
-							.main-service__btn.main-service__btn-get.modal-get(data-modal="order") Заказать
-					.main-service__img
-						.main-service__img-el(style="background-image:url('img/service-el-3.jpg')")
+.main-cont
+	.type--center.type--lg.type--w700.type--title.mt-100.mb-64 Каталог наших услуг
+	.g.g-2.gap-24.mb-100
+		a(href="#").bor.bor--border.p-48.f.f-col.br-8
+			.decorate.bg--mark.br-8.mb-48
+			.type--md.type--w700.type--title.mb-24 Геодезические услуги
+			.type--main.type--lh-1_6.mb-48 Геодезическое сопровождение строительства, исполнительная съемка, обмеры земельных участков и объектов капитального строительства, вынос в натуру, геодезические съемки.
+			.type--sm.type--mark.type--w700.mt-a Подробнее
+		a(href="#").bor.bor--border.p-48.f.f-col.br-8
+			.decorate.bg--mark.br-8.mb-48
+			.type--md.type--w700.type--title.mb-24 Кадастровые услуги
+			.type--main.type--lh-1_6.mb-48 Постановка на кадастровый учет, учет изменений объектов недвижимости, графическое описание санитарно-защитной зоны.
+			.type--sm.type--mark.type--w700.mt-a Подробнее
+		a(href="#").bor.bor--border.p-48.f.f-col.br-8
+			.decorate.bg--mark.br-8.mb-48
+			.type--md.type--w700.type--title.mb-24 Юридические услуги
+			.type--main.type--lh-1_6.mb-48 Регистрация прав (представление интересов в Росреестре), оптимизация налогообложения, уведомления о строительстве/сносе, экспертизы.
+			.type--sm.type--mark.type--w700.mt-a Подробнее
+		a(href="#").bor.bor--border.p-48.f.f-col.br-8
+			.decorate.bg--mark.br-8.mb-48
+			.type--md.type--w700.type--title.mb-24 Инженерные изыскания для строительства
+			.type--main.type--lh-1_6.mb-48 Геология, экология, топографическая съемка
+			.type--sm.type--mark.type--w700.mt-a Подробнее
 
-				.main-service__el
-					.main-service__cont
-						.main-service__el-title Исправление кадастровой (реестровой) ошибки
-						.main-service__title-sub размер участка до 8 соток
-						.main-service__price-row
-							.main-service__price.main-service__price--true 14 000 руб.
-							.main-service__price.main-service__price--false 15 000 руб.
-						.main-service__get
-							a(href="#").main-service__btn.main-service__btn-more Подробнее
-							.main-service__btn.main-service__btn-get.modal-get(data-modal="order") Заказать
-					.main-service__img
-						.main-service__img-el(style="background-image:url('img/service-el-5.jpg')")
 
-				.main-service__el
-					.main-service__cont
-						.main-service__el-title Межевой план
-						.main-service__title-sub на раздел, объединение и т.п.
-						.main-service__price-row
-							.main-service__price.main-service__price--true 10 000 руб.
-							.main-service__price.main-service__price--false 15 000 руб.
-						.main-service__get
-							a(href="#").main-service__btn.main-service__btn-more Подробнее
-							.main-service__btn.main-service__btn-get.modal-get(data-modal="order") Заказать
-					.main-service__img
-						.main-service__img-el(style="background-image:url('img/service-el-7.jpg')")
-
-				a(href="#").main-service__el-get Eще услуги
-
-			.main-service__col
-				.main-service__title Геодезические работы
-				.main-service__el
-					.main-service__cont
-						.main-service__el-title Топографическая съемка
-						.main-service__title-sub размер участка до 10 соток, 5 точек
-						.main-service__price-row
-							.main-service__price.main-service__price--true 10 000 руб.
-							.main-service__price.main-service__price--false 12 000 руб.
-						.main-service__get
-							a(href="#").main-service__btn.main-service__btn-more Подробнее
-							.main-service__btn.main-service__btn-get.modal-get(data-modal="order") Заказать
-					.main-service__img
-						.main-service__img-el(style="background-image:url('img/service-el-2.jpg')")
-
-				.main-service__el
-					.main-service__cont
-						.main-service__el-title Кадастровая съемка
-						.main-service__title-sub площадь участка до 8 соток
-						.main-service__price-row
-							.main-service__price.main-service__price--true 14 000 руб.
-							.main-service__price.main-service__price--false 15 000 руб.
-						.main-service__get
-							a(href="#").main-service__btn.main-service__btn-more Подробнее
-							.main-service__btn.main-service__btn-get.modal-get(data-modal="order") Заказать
-					.main-service__img
-						.main-service__img-el(style="background-image:url('img/service-el-4.jpg')")
-
-				.main-service__el
-					.main-service__cont
-						.main-service__el-title Вынос границ в натуру
-						.main-service__title-sub размер участка до 8 соток
-						.main-service__price-row
-							.main-service__price.main-service__price--true 10 000 руб.
-							.main-service__price.main-service__price--false 12 000 руб.
-						.main-service__get
-							a(href="#").main-service__btn.main-service__btn-more Подробнее
-							.main-service__btn.main-service__btn-get.modal-get(data-modal="order") Заказать
-					.main-service__img
-						.main-service__img-el(style="background-image:url('img/service-el-6.jpg')")
-
-				.main-service__el
-					.main-service__cont
-						.main-service__el-title Геодезическое сопровождение строительства
-						.main-service__title-sub день работы бригады геодезистов
-						.main-service__price-row
-							.main-service__price.main-service__price--true 10 000 руб.
-							.main-service__price.main-service__price--false 15 000 руб.
-						.main-service__get
-							a(href="#").main-service__btn.main-service__btn-more Подробнее
-							.main-service__btn.main-service__btn-get.modal-get(data-modal="order") Заказать
-					.main-service__img
-						.main-service__img-el(style="background-image:url('img/service-el-8.jpg')")
-				a(href="#").main-service__el-get Eще услуги
-
-//section-advance
-#advance.section.section-advance
-	.main-cont
-		.section-title Почему выбирают нас
-		.advance
-			.advance-el
-				.advance-icon
-					+icon("attest","icon")
-				.advance-text Штат аттестованных кадастровых инженеров. Лицензии СРО.
-			.advance-el
-				.advance-icon
-					+icon("time","icon")
-				.advance-text Оперативность решения вопросов.
-			.advance-el
-				.advance-icon
-					+icon("worker","icon")
-				.advance-text Все работы выполняются нашими штатными специалистами
-
-			.advance-el
-				.advance-icon
-					+icon("money","icon")
-				.advance-text Окончательный расчет производится по факту выполнения работ.
-			.advance-el
-				.advance-icon
-					+icon("posred","icon")
-				.advance-text Мы работаем без посредников, поэтому Вы экономите свои средства и время.
-			.advance-el
-				.advance-icon
-					+icon("result","icon")
-				.advance-text Более 1000 выполненных объектов по Москве и Московской области.
-
+.bg--fieldBackground
+	.psv-100.mb-100
+		.main-cont
+			.type--center.type--lg.type--w700.type--title.mb-64 Почему выбирают нас
+			.g.g-3.gap-24.mb-64
+				-
+					var items = [
+						{"icon":"attest","title":"Штат аттестованных кадастровых инженеров. Лицензии СРО."},
+						{"icon":"time","title":"Оперативность решения самых сложных вопросов."},
+						{"icon":"worker","title":"Все работы выполняются нашими штатными специалистами"},
+						{"icon":"money","title":"Окончательный расчет производится по факту выполнения работ."},
+						{"icon":"posred","title":"Мы работаем без посредников, поэтому Вы экономите свои средства и время."},
+						{"icon":"result","title":"Более 5000 выполненных объектов по Москве и Московской области."},
+						];
+				each item in items
+					.bor.bor--border.p-32.bg--white.br-4
+						.icon--64.br-round.bg--stateSuccessBG.f.f-mid.mb-32
+							+icon(item.icon,"icon icon--lg icon--mark")
+						.type--w500.type--title=item.title
 
 //about
-//.about.wow.fadeIn(style="background-image:url('img/our-gray.jpg')" data-wow-duration="1.75s" data-wow-delay="1s")
-	.main-cont
-		.about-cont
-			.about-cont__title О нашей компании
-			.about-cont__text
-				p Компания «Центр геодезических и кадастровых услуг» (ЦГиКУ) – это динамично развивающаяся организация, начавшая свою работу в 2012 году, основным профилем которой является выполнение кадастровых и геодезических работ. За время деятельности компании нами выполнены работы более чем на 5000 объектах по всей России.
-				p Мы являемся постоянными подрядчиками ПАО Сбербанк, АО «Мосводоканал», АО «Дон-Строй Инвест», ГУП «Московское имущество», ЦУМ, ГБУ МО «МОСАВТОДОР», АШАН, LIEBHERR и др., что подтверждается благодарственными письмами.
-				p Наши сотрудники - выпускники ведущих профильных ВУЗов страны, таких как Московский государственный университет геодезии и картографии (МИИГАиК), Государственный университет по землеустройству (ГУЗ). Все наши кадастровые инженеры имеют Аттестаты кадастровых инженеров и состоят в СРО, таких как А СРО «Кадастровые инженеры», А СРО «ОПКД».
-				p Показатель качества выполняемых нами услуг – долгосрочные и взаимовыгодные отношения как с крупными компаниями, так и с частными лицами. Выбирая нас, Вы можете быть уверены в грамотном и оперативном решении поставленных задач!
+.main-cont.mb-100
+	.type--lg.type--w700.type--title.type--center.mb-32 О нашей компании
+	img(src="img/companyGroup.jpg", alt="").mb-32.w100.br-8
+	.text
+		p Компания «Центр геодезических и кадастровых услуг» (ЦГиКУ) – это динамично развивающаяся организация, начавшая свою работу в 2012 году, основным профилем которой является выполнение кадастровых и геодезических работ. За время деятельности компании нами выполнены работы более чем на 5000 объектах по всей России.
+			p Мы являемся постоянными подрядчиками ПАО Сбербанк, АО «Мосводоканал», АО «Дон-Строй Инвест», ГУП «Московское имущество», ЦУМ, ГБУ МО «МОСАВТОДОР», АШАН, LIEBHERR и др., что подтверждается благодарственными письмами.
+			p Наши сотрудники - выпускники ведущих профильных ВУЗов страны, таких как Московский государственный университет геодезии и картографии (МИИГАиК), Государственный университет по землеустройству (ГУЗ). Все наши кадастровые инженеры имеют Аттестаты кадастровых инженеров и состоят в СРО, таких как А СРО «Кадастровые инженеры», А СРО «ОПКД».
 
-//slider customer
-.section.section--customer.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
-	.section-title Наши заказчики
-	.main-cont
-		.slider-customer.owl-carousel
-			- for (var i=1;i<15;i++)
-				.slider__el
-					img(src="img/"+i+"-customer.jpg", alt="")
+
+
+.main-cont
+	.type--lg.type--w700.type--title.type--center.mb-32 Наши заказчики
+	.g.g-6.f-gap-20.mb-100
+		- for (var i=1;i<13;i++)
+			img(src="img/" + i + "-customer.jpg", alt="").customer-item.filter--grayscale.p-24.tr
+
 
 //slider certificate
-.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
+//.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
 	.filter
 	.section-title Наши сертификаты
 	.main-cont
@@ -188,167 +98,166 @@ include block_html/_include.pug
 						img(src="img/cert-"+i+".jpg", alt="")
 
 //service
-//.section.section--service.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
-	.main-cont
-		.section-title Популярные услуги
-		.section-title-sub уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
-		.service
-			- for (var i=0;i<6;i++)
-				.service__el
-					.service__title Уточнение границ земельного участка
-					.service__text Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной – изготавливается межевой план по уточнению границ и (или) площади земельного участка.
-					.service__price 18 000 руб.
-					.service__get
-						.service__btn.service__btn-more Подробнее
-						.service__btn.service__btn-get Заказать
-
-
-
-
-#contact.section.section-contact
-	.main-cont
-		.section-title Наши контакты
-		.contact
-			.contact-form.contact-form--footer
-				.main-form
-					.form-title Оставьте вашу заявку
-					.form-title-sub Мы свяжемся с вам в кратчайшее время
-					form.validate-form.form--footer( action="javascript:void(null);")
-						.input-row
-							input(type="text" name="name" placeholder="Ваше имя").input
-						.input-row
-							input(type="text" name="phone" placeholder="Ваш телефон").input
-						.input-row
-							textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
-						.agree-row
-							.check-el
-								label.style-label.style-label--checkbox
-									input(type="checkbox" name="agree").sytle-input
-									.sytle-input-element
-										+icon("checked","icon-check")
-									.sytle-input-text=text
-							.agree-row__text Согласен с
-								a(href="#") условиями обработки персональных данных
-						input(type="submit" value="Отправить заявку").form-footer-send
-				.contact-info
-					.map
-						script("text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false")
-
-					.contact-row-wrap
-						.contact-row
-							.contact-icon
-								+icon("placeholder","icon")
-							.contact-text Москва, 1-ый Варшавский проезд, д.1А, строен.9, офис 2.6
-						.contact-row
-							.contact-icon
-								+icon("phone-call","icon")
-							.contact-text +7 (495) 514-84-13
-						.contact-row
-							.contact-icon
-								+icon("mail","icon")
-							.contact-text info@cgiku.ru
-						.contact-row
-							.contact-icon
-								+icon("metro","icon")
-							a(href="#").contact-text.contact-text--link Как к нам проехать
-	//section-contact-end
-
-//news
-.section.section--news.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
-	.section-title Новости
-	.main-cont
-		.news
-			.news__el
-				.news__el-date 18 июля 2017
-				.news__el-title ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ
-				.news__el-text По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...
-			.news__el
-				.news__el-date 22 авгутса 2017
-				.news__el-title Межевание участков, постановка на учет
-				.news__el-text Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....
-
-			.news__el
-				.news__el-date 19 сентября 2014
-				.news__el-title Подготовка технических планов
-				.news__el-text Технический план квартиры, дома, помещения, сооружения, гаража, объекта незавершенного строительства. Технический план для ввода объекта в эксплуатацию. Акт обследования. Заключение кадастрового инженера...
-
-			.news__el
-				.news__el-date 03 апреля 2014
-				.news__el-title Кадастровая съемка участков
-				.news__el-text Кадастровая съемка участка, Акт выбора земельных участков, Ситуационный план, Схема расположения земельного участка на кадастровой карте...
-
-			.news__el
-				.news__el-date 18 июля 2017
-				.news__el-title ЦЕНЫ НА ЭЛИТНЫЕ НОВОСТРОЙКИ В МОСКВЕ УПАЛИ
-				.news__el-text По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...
-			.news__el
-				.news__el-date 22 авгутса 2017
-				.news__el-title Межевание участков, постановка на учет
-				.news__el-text Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....
-
-//questions
-.section.section--news.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
-	.section-title Часто задаваемые вопросы
-	.section-title-sub Просто о сложном
-	.main-cont
-		.questions
-			.questions-slider.owl-carousel
-				- for (var i=0;i<6;i++)
-					.questions__el
-						.questions__el-wrap
-							.questions__name Валерия Моисеева.
-							.questions__title Здравствуйте! Поясните, пожалуйста, что такое кадастровая ошибка и как ее устранить?
-							.questions__text
-								p Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
-								p Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
-							.row-btn--center
-								a(href="#").questions__el-get Подробнее
-			.questions-more
-				.questions-title-sub Чтобы получить ответы на другие Ваши  вопросы, читайте наши статьи:
-				.questions-list
-
-					a(href="#").questions-list__el Пример кадастрового паспорта квартиры
-					a(href="#").questions-list__el Образец межевого плана земельного участка
-					a(href="#").questions-list__el Обязательно ли делать межевание земельного участка
-				a(href="#").questions-list__get Все статьи
-
-.footer
-	.footer-menu
-		//.main-cont
-			.menu
-				.menu-el
-					a(href="#")
-						span Главная
-				.menu-el.menu-el-service
-					a(href="#")
-						span Услуги
-				.menu-el
-					a(href="#")
-						span О компании
-				.menu-el
-					a(href="#")
-						span Прайс-лист
-				.menu-el
-					a(href="#")
-						span Наши лицензии
-				.menu-el
-					a(href="#")
-						span Контакты
-				.menu-el.menu-el--mark
-					a(href="#")
-						span Акции
-	.footer-info
+.bg--fieldBackground
+	.psv-100
 		.main-cont
-			.footer-container
-				.footer-list
-					- for (var i=0;i<15;i++)
-						.footer-list__el пункт меню #{i}
-				.footer-info-wrap
-					a(href="/").footer-info__logo
-						img(src="img/logo-dark.png", alt="").logo--full
-					.footer-info__phone
-							a(href="tel:+7 (495) 514-84-13").footer-info__phone +7 (495) 514-84-13
-							a(href="tel:+7 (495) 514-84-13").footer-info__phone +7 (495) 283-96-83
+			.type--center.type--lg.type--w700.type--title.mb-32 Популярные услуги
+			.type--center.w60.ml-a.mr-a.type--md.mb-64 уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+			.g.g-2.f-gap-24
+				-
+					var items = [
+						{
+							"title": "Уточнение границ земельного участка",
+							"text": "Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной",
+							"price": "18 000 руб"
+						},
+						{
+							"title": "Исправление реестровой ошибки",
+							"text": "Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади ",
+							"price": "22 000 руб"
+						},
+						{
+							"title": "Раздел земельного участка",
+							"text": "Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади (для юридических лиц).",
+							"price": "14 000 руб"
+						},
+						{
+							"title": "Объединение земельных участков",
+							"text": "Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади (для юридических лиц).",
+							"price": "26 000 руб"
+						},
+
+					];
+				each item in items
+					.p-32.bor.bor--border.f.f-col.bg--white.br-8
+						.type--w500.type--title.type--md.mb-24=item.title
+						.type--sm.type--main.mb-32.type--lh-1_6=item.text
+						.type--md.type--w700.mb-24.mt-a=item.price
+						.f
+							.btn.btn--md.btn--light Подробнее
+							.btn.btn--md.btn--mark.ml-24 Заказать
+
+
+.psv-100
+	.main-cont
+		.type--center.type--lg.type--w700.type--title.mb-32 Последние новости
+		.g.g-3.f-gap-24
+			- for (var i=0;i<2;i++)
+				-
+					var items = [
+						{
+							"title": "Упали цены на элитные новостройки",
+							"text": "По итогам первого полугодия 2015 года долларовые цены на первичном рынке высокопремиального жилья Москвы показали рекордно низкий уровень за последние семь лет ...",
+							"date": "18 июля 2021"
+						},
+						{
+							"title": "Межевание участков, постановка на учет",
+							"text": "Подготовка межевого плана и постановка на кадастровый учет. Уточнение границ, раздел, Объединение, выделение частей участков, межевание земель, придомовой территории....",
+							"date": "20 авг 2021"
+						},
+						{
+							"title": "Обновлены сведения об утраченных и поврежденных пунктах государственной геодезической сети",
+							"text": "Сведения об утраченных и поврежденных пунктах государственной геодезической сети, а также об ...",
+							"date": "22 авг 2021"
+						},
+						{
+							"title": "Росреестр уточнил минимальный размер машино-мест",
+							"text": "Как пишет Парламентская газета, в России установлен минимальный допустимый размер машино-мест — ...",
+							"date": "10 сент 2021"
+						},
+
+					];
+				each item in items
+					.p-32.bor.bor--border.f.f-col.bg--white.f-aifs.br-8
+						.bg--stateSuccessBG.type--w700.type--sm.type--mark.p-4.mb-12=item.date
+						.type--w500.type--title.type--main.mb-24=item.title
+						.type--sm.mb-32.type--lh-1_6=item.text
+						.type--sm.type--mark Подробнее
+
+.mb-100
+	.main-cont
+		.type--center.type--lg.type--w700.type--title.mb-32 Частые вопросы
+
+		-
+			var items = [
+				'Здравствуйте! Поясните пожалуйста что такое кадастровая ошибка и как ее устранить?',
+				'Почему могут отказать в выдаче кадастрового паспорта?',
+				'Возможно ли оформить земельный участок, на котором располагается жилой дом? На дом документы есть, а на участок отсутствуют. Участок находится в Московской области.',
+				'Добрый день уважаемые инженеры! По документам у меня 6 соток. Но после проведения геодезической съемки выяснилось, что площадь участка составляет 8 соток с небольшим. ',
+				'Подскажите пожалуйста, является ли процедура межевания обязательной?',
+				'Здравствуйте! У меня возникла проблема. При переезде с одного места жительства в другое были утеряны все документы на земельный участок. Участок 8 сот., ИЖС, находится в собственности. Хочу произвести межевание, а документов нет. Что делать?',
+				];
+		each item in items
+			.js-accordion
+				.accordion__el.js-accordion-el
+					.accordion__el-head.js-accordion-head
+						.accordion__el-head-text.type--w500.type--title.w80=item
+						.accordion__el-head-icon
+					.accordion__el-content.text.js-accordion-content
+						p Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
+							p Для начала следует произвести геодезическую съемку как Вашего участка, так и смежного, с которым имеется пересечение. Исходя из произведенной геодезической съемки, следует понимать кто виноват в сложившемся пересечении границ. Если у смежных владельцев вопросов не возникает и «виновник» дает согласие на отодвигание своих границ, то кадастровым инженером формируется межевой план по исправлению кадастровой ошибки.
+							p Если же «виновник» не признает своей вины, то данный спор решается в судебном порядке.
+
+.f.bor.bor-t.bor--border
+	.w50.psv-64
+		.ml-a.mr-a.wmax-640
+			.type--w700.type--lg.mb-24 Оставьте вашу заявку
+			.type--w700.type--xl.type--mark.mb-12 +7 (495) 514-84-13
+			.type--w600.mb-32 г. Москва, 1-ый Нагатинский проезд, д. 4, офис 210
+			//.type--main.type--gray Мы свяжемся с вам в кратчайшее время
+			.g.g-2.gap-24.mb-24
+				.input-row
+					input(type="text" placeholder="Ваше имя" class="input input--disable")
+				.input-row
+					input(type="text" placeholder="Ваше имя" class="input input--disable")
+			.input-row.mb-24
+				textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
+			.login-remember.mb-48
+				.check-el
+					label.style-label.style-label--checkbox
+						input(type="checkbox").style-input
+						.style-input-element
+							+icon("checked","icon")
+						.style-input-text Я ознакомился с #[a(href="#") политикой конфиденциальности], #[a(href="#") публичной офертой] и даю согласие на обработку моих персональных данных
+			.btn--md.btn--light Отправить заявку
+	.w50
+		.h100.w100
+			script("text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false")
+
+
+.footer.bg--dark.psv-48
+	.main-cont
+		.row.gap-24
+			.g-1-9
+				.g.g-3.gap-24
+					-
+						var items = [
+							"Главная",
+							"Кадастровые работы",
+							"Новости",
+							"О компании",
+							"Геодезические работы и услуги",
+							"Вопрос-ответ",
+							"Наши лицензии",
+							"ПРАЙС-ЛИСТ",
+							"Статьи",
+							"Контакты",
+							"Акции и Скидки",
+							"Список услуг в городах",
+							"Примеры работ",
+							"Нормативная документация",
+							"Благодарственные письма",
+							"Результаты специальной оценки условий труда",
+							"Политика в отношении обработки персональных данных",
+							"Отзывы",
+							];
+					each item in items
+						.type--white.type--sm.type--typeSecondary #{item}
+			.g-10-12
+				img(src="img/logo.png", alt="").mb-24
+				.type--mdx.type--white.type--w700.type--title.mb-12 +7 (495) 514-84-13
+				.type--typeSecondary.type--white.type--w700.type--title info@cgiku.ru
+
 .scroll-up
 	+icon("arrow-up","icon")
 
