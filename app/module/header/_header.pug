@@ -2,19 +2,52 @@ mixin header()
 	//block header
 	.head-container
 		//header
+		// mobile menu
+		.slide-block.slide-block--right.slide-block--menu.shadow-lg(data-menu="menu")
+			.js-accordion.psv-16.psh-32
+				.f.f-between.mb-24
+					img(src="img/logo-dark.png", alt="").w40
+					+icon("close","icon icon--24 icon-h--mark cp tr js-slide-block-close")
+				.type--title.type--w700.mb-16 Услуги
+				.pl-16.mb-16
+					a(href="#").type--16.type--w500.type--title.db.mb-4 Геодезические
+					a(href="#").type--16.type--w500.type--title.db.mb-4 Кадастровые
+					a(href="#").type--16.type--w500.type--title.db.mb-4 Юридические
+					a(href="#").type--16.type--w500.type--title.db Инженерные
+				a(href="#").type--title.type--w700.db.mb-12 Цены
+				a(href="#").type--title.type--w700.db.mb-12 О нас
+				a(href="#").type--title.type--w700.db.mb-12 Акции
+				a(href="#").type--title.type--w700.db Контакты
+
+				a(href="tel:8 (499) 110-12-15" ).type--w700.type--24.mt-48.mb-16.db.type--title.type--black 8 (499) 110-12-15
+				.type--typeSecondary.type--sm.mb-12.w80 г. Москва, 1-ый Нагатинский проезд, д. 4, офис 210
+				.type--typeSecondary.type--sm.mb-12 info@cgiku.ru
+
+			// mobile menu === end
+
 		.header
 			.main-cont
 				.header-wrap
 					a(href="#").logo
-						img(src="img/logo-dark.png", alt="").logo--full
-					.header-nav
-						a(href="#").header-nav__el.type--title.type--w500 Услуги
-						a(href="#").header-nav__el.type--title.type--w500 Цены
-						a(href="#").header-nav__el.type--title.type--w500 О нас
-						a(href="#").header-nav__el.type--title.type--w500 Акции
-						a(href="#").header-nav__el.type--title.type--w500 Контакты
-					.header-phone
-						a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 514-84-13
+						img(src="img/logo-dark.png", alt="")
+					.header-nav.w45.md__hide
+						.header-nav__el.header-nav__el-drop.type--title.type--w500.cp
+							.f.f-mid
+								span.type--nowrap Услуги
+								+icon("arrow-down","icon icon--sm ml-8 tr")
+							.header-nav__el-drop-list
+								a(href="#").type--sm.type-h--mark.tr.dib.mb-4 Геодезические
+								a(href="#").type--sm.type-h--mark.tr.dib.mb-4 Кадастровые
+								a(href="#").type--sm.type-h--mark.tr.dib.mb-4 Юридические
+								a(href="#").type--sm.type-h--mark.tr.dib Инженерные
+						a(href="#").header-nav__el.type--title.type--w500.type--nowrap.type-h--mark Цены
+						a(href="#").header-nav__el.type--title.type--w500.type--nowrap.type-h--mark О нас
+						a(href="#").header-nav__el.type--title.type--w500.type--nowrap.type-h--mark Акции
+						a(href="#").header-nav__el.type--title.type--w500.type--nowrap.type-h--mark Контакты
+					.header-phone.md__ml-a
+						a(href="tel:+7 (495) 514-84-13").type--title.type--w700.type--black.type--16.sm__type--12 +7 (495) 514-84-13
+					.head-toggle.md__show.js-slide-block-toggle.md__ml-12.f.f-mid(data-menu="menu")
+						+icon("menu","icon icon--md")
 						//a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 283-96-83
 			//.top-line
 				.main-cont

@@ -25,25 +25,70 @@
 
 	<body>
 		<!--block footer end-->
-		<div class="banner-main" style="background-image:url('img/baner-39.jpg');">
+		<!--.banner-main(style="background-image:url('img/baner-39.jpg')")-->
+		<div class="banner-main" style="background-image:url('img/mainPage-banner-1.jpeg');">
 			<!--block header-->
 			<div class="head-container">
 				<!--header-->
+				<!-- mobile menu-->
+				<div class="slide-block slide-block--right slide-block--menu shadow-lg" data-menu="menu">
+					<div class="js-accordion psv-16 psh-32">
+						<div class="f f-between mb-24">
+							<img class="w40" src="img/logo-dark.png" alt="" />
+							<svg class="icon icon--24 icon-h--mark cp tr js-slide-block-close">
+								<use xlink:href="#close"></use>
+							</svg>
+						</div>
+						<div class="type--title type--w700 mb-16">Услуги</div>
+						<div class="pl-16 mb-16">
+							<a class="type--16 type--w500 type--title db mb-4" href="#">Геодезические</a>
+							<a class="type--16 type--w500 type--title db mb-4" href="#">Кадастровые</a>
+							<a class="type--16 type--w500 type--title db mb-4" href="#">Юридические</a>
+							<a class="type--16 type--w500 type--title db" href="#">Инженерные</a>
+						</div>
+						<a class="type--title type--w700 db mb-12" href="#">Цены</a>
+						<a class="type--title type--w700 db mb-12" href="#">О нас</a>
+						<a class="type--title type--w700 db mb-12" href="#">Акции</a>
+						<a class="type--title type--w700 db" href="#">Контакты</a>
+						<a class="type--w700 type--24 mt-48 mb-16 db type--title type--black" href="tel:8 (499) 110-12-15">8 (499) 110-12-15</a>
+						<div class="type--typeSecondary type--sm mb-12 w80">г. Москва, 1-ый Нагатинский проезд, д. 4, офис 210</div>
+						<div class="type--typeSecondary type--sm mb-12">info@cgiku.ru</div>
+					</div>
+					<!-- mobile menu === end-->
+				</div>
 				<div class="header">
 					<div class="main-cont">
 						<div class="header-wrap">
 							<a class="logo" href="#">
-								<img class="logo--full" src="img/logo-dark.png" alt="" />
+								<img src="img/logo-dark.png" alt="" />
 							</a>
-							<div class="header-nav">
-								<a class="header-nav__el type--title type--w500" href="#">Услуги</a>
-								<a class="header-nav__el type--title type--w500" href="#">Цены</a>
-								<a class="header-nav__el type--title type--w500" href="#">О нас</a>
-								<a class="header-nav__el type--title type--w500" href="#">Акции</a>
-								<a class="header-nav__el type--title type--w500" href="#">Контакты</a>
+							<div class="header-nav w45 md__hide">
+								<div class="header-nav__el header-nav__el-drop type--title type--w500 cp">
+									<div class="f f-mid">
+										<span class="type--nowrap">Услуги</span>
+										<svg class="icon icon--sm ml-8 tr">
+											<use xlink:href="#arrow-down"></use>
+										</svg>
+									</div>
+									<div class="header-nav__el-drop-list">
+										<a class="type--sm type-h--mark tr dib mb-4" href="#">Геодезические</a>
+										<a class="type--sm type-h--mark tr dib mb-4" href="#">Кадастровые</a>
+										<a class="type--sm type-h--mark tr dib mb-4" href="#">Юридические</a>
+										<a class="type--sm type-h--mark tr dib" href="#">Инженерные</a>
+									</div>
+								</div>
+								<a class="header-nav__el type--title type--w500 type--nowrap type-h--mark" href="#">Цены</a>
+								<a class="header-nav__el type--title type--w500 type--nowrap type-h--mark" href="#">О нас</a>
+								<a class="header-nav__el type--title type--w500 type--nowrap type-h--mark" href="#">Акции</a>
+								<a class="header-nav__el type--title type--w500 type--nowrap type-h--mark" href="#">Контакты</a>
 							</div>
-							<div class="header-phone">
-								<a class="nav-phone-el" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+							<div class="header-phone md__ml-a">
+								<a class="type--title type--w700 type--black type--16 sm__type--12" href="tel:+7 (495) 514-84-13">+7 (495) 514-84-13</a>
+							</div>
+							<div class="head-toggle md__show js-slide-block-toggle md__ml-12 f f-mid" data-menu="menu">
+								<svg class="icon icon--md">
+									<use xlink:href="#menu"></use>
+								</svg>
 								<!--a(href="tel:+7 (495) 514-84-13").nav-phone-el +7 (495) 283-96-83-->
 							</div>
 						</div>
@@ -120,10 +165,9 @@
 			<div class="banner-main__content">
 				<div class="main-cont-sm">
 					<div class="f f-col f-aic">
-						<div class="type--xl type--w700 type--center type--black mb-32 type--title">
-							<span>Ваш надежный партнер в оформлении недвижимости и инженерных изысканий</div>
-						<div class="type--main type--center type--black wmax-500 mb-64 type--title">Качественные услуги от команды с многолетним опытом. Мы рещим вашу проблему уже сегодня.</div>
-						<div class="f gap-32 mb-48">
+						<div class="banner-main__title">Ваш надежный партнер в оформлении недвижимости и инженерных изысканий</div>
+						<div class="type--main type--center type--black wmax-500 mb-64 type--title md__hide">Качественные услуги от команды с многолетним опытом. Мы рещим вашу проблему уже сегодня.</div>
+						<div class="f gap-32 mb-48 md__hide">
 							<div class="f f-aic gap-12">
 								<div class="round bg--mark"></div>
 								<span class="type--w600 type--black">Штат инженеров</span>
@@ -137,9 +181,9 @@
 								<span class="type--w600 type--black">Гарантия сроков</span>
 							</div>
 						</div>
-						<div class="f gap-12">
-							<div class="btn--md btn--mark btn--fix">Подробнее</div>
-							<div class="btn--md btn--light btn--fix">Заказать</div>
+						<div class="f gap-12 sm__fw">
+							<div class="btn--md btn--mark btn--fix sm__w100">Подробнее</div>
+							<div class="btn--md btn--light btn--fix sm__w100">Заказать</div>
 						</div>
 					</div>
 				</div>
@@ -147,7 +191,7 @@
 		</div>
 		<div class="main-cont">
 			<div class="type--center type--lg type--w700 type--title mt-100 mb-64">Каталог наших услуг</div>
-			<div class="g g-2 gap-24 mb-100">
+			<div class="g g-2 gap-24 mb-100 sm__g-1">
 				<a class="bor bor--border p-48 f f-col br-8" href="#">
 					<div class="decorate bg--mark br-8 mb-48"></div>
 					<div class="type--md type--w700 type--title mb-24">Геодезические услуги</div>
@@ -175,17 +219,17 @@
 			</div>
 		</div>
 		<div class="bg--fieldBackground">
-			<div class="psv-100 mb-100">
+			<div class="psv-100 mb-100 sm__psv-48">
 				<div class="main-cont">
 					<div class="type--center type--lg type--w700 type--title mb-64">Почему выбирают нас</div>
-					<div class="g g-3 gap-24 mb-64">
+					<div class="g g-3 gap-24 mb-64 sm__g-2">
 						<div class="bor bor--border p-32 bg--white br-4">
 							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
 								<svg class="icon icon--lg icon--mark">
 									<use xlink:href="#attest"></use>
 								</svg>
 							</div>
-							<div class="type--w500 type--title">Штат аттестованных кадастровых инженеров. Лицензии СРО.</div>
+							<div class="type--w500 type--title sm__type--12">Штат аттестованных кадастровых инженеров. Лицензии СРО.</div>
 						</div>
 						<div class="bor bor--border p-32 bg--white br-4">
 							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
@@ -193,7 +237,7 @@
 									<use xlink:href="#time"></use>
 								</svg>
 							</div>
-							<div class="type--w500 type--title">Оперативность решения самых сложных вопросов.</div>
+							<div class="type--w500 type--title sm__type--12">Оперативность решения самых сложных вопросов.</div>
 						</div>
 						<div class="bor bor--border p-32 bg--white br-4">
 							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
@@ -201,7 +245,7 @@
 									<use xlink:href="#worker"></use>
 								</svg>
 							</div>
-							<div class="type--w500 type--title">Все работы выполняются нашими штатными специалистами</div>
+							<div class="type--w500 type--title sm__type--12">Все работы выполняются нашими штатными специалистами</div>
 						</div>
 						<div class="bor bor--border p-32 bg--white br-4">
 							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
@@ -209,7 +253,7 @@
 									<use xlink:href="#money"></use>
 								</svg>
 							</div>
-							<div class="type--w500 type--title">Окончательный расчет производится по факту выполнения работ.</div>
+							<div class="type--w500 type--title sm__type--12">Окончательный расчет производится по факту выполнения работ.</div>
 						</div>
 						<div class="bor bor--border p-32 bg--white br-4">
 							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
@@ -217,7 +261,7 @@
 									<use xlink:href="#posred"></use>
 								</svg>
 							</div>
-							<div class="type--w500 type--title">Мы работаем без посредников, поэтому Вы экономите свои средства и время.</div>
+							<div class="type--w500 type--title sm__type--12">Мы работаем без посредников, поэтому Вы экономите свои средства и время.</div>
 						</div>
 						<div class="bor bor--border p-32 bg--white br-4">
 							<div class="icon--64 br-round bg--stateSuccessBG f f-mid mb-32">
@@ -225,7 +269,7 @@
 									<use xlink:href="#result"></use>
 								</svg>
 							</div>
-							<div class="type--w500 type--title">Более 5000 выполненных объектов по Москве и Московской области.</div>
+							<div class="type--w500 type--title sm__type--12">Более 5000 выполненных объектов по Москве и Московской области.</div>
 						</div>
 					</div>
 				</div>
@@ -246,7 +290,7 @@
 		</div>
 		<div class="main-cont">
 			<div class="type--lg type--w700 type--title type--center mb-32">Наши заказчики</div>
-			<div class="g g-6 f-gap-20 mb-100">
+			<div class="g g-6 g-gap-20 mb-100 sm__g-3">
 				<img class="customer-item filter--grayscale p-24 tr" src="img/1-customer.jpg" alt="" />
 				<img class="customer-item filter--grayscale p-24 tr" src="img/2-customer.jpg" alt="" />
 				<img class="customer-item filter--grayscale p-24 tr" src="img/3-customer.jpg" alt="" />
@@ -261,69 +305,57 @@
 				<img class="customer-item filter--grayscale p-24 tr" src="img/12-customer.jpg" alt="" />
 			</div>
 		</div>
-		<!--slider certificate-->
-		<!--.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
-.filter
-.section-title Наши сертификаты
-.main-cont
-	.slider-certificate.owl-carousel
-		- for (var i=1;i<11;i++)
-			.slider__el
-				a(href="img/cert-"+i+".jpg" rel="group-elemen").fancybox
-					img(src="img/cert-"+i+".jpg", alt="")
-
--->
 		<!--service-->
 		<div class="bg--fieldBackground">
-			<div class="psv-100">
+			<div class="psv-100 sm__psv-48">
 				<div class="main-cont">
 					<div class="type--center type--lg type--w700 type--title mb-32">Популярные услуги</div>
-					<div class="type--center w60 ml-a mr-a type--md mb-64">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
-					<div class="g g-2 f-gap-24">
+					<div class="type--center w60 ml-a mr-a type--md mb-64 sm__w100 sm__type--14">уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков</div>
+					<div class="g g-2 f-gap-24 sm__g-1">
 						<div class="p-32 bor bor--border f f-col bg--white br-8">
 							<div class="type--w500 type--title type--md mb-24">Уточнение границ земельного участка</div>
 							<div class="type--sm type--main mb-32 type--lh-1_6">Если границы Вашего земельного участка не установлены, либо установлены, но с точностью ниже нормативной</div>
 							<div class="type--md type--w700 mb-24 mt-a">18 000 руб</div>
-							<div class="f">
-								<div class="btn btn--md btn--light">Подробнее</div>
-								<div class="btn btn--md btn--mark ml-24">Заказать</div>
+							<div class="f sm__fw">
+								<div class="btn btn--md btn--light sm__w100 sm__mb-10">Подробнее</div>
+								<div class="btn btn--md btn--mark ml-24 sm__w100 sm__ml-0">Заказать</div>
 							</div>
 						</div>
 						<div class="p-32 bor bor--border f f-col bg--white br-8">
 							<div class="type--w500 type--title type--md mb-24">Исправление реестровой ошибки</div>
 							<div class="type--sm type--main mb-32 type--lh-1_6">Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади </div>
 							<div class="type--md type--w700 mb-24 mt-a">22 000 руб</div>
-							<div class="f">
-								<div class="btn btn--md btn--light">Подробнее</div>
-								<div class="btn btn--md btn--mark ml-24">Заказать</div>
+							<div class="f sm__fw">
+								<div class="btn btn--md btn--light sm__w100 sm__mb-10">Подробнее</div>
+								<div class="btn btn--md btn--mark ml-24 sm__w100 sm__ml-0">Заказать</div>
 							</div>
 						</div>
 						<div class="p-32 bor bor--border f f-col bg--white br-8">
 							<div class="type--w500 type--title type--md mb-24">Раздел земельного участка</div>
 							<div class="type--sm type--main mb-32 type--lh-1_6">Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади (для юридических лиц).</div>
 							<div class="type--md type--w700 mb-24 mt-a">14 000 руб</div>
-							<div class="f">
-								<div class="btn btn--md btn--light">Подробнее</div>
-								<div class="btn btn--md btn--mark ml-24">Заказать</div>
+							<div class="f sm__fw">
+								<div class="btn btn--md btn--light sm__w100 sm__mb-10">Подробнее</div>
+								<div class="btn btn--md btn--mark ml-24 sm__w100 sm__ml-0">Заказать</div>
 							</div>
 						</div>
 						<div class="p-32 bor bor--border f f-col bg--white br-8">
 							<div class="type--w500 type--title type--md mb-24">Объединение земельных участков</div>
 							<div class="type--sm type--main mb-32 type--lh-1_6">Выполнение работ как на частных земельных участках (для физических лиц), так и на участках большой площади (для юридических лиц).</div>
 							<div class="type--md type--w700 mb-24 mt-a">26 000 руб</div>
-							<div class="f">
-								<div class="btn btn--md btn--light">Подробнее</div>
-								<div class="btn btn--md btn--mark ml-24">Заказать</div>
+							<div class="f sm__fw">
+								<div class="btn btn--md btn--light sm__w100 sm__mb-10">Подробнее</div>
+								<div class="btn btn--md btn--mark ml-24 sm__w100 sm__ml-0">Заказать</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="psv-100">
+		<div class="psv-100 sm__psv-48">
 			<div class="main-cont">
 				<div class="type--center type--lg type--w700 type--title mb-32">Последние новости</div>
-				<div class="g g-3 f-gap-24">
+				<div class="g g-3 f-gap-24 sm__g-1">
 					<div class="p-32 bor bor--border f f-col bg--white f-aifs br-8">
 						<div class="bg--stateSuccessBG type--w700 type--sm type--mark p-4 mb-12">18 июля 2021</div>
 						<div class="type--w500 type--title type--main mb-24">Упали цены на элитные новостройки</div>
@@ -381,7 +413,7 @@
 				<div class="js-accordion">
 					<div class="accordion__el js-accordion-el">
 						<div class="accordion__el-head js-accordion-head">
-							<div class="accordion__el-head-text type--w500 type--title w80">Здравствуйте! Поясните пожалуйста что такое кадастровая ошибка и как ее устранить?</div>
+							<div class="accordion__el-head-text type--w500 type--title w80 sm__type--12">Здравствуйте! Поясните пожалуйста что такое кадастровая ошибка и как ее устранить?</div>
 							<div class="accordion__el-head-icon"></div>
 						</div>
 						<div class="accordion__el-content text js-accordion-content">
@@ -397,7 +429,7 @@
 				<div class="js-accordion">
 					<div class="accordion__el js-accordion-el">
 						<div class="accordion__el-head js-accordion-head">
-							<div class="accordion__el-head-text type--w500 type--title w80">Почему могут отказать в выдаче кадастрового паспорта?</div>
+							<div class="accordion__el-head-text type--w500 type--title w80 sm__type--12">Почему могут отказать в выдаче кадастрового паспорта?</div>
 							<div class="accordion__el-head-icon"></div>
 						</div>
 						<div class="accordion__el-content text js-accordion-content">
@@ -413,7 +445,7 @@
 				<div class="js-accordion">
 					<div class="accordion__el js-accordion-el">
 						<div class="accordion__el-head js-accordion-head">
-							<div class="accordion__el-head-text type--w500 type--title w80">Возможно ли оформить земельный участок, на котором располагается жилой дом? На дом документы есть, а на участок отсутствуют. Участок находится в Московской области.</div>
+							<div class="accordion__el-head-text type--w500 type--title w80 sm__type--12">Возможно ли оформить земельный участок, на котором располагается жилой дом? На дом документы есть, а на участок отсутствуют. Участок находится в Московской области.</div>
 							<div class="accordion__el-head-icon"></div>
 						</div>
 						<div class="accordion__el-content text js-accordion-content">
@@ -429,7 +461,7 @@
 				<div class="js-accordion">
 					<div class="accordion__el js-accordion-el">
 						<div class="accordion__el-head js-accordion-head">
-							<div class="accordion__el-head-text type--w500 type--title w80">Добрый день уважаемые инженеры! По документам у меня 6 соток. Но после проведения геодезической съемки выяснилось, что площадь участка составляет 8 соток с небольшим. </div>
+							<div class="accordion__el-head-text type--w500 type--title w80 sm__type--12">Добрый день уважаемые инженеры! По документам у меня 6 соток. Но после проведения геодезической съемки выяснилось, что площадь участка составляет 8 соток с небольшим. </div>
 							<div class="accordion__el-head-icon"></div>
 						</div>
 						<div class="accordion__el-content text js-accordion-content">
@@ -445,7 +477,7 @@
 				<div class="js-accordion">
 					<div class="accordion__el js-accordion-el">
 						<div class="accordion__el-head js-accordion-head">
-							<div class="accordion__el-head-text type--w500 type--title w80">Подскажите пожалуйста, является ли процедура межевания обязательной?</div>
+							<div class="accordion__el-head-text type--w500 type--title w80 sm__type--12">Подскажите пожалуйста, является ли процедура межевания обязательной?</div>
 							<div class="accordion__el-head-icon"></div>
 						</div>
 						<div class="accordion__el-content text js-accordion-content">
@@ -461,7 +493,7 @@
 				<div class="js-accordion">
 					<div class="accordion__el js-accordion-el">
 						<div class="accordion__el-head js-accordion-head">
-							<div class="accordion__el-head-text type--w500 type--title w80">Здравствуйте! У меня возникла проблема. При переезде с одного места жительства в другое были утеряны все документы на земельный участок. Участок 8 сот., ИЖС, находится в собственности. Хочу произвести межевание, а документов нет. Что делать?</div>
+							<div class="accordion__el-head-text type--w500 type--title w80 sm__type--12">Здравствуйте! У меня возникла проблема. При переезде с одного места жительства в другое были утеряны все документы на земельный участок. Участок 8 сот., ИЖС, находится в собственности. Хочу произвести межевание, а документов нет. Что делать?</div>
 							<div class="accordion__el-head-icon"></div>
 						</div>
 						<div class="accordion__el-content text js-accordion-content">
@@ -476,19 +508,19 @@
 				</div>
 			</div>
 		</div>
-		<div class="f bor bor-t bor--border">
-			<div class="w50 psv-64">
+		<div class="f bor bor-t bor--border md__fw">
+			<div class="w50 psv-64 psh-24 lg__w100">
 				<div class="ml-a mr-a wmax-640">
 					<div class="type--w700 type--lg mb-24">Оставьте вашу заявку</div>
-					<div class="type--w700 type--xl type--mark mb-12">+7 (495) 514-84-13</div>
-					<div class="type--w600 mb-32">г. Москва, 1-ый Нагатинский проезд, д. 4, офис 210</div>
+					<div class="type--w700 type--xl type--mark mb-12 sm__type--32">+7 (495) 514-84-13</div>
+					<div class="type--w600 mb-32 sm__type--12">г. Москва, 1-ый Нагатинский проезд, д. 4, офис 210</div>
 					<!--.type--main.type--gray Мы свяжемся с вам в кратчайшее время-->
 					<div class="g g-2 gap-24 mb-24">
 						<div class="input-row">
 							<input class="input input--disable" type="text" placeholder="Ваше имя" />
 						</div>
 						<div class="input-row">
-							<input class="input input--disable" type="text" placeholder="Ваше имя" />
+							<input class="input input--disable" type="text" placeholder="Ваш телефон" />
 						</div>
 					</div>
 					<div class="input-row mb-24">
@@ -509,20 +541,20 @@
 							</label>
 						</div>
 					</div>
-					<div class="btn--md btn--light">Отправить заявку</div>
+					<div class="btn--md btn--light sm__w100">Отправить заявку</div>
 				</div>
 			</div>
-			<div class="w50">
-				<div class="h100 w100">
+			<div class="w50 md__w100">
+				<div class="h100 w100 map--mobile">
 					<script text/javascript="text/javascript" charset="utf-8" async="async" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;amp;width=100%&amp;amp;height=100%&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
 				</div>
 			</div>
 		</div>
-		<div class="footer bg--dark psv-48">
+		<div class="footer bg--dark psv-48 sm__psv-24">
 			<div class="main-cont">
 				<div class="row gap-24">
-					<div class="g-1-9">
-						<div class="g g-3 gap-24">
+					<div class="g-1-9 md__g-1-8 sm__order-2 sm__g-1-12">
+						<div class="g g-3 gap-24 sm__g-2">
 							<div class="type--white type--sm type--typeSecondary">Главная</div>
 							<div class="type--white type--sm type--typeSecondary">Кадастровые работы</div>
 							<div class="type--white type--sm type--typeSecondary">Новости</div>
@@ -530,7 +562,7 @@
 							<div class="type--white type--sm type--typeSecondary">Геодезические работы и услуги</div>
 							<div class="type--white type--sm type--typeSecondary">Вопрос-ответ</div>
 							<div class="type--white type--sm type--typeSecondary">Наши лицензии</div>
-							<div class="type--white type--sm type--typeSecondary">ПРАЙС-ЛИСТ</div>
+							<div class="type--white type--sm type--typeSecondary">Прайс-лист</div>
 							<div class="type--white type--sm type--typeSecondary">Статьи</div>
 							<div class="type--white type--sm type--typeSecondary">Контакты</div>
 							<div class="type--white type--sm type--typeSecondary">Акции и Скидки</div>
@@ -543,10 +575,10 @@
 							<div class="type--white type--sm type--typeSecondary">Отзывы</div>
 						</div>
 					</div>
-					<div class="g-10-12">
-						<img class="mb-24" src="img/logo.png" alt="" />
+					<div class="g-10-12 md__g-9-12 sm__order-1 sm__g-1-12">
+						<img class="mb-24 sm__w60" src="img/logo.png" alt="" />
 						<div class="type--mdx type--white type--w700 type--title mb-12">+7 (495) 514-84-13</div>
-						<div class="type--typeSecondary type--white type--w700 type--title">info@cgiku.ru</div>
+						<div class="type--typeSecondary type--white type--w700 type--title sm__mb-24">info@cgiku.ru</div>
 					</div>
 				</div>
 			</div>

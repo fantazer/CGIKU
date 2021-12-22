@@ -5,17 +5,15 @@
 @import "variable/_helper.styl"
 
 // ADD
-@import "grid/grid.css"
 @import "grid/extends.css"
+@import "grid/grid.css"
 
-@import "variable/config/_config.styl"
 @import "variable/config/_grid.styl"
 
 @import "variable/config/_color.styl"
 @import "variable/config/_typography.styl"
 @import "variable/config/_btn.styl"
 @import "variable/config/_input.styl"
-
 
 // ADD === end
 
@@ -362,9 +360,9 @@ body
 	+below(768px)
 		size 40px
 	flex(mid)
-	round()
 	cp()
 	tr(all)
+	br(4px)
 	position: fixed
 	z-index 15
 	bottom 20%
@@ -374,13 +372,11 @@ body
 	opacity 0
 	background: white
 	&:hover
-		background: black
+		background: $mark
 		.icon
 			fill white
 	.icon
-		+below(768px)
-			size 15px
-		size 30px
+		size 16px
 		fill black
 
 .scroll-up--show
@@ -3071,13 +3067,16 @@ select.select-beauty
 	margin-bottom: 20px
 	border-bottom 1px solid #efefef
 
-
 // redesign
 .round
 	br(50%)
 	size 12px
 .logo
-	max-width 200px
+	+below(768px)
+		width: 150px
+	+below(640px)
+		width: 120px
+	width 200px
 .head-container
 	position absolute
 	top 0
@@ -3087,12 +3086,81 @@ select.select-beauty
 	z-index 1000
 
 .header-wrap
+	+below(768px)
+		height: 55px
 	flex(between)
 .header-nav
 	f()
 	justify-content space-between
 	grid-gap 20px
-	width: 40%
+
+.header-nav__el
+	padding: 10px 5px
+	margin-bottom: 6px
+	display inline-block
+.header-nav__el-drop
+	position relative
+	&:hover
+		cursor pointer
+		.icon
+			transform rotate(180deg)
+		.header-nav__el-drop-list
+			left -25px
+			opacity: 1
+			transform translateY(0px)
+
+.header-nav__el-drop-list
+	br(4px)
+	position absolute
+	background: white
+	padding: 10px 15px
+	bsh()
+	width: 146px
+	top 100%
+	left -9999px
+	opacity: 0
+	transition opacity .8s, transform .4s
+	transform translateY(20px)
+
+// slider menu
+.head-toggle
+	cp()
+	.icon-close
+		display: none
+	&.active
+		.icon-close
+			display: block
+		.icon-open
+			display: none
+
+.slide-block
+	+below(480px)
+		width: 100%
+	position: fixed
+	width: 410px
+	top 0
+	tr(all)
+	height: 100%
+	z-index 100
+	background: white
+	&.active
+		transform translateX(0%)
+.slide-block--left
+	left 0
+	transform translateX(-100%)
+
+.slide-block--right
+	right 0
+	transform translateX(100%)
+
+.slide-nav__el
+	display  block
+
+.slide-block-wrap
+	padding: 24px
+// slider menu === end
+
+
 .banner-main
 	height: 100vh
 	bg-full()
@@ -3110,6 +3178,19 @@ select.select-beauty
 .banner-main__content
 	z-index 100
 	margin-top: 80px
+
+.banner-main__title
+	+below(768px)
+		font-size: 32px
+	+below(640px)
+		font-size: 24px
+
+	font-size: 58px
+	font-weight: 700
+	color black
+	font-family Gotham
+	text-align center
+	margin-bottom: 32px
 
 .decorate
 	width: 24px
@@ -3204,7 +3285,11 @@ select.select-beauty
 			margin-top: 0
 		&:last-child
 			margin-bottom: 0
-
 // accordion === end
 
+
+.map--mobile
+	+below(768px)
+		height: 400px
+		width: 100%
 // redesign === end

@@ -1,3 +1,5 @@
+@import '../variable/config/_config.styl'
+
 //  ============================ Typography ============================
 // icon size
 for $listIconItem in $listIcon
@@ -37,6 +39,17 @@ for $listTypeItem in $listType
 			.{$windowSizeItem[0]}__type--{$listTypeItem[0]},.{$windowSizeItem[0]}__type--{$listTypeItem[1]}
 				font-size $listTypeItem[1] px
 // calc font size === end
+
+// calc font size
+for $listTypeItem in $listTypeSimple
+	.type--{$listTypeItem}
+		font-size $listTypeItem px
+	for $windowSizeItem in $windowSize
+		.{$windowSizeItem[0]}__type--{$listTypeItem}
+			@media only screen and (max-width: $windowSizeItem[1]px)
+				font-size $listTypeItem px
+// calc font size === end
+
 
 // calc font weight
 for $listFwItem in $listFw
@@ -156,3 +169,13 @@ p
 				top 6px
 			&:last-child
 				margin-bottom: 0
+
+.type--nowrap
+	white-space nowrap
+
+.type--ellipsis
+	white-space: nowrap
+	display: inline-block
+	overflow: hidden
+	text-overflow: ellipsis
+	word-wrap: normal

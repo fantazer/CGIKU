@@ -1,14 +1,15 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
-.banner-main(style="background-image:url('img/baner-39.jpg')")
+//.banner-main(style="background-image:url('img/baner-39.jpg')")
+.banner-main(style="background-image:url('img/mainPage-banner-1.jpeg')")
 	+header()
 	.banner-main__content
 		.main-cont-sm
 			.f.f-col.f-aic
-				.type--xl.type--w700.type--center.type--black.mb-32.type--title <span>Ваш надежный партнер в оформлении недвижимости и инженерных изысканий
-				.type--main.type--center.type--black.wmax-500.mb-64.type--title Качественные услуги от команды с многолетним опытом. Мы рещим вашу проблему уже сегодня.
-				.f.gap-32.mb-48
+				.banner-main__title Ваш надежный партнер в оформлении недвижимости и инженерных изысканий
+				.type--main.type--center.type--black.wmax-500.mb-64.type--title.md__hide Качественные услуги от команды с многолетним опытом. Мы рещим вашу проблему уже сегодня.
+				.f.gap-32.mb-48.md__hide
 					.f.f-aic.gap-12
 						.round.bg--mark
 						span.type--w600.type--black Штат инженеров
@@ -18,14 +19,14 @@ include block_html/_include.pug
 					.f.f-aic.gap-12
 						.round.bg--mark
 						span.type--w600.type--black Гарантия сроков
+				.f.gap-12.sm__fw
+					.btn--md.btn--mark.btn--fix.sm__w100 Подробнее
+					.btn--md.btn--light.btn--fix.sm__w100 Заказать
 
-				.f.gap-12
-					.btn--md.btn--mark.btn--fix Подробнее
-					.btn--md.btn--light.btn--fix Заказать
 
 .main-cont
 	.type--center.type--lg.type--w700.type--title.mt-100.mb-64 Каталог наших услуг
-	.g.g-2.gap-24.mb-100
+	.g.g-2.gap-24.mb-100.sm__g-1
 		a(href="#").bor.bor--border.p-48.f.f-col.br-8
 			.decorate.bg--mark.br-8.mb-48
 			.type--md.type--w700.type--title.mb-24 Геодезические услуги
@@ -49,10 +50,10 @@ include block_html/_include.pug
 
 
 .bg--fieldBackground
-	.psv-100.mb-100
+	.psv-100.mb-100.sm__psv-48
 		.main-cont
 			.type--center.type--lg.type--w700.type--title.mb-64 Почему выбирают нас
-			.g.g-3.gap-24.mb-64
+			.g.g-3.gap-24.mb-64.sm__g-2
 				-
 					var items = [
 						{"icon":"attest","title":"Штат аттестованных кадастровых инженеров. Лицензии СРО."},
@@ -66,7 +67,7 @@ include block_html/_include.pug
 					.bor.bor--border.p-32.bg--white.br-4
 						.icon--64.br-round.bg--stateSuccessBG.f.f-mid.mb-32
 							+icon(item.icon,"icon icon--lg icon--mark")
-						.type--w500.type--title=item.title
+						.type--w500.type--title.sm__type--12=item.title
 
 //about
 .main-cont.mb-100
@@ -81,29 +82,17 @@ include block_html/_include.pug
 
 .main-cont
 	.type--lg.type--w700.type--title.type--center.mb-32 Наши заказчики
-	.g.g-6.f-gap-20.mb-100
+	.g.g-6.g-gap-20.mb-100.sm__g-3
 		- for (var i=1;i<13;i++)
 			img(src="img/" + i + "-customer.jpg", alt="").customer-item.filter--grayscale.p-24.tr
 
-
-//slider certificate
-//.section.section--certificate.wow.fadeIn(data-wow-duration="2s" data-wow-delay=".75s")
-	.filter
-	.section-title Наши сертификаты
-	.main-cont
-		.slider-certificate.owl-carousel
-			- for (var i=1;i<11;i++)
-				.slider__el
-					a(href="img/cert-"+i+".jpg" rel="group-elemen").fancybox
-						img(src="img/cert-"+i+".jpg", alt="")
-
 //service
 .bg--fieldBackground
-	.psv-100
+	.psv-100.sm__psv-48
 		.main-cont
 			.type--center.type--lg.type--w700.type--title.mb-32 Популярные услуги
-			.type--center.w60.ml-a.mr-a.type--md.mb-64 уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
-			.g.g-2.f-gap-24
+			.type--center.w60.ml-a.mr-a.type--md.mb-64.sm__w100.sm__type--14 уточнение, исправление реестровой ошибки, объединение, раздел, перераспределение, образование земельных участков
+			.g.g-2.f-gap-24.sm__g-1
 				-
 					var items = [
 						{
@@ -133,15 +122,15 @@ include block_html/_include.pug
 						.type--w500.type--title.type--md.mb-24=item.title
 						.type--sm.type--main.mb-32.type--lh-1_6=item.text
 						.type--md.type--w700.mb-24.mt-a=item.price
-						.f
-							.btn.btn--md.btn--light Подробнее
-							.btn.btn--md.btn--mark.ml-24 Заказать
+						.f.sm__fw
+							.btn.btn--md.btn--light.sm__w100.sm__mb-10 Подробнее
+							.btn.btn--md.btn--mark.ml-24.sm__w100.sm__ml-0 Заказать
 
 
-.psv-100
+.psv-100.sm__psv-48
 	.main-cont
 		.type--center.type--lg.type--w700.type--title.mb-32 Последние новости
-		.g.g-3.f-gap-24
+		.g.g-3.f-gap-24.sm__g-1
 			- for (var i=0;i<2;i++)
 				-
 					var items = [
@@ -191,25 +180,25 @@ include block_html/_include.pug
 			.js-accordion
 				.accordion__el.js-accordion-el
 					.accordion__el-head.js-accordion-head
-						.accordion__el-head-text.type--w500.type--title.w80=item
+						.accordion__el-head-text.type--w500.type--title.w80.sm__type--12=item
 						.accordion__el-head-icon
 					.accordion__el-content.text.js-accordion-content
 						p Кадастровой ошибкой является ошибка, воспроизведенная в государственном кадастре недвижимости ошибка в документе, на основании которого вносились сведения в государственный кадастр недвижимости. То есть в отношении границ земельных участков кадастровой ошибкой является ошибка, допущенная при определении координат характерных точек границ участка и воспроизведенная в государственном кадастре недвижимости.
 							p Для начала следует произвести геодезическую съемку как Вашего участка, так и смежного, с которым имеется пересечение. Исходя из произведенной геодезической съемки, следует понимать кто виноват в сложившемся пересечении границ. Если у смежных владельцев вопросов не возникает и «виновник» дает согласие на отодвигание своих границ, то кадастровым инженером формируется межевой план по исправлению кадастровой ошибки.
 							p Если же «виновник» не признает своей вины, то данный спор решается в судебном порядке.
 
-.f.bor.bor-t.bor--border
-	.w50.psv-64
+.f.bor.bor-t.bor--border.md__fw
+	.w50.psv-64.psh-24.lg__w100
 		.ml-a.mr-a.wmax-640
 			.type--w700.type--lg.mb-24 Оставьте вашу заявку
-			.type--w700.type--xl.type--mark.mb-12 +7 (495) 514-84-13
-			.type--w600.mb-32 г. Москва, 1-ый Нагатинский проезд, д. 4, офис 210
+			.type--w700.type--xl.type--mark.mb-12.sm__type--32 +7 (495) 514-84-13
+			.type--w600.mb-32.sm__type--12 г. Москва, 1-ый Нагатинский проезд, д. 4, офис 210
 			//.type--main.type--gray Мы свяжемся с вам в кратчайшее время
 			.g.g-2.gap-24.mb-24
 				.input-row
 					input(type="text" placeholder="Ваше имя" class="input input--disable")
 				.input-row
-					input(type="text" placeholder="Ваше имя" class="input input--disable")
+					input(type="text" placeholder="Ваш телефон" class="input input--disable")
 			.input-row.mb-24
 				textarea(name="info", cols="30", rows="5" placeholder="Сообщение").input
 			.login-remember.mb-48
@@ -219,17 +208,17 @@ include block_html/_include.pug
 						.style-input-element
 							+icon("checked","icon")
 						.style-input-text Я ознакомился с #[a(href="#") политикой конфиденциальности], #[a(href="#") публичной офертой] и даю согласие на обработку моих персональных данных
-			.btn--md.btn--light Отправить заявку
-	.w50
-		.h100.w100
+			.btn--md.btn--light.sm__w100 Отправить заявку
+	.w50.md__w100
+		.h100.w100.map--mobile
 			script("text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104108c83896b1a6c1b544e50f3d690ee4df2f43b13730f0b9a6f0d5ead96cae&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false")
 
 
-.footer.bg--dark.psv-48
+.footer.bg--dark.psv-48.sm__psv-24
 	.main-cont
 		.row.gap-24
-			.g-1-9
-				.g.g-3.gap-24
+			.g-1-9.md__g-1-8.sm__order-2.sm__g-1-12
+				.g.g-3.gap-24.sm__g-2
 					-
 						var items = [
 							"Главная",
@@ -239,7 +228,7 @@ include block_html/_include.pug
 							"Геодезические работы и услуги",
 							"Вопрос-ответ",
 							"Наши лицензии",
-							"ПРАЙС-ЛИСТ",
+							"Прайс-лист",
 							"Статьи",
 							"Контакты",
 							"Акции и Скидки",
@@ -253,10 +242,10 @@ include block_html/_include.pug
 							];
 					each item in items
 						.type--white.type--sm.type--typeSecondary #{item}
-			.g-10-12
-				img(src="img/logo.png", alt="").mb-24
+			.g-10-12.md__g-9-12.sm__order-1.sm__g-1-12
+				img(src="img/logo.png", alt="").mb-24.sm__w60
 				.type--mdx.type--white.type--w700.type--title.mb-12 +7 (495) 514-84-13
-				.type--typeSecondary.type--white.type--w700.type--title info@cgiku.ru
+				.type--typeSecondary.type--white.type--w700.type--title.sm__mb-24 info@cgiku.ru
 
 .scroll-up
 	+icon("arrow-up","icon")
